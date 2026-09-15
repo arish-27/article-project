@@ -128,29 +128,34 @@
         </div>
       </a>
 
-      <!-- 4-PAGE NAVIGATOR (Direct Multi-Page Navigation) -->
+      <!-- 5-PAGE NAVIGATOR (Direct Multi-Page Navigation) -->
       <nav
-        class="hidden md:flex items-center gap-1.5 bg-surface-container-low/90 p-1.5 rounded-full border border-surface-container-highest/70 text-xs font-semibold shadow-sm"
+        class="hidden lg:flex items-center gap-1.5 bg-surface-container-low/90 p-1.5 rounded-full border border-surface-container-highest/70 text-xs font-semibold shadow-sm"
         id="pageNav">
         <a href="index.html"
-          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
           <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">01</span>
-          <span>Macro &amp; Architecture</span>
+          <span>Macro</span>
         </a>
         <a href="page2.html"
-          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
           <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">02</span>
           <span>Jobs &amp; Roles</span>
         </a>
         <a href="page3.html"
-          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
           <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">03</span>
           <span>Cities &amp; Corridors</span>
         </a>
         <a href="page4.html"
-          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary text-on-primary shadow-sm transition-all">
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary shadow-sm transition-all">
           <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-white/20 text-white">04</span>
           <span>Human-First Work</span>
+        </a>
+        <a href="page5.html"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">05</span>
+          <span>AI Evolution</span>
         </a>
       </nav>
 
@@ -172,7 +177,7 @@
 
         <!-- Mobile Menu Toggle -->
         <button onclick="toggleMobileMenu()" aria-label="Toggle mobile menu"
-          class="md:hidden w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high">
+          class="lg:hidden w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high">
           <span class="material-symbols-outlined text-[22px]">menu</span>
         </button>
       </div>
@@ -180,11 +185,12 @@
 
     <!-- Mobile Dropdown Drawer -->
     <div id="mobileMenu"
-      class="hidden md:hidden border-t border-surface-container-highest bg-surface-container-lowest px-6 py-4 space-y-3 text-xs uppercase tracking-wider font-semibold">
+      class="hidden lg:hidden border-t border-surface-container-highest bg-surface-container-lowest px-6 py-4 space-y-3 text-xs uppercase tracking-wider font-semibold">
       <a href="index.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 01: Macro &amp; Architecture</a>
       <a href="page2.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 02: Jobs &amp; Roles</a>
       <a href="page3.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 03: Cities &amp; Corridors</a>
       <a href="page4.html" class="block py-1.5 text-secondary font-bold">Page 04: Human-First Work (Active)</a>
+      <a href="page5.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 05: AI Evolution</a>
     </div>
   </header>
 
@@ -199,7 +205,7 @@
         <div class="flex items-center gap-3 text-on-surface-variant text-[11px] uppercase tracking-widest">
           <span class="inline-flex items-center gap-1.5 text-secondary font-semibold">
             <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-            Comprehensive Report • Page 04 of 04
+            Comprehensive Report • Page 04 of 05
           </span>
           <span class="text-outline-variant">/</span>
           <span>Chapter 04: Human-First Work &amp; Resilient Careers</span>
@@ -839,7 +845,7 @@
         <!-- Left: Status Indicator -->
         <div class="flex items-center gap-3">
           <div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
-          <span class="text-xs font-mono uppercase tracking-widest text-on-surface font-semibold">Comprehensive Report • Page 04 of 04</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-on-surface font-semibold">Comprehensive Report • Page 04 of 05</span>
         </div>
 
         <!-- Middle: Page Indicator Dots -->
@@ -850,18 +856,19 @@
             <a href="page2.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">02</a>
             <a href="page3.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">03</a>
             <span class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-secondary text-white shadow-sm">04</span>
+            <a href="page5.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">05</a>
           </div>
-          <span class="text-xs text-on-surface-variant font-medium">of 04</span>
+          <span class="text-xs text-on-surface-variant font-medium">of 05</span>
         </div>
 
-        <!-- Right: Next Page / Restart -->
-        <a href="index.html"
+        <!-- Right: Next Page / AI Evolution -->
+        <a href="page5.html"
           class="flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-on-primary text-xs font-bold hover:bg-neutral-800 transition-all group shadow-sm">
           <div class="flex flex-col text-right">
-            <span class="text-[9px] uppercase font-mono text-outline-variant">Return to Start</span>
-            <span>Page 01: Macro Shift ↺</span>
+            <span class="text-[9px] uppercase font-mono text-outline-variant">Proceed to Page 05</span>
+            <span>AI Evolution (2026–2030) →</span>
           </div>
-          <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform">restart_alt</span>
+          <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
         </a>
 
       </div>
@@ -904,6 +911,7 @@
               <li><a href="page2.html" class="hover:text-inverse-on-surface transition-colors">Page 02: Jobs &amp; Roles</a></li>
               <li><a href="page3.html" class="hover:text-inverse-on-surface transition-colors">Page 03: Cities &amp; Corridors</a></li>
               <li><a href="page4.html" class="text-inverse-on-surface font-semibold">Page 04: Human-First Work (Active)</a></li>
+              <li><a href="page5.html" class="hover:text-inverse-on-surface transition-colors">Page 05: AI Evolution</a></li>
               <li><a href="#" onclick="toggleSummaryModal(); return false;" class="text-secondary hover:underline flex items-center gap-1">Executive Summary <span>→</span></a></li>
             </ul>
           </div>
@@ -919,12 +927,13 @@
           </div>
 
           <div class="flex flex-col gap-3">
-            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">4-Page Edition</h4>
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">5-Page Edition</h4>
             <ul class="space-y-2 text-xs text-outline-variant">
               <li><a href="index.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">01</span> Macro Shift</a></li>
               <li><a href="page2.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">02</span> Jobs &amp; Roles</a></li>
               <li><a href="page3.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">03</span> Cities &amp; Corridors</a></li>
               <li><a href="page4.html" class="flex items-center gap-1.5 text-inverse-on-surface font-semibold"><span class="font-mono text-[10px] text-secondary">04</span> Human-First Work</a></li>
+              <li><a href="page5.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">05</span> AI Evolution</a></li>
               <li class="pt-1 font-mono text-[11px] text-outline">ISSN 2840-192X</li>
             </ul>
           </div>
@@ -942,7 +951,8 @@
           <a href="index.html" class="hover:text-inverse-on-surface transition-colors">Page 01: Macro</a>
           <a href="page2.html" class="hover:text-inverse-on-surface transition-colors">Page 02: Jobs</a>
           <a href="page3.html" class="hover:text-inverse-on-surface transition-colors">Page 03: Cities</a>
-          <a href="page4.html" class="text-inverse-on-surface font-semibold">Page 04: Human-First</a>
+          <a href="page4.html" class="hover:text-inverse-on-surface transition-colors">Page 04: Human-First</a>
+          <a href="page5.html" class="hover:text-inverse-on-surface transition-colors">Page 05: Evolution</a>
         </div>
       </div>
     </div>
@@ -1035,6 +1045,9 @@
       { title: 'Unpredictable Situation Responders', url: 'page4.html', desc: 'Emergency responders, firefighters, paramedics' },
       { title: 'Human Responsibility & Decision Making', url: 'page4.html', desc: 'Managers, safety directors, lawyers, executives' },
       { title: 'AI + Human Collaboration Formula', url: 'page4.html', desc: 'Technical skills + problem solving + human judgment' },
+      { title: 'AI Evolution 2026 → 2030', url: 'page5.html#capability-growth', desc: 'Year-by-year capability growth and workforce impact' },
+      { title: 'Emerging AI Jobs by 2030', url: 'page5.html#new-jobs-2030', desc: '12 new specialized roles: AI Agent Developer, AI Auditor, AI Safety' },
+      { title: 'Future Skills 2026–2030', url: 'page5.html#skills-evolution', desc: 'Top skills that become more important alongside AI' },
       { title: 'AI Application Engineer', url: 'page2.html#jobs-skills', desc: 'Agent workflows, RAG pipelines, production LLMs' },
       { title: 'Machine Learning Engineer', url: 'page2.html#jobs-skills', desc: 'Fine-tuning, vLLM, quantization, Triton' },
       { title: 'Chennai Coromandel Corridor', url: 'page3.html#chennai-2030', desc: 'Automotive, SaaS, healthcare capital resilience' },

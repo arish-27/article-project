@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>NEUROS / IT 2030 — Page 05: AI Evolution (2026 → 2030)</title>
+
+  <!-- Typography: Plus Jakarta Sans & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..24,400..700,0..1,-50..200"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#f8f9fa",
+            "surface-dim": "#d9dadb",
+            "surface-bright": "#f8f9fa",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f3f4f5",
+            "surface-container": "#edeeef",
+            "surface-container-high": "#e7e8e9",
+            "surface-container-highest": "#e1e3e4",
+            "on-surface": "#191c1d",
+            "on-surface-variant": "#46464b",
+            "inverse-surface": "#1b1b1f",
+            "inverse-on-surface": "#f0f1f2",
+            "outline": "#76777b",
+            "outline-variant": "#c7c6cb",
+            "surface-tint": "#5e5e62",
+            "primary": "#000000",
+            "on-primary": "#ffffff",
+            "primary-container": "#1b1b1f",
+            "on-primary-container": "#848387",
+            "secondary": "#af2f25",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#fe6858",
+            "on-secondary-container": "#690003",
+            "secondary-accent": "#e05244",
+            "tertiary": "#6366f1",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6"
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['"SF Mono"', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+            serif: ['Georgia', 'Cambria', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+        background-color: #f8f9fa;
+        color: #191c1d;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f2f4;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c7c6cb;
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #76777b;
+      }
+    }
+
+    .shape-card-base {
+      border: none !important;
+      background: linear-gradient(145deg, #ffffff 0%, #f6f7f9 100%);
+      box-shadow: 0 12px 30px -8px rgba(25, 28, 29, 0.06), 0 3px 10px -2px rgba(25, 28, 29, 0.03);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .shape-card-base:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 42px -10px rgba(25, 28, 29, 0.12), 0 6px 16px -3px rgba(25, 28, 29, 0.05);
+    }
+    .shape-grand-deck {
+      border: none !important;
+      border-radius: 36px;
+      background: linear-gradient(175deg, #ffffff 0%, #f7f8fa 100%);
+      box-shadow: 0 24px 60px -15px rgba(25, 28, 29, 0.07), 0 8px 24px -4px rgba(25, 28, 29, 0.03);
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-sans text-on-surface antialiased selection:bg-secondary/20 selection:text-secondary">
+
+  <!-- ========================================================================= -->
+  <!-- FIXED TOP MASTHEAD & 5-PAGE NAVIGATION -->
+  <!-- ========================================================================= -->
+  <header
+    class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-highest/60 transition-all duration-300"
+    id="mainHeader">
+    <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6">
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div
+          class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-base tracking-tighter shadow-sm group-hover:scale-105 transition-transform">
+          N
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-base tracking-tight text-on-surface leading-none">NEUROS</span>
+          <span class="text-[10px] tracking-widest text-secondary font-semibold uppercase">/ IT 2030 RESEARCH</span>
+        </div>
+      </a>
+
+      <!-- 5-PAGE NAVIGATOR (Direct Multi-Page Navigation) -->
+      <nav
+        class="hidden lg:flex items-center gap-1.5 bg-surface-container-low/90 p-1.5 rounded-full border border-surface-container-highest/70 text-xs font-semibold shadow-sm"
+        id="pageNav">
+        <a href="index.html"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">01</span>
+          <span>Macro</span>
+        </a>
+        <a href="page2.html"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">02</span>
+          <span>Jobs &amp; Roles</span>
+        </a>
+        <a href="page3.html"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">03</span>
+          <span>Cities &amp; Corridors</span>
+        </a>
+        <a href="page4.html"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">04</span>
+          <span>Human-First Work</span>
+        </a>
+        <a href="page5.html"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary shadow-sm transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-white/20 text-white">05</span>
+          <span>AI Evolution</span>
+        </a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3">
+        <!-- Search Trigger -->
+        <button onclick="toggleSearchModal()" aria-label="Search report"
+          class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+        </button>
+
+        <!-- Executive Summary Button -->
+        <button onclick="toggleSummaryModal()"
+          class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-on-primary text-xs font-semibold tracking-tight hover:bg-neutral-800 transition-all shadow-sm">
+          <span class="hidden sm:inline">Executive Summary</span>
+          <span class="sm:hidden">Summary</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button onclick="toggleMobileMenu()" aria-label="Toggle mobile menu"
+          class="lg:hidden w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high">
+          <span class="material-symbols-outlined text-[22px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Drawer -->
+    <div id="mobileMenu"
+      class="hidden lg:hidden border-t border-surface-container-highest bg-surface-container-lowest px-6 py-4 space-y-3 text-xs uppercase tracking-wider font-semibold">
+      <a href="index.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 01: Macro &amp; Architecture</a>
+      <a href="page2.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 02: Jobs &amp; Roles</a>
+      <a href="page3.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 03: Cities &amp; Corridors</a>
+      <a href="page4.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 04: Human-First Work</a>
+      <a href="page5.html" class="block py-1.5 text-secondary font-bold">Page 05: AI Evolution (Active)</a>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT: AI EVOLUTION 2026 → 2030 -->
+  <!-- ========================================================================= -->
+  <main class="w-full pt-20 bg-surface min-h-screen">
+
+    <!-- Top Breadcrumb Strip -->
+    <section class="w-full px-6 lg:px-12 pt-6 pb-2">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 border-b border-surface-container-highest pb-3">
+        <div class="flex items-center gap-3 text-on-surface-variant text-[11px] uppercase tracking-widest">
+          <span class="inline-flex items-center gap-1.5 text-secondary font-semibold">
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Comprehensive Report • Page 05 of 05
+          </span>
+          <span class="text-outline-variant">/</span>
+          <span>Chapter 05: AI Evolution (2026 → 2030)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary text-[11px] font-mono font-bold">Evolutionary Timeline • Illustrative Scenario</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 pt-10 pb-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+        <div class="max-w-3xl space-y-4">
+          <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-mono font-bold uppercase tracking-wider inline-block">
+            2026 → 2030
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-on-surface leading-[1.1]">
+            HOW COULD AI CHANGE FROM 2026 TO 2030?
+          </h1>
+          <p class="text-base sm:text-lg text-on-surface-variant font-light leading-relaxed">
+            AI is not changing all at once. Its abilities are growing step by step. This timeline explores what AI could become better at and how those changes may affect the way people work.
+          </p>
+        </div>
+
+        <!-- Metric Anchor Box -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest max-w-sm w-full space-y-3 shadow-sm">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+            <span class="text-[11px] font-mono uppercase tracking-wider text-outline font-semibold">Core Progression</span>
+          </div>
+          <div class="text-2xl font-bold text-on-surface">Assistant → Work Partner</div>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            From assisting individual coding tasks in 2026 to handling connected business processes alongside human decision-makers by 2030.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MAIN GRAPH 1: AI CAPABILITY GROWTH (INTERACTIVE MATURITY VISUALIZATION) -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Capability Roadmap</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight mt-1">
+            HOW COULD AI'S ABILITIES GROW?
+          </h2>
+          <p class="text-sm text-on-surface-variant font-light max-w-2xl mt-1">
+            An illustrative progression of AI capabilities across 6 key functional areas (2026 to 2030).
+          </p>
+        </div>
+        <div class="px-3 py-1.5 rounded-full bg-surface-container border border-surface-container-highest text-[10px] font-mono text-outline font-semibold">
+          ILLUSTRATIVE SCENARIO • NOT AN OFFICIAL FORECAST
+        </div>
+      </div>
+
+      <!-- Capability Grid with Year Progress Bars -->
+      <div class="p-8 rounded-3xl bg-surface-container-lowest border border-surface-container-highest shadow-sm space-y-8">
+        
+        <!-- Year Selector Buttons for Interactive Filtering -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-surface-container-highest">
+          <span class="text-xs font-mono uppercase text-outline font-semibold">Select Target Year:</span>
+          <div class="flex items-center gap-2" id="yearButtons">
+            <button onclick="selectCapYear(2026)" id="btn2026" class="px-3.5 py-1.5 rounded-full text-xs font-mono font-bold transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high">2026</button>
+            <button onclick="selectCapYear(2027)" id="btn2027" class="px-3.5 py-1.5 rounded-full text-xs font-mono font-bold transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high">2027</button>
+            <button onclick="selectCapYear(2028)" id="btn2028" class="px-3.5 py-1.5 rounded-full text-xs font-mono font-bold transition-all bg-secondary text-white shadow-sm">2028</button>
+            <button onclick="selectCapYear(2029)" id="btn2029" class="px-3.5 py-1.5 rounded-full text-xs font-mono font-bold transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high">2029</button>
+            <button onclick="selectCapYear(2030)" id="btn2030" class="px-3.5 py-1.5 rounded-full text-xs font-mono font-bold transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high">2030</button>
+          </div>
+        </div>
+
+        <!-- Capability Bars -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="capGrid">
+          
+          <!-- Area 1: Writing & Content -->
+          <div class="space-y-2 p-4 rounded-2xl bg-surface border border-surface-container-highest">
+            <div class="flex justify-between items-center text-xs">
+              <span class="font-bold text-on-surface">1. Writing &amp; Content Creation</span>
+              <span id="badge-writing" class="font-mono px-2 py-0.5 rounded bg-secondary/10 text-secondary font-bold">HIGH</span>
+            </div>
+            <div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+              <div id="bar-writing" class="h-full bg-secondary transition-all duration-500 rounded-full" style="width: 85%;"></div>
+            </div>
+            <p id="desc-writing" class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              Highly capable at drafting articles, summarizing texts, and translating across languages with human review.
+            </p>
+          </div>
+
+          <!-- Area 2: Coding & Software Work -->
+          <div class="space-y-2 p-4 rounded-2xl bg-surface border border-surface-container-highest">
+            <div class="flex justify-between items-center text-xs">
+              <span class="font-bold text-on-surface">2. Coding &amp; Routine Software Work</span>
+              <span id="badge-coding" class="font-mono px-2 py-0.5 rounded bg-secondary/10 text-secondary font-bold">HIGH</span>
+            </div>
+            <div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+              <div id="bar-coding" class="h-full bg-secondary transition-all duration-500 rounded-full" style="width: 75%;"></div>
+            </div>
+            <p id="desc-coding" class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              Generates boilerplate scripts, unit tests, and routine components; architects still design overall system safety.
+            </p>
+          </div>
+
+          <!-- Area 3: Data Analysis -->
+          <div class="space-y-2 p-4 rounded-2xl bg-surface border border-surface-container-highest">
+            <div class="flex justify-between items-center text-xs">
+              <span class="font-bold text-on-surface">3. Data Analysis &amp; Pattern Finding</span>
+              <span id="badge-data" class="font-mono px-2 py-0.5 rounded bg-secondary/10 text-secondary font-bold">MEDIUM–HIGH</span>
+            </div>
+            <div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+              <div id="bar-data" class="h-full bg-secondary transition-all duration-500 rounded-full" style="width: 70%;"></div>
+            </div>
+            <p id="desc-data" class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              Extracts patterns, cleans large tables, and builds query charts quickly for human analyst verification.
+            </p>
+          </div>
+
+          <!-- Area 4: Routine Decision Support -->
+          <div class="space-y-2 p-4 rounded-2xl bg-surface border border-surface-container-highest">
+            <div class="flex justify-between items-center text-xs">
+              <span class="font-bold text-on-surface">4. Routine Decision Support</span>
+              <span id="badge-decision" class="font-mono px-2 py-0.5 rounded bg-secondary/10 text-secondary font-bold">MEDIUM</span>
+            </div>
+            <div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+              <div id="bar-decision" class="h-full bg-secondary transition-all duration-500 rounded-full" style="width: 55%;"></div>
+            </div>
+            <p id="desc-decision" class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              Recommends triage priority for support tickets and loan checks; humans make the final binding approval.
+            </p>
+          </div>
+
+          <!-- Area 5: Multi-step Task Completion -->
+          <div class="space-y-2 p-4 rounded-2xl bg-surface border border-surface-container-highest">
+            <div class="flex justify-between items-center text-xs">
+              <span class="font-bold text-on-surface">5. Multi-step Workflow Completion</span>
+              <span id="badge-workflow" class="font-mono px-2 py-0.5 rounded bg-secondary/10 text-secondary font-bold">MEDIUM</span>
+            </div>
+            <div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+              <div id="bar-workflow" class="h-full bg-secondary transition-all duration-500 rounded-full" style="width: 50%;"></div>
+            </div>
+            <p id="desc-workflow" class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              Chains multiple software tools together to fulfill structured business requests under human supervision.
+            </p>
+          </div>
+
+          <!-- Area 6: Real-world / Physical Work -->
+          <div class="space-y-2 p-4 rounded-2xl bg-surface border border-surface-container-highest">
+            <div class="flex justify-between items-center text-xs">
+              <span class="font-bold text-on-surface">6. Real-World &amp; Physical Work</span>
+              <span id="badge-physical" class="font-mono px-2 py-0.5 rounded bg-outline/20 text-outline font-bold">LOW</span>
+            </div>
+            <div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+              <div id="bar-physical" class="h-full bg-outline transition-all duration-500 rounded-full" style="width: 25%;"></div>
+            </div>
+            <p id="desc-physical" class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              Physical dexterity in unpredictable outdoor and construction settings remains difficult for automated systems.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. YEAR-BY-YEAR AI EVOLUTION (2026 → 2030) -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col gap-2 mb-10">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Sequential Trajectory</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          Year-by-Year AI Evolution (2026 to 2030)
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-3xl">
+          A step-by-step exploration of how tools may mature from single-task assistants to integrated work partners.
+        </p>
+      </div>
+
+      <!-- 5-Card Step Timeline -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        
+        <!-- 2026 -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between space-y-4 hover:border-secondary/40 transition-all shadow-sm">
+          <div>
+            <div class="flex items-center justify-between pb-2 border-b border-surface-container-highest">
+              <span class="text-xl font-bold font-mono text-secondary">2026</span>
+              <span class="text-[10px] font-mono text-outline">Stage 01</span>
+            </div>
+            <h3 class="text-sm font-bold text-on-surface mt-3">Powerful Assistant</h3>
+            <p class="text-xs text-on-surface-variant font-light mt-2 leading-relaxed">
+              People use AI to write, search, summarize, generate code, analyse information and create content for individual tasks.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Focus: Individual task help
+          </div>
+        </div>
+
+        <!-- 2027 -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between space-y-4 hover:border-secondary/40 transition-all shadow-sm">
+          <div>
+            <div class="flex items-center justify-between pb-2 border-b border-surface-container-highest">
+              <span class="text-xl font-bold font-mono text-secondary">2027</span>
+              <span class="text-[10px] font-mono text-outline">Stage 02</span>
+            </div>
+            <h3 class="text-sm font-bold text-on-surface mt-3">Connected Tasks</h3>
+            <p class="text-xs text-on-surface-variant font-light mt-2 leading-relaxed">
+              AI may become better at completing several connected steps instead of helping with only one small prompt.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Focus: Multi-step workflows
+          </div>
+        </div>
+
+        <!-- 2028 -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border-2 border-secondary/40 flex flex-col justify-between space-y-4 shadow-md">
+          <div>
+            <div class="flex items-center justify-between pb-2 border-b border-surface-container-highest">
+              <span class="text-xl font-bold font-mono text-secondary">2028</span>
+              <span class="text-[10px] font-mono text-secondary font-bold">Stage 03</span>
+            </div>
+            <h3 class="text-sm font-bold text-on-surface mt-3">Everyday Work Partner</h3>
+            <p class="text-xs text-on-surface-variant font-light mt-2 leading-relaxed">
+              More companies connect AI directly to their internal business tools and databases for regular daily processes.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-container-highest text-[10px] font-mono text-secondary font-medium">
+            Focus: Company integration
+          </div>
+        </div>
+
+        <!-- 2029 -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between space-y-4 hover:border-secondary/40 transition-all shadow-sm">
+          <div>
+            <div class="flex items-center justify-between pb-2 border-b border-surface-container-highest">
+              <span class="text-xl font-bold font-mono text-secondary">2029</span>
+              <span class="text-[10px] font-mono text-outline">Stage 04</span>
+            </div>
+            <h3 class="text-sm font-bold text-on-surface mt-3">Routine Automation</h3>
+            <p class="text-xs text-on-surface-variant font-light mt-2 leading-relaxed">
+              Some repetitive digital tasks and maintenance happen with less manual human intervention, freeing up time.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Focus: Self-handling routines
+          </div>
+        </div>
+
+        <!-- 2030 -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between space-y-4 hover:border-secondary/40 transition-all shadow-sm">
+          <div>
+            <div class="flex items-center justify-between pb-2 border-b border-surface-container-highest">
+              <span class="text-xl font-bold font-mono text-secondary">2030</span>
+              <span class="text-[10px] font-mono text-outline">Stage 05</span>
+            </div>
+            <h3 class="text-sm font-bold text-on-surface mt-3">Deep Collaboration</h3>
+            <p class="text-xs text-on-surface-variant font-light mt-2 leading-relaxed">
+              Many jobs involve AI as a regular co-worker, while humans focus heavily on judgment, communication, creativity and ethics.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Focus: Human judgment &amp; safety
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-6 text-center text-xs text-on-surface-variant font-light">
+        <em>Note: These are illustrative scenario descriptions, not guaranteed dates or predictions.</em>
+      </div>
+    </section>
+
+    <!-- 4. SECOND GRAPH: WHICH TYPES OF WORK COULD AI CHANGE THE MOST? (HORIZONTAL BAR CHART) -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col gap-2 mb-10">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Task Impact Spectrum</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          WHICH TYPES OF WORK COULD AI CHANGE THE MOST?
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-3xl">
+          AI is more likely to affect repetitive and predictable digital tasks first. Jobs that involve people, physical environments, complex judgment or responsibility may be harder to fully automate.
+        </p>
+      </div>
+
+      <!-- Horizontal Impact Bars Grid -->
+      <div class="p-8 rounded-3xl bg-surface-container-lowest border border-surface-container-highest shadow-sm space-y-4">
+        
+        <!-- Bar Item -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Repetitive data entry</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-error h-full rounded-full" style="width: 90%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-error">HIGH IMPACT</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Basic customer support tickets</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-error h-full rounded-full" style="width: 82%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-error">HIGH IMPACT</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Routine boilerplate coding</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-secondary h-full rounded-full" style="width: 78%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-secondary">MEDIUM–HIGH</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Basic software testing</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-secondary h-full rounded-full" style="width: 74%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-secondary">MEDIUM–HIGH</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Routine documentation &amp; logs</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-secondary h-full rounded-full" style="width: 65%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-secondary">MEDIUM</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Data extraction &amp; reporting</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-secondary h-full rounded-full" style="width: 60%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-secondary">MEDIUM</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Complex software architecture</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-outline h-full rounded-full" style="width: 35%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-outline">LOW–MEDIUM</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Team leadership &amp; coaching</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-outline h-full rounded-full" style="width: 20%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-outline">LOW IMPACT</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Human care &amp; medical support</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-outline h-full rounded-full" style="width: 15%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-outline">LOW IMPACT</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center text-xs">
+          <div class="md:col-span-4 font-semibold text-on-surface">Physical trades &amp; field maintenance</div>
+          <div class="md:col-span-6 bg-surface-container rounded-full h-3.5 overflow-hidden">
+            <div class="bg-outline h-full rounded-full" style="width: 10%;"></div>
+          </div>
+          <div class="md:col-span-2 text-right font-mono font-bold text-outline">LOW IMPACT</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. CRITICAL DISTINCTION: AI MAY CHANGE A JOB BEFORE IT REPLACES A JOB -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="p-8 sm:p-10 rounded-3xl bg-surface-container-lowest border-2 border-secondary/30 shadow-md">
+        <div class="max-w-3xl space-y-3 mb-8">
+          <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-mono font-bold uppercase tracking-wider inline-block">
+            Key Distinction
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-on-surface tracking-tight">
+            AI MAY CHANGE A JOB BEFORE IT REPLACES A JOB
+          </h2>
+          <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+            A job is made up of many different tasks. AI may automate some tasks while the person continues doing the rest with higher impact.
+          </p>
+        </div>
+
+        <!-- Example Card: Software Developer -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-surface border border-surface-container-highest">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+            <span class="text-sm font-bold text-on-surface">Role Transformation Example: Software Developer</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-container-highest">
+              <span class="text-[10px] uppercase font-mono text-outline font-bold block mb-1">Before AI:</span>
+              <p class="text-xs text-on-surface-variant font-light">
+                Writing routine code by hand, manually looking up syntax, and writing repetitive tests line by line.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-container-highest">
+              <span class="text-[10px] uppercase font-mono text-secondary font-bold block mb-1">With AI Tools:</span>
+              <p class="text-xs text-on-surface-variant font-light">
+                AI generates initial drafts of functions, auto-completes code, and drafts basic test cases in seconds.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-surface-container-lowest border border-secondary/40 shadow-xs">
+              <span class="text-[10px] uppercase font-mono text-secondary font-bold block mb-1">Human Focus:</span>
+              <p class="text-xs text-on-surface font-medium">
+                Understanding true business needs, solving difficult architecture puzzles, security, and making sure the system works safely.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. THIRD GRAPH: WHICH IT JOBS COULD CHANGE THE MOST? -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col gap-2 mb-10">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">IT Industry Overview</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          WHICH IT JOBS COULD CHANGE THE MOST?
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-3xl">
+          Based on the existing roles in Indian tech hubs, grouped into three practical categories.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Group 1: More Exposed -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between space-y-4 shadow-sm">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+              <span class="text-xs font-mono font-bold text-error uppercase">Group 01</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-error/10 text-error font-semibold">More Exposed</span>
+            </div>
+            <h3 class="text-base font-bold text-on-surface">Jobs with Repetitive Tasks</h3>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+              Roles where a large portion of daily work involves predictable, repeatable steps that AI handles well.
+            </p>
+            <div class="p-3 rounded-2xl bg-surface border border-surface-container-highest text-xs space-y-1">
+              <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Examples:</span>
+              <ul class="space-y-1 text-on-surface font-medium">
+                <li>• Manual QA Tester</li>
+                <li>• Level 1 Technical Support</li>
+                <li>• Basic Template Coder</li>
+                <li>• Routine Data Processing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Outlook: Requires reskilling to modern tools
+          </div>
+        </div>
+
+        <!-- Group 2: Transforming -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border-2 border-secondary/30 flex flex-col justify-between space-y-4 shadow-sm">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+              <span class="text-xs font-mono font-bold text-secondary uppercase">Group 02</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-secondary/10 text-secondary font-semibold">Transforming</span>
+            </div>
+            <h3 class="text-base font-bold text-on-surface">Jobs Changing How Work Is Done</h3>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+              Roles that will not disappear, but where engineers use AI daily to produce 2x–3x more complex output.
+            </p>
+            <div class="p-3 rounded-2xl bg-surface border border-surface-container-highest text-xs space-y-1">
+              <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Examples:</span>
+              <ul class="space-y-1 text-on-surface font-medium">
+                <li>• Full Stack Developer</li>
+                <li>• Automation Test Engineer</li>
+                <li>• DevOps / Cloud Engineer</li>
+                <li>• Business Analyst</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-surface-container-highest text-[10px] font-mono text-secondary font-medium">
+            Outlook: Strong demand for AI-empowered engineers
+          </div>
+        </div>
+
+        <!-- Group 3: Growing -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between space-y-4 shadow-sm">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+              <span class="text-xs font-mono font-bold text-on-surface uppercase">Group 03</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Growing Fast</span>
+            </div>
+            <h3 class="text-base font-bold text-on-surface">New Demand &amp; Deep Skills</h3>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+              Roles created directly by AI expansion, data infrastructure, and complex safety requirements.
+            </p>
+            <div class="p-3 rounded-2xl bg-surface border border-surface-container-highest text-xs space-y-1">
+              <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Examples:</span>
+              <ul class="space-y-1 text-on-surface font-medium">
+                <li>• AI / Machine Learning Engineer</li>
+                <li>• Modern Data Engineer</li>
+                <li>• Cybersecurity Specialist</li>
+                <li>• Solution Architect &amp; AI Safety</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Outlook: Record hiring demand &amp; premium pay
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. FIFTH GRAPH: HOW COULD WORK SHIFT FROM HUMAN-LED TO AI-ASSISTED? -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Workforce Mix Shift</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight mt-1">
+            HOW COULD WORK SHIFT FROM HUMAN-LED TO AI-ASSISTED?
+          </h2>
+          <p class="text-sm text-on-surface-variant font-light max-w-2xl mt-1">
+            An illustrative look at how everyday tasks could transition from manual effort to human-AI collaboration.
+          </p>
+        </div>
+        <div class="px-3 py-1.5 rounded-full bg-surface-container border border-surface-container-highest text-[10px] font-mono text-outline font-semibold">
+          ILLUSTRATIVE WORK-MIX SCENARIO
+        </div>
+      </div>
+
+      <!-- Stacked Bars Visual -->
+      <div class="p-8 rounded-3xl bg-surface-container-lowest border border-surface-container-highest shadow-sm space-y-6">
+        
+        <!-- Legend -->
+        <div class="flex flex-wrap items-center gap-6 pb-4 border-b border-surface-container-highest text-xs font-semibold">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded bg-primary"></span>
+            <span class="text-on-surface">Human-Led Work</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded bg-secondary"></span>
+            <span class="text-on-surface">AI-Assisted Work</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded bg-surface-container-highest"></span>
+            <span class="text-on-surface">Highly Automated Routines</span>
+          </div>
+        </div>
+
+        <!-- 2026 Bar -->
+        <div class="space-y-1.5">
+          <div class="flex justify-between text-xs font-mono">
+            <span class="font-bold text-on-surface">2026 (Today)</span>
+            <span class="text-outline">65% Human-Led • 25% AI-Assisted • 10% Automated</span>
+          </div>
+          <div class="w-full h-8 rounded-xl overflow-hidden flex font-mono text-[10px] text-white font-bold">
+            <div class="bg-primary flex items-center justify-center" style="width: 65%;">65% Human</div>
+            <div class="bg-secondary flex items-center justify-center" style="width: 25%;">25% AI</div>
+            <div class="bg-neutral-400 flex items-center justify-center text-on-surface" style="width: 10%;">10%</div>
+          </div>
+        </div>
+
+        <!-- 2028 Bar -->
+        <div class="space-y-1.5">
+          <div class="flex justify-between text-xs font-mono">
+            <span class="font-bold text-on-surface">2028 (Mid-Term)</span>
+            <span class="text-outline">40% Human-Led • 45% AI-Assisted • 15% Automated</span>
+          </div>
+          <div class="w-full h-8 rounded-xl overflow-hidden flex font-mono text-[10px] text-white font-bold">
+            <div class="bg-primary flex items-center justify-center" style="width: 40%;">40% Human</div>
+            <div class="bg-secondary flex items-center justify-center" style="width: 45%;">45% AI-Assisted</div>
+            <div class="bg-neutral-400 flex items-center justify-center text-on-surface" style="width: 15%;">15% Auto</div>
+          </div>
+        </div>
+
+        <!-- 2030 Bar -->
+        <div class="space-y-1.5">
+          <div class="flex justify-between text-xs font-mono">
+            <span class="font-bold text-on-surface">2030 (Integrated)</span>
+            <span class="text-outline">25% Human-Led • 55% AI-Assisted • 20% Automated</span>
+          </div>
+          <div class="w-full h-8 rounded-xl overflow-hidden flex font-mono text-[10px] text-white font-bold">
+            <div class="bg-primary flex items-center justify-center" style="width: 25%;">25% Human</div>
+            <div class="bg-secondary flex items-center justify-center" style="width: 55%;">55% AI-Assisted Work</div>
+            <div class="bg-neutral-400 flex items-center justify-center text-on-surface" style="width: 20%;">20% Auto</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. NEW JOBS BY 2030 -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col gap-2 mb-10">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Future Opportunities</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          IF AI CHANGES OLD TASKS, WHAT NEW WORK COULD APPEAR?
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-3xl">
+          As technology evolves, new specialized roles emerge. Here are practical roles emerging across companies.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">AI Agent Developer</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Builds AI systems that can complete multiple connected tasks with less human help.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">Generative AI Application Engineer</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Connects smart AI models into everyday company software and mobile apps.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">AI Integration Specialist</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Connects AI tools smoothly with existing company databases and private systems.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">AI Workflow Engineer</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Designs and organizes how departments use AI to finish complex multi-person projects.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">AI Safety Engineer</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Tests AI tools to make sure they do not give fake, biased, or dangerous answers.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">AI Governance Specialist</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Ensures company AI tools follow laws, privacy regulations, and ethical guidelines.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">AI Auditor</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Checks whether AI systems are working correctly, accurately, and fairly over time.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">Model Evaluation Engineer</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Runs rigorous benchmarks to measure speed, accuracy, and cost of different AI models.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">AI Privacy Specialist</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Guarantees that private customer data is never leaked or misused by AI systems.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">Human-AI Interaction Designer</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Designs software interfaces that make it easy and natural for people to work with AI.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">AI Adoption Specialist</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Helps employees and teams learn how to start using AI tools productively.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface-container-lowest border border-surface-container-highest space-y-1.5">
+          <h4 class="text-xs font-bold text-secondary font-mono uppercase">AI Output Quality Reviewer</h4>
+          <p class="text-xs text-on-surface font-light leading-relaxed">
+            Reviews content and code generated by AI to ensure it meets high professional standards.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. SKILLS GRAPH: WHAT SKILLS COULD BECOME MORE IMPORTANT? -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col gap-2 mb-10">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Career Preparedness</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          WHAT SKILLS COULD BECOME MORE IMPORTANT?
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-3xl">
+          The future will not reward people who compete directly against AI on repetitive tasks. It rewards people who know how to use AI while bringing distinct human skills.
+        </p>
+      </div>
+
+      <!-- Skills Progression Badges -->
+      <div class="p-8 rounded-3xl bg-surface-container-lowest border border-surface-container-highest shadow-sm">
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 text-center">
+          
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">smart_toy</span>
+            <div class="text-xs font-bold text-on-surface">Using AI Tools</div>
+            <p class="text-[10px] text-on-surface-variant font-light">Prompting &amp; workflows</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">psychology</span>
+            <div class="text-xs font-bold text-on-surface">Problem Solving</div>
+            <p class="text-[10px] text-on-surface-variant font-light">Root cause analysis</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">chat</span>
+            <div class="text-xs font-bold text-on-surface">Communication</div>
+            <p class="text-[10px] text-on-surface-variant font-light">Explaining ideas clearly</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">account_tree</span>
+            <div class="text-xs font-bold text-on-surface">System Thinking</div>
+            <p class="text-[10px] text-on-surface-variant font-light">End-to-end architecture</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">shield</span>
+            <div class="text-xs font-bold text-on-surface">Cybersecurity</div>
+            <p class="text-[10px] text-on-surface-variant font-light">Protecting data &amp; models</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">database</span>
+            <div class="text-xs font-bold text-on-surface">Data Skills</div>
+            <p class="text-[10px] text-on-surface-variant font-light">Pipelines &amp; curation</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">lightbulb</span>
+            <div class="text-xs font-bold text-on-surface">Creativity</div>
+            <p class="text-[10px] text-on-surface-variant font-light">Original ideas &amp; taste</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">groups</span>
+            <div class="text-xs font-bold text-on-surface">Leadership</div>
+            <p class="text-[10px] text-on-surface-variant font-light">Guiding people</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">balance</span>
+            <div class="text-xs font-bold text-on-surface">Human Judgment</div>
+            <p class="text-[10px] text-on-surface-variant font-light">Accountability &amp; ethics</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-surface border border-surface-container-highest space-y-1">
+            <span class="material-symbols-outlined text-secondary text-2xl">verified_user</span>
+            <div class="text-xs font-bold text-on-surface">AI Governance</div>
+            <p class="text-[10px] text-on-surface-variant font-light">Safety &amp; compliance</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FRESHER CONNECTION -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="p-8 sm:p-10 rounded-3xl bg-surface-container-lowest border border-surface-container-highest shadow-sm flex flex-col md:flex-row items-start md:items-center gap-8">
+        <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
+          <span class="material-symbols-outlined text-3xl">school</span>
+        </div>
+        <div class="space-y-3">
+          <span class="text-[10px] font-mono uppercase tracking-widest text-secondary font-bold">Advice for Students &amp; Freshers</span>
+          <h3 class="text-2xl font-bold text-on-surface">WHAT DOES THIS MEAN FOR FRESHERS?</h3>
+          <p class="text-xs sm:text-sm text-on-surface-variant font-light leading-relaxed">
+            Some beginner-level tasks may become easier for AI to handle, which could make getting a first job more competitive. But new technology also creates new types of work.
+          </p>
+          <p class="text-xs sm:text-sm text-on-surface font-medium leading-relaxed">
+            For a fresher, the goal should not be to avoid AI. Learn how to use it daily while building strong engineering fundamentals, problem-solving skills, and clear communication.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FINAL 2026 → 2030 SUMMARY -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+      <div class="p-8 sm:p-12 rounded-3xl bg-neutral-900 text-white text-center flex flex-col items-center justify-center space-y-6 shadow-xl">
+        <span class="text-[11px] font-mono tracking-widest text-secondary-container uppercase font-semibold">Summary Trajectory</span>
+        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight max-w-3xl leading-snug">
+          THE 2026 → 2030 JOURNEY AT A GLANCE
+        </h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 w-full max-w-4xl text-left text-xs font-mono pt-4">
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1">
+            <span class="text-secondary-container font-bold block">2026: Assistant</span>
+            <p class="text-[11px] text-neutral-300 font-sans font-light">AI helps with individual tasks.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1">
+            <span class="text-secondary-container font-bold block">2027: Helper</span>
+            <p class="text-[11px] text-neutral-300 font-sans font-light">AI handles connected steps.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1">
+            <span class="text-secondary-container font-bold block">2028: Partner</span>
+            <p class="text-[11px] text-neutral-300 font-sans font-light">AI enters company workflows.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1">
+            <span class="text-secondary-container font-bold block">2029: Workflow</span>
+            <p class="text-[11px] text-neutral-300 font-sans font-light">Routines run automatically.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-secondary/30 border border-secondary space-y-1">
+            <span class="text-white font-bold block">2030: Human + AI</span>
+            <p class="text-[11px] text-neutral-200 font-sans font-light">Deep judgment &amp; safety focus.</p>
+          </div>
+        </div>
+
+        <p class="text-xs sm:text-sm text-neutral-300 font-light max-w-2xl leading-relaxed pt-2">
+          People focus more on judgment, creativity, relationships and responsibility while AI handles routine digital work.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BOTTOM MULTI-PAGE PAGINATION DECK -->
+    <!-- ========================================================================= -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-10">
+      <div class="shape-grand-deck p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 border border-surface-container-highest/60">
+        
+        <!-- Left: Previous Page -->
+        <a href="page4.html"
+          class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface border border-surface-container-highest text-xs font-bold text-on-surface hover:bg-surface-container hover:text-secondary transition-all group">
+          <span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+          <div class="flex flex-col text-left">
+            <span class="text-[9px] uppercase font-mono text-outline">Page 04</span>
+            <span>Human-First Work</span>
+          </div>
+        </a>
+
+        <!-- Middle: Page Indicator Dots -->
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-outline">Page</span>
+          <div class="flex items-center gap-2">
+            <a href="index.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">01</a>
+            <a href="page2.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">02</a>
+            <a href="page3.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">03</a>
+            <a href="page4.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">04</a>
+            <span class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-secondary text-white shadow-sm">05</span>
+          </div>
+          <span class="text-xs text-on-surface-variant font-medium">of 05</span>
+        </div>
+
+        <!-- Right: Return to Start -->
+        <a href="index.html"
+          class="flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-on-primary text-xs font-bold hover:bg-neutral-800 transition-all group shadow-sm">
+          <div class="flex flex-col text-right">
+            <span class="text-[9px] uppercase font-mono text-outline-variant">Return to Start</span>
+            <span>Page 01: Macro Shift ↺</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform">restart_alt</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- BALANCED EDITORIAL FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="w-full bg-inverse-surface text-inverse-on-surface pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-surface-tint/20">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-5 flex flex-col justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+            <span class="text-[11px] font-mono tracking-widest text-secondary uppercase font-semibold">Strategic Industry Report</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl text-inverse-on-surface tracking-tight font-light leading-snug">
+            Welcome to the new era of work &amp; technology.
+          </h2>
+          <p class="text-sm text-outline-variant font-light leading-relaxed">
+            A clear, research-backed guide examining how AI and automation are changing jobs, skills, and human careers by 2030.
+          </p>
+          <div class="pt-2 flex flex-wrap items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-mono text-outline-variant">Edition 2026–2030</span>
+            <span class="px-3 py-1 rounded-full bg-secondary/20 text-secondary text-[11px] font-semibold">Verified Research</span>
+            <span class="text-xs text-outline-variant font-mono">Cambridge / Bengaluru / Chennai / Zurich</span>
+          </div>
+        </div>
+
+        <!-- Right Side: 3-Column Directory -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 lg:pt-0">
+          <div class="flex flex-col gap-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">Report Pages</h4>
+            <ul class="space-y-2 text-xs text-outline-variant">
+              <li><a href="index.html" class="hover:text-inverse-on-surface transition-colors">Page 01: Macro Shift</a></li>
+              <li><a href="page2.html" class="hover:text-inverse-on-surface transition-colors">Page 02: Jobs &amp; Roles</a></li>
+              <li><a href="page3.html" class="hover:text-inverse-on-surface transition-colors">Page 03: Cities &amp; Corridors</a></li>
+              <li><a href="page4.html" class="hover:text-inverse-on-surface transition-colors">Page 04: Human-First Work</a></li>
+              <li><a href="page5.html" class="text-inverse-on-surface font-semibold">Page 05: AI Evolution (Active)</a></li>
+              <li><a href="#" onclick="toggleSummaryModal(); return false;" class="text-secondary hover:underline flex items-center gap-1">Executive Summary <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">Research Centers</h4>
+            <ul class="space-y-2 text-xs text-outline-variant">
+              <li><span class="text-inverse-on-surface font-medium">Cambridge</span> — Policy &amp; Ethics</li>
+              <li><span class="text-inverse-on-surface font-medium">Bengaluru</span> — AI &amp; Software</li>
+              <li><span class="text-inverse-on-surface font-medium">Chennai</span> — Auto &amp; SaaS</li>
+              <li><span class="text-inverse-on-surface font-medium">Zurich</span> — Systems Engineering</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">5-Page Edition</h4>
+            <ul class="space-y-2 text-xs text-outline-variant">
+              <li><a href="index.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">01</span> Macro Shift</a></li>
+              <li><a href="page2.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">02</span> Jobs &amp; Roles</a></li>
+              <li><a href="page3.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">03</span> Cities &amp; Corridors</a></li>
+              <li><a href="page4.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">04</span> Human-First Work</a></li>
+              <li><a href="page5.html" class="flex items-center gap-1.5 text-inverse-on-surface font-semibold"><span class="font-mono text-[10px] text-secondary">05</span> AI Evolution</a></li>
+              <li class="pt-1 font-mono text-[11px] text-outline">ISSN 2840-192X</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-outline-variant">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+          <span>© 2024–2030 NEUROS Research Foundation. Distributed under CC BY-NC 4.0.</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="index.html" class="hover:text-inverse-on-surface transition-colors">Page 01: Macro</a>
+          <a href="page2.html" class="hover:text-inverse-on-surface transition-colors">Page 02: Jobs</a>
+          <a href="page3.html" class="hover:text-inverse-on-surface transition-colors">Page 03: Cities</a>
+          <a href="page4.html" class="hover:text-inverse-on-surface transition-colors">Page 04: Human-First</a>
+          <a href="page5.html" class="text-inverse-on-surface font-semibold">Page 05: Evolution</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: EXECUTIVE SUMMARY MATRIX -->
+  <!-- ========================================================================= -->
+  <div id="summaryModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div
+      class="bg-surface-container-lowest max-w-2xl w-full rounded-3xl p-6 sm:p-8 shadow-2xl border border-surface-container-highest max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+          <h3 class="text-lg font-bold text-on-surface">Executive Summary: Key Takeaways</h3>
+        </div>
+        <button onclick="toggleSummaryModal()"
+          class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="mt-6 space-y-4 text-xs sm:text-sm text-on-surface leading-relaxed">
+        <p class="font-medium text-secondary">Key Points from the 2030 IT Industry Report:</p>
+        <ul class="space-y-2 list-disc pl-5 text-on-surface-variant">
+          <li><strong>Step-by-Step AI Growth:</strong> AI evolves from helping with single prompts (2026) to managing connected multi-step company workflows (2030).</li>
+          <li><strong>Task Automation Over Job Elimination:</strong> AI automates routine tasks, while people retain responsibility for system architecture, safety, and business strategy.</li>
+          <li><strong>Emerging High-Demand Roles:</strong> New careers such as AI Agent Developers, AI Safety Engineers, and AI Integration Specialists are rapidly growing.</li>
+          <li><strong>Reskilling Focus for Freshers:</strong> Strong fundamentals, problem-solving, and communication combined with AI tools create the strongest career path.</li>
+        </ul>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-surface-container-highest flex justify-end">
+        <button onclick="toggleSummaryModal()"
+          class="px-6 py-2.5 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-neutral-800 transition-all">
+          Close Summary
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: SEARCH OVERLAY -->
+  <!-- ========================================================================= -->
+  <div id="searchModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div
+      class="bg-surface-container-lowest max-w-xl w-full rounded-3xl p-6 shadow-2xl border border-surface-container-highest">
+      <div class="flex items-center gap-3 border-b border-surface-container-highest pb-3">
+        <span class="material-symbols-outlined text-outline">search</span>
+        <input id="searchInput" type="text" placeholder="Search years, capabilities, emerging roles, or skills..."
+          oninput="handleSearch(this.value)"
+          class="flex-1 text-sm bg-transparent outline-none text-on-surface placeholder:text-outline" />
+        <button onclick="toggleSearchModal()"
+          class="text-xs text-outline hover:text-on-surface font-semibold">ESC</button>
+      </div>
+      <div id="searchResults" class="mt-4 max-h-60 overflow-y-auto space-y-2 text-xs">
+        <p class="text-outline text-center py-4">Type to instantly search across all 5 report pages...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- SCRIPTS & INTERACTIVE CAPABILITY LOGIC -->
+  <!-- ========================================================================= -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    function toggleSummaryModal() {
+      const modal = document.getElementById('summaryModal');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+    }
+
+    function toggleSearchModal() {
+      const modal = document.getElementById('searchModal');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+      if (!modal.classList.contains('hidden')) {
+        setTimeout(() => document.getElementById('searchInput').focus(), 100);
+      }
+    }
+
+    // Capability Data by Year (Qualitative Scenario Model)
+    const capabilityByYear = {
+      2026: {
+        writing: { width: '70%', label: 'MEDIUM–HIGH', desc: 'Drafts articles, summarizes text, translates languages with human review.' },
+        coding: { width: '50%', label: 'MEDIUM', desc: 'Auto-completes functions and drafts boilerplate code; developers review all syntax.' },
+        data: { width: '55%', label: 'MEDIUM', desc: 'Finds basic patterns and writes SQL queries from simple prompts.' },
+        decision: { width: '35%', label: 'LOW–MEDIUM', desc: 'Assists with basic recommendations; human approves all decisions.' },
+        workflow: { width: '30%', label: 'LOW', desc: 'Handles single-step prompts; limited tool-to-tool handoffs.' },
+        physical: { width: '15%', label: 'LOW', desc: 'Limited to structured factory robots; real-world environments remain human.' }
+      },
+      2027: {
+        writing: { width: '80%', label: 'HIGH', desc: 'Multi-lingual long-form content generation with style consistency.' },
+        coding: { width: '65%', label: 'MEDIUM–HIGH', desc: 'Generates full unit tests and complex modular code components.' },
+        data: { width: '65%', label: 'MEDIUM–HIGH', desc: 'Automates routine data cleaning and trend forecasting.' },
+        decision: { width: '45%', label: 'MEDIUM', desc: 'Triages customer support tickets and suggests resolution steps.' },
+        workflow: { width: '45%', label: 'MEDIUM', desc: 'Executes 2–3 connected digital actions reliably.' },
+        physical: { width: '20%', label: 'LOW', desc: 'Sensor-assisted drone inspections and inventory scanning.' }
+      },
+      2028: {
+        writing: { width: '85%', label: 'HIGH', desc: 'Highly capable at drafting articles, technical guides, and reports.' },
+        coding: { width: '75%', label: 'HIGH', desc: 'Generates boilerplate, refactors legacy code, and drafts integration bridges.' },
+        data: { width: '70%', label: 'MEDIUM–HIGH', desc: 'Extracts real-time business insights from multi-modal databases.' },
+        decision: { width: '55%', label: 'MEDIUM', desc: 'Assists risk assessment and financial compliance checks under supervision.' },
+        workflow: { width: '55%', label: 'MEDIUM', desc: 'Chains multiple software tools to fulfill business requests.' },
+        physical: { width: '25%', label: 'LOW', desc: 'Specialized warehouse robotics and guided physical repairs.' }
+      },
+      2029: {
+        writing: { width: '90%', label: 'HIGH', desc: 'Automated documentation, localized user content, and compliance reporting.' },
+        coding: { width: '82%', label: 'HIGH', desc: 'Autonomous bug patch drafts, self-healing routine pipelines, and test suites.' },
+        data: { width: '80%', label: 'HIGH', desc: 'Predictive modeling, automated anomaly detection across millions of records.' },
+        decision: { width: '65%', label: 'MEDIUM–HIGH', desc: 'Pre-screens complex loan applications, insurance claims, and IT incidents.' },
+        workflow: { width: '70%', label: 'HIGH', desc: 'Handles multi-department digital handoffs autonomously with oversight.' },
+        physical: { width: '30%', label: 'LOW–MEDIUM', desc: 'Autonomous delivery pods in structured corridors and precision agriculture.' }
+      },
+      2030: {
+        writing: { width: '92%', label: 'HIGH', desc: 'Effortless drafting; humans focus on message strategy, taste, and truth.' },
+        coding: { width: '88%', label: 'HIGH', desc: 'Deep synthesis of enterprise systems; architects verify safety and ethics.' },
+        data: { width: '85%', label: 'HIGH', desc: 'Synthetic data generation and real-time streaming pattern recognition.' },
+        decision: { width: '75%', label: 'HIGH (Assisted)', desc: 'High-speed decision support; humans retain legal and moral accountability.' },
+        workflow: { width: '80%', label: 'HIGH', desc: 'Autonomous routine enterprise workflows; humans handle exceptions.' },
+        physical: { width: '38%', label: 'LOW–MEDIUM', desc: 'Spatial robotics in construction and healthcare logistics alongside humans.' }
+      }
+    };
+
+    function selectCapYear(year) {
+      [2026, 2027, 2028, 2029, 2030].forEach(y => {
+        const btn = document.getElementById('btn' + y);
+        if (y === year) {
+          btn.className = 'px-3.5 py-1.5 rounded-full text-xs font-mono font-bold transition-all bg-secondary text-white shadow-sm';
+        } else {
+          btn.className = 'px-3.5 py-1.5 rounded-full text-xs font-mono font-bold transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+        }
+      });
+
+      const data = capabilityByYear[year] || capabilityByYear[2028];
+      
+      const areas = ['writing', 'coding', 'data', 'decision', 'workflow', 'physical'];
+      areas.forEach(area => {
+        const bar = document.getElementById('bar-' + area);
+        const badge = document.getElementById('badge-' + area);
+        const desc = document.getElementById('desc-' + area);
+        if (bar && badge && desc && data[area]) {
+          bar.style.width = data[area].width;
+          badge.innerText = data[area].label;
+          desc.innerText = data[area].desc;
+        }
+      });
+    }
+
+    const searchItems = [
+      { title: 'AI Capability Growth Timeline', url: 'page5.html', desc: 'Tracking writing, coding, data, decision support, and workflows (2026-2030)' },
+      { title: 'AI Agent Developer', url: 'page5.html', desc: 'Builds systems that complete multiple tasks with less human help' },
+      { title: 'AI Safety Engineer', url: 'page5.html', desc: 'Tests AI tools to ensure safe, unbiased, and accurate outputs' },
+      { title: 'What Skills Matter in 2030', url: 'page5.html', desc: 'Problem solving, communication, system thinking, human judgment' },
+      { title: 'Freshers in the AI Era', url: 'page5.html', desc: 'How students and graduates can prepare for an AI-heavy workplace' },
+      { title: 'Work That Needs Human Trust', url: 'page4.html', desc: 'Therapists, doctors, teachers, financial advisers' },
+      { title: 'AI Application Engineer', url: 'page2.html#jobs-skills', desc: 'Agent workflows, RAG pipelines, production LLMs' },
+      { title: 'Chennai Coromandel Corridor', url: 'page3.html#chennai-2030', desc: 'Automotive, SaaS, healthcare capital resilience' }
+    ];
+
+    function handleSearch(query) {
+      const resultsContainer = document.getElementById('searchResults');
+      if (!query.trim()) {
+        resultsContainer.innerHTML = '<p class="text-outline text-center py-4">Type to instantly search across all 5 report pages...</p>';
+        return;
+      }
+      const q = query.toLowerCase();
+      const matches = searchItems.filter(item =>
+        item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q)
+      );
+      if (matches.length === 0) {
+        resultsContainer.innerHTML = '<p class="text-outline text-center py-4">No matching entries found.</p>';
+        return;
+      }
+      resultsContainer.innerHTML = matches.map(item => `
+        <a href="${item.url}" class="block p-3 rounded-xl bg-surface hover:bg-surface-container transition-colors">
+          <div class="font-bold text-on-surface">${item.title}</div>
+          <div class="text-xs text-on-surface-variant font-light mt-0.5">${item.desc}</div>
+        </a>
+      `).join('');
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.getElementById('summaryModal').classList.add('hidden');
+        document.getElementById('summaryModal').classList.remove('flex');
+        document.getElementById('searchModal').classList.add('hidden');
+        document.getElementById('searchModal').classList.remove('flex');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
