@@ -650,94 +650,125 @@
       <!-- Geographic Storytelling Canvas -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
         
-        <!-- Interactive Satellite Corridor Map -->
-        <div class="lg:col-span-7 space-y-4">
-          <div class="relative rounded-3xl overflow-hidden shadow-xl border border-surface-container-highest bg-primary-container">
-            <img alt="Aerial satellite view of Old Mahabalipuram Road corridor and arterial networks in Chennai"
-              class="w-full h-[380px] sm:h-[440px] object-cover filter contrast-[1.08] saturate-[0.85]"
-              src="./figures/chennai_omr_corridor.jpg"
-              onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='public/figures/chennai_omr_corridor.jpg';}" />
-            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-primary/20 pointer-events-none"></div>
+        <!-- Oval Shape Corridor Content Container (No Image) -->
+        <div class="lg:col-span-7 flex flex-col justify-center">
+          <div class="relative w-full rounded-[48px] sm:rounded-[64px] lg:rounded-[80px] border-2 border-secondary/30 bg-gradient-to-br from-neutral-900 via-neutral-950 to-black p-6 sm:p-8 text-white shadow-2xl overflow-hidden flex flex-col justify-between min-h-[460px]">
+            <!-- Ambient elliptical / oval background grid lines -->
+            <div class="absolute inset-0 opacity-20 pointer-events-none flex items-center justify-center">
+              <div class="w-[92%] h-[85%] rounded-full border border-dashed border-white/40"></div>
+              <div class="w-[65%] h-[55%] rounded-full border border-white/20"></div>
+              <div class="absolute w-full h-[1px] bg-white/10 top-1/2 -translate-y-1/2"></div>
+            </div>
 
-            <!-- Floating Marker Nodes -->
-            <!-- Guindy Hub (Auto & Rail) -->
-            <div class="absolute top-[24%] left-[27%] flex items-center gap-2 group cursor-pointer z-20">
-              <span class="relative flex h-6 w-6">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white/60"></span>
-                <span class="relative inline-flex rounded-full h-6 w-6 bg-neutral-900 border-2 border-white text-white text-[9px] font-bold items-center justify-center shadow-lg">●</span>
-              </span>
-              <div class="bg-neutral-900/90 text-white border border-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold shadow-xl">
-                Guindy Hub <span class="text-neutral-400 font-normal">| Auto &amp; Rail</span>
+            <!-- Top Header Inside Oval -->
+            <div class="relative z-10 flex flex-wrap items-center justify-between gap-3 border-b border-white/15 pb-4">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-secondary-container">OMR Corridor Map</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-[10px] font-mono text-outline-variant uppercase">12.98° N, 80.24° E</span>
+                <span class="bg-white/10 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full border border-white/10">CMRL Metro Phase II: 74%</span>
               </div>
             </div>
 
-            <!-- Taramani (IIT-M Research Park & TIDEL) -->
-            <div class="absolute top-[38%] left-[47%] flex items-center gap-2 group cursor-pointer z-20">
-              <span class="relative flex h-6 w-6">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary/80"></span>
-                <span class="relative inline-flex rounded-full h-6 w-6 bg-secondary border-2 border-white text-white text-[9px] font-bold items-center justify-center shadow-lg">●</span>
-              </span>
-              <div class="bg-white/95 text-neutral-900 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold border border-secondary/30 shadow-xl">
-                <span class="text-secondary font-bold">● Taramani</span> <span class="text-neutral-500 font-normal">| IIT-M Research Park</span>
+            <!-- Center Visual Corridor Nodes inside Oval -->
+            <div class="relative z-10 py-5 my-auto space-y-3">
+              <!-- Connecting pathway dashed line -->
+              <div class="absolute left-6 sm:left-8 top-6 bottom-6 w-[2px] bg-gradient-to-b from-white/40 via-secondary to-white/40 border-l border-dashed border-white/30 pointer-events-none"></div>
+
+              <!-- Node 1: Guindy Hub -->
+              <div class="relative flex items-center gap-3 pl-2 sm:pl-4 group">
+                <div class="w-8 h-8 rounded-full bg-neutral-800 border-2 border-white text-white font-mono font-bold text-xs flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                  01
+                </div>
+                <div class="flex-1 p-2.5 sm:p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md flex items-center justify-between gap-2 hover:bg-white/10 transition-all">
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-bold text-white">Guindy Hub</h4>
+                    <span class="text-[10px] text-outline-variant font-mono">Auto &amp; Rail Manufacturing • Metro Junction</span>
+                  </div>
+                  <span class="text-[10px] font-mono text-secondary-container font-semibold bg-secondary/20 px-2 py-0.5 rounded-md shrink-0">Industrial</span>
+                </div>
+              </div>
+
+              <!-- Node 2: Taramani -->
+              <div class="relative flex items-center gap-3 pl-2 sm:pl-4 group">
+                <div class="w-8 h-8 rounded-full bg-secondary border-2 border-white text-white font-mono font-bold text-xs flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                  02
+                </div>
+                <div class="flex-1 p-2.5 sm:p-3 rounded-2xl bg-white/10 border border-secondary/40 backdrop-blur-md flex items-center justify-between gap-2 hover:bg-white/15 transition-all shadow-md">
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-bold text-white flex items-center gap-1.5">
+                      <span>Taramani</span>
+                      <span class="w-1.5 h-1.5 rounded-full bg-secondary-accent inline-block animate-pulse"></span>
+                    </h4>
+                    <span class="text-[10px] text-neutral-300 font-mono">IIT-M Research Park, TIDEL &amp; Deep Tech Labs</span>
+                  </div>
+                  <span class="text-[10px] font-mono text-white font-bold bg-secondary px-2 py-0.5 rounded-md shrink-0">R&amp;D Hub</span>
+                </div>
+              </div>
+
+              <!-- Node 3: OMR Main Road (Spine) -->
+              <div class="relative flex items-center gap-3 pl-2 sm:pl-4 group">
+                <div class="w-8 h-8 rounded-full bg-secondary text-white border-2 border-white font-mono font-bold text-xs flex items-center justify-center shrink-0 shadow-xl group-hover:scale-110 transition-transform">
+                  03
+                </div>
+                <div class="flex-1 p-2.5 sm:p-3 rounded-2xl bg-secondary text-white flex items-center justify-between gap-2 shadow-xl">
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-bold text-white">OMR Main Road</h4>
+                    <span class="text-[10px] text-white/80 font-mono">6-Lane IT Expressway &amp; Arterial Corridor Spine</span>
+                  </div>
+                  <span class="text-[10px] font-mono text-secondary bg-white font-bold px-2 py-0.5 rounded-md shrink-0">Spine</span>
+                </div>
+              </div>
+
+              <!-- Node 4: Sholinganallur -->
+              <div class="relative flex items-center gap-3 pl-2 sm:pl-4 group">
+                <div class="w-8 h-8 rounded-full bg-neutral-800 border-2 border-white text-white font-mono font-bold text-xs flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                  04
+                </div>
+                <div class="flex-1 p-2.5 sm:p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md flex items-center justify-between gap-2 hover:bg-white/10 transition-all">
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-bold text-white">Sholinganallur</h4>
+                    <span class="text-[10px] text-outline-variant font-mono">Residential Apartments, PGs, Food Stalls &amp; Hostels</span>
+                  </div>
+                  <span class="text-[10px] font-mono text-secondary-container font-semibold bg-secondary/20 px-2 py-0.5 rounded-md shrink-0">Housing</span>
+                </div>
+              </div>
+
+              <!-- Node 5: Siruseri -->
+              <div class="relative flex items-center gap-3 pl-2 sm:pl-4 group">
+                <div class="w-8 h-8 rounded-full bg-neutral-800 border-2 border-white text-white font-mono font-bold text-xs flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                  05
+                </div>
+                <div class="flex-1 p-2.5 sm:p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md flex items-center justify-between gap-2 hover:bg-white/10 transition-all">
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-bold text-white">Siruseri</h4>
+                    <span class="text-[10px] text-outline-variant font-mono">SIPCOT IT Park &amp; Major Technology Campuses</span>
+                  </div>
+                  <span class="text-[10px] font-mono text-outline-variant font-semibold bg-white/10 px-2 py-0.5 rounded-md shrink-0">Campuses</span>
+                </div>
               </div>
             </div>
 
-            <!-- OMR Main Road -->
-            <div class="absolute top-[51%] left-[56%] flex items-center gap-2 group cursor-pointer z-20">
-              <span class="relative flex h-6 w-6">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary/90"></span>
-                <span class="relative inline-flex rounded-full h-6 w-6 bg-secondary border-2 border-white text-white text-[9px] font-bold items-center justify-center shadow-2xl">●</span>
-              </span>
-              <div class="bg-secondary text-white px-3.5 py-1 rounded-full text-[11px] font-mono font-bold shadow-2xl flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-white inline-block"></span>
-                OMR Main Road
+            <!-- Bottom Node Pills inside Oval -->
+            <div class="relative z-10 pt-3 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[10px] font-mono">
+              <div class="p-2 rounded-xl bg-white/5 border border-white/10 text-center">
+                <strong class="text-white block">Taramani</strong>
+                <span class="text-secondary-container text-[9px]">Deep Tech</span>
               </div>
-            </div>
-
-            <!-- Sholinganallur (Housing & PGs) -->
-            <div class="absolute top-[67%] left-[60%] flex items-center gap-2 group cursor-pointer z-20">
-              <span class="relative flex h-6 w-6">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary/70"></span>
-                <span class="relative inline-flex rounded-full h-6 w-6 bg-secondary border-2 border-white text-white text-[9px] font-bold items-center justify-center shadow-lg">●</span>
-              </span>
-              <div class="bg-white/95 text-neutral-900 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold border border-neutral-200 shadow-xl">
-                <span>● Sholinganallur</span> <span class="text-secondary font-normal">| Housing &amp; PGs</span>
+              <div class="p-2 rounded-xl bg-white/5 border border-white/10 text-center">
+                <strong class="text-white block">Guindy</strong>
+                <span class="text-outline-variant text-[9px]">Auto &amp; Rail</span>
               </div>
-            </div>
-
-            <!-- Siruseri (SIPCOT IT Park) -->
-            <div class="absolute top-[80%] left-[66%] flex items-center gap-2 group cursor-pointer z-20">
-              <span class="relative flex h-6 w-6">
-                <span class="relative inline-flex rounded-full h-6 w-6 bg-neutral-900 border-2 border-white text-white text-[9px] font-bold items-center justify-center shadow-lg">●</span>
-              </span>
-              <div class="bg-neutral-900/90 text-white border border-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-bold shadow-xl">
-                Siruseri <span class="text-neutral-400 font-normal">| SIPCOT IT Park</span>
+              <div class="p-2 rounded-xl bg-white/5 border border-white/10 text-center">
+                <strong class="text-white block">Sholinganallur</strong>
+                <span class="text-secondary-container text-[9px]">Housing</span>
               </div>
-            </div>
-
-            <div class="absolute bottom-4 left-6 right-6 flex items-center justify-between text-white/90 text-xs font-mono z-20">
-              <span class="text-[11px] uppercase tracking-wider text-white font-mono bg-black/60 backdrop-blur-sm px-2.5 py-1 rounded-md">12.98° N, 80.24° E</span>
-              <span class="bg-black/75 backdrop-blur-sm px-3.5 py-1 rounded-full text-[11px] text-white border border-white/15">CMRL Metro Phase II: 74% Complete</span>
-            </div>
-          </div>
-
-          <!-- Node Breakdown Strip -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1 font-mono text-xs">
-            <div class="p-2.5 rounded-xl bg-surface-container-lowest border border-surface-container-highest">
-              <span class="font-bold text-on-surface block">● Taramani</span>
-              <span class="text-secondary text-[10px] block">Research &amp; Deep Tech</span>
-            </div>
-            <div class="p-2.5 rounded-xl bg-surface-container-lowest border border-surface-container-highest">
-              <span class="font-bold text-on-surface block">● Guindy</span>
-              <span class="text-outline text-[10px] block">Manufacturing &amp; Trains</span>
-            </div>
-            <div class="p-2.5 rounded-xl bg-surface-container-lowest border border-surface-container-highest">
-              <span class="font-bold text-on-surface block">● Sholinganallur</span>
-              <span class="text-secondary text-[10px] block">Residential &amp; Hostels</span>
-            </div>
-            <div class="p-2.5 rounded-xl bg-surface-container-lowest border border-surface-container-highest">
-              <span class="font-bold text-on-surface block">● Siruseri</span>
-              <span class="text-outline text-[10px] block">Major IT Campuses</span>
+              <div class="p-2 rounded-xl bg-white/5 border border-white/10 text-center">
+                <strong class="text-white block">Siruseri</strong>
+                <span class="text-outline-variant text-[9px]">IT Campuses</span>
+              </div>
             </div>
           </div>
         </div>
