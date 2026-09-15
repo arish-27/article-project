@@ -225,11 +225,11 @@
 
     /* Perfect Circle Card Pod */
     .shape-circle-card {
-      border: 2px solid #d9dadb !important;
+      border: 2px solid #e1e3e4 !important;
       border-radius: 9999px !important;
       aspect-ratio: 1 / 1;
-      background: radial-gradient(circle at 35% 30%, #ffffff 0%, #f5f6f8 100%);
-      box-shadow: 0 16px 36px -8px rgba(25, 28, 29, 0.08), 0 4px 14px -2px rgba(25, 28, 29, 0.03);
+      background: radial-gradient(circle at 50% 32%, #ffffff 0%, #f6f7f9 100%);
+      box-shadow: 0 12px 30px -8px rgba(25, 28, 29, 0.07), 0 4px 12px -2px rgba(25, 28, 29, 0.03);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
     }
@@ -670,14 +670,14 @@
                 </span>
                 <span class="text-error font-mono px-3 py-1 rounded-full bg-error/10 font-bold">2026 – 2028</span>
               </div>
-              <div class="flex items-center gap-4 py-2">
+              <div class="flex items-center gap-3.5 py-2">
                 <div
-                  class="w-20 h-20 rounded-full bg-error/10 flex items-center justify-center flex-shrink-0 shadow-inner group-hover:scale-105 transition-transform duration-300">
-                  <span class="text-3xl sm:text-4xl font-extrabold text-error font-mono">-35%</span>
+                  class="w-16 h-16 rounded-full bg-error/10 flex items-center justify-center flex-shrink-0 shadow-inner group-hover:scale-105 transition-transform duration-300">
+                  <span class="text-xl sm:text-2xl font-extrabold text-error font-mono tracking-tight">-35%</span>
                 </div>
-                <div class="flex flex-col">
-                  <span class="text-[10px] uppercase text-outline tracking-wider font-semibold">Workload Change</span>
-                  <span class="text-base font-bold text-on-surface leading-tight">Routine Coding Hours</span>
+                <div class="flex flex-col min-w-0 flex-1">
+                  <span class="text-[10px] uppercase text-outline tracking-wider font-semibold truncate">Workload Change</span>
+                  <span class="text-sm sm:text-base font-bold text-on-surface leading-tight">Routine Coding Hours</span>
                 </div>
               </div>
               <p class="text-xs text-on-surface-variant leading-relaxed font-light">
@@ -700,14 +700,14 @@
                 </span>
                 <span class="text-secondary font-mono px-3 py-1 rounded-full bg-secondary/10 font-bold">Peak 2027</span>
               </div>
-              <div class="flex items-center gap-4 py-2">
+              <div class="flex items-center gap-3.5 py-2">
                 <div
-                  class="w-20 h-20 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0 shadow-inner group-hover:scale-105 transition-transform duration-300">
-                  <span class="text-3xl sm:text-4xl font-extrabold text-secondary font-mono">4.2×</span>
+                  class="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0 shadow-inner group-hover:scale-105 transition-transform duration-300">
+                  <span class="text-xl sm:text-2xl font-extrabold text-secondary font-mono tracking-tight">4.2×</span>
                 </div>
-                <div class="flex flex-col">
-                  <span class="text-[10px] uppercase text-secondary tracking-wider font-semibold">Demand Growth For</span>
-                  <span class="text-base font-bold text-on-surface leading-tight">Senior System Architects</span>
+                <div class="flex flex-col min-w-0 flex-1">
+                  <span class="text-[10px] uppercase text-secondary tracking-wider font-semibold truncate">Demand Growth For</span>
+                  <span class="text-sm sm:text-base font-bold text-on-surface leading-tight">Senior System Architects</span>
                 </div>
               </div>
               <p class="text-xs text-on-surface-variant leading-relaxed font-light">
@@ -730,14 +730,14 @@
                 </span>
                 <span class="text-primary font-mono px-3 py-1 rounded-full bg-primary/10 font-bold">2030 Horizon</span>
               </div>
-              <div class="flex items-center gap-4 py-2">
+              <div class="flex items-center gap-3.5 py-2">
                 <div
-                  class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 shadow-inner group-hover:scale-105 transition-transform duration-300">
-                  <span class="text-2xl sm:text-3xl font-extrabold text-primary font-mono">+1.8M</span>
+                  class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 shadow-inner group-hover:scale-105 transition-transform duration-300">
+                  <span class="text-lg sm:text-xl font-extrabold text-primary font-mono tracking-tight">+1.8M</span>
                 </div>
-                <div class="flex flex-col">
-                  <span class="text-[10px] uppercase text-outline tracking-wider font-semibold">Global Growth</span>
-                  <span class="text-base font-bold text-on-surface leading-tight">Net New Tech Jobs</span>
+                <div class="flex flex-col min-w-0 flex-1">
+                  <span class="text-[10px] uppercase text-outline tracking-wider font-semibold truncate">Global Growth</span>
+                  <span class="text-sm sm:text-base font-bold text-on-surface leading-tight">Net New Tech Jobs</span>
                 </div>
               </div>
               <p class="text-xs text-on-surface-variant leading-relaxed font-light">
@@ -1517,110 +1517,110 @@
           <!-- 6 Urban Tissues Circles -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             <!-- Circle 01: PGs & Micro-Housing -->
-            <div class="shape-circle-card w-full max-w-[340px] p-7 sm:p-8 flex flex-col items-center text-center justify-between group cursor-default">
-              <div class="w-11 h-11 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-base shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+            <div class="shape-circle-card w-full max-w-[340px] p-6 sm:p-7 flex flex-col items-center text-center justify-between group cursor-default">
+              <div class="w-9 h-9 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-sm shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300 mt-1">
                 01
               </div>
-              <div class="my-auto py-1">
+              <div class="my-auto py-1 px-1">
                 <h4 class="text-sm sm:text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
                   Hostels, PGs &amp; Rental Rooms
                 </h4>
-                <p class="text-[11px] sm:text-xs text-on-surface-variant font-light mt-2 leading-relaxed max-w-[240px] mx-auto">
-                  Crowded 4-sharing rooms see fewer freshers. Landlords are remodeling spaces into private, comfortable studio rooms with good desks and high-speed internet.
+                <p class="text-[11px] text-on-surface-variant font-light mt-1.5 leading-relaxed max-w-[200px] sm:max-w-[210px] mx-auto">
+                  Crowded 4-sharing rooms see fewer freshers. Landlords are remodeling spaces into private studio rooms with good desks and fast Wi-Fi.
                 </p>
               </div>
-              <span class="px-3 py-1 rounded-full bg-surface-container text-outline font-mono text-[10px] font-semibold tracking-wide shadow-inner">
-                Room Occupancy: <strong class="text-secondary">-22%</strong> • Upgrading Studios
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-outline font-mono text-[9px] sm:text-[10px] font-semibold tracking-tight shadow-inner mb-1.5 max-w-[190px] truncate block">
+                Occupancy: <strong class="text-secondary">-22%</strong> • Studios
               </span>
             </div>
 
             <!-- Circle 02: Restaurants & Messes -->
-            <div class="shape-circle-card w-full max-w-[340px] p-7 sm:p-8 flex flex-col items-center text-center justify-between group cursor-default">
-              <div class="w-11 h-11 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-base shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+            <div class="shape-circle-card w-full max-w-[340px] p-6 sm:p-7 flex flex-col items-center text-center justify-between group cursor-default">
+              <div class="w-9 h-9 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-sm shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300 mt-1">
                 02
               </div>
-              <div class="my-auto py-1">
+              <div class="my-auto py-1 px-1">
                 <h4 class="text-sm sm:text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
-                  Food Stalls, Messes &amp; Restaurants
+                  Food Stalls, Messes &amp; Eateries
                 </h4>
-                <p class="text-[11px] sm:text-xs text-on-surface-variant font-light mt-2 leading-relaxed max-w-[240px] mx-auto">
-                  Weekday lunch crowds decline by 35–45% with hybrid work. Food businesses adapt by offering online food delivery, catering, and weekend family menus.
+                <p class="text-[11px] text-on-surface-variant font-light mt-1.5 leading-relaxed max-w-[200px] sm:max-w-[210px] mx-auto">
+                  Weekday lunch crowds decline by 35–45% with hybrid work. Food businesses adapt by offering online food delivery and family menus.
                 </p>
               </div>
-              <span class="px-3 py-1 rounded-full bg-surface-container text-outline font-mono text-[10px] font-semibold tracking-wide shadow-inner">
-                Lunch Crowd: <strong class="text-secondary">-38%</strong> • Delivery Focus
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-outline font-mono text-[9px] sm:text-[10px] font-semibold tracking-tight shadow-inner mb-1.5 max-w-[190px] truncate block">
+                Lunch Crowd: <strong class="text-secondary">-38%</strong> • Delivery
               </span>
             </div>
 
             <!-- Circle 03: Transit & Mobility -->
-            <div class="shape-circle-card w-full max-w-[340px] p-7 sm:p-8 flex flex-col items-center text-center justify-between group cursor-default">
-              <div class="w-11 h-11 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-base shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+            <div class="shape-circle-card w-full max-w-[340px] p-6 sm:p-7 flex flex-col items-center text-center justify-between group cursor-default">
+              <div class="w-9 h-9 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-sm shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300 mt-1">
                 03
               </div>
-              <div class="my-auto py-1">
+              <div class="my-auto py-1 px-1">
                 <h4 class="text-sm sm:text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
                   Daily Commute &amp; Transport
                 </h4>
-                <p class="text-[11px] sm:text-xs text-on-surface-variant font-light mt-2 leading-relaxed max-w-[240px] mx-auto">
+                <p class="text-[11px] text-on-surface-variant font-light mt-1.5 leading-relaxed max-w-[200px] sm:max-w-[210px] mx-auto">
                   Big 40-seat company bus routes decrease by 24%. Meanwhile, demand increases for metro trains, electric shuttle vans, and bike rentals.
                 </p>
               </div>
-              <span class="px-3 py-1 rounded-full bg-surface-container text-outline font-mono text-[10px] font-semibold tracking-wide shadow-inner">
-                Company Buses: <strong class="text-secondary">-24%</strong> • Metro &amp; Vans
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-outline font-mono text-[9px] sm:text-[10px] font-semibold tracking-tight shadow-inner mb-1.5 max-w-[190px] truncate block">
+                Buses: <strong class="text-secondary">-24%</strong> • Metro &amp; Vans
               </span>
             </div>
 
             <!-- Circle 04: Retail & Healthcare -->
-            <div class="shape-circle-card w-full max-w-[340px] p-7 sm:p-8 flex flex-col items-center text-center justify-between group cursor-default">
-              <div class="w-11 h-11 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-base shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+            <div class="shape-circle-card w-full max-w-[340px] p-6 sm:p-7 flex flex-col items-center text-center justify-between group cursor-default">
+              <div class="w-9 h-9 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-sm shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300 mt-1">
                 04
               </div>
-              <div class="my-auto py-1">
+              <div class="my-auto py-1 px-1">
                 <h4 class="text-sm sm:text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
                   Local Shops &amp; Pharmacies
                 </h4>
-                <p class="text-[11px] sm:text-xs text-on-surface-variant font-light mt-2 leading-relaxed max-w-[240px] mx-auto">
-                  Neighborhood grocery stores and medical shops maintain steady sales from resident families, while quick 10-minute delivery apps expand fast.
+                <p class="text-[11px] text-on-surface-variant font-light mt-1.5 leading-relaxed max-w-[200px] sm:max-w-[210px] mx-auto">
+                  Neighborhood grocery stores and medical shops maintain steady sales from resident families, while quick delivery apps expand fast.
                 </p>
               </div>
-              <span class="px-3 py-1 rounded-full bg-surface-container text-outline font-mono text-[10px] font-semibold tracking-wide shadow-inner">
-                Quick Delivery: <strong class="text-secondary">+65%</strong> • Steady Shops
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-outline font-mono text-[9px] sm:text-[10px] font-semibold tracking-tight shadow-inner mb-1.5 max-w-[190px] truncate block">
+                Quick Delivery: <strong class="text-secondary">+65%</strong> • Steady
               </span>
             </div>
 
             <!-- Circle 05: Tech Parks & Labs -->
-            <div class="shape-circle-card w-full max-w-[340px] p-7 sm:p-8 flex flex-col items-center text-center justify-between group cursor-default">
-              <div class="w-11 h-11 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-base shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+            <div class="shape-circle-card w-full max-w-[340px] p-6 sm:p-7 flex flex-col items-center text-center justify-between group cursor-default">
+              <div class="w-9 h-9 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold font-mono text-sm shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300 mt-1">
                 05
               </div>
-              <div class="my-auto py-1">
+              <div class="my-auto py-1 px-1">
                 <h4 class="text-sm sm:text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
                   Offices &amp; Innovation Labs
                 </h4>
-                <p class="text-[11px] sm:text-xs text-on-surface-variant font-light mt-2 leading-relaxed max-w-[240px] mx-auto">
-                  Rows of generic desk cubicles see lower demand, while specialized hardware labs, automotive testing centers, and AI server facilities are booming.
+                <p class="text-[11px] text-on-surface-variant font-light mt-1.5 leading-relaxed max-w-[200px] sm:max-w-[210px] mx-auto">
+                  Rows of generic desk cubicles see lower demand, while specialized hardware labs, testing centers, and AI server facilities boom.
                 </p>
               </div>
-              <span class="px-3 py-1 rounded-full bg-surface-container text-outline font-mono text-[10px] font-semibold tracking-wide shadow-inner">
-                Basic Desks: <strong class="text-secondary">-18%</strong> • Lab Growth
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-outline font-mono text-[9px] sm:text-[10px] font-semibold tracking-tight shadow-inner mb-1.5 max-w-[190px] truncate block">
+                Basic Desks: <strong class="text-secondary">-18%</strong> • Labs
               </span>
             </div>
 
             <!-- Circle 06: High-Impact Teams -->
-            <div class="shape-circle-card w-full max-w-[340px] p-7 sm:p-8 flex flex-col items-center text-center justify-between group cursor-default !bg-gradient-to-br !from-neutral-900 !to-neutral-950 !text-white shadow-2xl">
-              <div class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-secondary-container font-bold font-mono text-base shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+            <div class="shape-circle-card w-full max-w-[340px] p-6 sm:p-7 flex flex-col items-center text-center justify-between group cursor-default !bg-gradient-to-br !from-neutral-900 !to-neutral-950 !text-white shadow-2xl">
+              <div class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-secondary-container font-bold font-mono text-sm shadow-inner group-hover:bg-secondary group-hover:text-white transition-all duration-300 mt-1">
                 06
               </div>
-              <div class="my-auto py-1">
+              <div class="my-auto py-1 px-1">
                 <h4 class="text-sm sm:text-base font-bold text-white group-hover:text-secondary-container transition-colors leading-snug">
                   High-Impact Tech Teams
                 </h4>
-                <p class="text-[11px] sm:text-xs text-neutral-300 font-light mt-2 leading-relaxed max-w-[240px] mx-auto">
-                  Offices in Bengaluru, Hyderabad, and Chennai are shifting from huge teams doing repetitive coding to small, focused teams building powerful solutions.
+                <p class="text-[11px] text-neutral-300 font-light mt-1.5 leading-relaxed max-w-[200px] sm:max-w-[210px] mx-auto">
+                  Offices across major cities are shifting from huge teams doing repetitive coding to small, focused teams building powerful solutions.
                 </p>
               </div>
-              <span class="px-3 py-1 rounded-full bg-white/10 text-secondary-container font-mono text-[10px] font-semibold tracking-wide shadow-inner">
-                High-Skilled Technical Teams
+              <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-secondary-container font-mono text-[9px] sm:text-[10px] font-semibold tracking-tight shadow-inner mb-1.5 max-w-[190px] truncate block">
+                High-Skilled Tech Teams
               </span>
             </div>
           </div>
