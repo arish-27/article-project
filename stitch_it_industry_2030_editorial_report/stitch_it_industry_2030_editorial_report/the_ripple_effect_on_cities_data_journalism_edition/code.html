@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NEUROS — Spatial &amp; Urban Economics Monograph</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+  @layer base {
+    html, body { margin: 0; padding: 0; }
+    body { overscroll-behavior: none; }
+  }
+  ::-webkit-scrollbar { display: none; }
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface": "#f8f9fa",
+          "background": "#f8f9fa",
+          "on-surface": "#111215",
+          "on-surface-variant": "#4d5156",
+          "primary": "#111215",
+          "primary-container": "#1d2024",
+          "on-primary": "#ffffff",
+          "secondary": "#af2f25",
+          "secondary-accent": "#e05244",
+          "secondary-container": "#fe6858",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f2f4f6",
+          "surface-container": "#ebecee",
+          "surface-container-high": "#e2e4e7",
+          "outline": "#76777b",
+          "outline-variant": "#c7c6cb",
+          "inverse-surface": "#191c1d",
+          "inverse-on-surface": "#f0f1f2"
+        },
+        fontFamily: {
+          sans: ["Plus Jakarta Sans", "sans-serif"]
+        },
+        letterSpacing: {
+          tighter: "-0.04em",
+          tight: "-0.025em",
+          widest: "0.12em"
+        }
+      }
+    }
+  };
+</script>
+</head>
+<body class="bg-surface font-sans text-on-surface antialiased selection:bg-secondary/15 selection:text-secondary">
+<!-- TOP EDITORIAL MASTHEAD & NAV -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-surface-container-high/60">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-3" href="#">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm tracking-tighter shadow-sm ring-4 ring-primary/10">N</span>
+<div class="flex flex-col">
+<span class="text-sm font-extrabold tracking-tight leading-none text-on-surface">NEUROS</span>
+<span class="text-[10px] tracking-widest uppercase font-semibold text-secondary-accent">Economic Futures</span>
+</div>
+</a>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface font-medium transition-colors" href="#">Overview</a>
+<a class="text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface font-medium transition-colors" href="#">Jobs &amp; Skills</a>
+<a class="text-xs uppercase tracking-widest text-secondary-accent font-semibold border-b-2 border-secondary-accent pb-0.5" href="#">Ripple on Cities</a>
+<a class="text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface font-medium transition-colors" href="#">Chennai 2030</a>
+<a class="text-xs uppercase tracking-widest text-on-surface-variant hover:text-on-surface font-medium transition-colors" href="#">Scenarios</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="hidden sm:inline-block text-[11px] font-mono uppercase text-outline">Vol. IV / Issue 02</span>
+<a class="px-5 py-2.5 rounded-full text-xs font-semibold bg-primary text-on-primary hover:bg-on-surface-variant transition-colors ring-1 ring-primary/20" href="#synthesis">
+        Full Monograph
+      </a>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- 1. HERO SECTION: PRESTIGIOUS MAGAZINE COVER ESSAY -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 lg:pt-24 pb-16 border-b border-surface-container-high/80">
+<div class="flex flex-wrap items-center gap-4 text-xs font-semibold tracking-widest uppercase text-secondary-accent mb-6">
+<span>Volume IV: Spatial &amp; Urban Economics</span>
+<span class="text-outline-variant">•</span>
+<span class="text-outline">Coromandel Empirical Series</span>
+<span class="text-outline-variant">•</span>
+<span class="text-outline">12 Min Read</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+<div class="lg:col-span-8">
+<h1 class="text-4xl sm:text-6xl lg:text-[4.75rem] font-bold tracking-tighter leading-[1.03] text-on-surface">
+          When Technology Shifts, <span class="italic font-serif font-normal text-secondary-accent">Cities Follow.</span>
+</h1>
+<p class="mt-8 text-xl sm:text-2xl text-on-surface-variant font-normal leading-relaxed max-w-3xl">
+          If fewer IT employees live and work in an urban district, everyday ancillary enterprises must recalibrate. Metropolitan tech clusters are delicate living metabolisms comprising micro-housing, community kitchens, transit networks, and secondary commerce.
+        </p>
+</div>
+<div class="lg:col-span-4 lg:pt-3 border-l-0 lg:border-l lg:border-surface-container-high lg:pl-10">
+<div class="space-y-6">
+<div>
+<span class="text-[11px] font-mono tracking-widest uppercase text-outline block mb-1">Empirical Anchor Multiplier</span>
+<div class="text-4xl lg:text-5xl font-bold tracking-tight text-on-surface font-mono">
+              1 : 3.8
+            </div>
+<p class="text-sm font-semibold text-secondary-accent mt-1">
+              1 Direct IT Role sustains 3.8 Peripheral Urban Livelihoods
+            </p>
+<p class="text-xs text-on-surface-variant mt-2 leading-normal">
+              Synthesized across rental tenancies, decentralized food distribution, feeder transit loops, and localized retail in metropolitan sub-clusters.
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container-high/80 text-xs text-on-surface-variant space-y-1 font-mono">
+<div class="flex justify-between py-1">
+<span class="text-outline">Base Cluster:</span>
+<span class="font-medium text-on-surface">Chennai Metropolitan Area</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-outline">Horizon Period:</span>
+<span class="font-medium text-on-surface">2024 – 2030 F</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-outline">Primary Arterial:</span>
+<span class="font-medium text-on-surface">OMR / Rajiv Gandhi Salai</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Visual Panorama & Float Data -->
+<div class="mt-14 relative rounded-3xl overflow-hidden shadow-2xl bg-primary-container">
+<div class="relative h-[380px] sm:h-[460px] lg:h-[520px] w-full">
+<img alt="Aerial photography of metropolitan technology arterial expressways and residential networks at twilight" class="w-full h-full object-cover object-center filter saturate-[0.85] contrast-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbIWYSrM9ZeLdY7NBiQEIpnTPXankc-L4SraH5-CVuR4cuZcOX3-q82LODQB3GdPUTnXTGauI07qVxCG-pSJL8m5nrGIwRKHKIerYIrmBjWbcI85svXw_FrSMv4_8gWy-VfR8jZDpl1ycYUmdlwKkjCihb26G3qRmNwMiWEvsj3uNs-a0KbntdULwItBZsRLlecjLMbxNVvMn1sFhJlqCl2GwKsWX4wYmnKEyViZXINsFqE-e9m2iBFA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 sm:p-10 text-on-primary flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-xl">
+<span class="text-[10px] font-mono tracking-widest uppercase px-2.5 py-1 rounded bg-surface-container-lowest/20 backdrop-blur-md inline-block mb-3">Fig 1.0 // Spatial Intensity Matrix</span>
+<h3 class="text-lg sm:text-xl font-medium tracking-tight leading-snug text-white">
+              South Chennai Corridor at Twilight: Where software export campuses meet high-density informal domestic economies.
+            </h3>
+</div>
+<div class="grid grid-cols-3 gap-6 sm:gap-10 border-t border-white/15 pt-4 md:pt-0 md:border-t-0 font-mono">
+<div>
+<span class="text-[10px] uppercase text-outline-variant block">Turnover Swing</span>
+<span class="text-xl sm:text-2xl font-bold text-white tracking-tight">18–32%</span>
+</div>
+<div>
+<span class="text-[10px] uppercase text-outline-variant block">Shuttle Commute</span>
+<span class="text-xl sm:text-2xl font-bold text-white tracking-tight">-24%</span>
+</div>
+<div>
+<span class="text-[10px] uppercase text-outline-variant block">Hybrid Density</span>
+<span class="text-xl sm:text-2xl font-bold text-white tracking-tight">+41%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="mt-3 text-right text-[11px] text-outline font-mono">
+      Field Sensor Feeds &amp; Municipal Land Records / 2024 Synthesis
+    </p>
+</section>
+<!-- EDITORIAL STATEMENT: UNBOXED FLUID TRANSITION -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-high/80">
+<div class="flex flex-col md:flex-row items-baseline justify-between gap-6">
+<div class="max-w-4xl">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-accent animate-ping"></span>
+<span class="text-xs font-mono uppercase tracking-widest text-secondary-accent font-semibold">Core Premise &amp; Systemic Thesis</span>
+</div>
+<blockquote class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-on-surface leading-[1.18]">
+          “AI will affect not only IT employees, but the <span class="text-secondary-accent underline decoration-secondary-accent/40 decoration-2 underline-offset-8 font-serif italic font-normal">delicate living metabolism</span> of the city built around them.”
+        </blockquote>
+</div>
+<div class="shrink-0 font-mono text-xs text-outline space-y-1 md:text-right border-l-2 md:border-l-0 md:border-r-2 border-secondary-accent pl-4 md:pl-0 md:pr-4">
+<span class="block text-on-surface font-semibold uppercase">Metabolic Cascade</span>
+<span class="block text-[11px]">Dynamic System Dynamics v4.8</span>
+</div>
+</div>
+</section>
+<!-- 2. SIGNATURE CONCENTRIC RIPPLE INFOGRAPHIC: MASTERPIECE (NO CARDS, ORBITAL COMPOSITION) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-24 border-b border-surface-container-high/80" id="macro-chain">
+<!-- Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded-full border-2 border-secondary-accent text-secondary-accent font-mono font-bold text-xl flex items-center justify-center shrink-0 mt-1 shadow-sm bg-transparent">
+          01
+        </div>
+<div>
+<span class="text-xs font-mono font-semibold uppercase tracking-widest text-secondary-accent block mb-2">Concentric Transmission Mechanics</span>
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-on-surface">The Macro Spillover Sequence</h2>
+<p class="mt-2 text-base sm:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            An expanding concentric ripple: algorithmic shocks at the catalytic IT core propagate outward across seven successive socio-spatial layers over a 6 to 18 month cascade.
+          </p>
+</div>
+</div>
+<div class="text-left md:text-right font-mono text-xs">
+<span class="text-outline uppercase block">Radial Velocity</span>
+<span class="font-semibold text-secondary-accent">Epicenter ◉ → Ring 07 ◯</span>
+<span class="text-outline block text-[11px] mt-0.5">Empirical Ripple Matrix</span>
+</div>
+</div>
+<!-- The Ripple Composition Canvas: Clean, Expansive, Unboxed Data Visualization -->
+<div class="relative w-full py-12 px-4 flex flex-col items-center justify-center overflow-hidden">
+<!-- Ambient background hairlines -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-40">
+<div class="w-[900px] h-[900px] rounded-full border border-dashed border-outline-variant/30"></div>
+<div class="w-[1100px] h-[1100px] rounded-full border border-outline-variant/20"></div>
+</div>
+<!-- Main Interactive Orbital SVG + Overlay Labels -->
+<div class="relative w-full max-w-5xl h-[620px] sm:h-[720px] lg:h-[780px] flex items-center justify-center">
+<!-- SVG Concentric Circles and Radial Rays -->
+<svg class="absolute inset-0 w-full h-full" fill="none" viewbox="0 0 900 780" xmlns="http://www.w3.org/2000/svg">
+<!-- Center Point: (450, 390) -->
+<!-- Radial Guideline Rays with fine dash -->
+<line opacity="0.4" stroke="#c7c6cb" stroke-dasharray="3 4" stroke-width="1" x1="450" x2="450" y1="50" y2="730"></line>
+<line opacity="0.4" stroke="#c7c6cb" stroke-dasharray="3 4" stroke-width="1" x1="80" x2="820" y1="390" y2="390"></line>
+<line opacity="0.25" stroke="#c7c6cb" stroke-dasharray="3 4" stroke-width="1" x1="190" x2="710" y1="130" y2="650"></line>
+<line opacity="0.25" stroke="#c7c6cb" stroke-dasharray="3 4" stroke-width="1" x1="190" x2="710" y1="650" y2="130"></line>
+<!-- Ring 07: City Economy & Municipal Tax Base (R=350) -->
+<circle cx="450" cy="390" opacity="0.45" r="350" stroke="#76777b" stroke-dasharray="6 6" stroke-width="1.2"></circle>
+<!-- Ring 06: Built Environment & Property (R=300) -->
+<circle cx="450" cy="390" opacity="0.5" r="300" stroke="#af2f25" stroke-dasharray="2 3" stroke-width="1"></circle>
+<!-- Ring 05: Local Retail & Services (R=250) -->
+<circle cx="450" cy="390" opacity="0.4" r="250" stroke="#76777b" stroke-width="1"></circle>
+<!-- Ring 04: Delivery Logistics & Q-Commerce (R=205) -->
+<circle cx="450" cy="390" opacity="0.5" r="205" stroke="#76777b" stroke-dasharray="4 4" stroke-width="1"></circle>
+<!-- Ring 03: Urban Mobility & Feeder Transit (R=160) -->
+<circle cx="450" cy="390" opacity="0.65" r="160" stroke="#e05244" stroke-width="1.5"></circle>
+<!-- Ring 02: Restaurants, Messes & Food Networks (R=118) -->
+<circle cx="450" cy="390" opacity="0.85" r="118" stroke="#e05244" stroke-width="1.75"></circle>
+<!-- Ring 01: PGs & Accommodations (R=78) -->
+<circle cx="450" cy="390" r="78" stroke="#af2f25" stroke-width="2.5"></circle>
+<!-- Subtle Glow Halo around Epicenter -->
+<circle cx="450" cy="390" fill="#af2f25" fill-opacity="0.08" r="54"></circle>
+<!-- Delicate Vector Callout Lines with Terminal Dots -->
+<!-- Ring 1 Line (Top-Right) -->
+<path d="M 505 340 L 590 280 L 670 280" fill="none" stroke="#af2f25" stroke-width="1.2"></path>
+<circle cx="505" cy="340" fill="#af2f25" r="3"></circle>
+<!-- Ring 2 Line (Top-Left) -->
+<path d="M 365 310 L 290 230 L 190 230" fill="none" stroke="#e05244" stroke-width="1.2"></path>
+<circle cx="365" cy="310" fill="#e05244" r="3"></circle>
+<!-- Ring 3 Line (Bottom-Left) -->
+<path d="M 335 480 L 260 550 L 170 550" fill="none" stroke="#e05244" stroke-width="1.2"></path>
+<circle cx="335" cy="480" fill="#e05244" r="3"></circle>
+<!-- Ring 4 Line (Bottom-Right) -->
+<path d="M 590 490 L 660 530 L 740 530" fill="none" stroke="#76777b" stroke-width="1.2"></path>
+<circle cx="590" cy="490" fill="#76777b" r="3"></circle>
+<!-- Ring 5 Line (Far Left Mid) -->
+<path d="M 200 390 L 140 370 L 60 370" fill="none" stroke="#76777b" stroke-width="1.2"></path>
+<circle cx="200" cy="390" fill="#76777b" r="3"></circle>
+<!-- Ring 6 Line (Far Right Mid-High) -->
+<path d="M 750 390 L 800 370 L 860 370" fill="none" stroke="#af2f25" stroke-width="1.2"></path>
+<circle cx="750" cy="390" fill="#af2f25" r="3"></circle>
+<!-- Ring 7 Line (Top Center) -->
+<path d="M 450 40 L 450 15" fill="none" stroke="#76777b" stroke-width="1.2"></path>
+<circle cx="450" cy="40" fill="#76777b" r="3"></circle>
+</svg>
+<!-- CENTER SOLID DARK CIRCLE: THE EPICENTER (◉ IT JOBS) -->
+<div class="relative z-30 w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-primary text-white flex flex-col items-center justify-center p-3 text-center shadow-2xl ring-4 ring-secondary-accent/30 ring-offset-4 ring-offset-surface">
+<span class="text-base sm:text-lg font-extrabold tracking-tight leading-none text-white font-mono flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-accent animate-ping inline-block"></span>
+            ◉ IT JOBS
+          </span>
+<span class="text-[10px] font-mono tracking-widest uppercase text-secondary-accent font-semibold mt-1.5">The Epicenter</span>
+<span class="text-[9px] font-mono text-outline-variant mt-0.5 leading-tight">Catalytic Headcount Delta</span>
+<span class="text-[10px] font-mono text-white/90 font-bold mt-1 bg-white/10 px-2 py-0.5 rounded-full">-15% to -28%</span>
+</div>
+<!-- FLOATING RADIAL DATA CALLOUTS (UNBOXED, PURE TYPOGRAPHY & TICK LABELS) -->
+<!-- Ring 01 Callout (Top Right) -->
+<div class="absolute top-[28%] left-[70%] sm:left-[72%] -translate-y-1/2 z-20 max-w-[240px] pointer-events-auto">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="text-[11px] font-mono font-bold text-secondary tracking-wider">RING 01 // </span>
+<span class="text-xs font-mono font-bold text-secondary uppercase tracking-tight bg-secondary/10 px-2 py-0.5 rounded-full">-8% to -12% Yields</span>
+</div>
+<h4 class="text-sm sm:text-base font-bold text-on-surface tracking-tight leading-tight">PGs &amp; Accommodations</h4>
+<p class="text-xs text-on-surface-variant font-sans mt-1 leading-snug">
+            Single-room occupancies drop as campus fresher cohorts compress. Landlords pivot to micro-suites.
+          </p>
+</div>
+<!-- Ring 02 Callout (Top Left) -->
+<div class="absolute top-[22%] right-[70%] sm:right-[72%] -translate-y-1/2 z-20 max-w-[240px] text-left md:text-right pointer-events-auto">
+<div class="flex items-center md:justify-end gap-2 mb-0.5">
+<span class="text-xs font-mono font-bold text-secondary-accent uppercase tracking-tight bg-secondary-accent/10 px-2 py-0.5 rounded-full">-26% Campus Tickets</span>
+<span class="text-[11px] font-mono font-bold text-secondary-accent tracking-wider">// RING 02</span>
+</div>
+<h4 class="text-sm sm:text-base font-bold text-on-surface tracking-tight leading-tight">Restaurants &amp; Messes</h4>
+<p class="text-xs text-on-surface-variant font-sans mt-1 leading-snug">
+            Noon corporate lunch tickets contract; commercial kitchens pivot to evening dining and hospital contracts.
+          </p>
+</div>
+<!-- Ring 03 Callout (Bottom Left) -->
+<div class="absolute top-[68%] right-[70%] sm:right-[72%] -translate-y-1/2 z-20 max-w-[240px] text-left md:text-right pointer-events-auto">
+<div class="flex items-center md:justify-end gap-2 mb-0.5">
+<span class="text-xs font-mono font-bold text-secondary uppercase tracking-tight bg-secondary/10 px-2 py-0.5 rounded-full">-24% Fixed Fleets</span>
+<span class="text-[11px] font-mono font-bold text-secondary tracking-wider">// RING 03</span>
+</div>
+<h4 class="text-sm sm:text-base font-bold text-on-surface tracking-tight leading-tight">Urban Mobility &amp; Transit</h4>
+<p class="text-xs text-on-surface-variant font-sans mt-1 leading-snug">
+            Corporate shuttles yield to micro-mobility feeders and direct metro link shuttles along arterial hubs.
+          </p>
+</div>
+<!-- Ring 04 Callout (Bottom Right) -->
+<div class="absolute top-[68%] left-[72%] sm:left-[75%] -translate-y-1/2 z-20 max-w-[240px] pointer-events-auto">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="text-[11px] font-mono font-bold text-outline tracking-wider">RING 04 // </span>
+<span class="text-xs font-mono font-bold text-on-surface uppercase tracking-tight bg-surface-container-high px-2 py-0.5 rounded-full">-18% Dark Stores</span>
+</div>
+<h4 class="text-sm sm:text-base font-bold text-on-surface tracking-tight leading-tight">Delivery Logistics</h4>
+<p class="text-xs text-on-surface-variant font-sans mt-1 leading-snug">
+            Quick-commerce networks rationalize overlapping micro-hubs into regional corridor distribution nodes.
+          </p>
+</div>
+<!-- Ring 05 Callout (Far Left Mid) -->
+<div class="hidden lg:block absolute top-[45%] right-[85%] -translate-y-1/2 z-20 max-w-[210px] text-right pointer-events-auto">
+<span class="text-[10px] font-mono font-bold text-outline uppercase tracking-wider block">RING 05 // SERVICES</span>
+<h4 class="text-xs sm:text-sm font-bold text-on-surface tracking-tight">Local Retail &amp; Care</h4>
+<span class="text-[11px] font-mono text-secondary-accent font-semibold block mt-0.5">-12% Tech Discretionary</span>
+<p class="text-[11px] text-on-surface-variant leading-snug mt-1">
+            Salons, gyms, and specialty retail broaden menus toward neighborhood residents.
+          </p>
+</div>
+<!-- Ring 06 Callout (Far Right Mid) -->
+<div class="hidden lg:block absolute top-[45%] left-[85%] -translate-y-1/2 z-20 max-w-[210px] pointer-events-auto">
+<span class="text-[10px] font-mono font-bold text-secondary uppercase tracking-wider block">RING 06 // BUILT FORM</span>
+<h4 class="text-xs sm:text-sm font-bold text-on-surface tracking-tight">Property Absorption</h4>
+<span class="text-[11px] font-mono text-on-surface font-semibold block mt-0.5">+4.2 Mo. Absorption Delay</span>
+<p class="text-[11px] text-on-surface-variant leading-snug mt-1">
+            Cavernous floorplates subdivide into modular life-science wet labs and incubation suites.
+          </p>
+</div>
+<!-- Ring 07 Callout (Top Center Apex) -->
+<div class="absolute top-[2%] left-1/2 -translate-x-1/2 z-20 text-center pointer-events-auto">
+<div class="inline-flex items-center gap-2 bg-surface px-3 py-1 rounded-full border border-surface-container-high shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-accent"></span>
+<span class="text-xs font-mono font-bold text-on-surface">RING 07: CITY ECONOMY &amp; TAX BASE</span>
+<span class="text-xs font-mono text-secondary-accent font-bold">• Resilient Equilibrium</span>
+</div>
+</div>
+</div>
+<!-- Linear Mobile Breakdown (Readable fallbacks for smaller screens) -->
+<div class="lg:hidden w-full mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-surface-container-high pt-6 font-mono text-xs">
+<div class="py-2 border-b border-surface-container-high/60">
+<span class="text-secondary font-bold">Ring 05: Retail &amp; Services</span>
+<p class="text-on-surface-variant font-sans text-xs mt-0.5">Gyms and cafes broaden memberships beyond coders to neighborhood residents.</p>
+</div>
+<div class="py-2 border-b border-surface-container-high/60">
+<span class="text-secondary font-bold">Ring 06: Built Environment</span>
+<p class="text-on-surface-variant font-sans text-xs mt-0.5">Commercial real estate converts single-tenant SEZ towers into multi-use bio-incubators.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. URBAN TISSUE UNDER STRESS: ASYMMETRICAL MAGAZINE SPREAD (NO CARDS / BOXES) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-24 border-b border-surface-container-high/80">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<!-- Left Editorial Column: Big Asymmetrical Typography -->
+<div class="lg:col-span-4 lg:sticky lg:top-28 space-y-8">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-4xl font-extrabold font-mono text-secondary-accent">02</span>
+<span class="h-px flex-1 bg-secondary-accent/40"></span>
+</div>
+<span class="text-xs font-mono font-semibold uppercase tracking-widest text-secondary-accent block mb-2">Sector Forensics</span>
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-on-surface leading-[1.08]">
+            Urban Tissue Under Stress &amp; Adaptation
+          </h2>
+</div>
+<p class="text-base sm:text-lg text-on-surface-variant leading-relaxed">
+          The narrative of sudden urban ruin misses the adaptive mechanics of real cities. Ancillary enterprises do not simply vanish when corporate headcount shifts—they undergo structural mutation, price adjustment, and demographic diversification.
+        </p>
+<!-- Unboxed Editorial Key Metric Strip -->
+<div class="pt-6 border-t border-surface-container-high space-y-4 font-mono">
+<div>
+<div class="flex justify-between items-baseline text-xs">
+<span class="text-on-surface font-bold uppercase tracking-wider">High Exposure Cohorts</span>
+<span class="text-secondary-accent font-semibold">Acute Risk</span>
+</div>
+<p class="text-outline text-xs font-sans mt-1">Unbranded PGs, single-format campus canteens, bespoke corporate shuttles.</p>
+</div>
+<div class="pt-3 border-t border-surface-container-high/60">
+<div class="flex justify-between items-baseline text-xs">
+<span class="text-on-surface font-bold uppercase tracking-wider">Adaptive Cohorts</span>
+<span class="text-on-surface font-semibold">Resilient Buffer</span>
+</div>
+<p class="text-outline text-xs font-sans mt-1">Neighborhood pharmacies, EV repair depots, mixed family diners.</p>
+</div>
+</div>
+</div>
+<!-- Right Editorial Spread: Unboxed Narrative Columns with Thin Horizontal Hairlines -->
+<div class="lg:col-span-8 space-y-14">
+<!-- Sector 1: PGs & Housing -->
+<article class="border-t border-surface-container-high pt-6">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-4">
+<div class="flex items-center gap-3">
+<span class="text-2xl font-bold font-mono text-outline">01</span>
+<h3 class="text-2xl font-bold text-on-surface tracking-tight">PGs, Co-Living &amp; Micro-Housing</h3>
+</div>
+<span class="text-xs font-mono uppercase tracking-widest text-secondary-accent font-bold">Vacancy +22% // Deposit -40%</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-sm sm:text-base">
+<p class="md:col-span-8 text-on-surface-variant leading-relaxed">
+              The traditional paying guest setup—cramming four junior engineers to a room with shared corridors—relied solely on 10,000-person campus hire classes. As hiring shifts to specialized seniority, landlords are forced to reconfigure dormitories into self-contained micro-studios with dedicated fiber and ergonomic desks.
+            </p>
+<div class="md:col-span-4 border-l border-surface-container-high pl-6 space-y-3 font-mono text-xs">
+<div>
+<span class="text-outline block text-[10px] uppercase">Turnaround Time</span>
+<span class="text-sm font-bold text-on-surface">34 Days <span class="text-outline font-normal text-xs">(vs 9 Days)</span></span>
+</div>
+<div>
+<span class="text-outline block text-[10px] uppercase">Structural Pivot</span>
+<span class="font-bold text-secondary-accent text-xs">Shared Dorm → Serviced Studio</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Sector 2: Messes & Dining -->
+<article class="border-t border-surface-container-high pt-6">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-4">
+<div class="flex items-center gap-3">
+<span class="text-2xl font-bold font-mono text-outline">02</span>
+<h3 class="text-2xl font-bold text-on-surface tracking-tight">Restaurants &amp; Local Mess Networks</h3>
+</div>
+<span class="text-xs font-mono uppercase tracking-widest text-secondary font-bold">Campus Lunch Tickets -26%</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-sm sm:text-base">
+<p class="md:col-span-8 text-on-surface-variant leading-relaxed">
+              The noon rush that once fed thousands of badge-wearing coders has contracted. Thriving kitchens are countering this by capturing weekend family diners from adjacent residential rings, and contracting with hospital staffs, research lab teams, and precision manufacturing lines.
+            </p>
+<div class="md:col-span-4 border-l border-surface-container-high pl-6 space-y-3 font-mono text-xs">
+<div>
+<span class="text-outline block text-[10px] uppercase">Coromandel Weekend Draw</span>
+<span class="text-sm font-bold text-on-surface">+18% Off-Peak Rebound</span>
+</div>
+<div>
+<span class="text-outline block text-[10px] uppercase">Demand Source</span>
+<span class="font-bold text-on-surface text-xs">Diversified Multi-Sector</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Sector 3: Mobility -->
+<article class="border-t border-surface-container-high pt-6">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-4">
+<div class="flex items-center gap-3">
+<span class="text-2xl font-bold font-mono text-outline">03</span>
+<h3 class="text-2xl font-bold text-on-surface tracking-tight">Urban Mobility &amp; Micro-Transit</h3>
+</div>
+<span class="text-xs font-mono uppercase tracking-widest text-outline font-bold">Fixed Shuttle Runs -24%</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-sm sm:text-base">
+<p class="md:col-span-8 text-on-surface-variant leading-relaxed">
+              Rigid 40-seat corporate employee shuttles are yielding to on-demand micro-mobility fleets and dynamic feeder links connecting with expanding metro lines. Commuter patterns become less spiky at 9 AM and 6 PM, smoothing throughout the working day across multiple residential destinations.
+            </p>
+<div class="md:col-span-4 border-l border-surface-container-high pl-6 space-y-3 font-mono text-xs">
+<div>
+<span class="text-outline block text-[10px] uppercase">Metro Feeder Loops</span>
+<span class="text-sm font-bold text-on-surface">+31% Intra-Corridor</span>
+</div>
+<div>
+<span class="text-outline block text-[10px] uppercase">Transit Structure</span>
+<span class="font-bold text-on-surface text-xs">Decentralized Multi-Node</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Dual Column Unboxed Flow: Retail & Facilities -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 border-t border-surface-container-high pt-6">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="text-xl font-bold font-mono text-outline">04</span>
+<h4 class="text-lg font-bold text-on-surface">Neighborhood Retail &amp; Care</h4>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-3">
+              Daily essentials, hardware suppliers, and medical stores retain solid margins, while gym franchises and specialty cafes broaden their service menus to court non-tech residents.
+            </p>
+<div class="text-xs font-mono text-secondary-accent space-y-1">
+<span>• Gyms adding physical rehabilitation clinics</span><br/>
+<span>• Electronics shops pivoting to EV battery servicing</span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="text-xl font-bold font-mono text-outline">05</span>
+<h4 class="text-lg font-bold text-on-surface">Commercial Built Form &amp; Labs</h4>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-3">
+              Developers divide cavernous 100,000 sq.ft. software floorplates into modular incubation suites and life-science wet labs. Maintenance staffs reskill toward automated BMS and IoT monitoring.
+            </p>
+<div class="text-xs font-mono text-on-surface space-y-1">
+<span>• 68% Mixed-use buffer threshold requirement</span><br/>
+<span>• Facilities team reskilling: HVAC IoT telemetry</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. CHENNAI 2030: GEOGRAPHIC STORYTELLING (UNBOXED MAP & FOUR PILLARS) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-24 border-b border-surface-container-high/80" id="chennai-corridor">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+<div class="flex items-start gap-4 max-w-3xl">
+<div class="w-14 h-14 rounded-full border-2 border-secondary-accent text-secondary-accent font-mono font-bold text-xl flex items-center justify-center shrink-0 mt-1 shadow-sm bg-transparent">
+          03
+        </div>
+<div>
+<span class="text-xs font-mono font-semibold uppercase tracking-widest text-secondary-accent block mb-2">Geographic Empirical Case</span>
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-on-surface leading-tight">
+            Chennai 2030: The Resilient Corridors
+          </h2>
+<p class="mt-3 text-lg text-on-surface-variant leading-relaxed">
+            Why Chennai's urban fabric offers an empirical blueprint for adaptive resilience rather than single-industry collapse.
+          </p>
+</div>
+</div>
+<div class="font-mono text-xs text-outline space-y-1 lg:text-right">
+<span class="text-secondary-accent font-bold uppercase block flex items-center gap-1.5 lg:justify-end">
+<span class="w-2 h-2 rounded-full bg-secondary-accent animate-ping"></span>
+          Coromandel Basin Survey
+        </span>
+<span class="text-[11px] block">CMRL Metro Phase II Integration</span>
+</div>
+</div>
+<!-- Editorial Callout Bar: Unboxed Border Strip -->
+<div class="mb-14 py-4 px-0 border-y border-secondary-accent/30 flex flex-col md:flex-row items-baseline md:items-center justify-between gap-4">
+<p class="text-base sm:text-lg font-medium text-on-surface">
+        “Chennai’s diversified economy — <span class="text-secondary font-bold">Automotive, Healthcare, Port Logistics, Education</span> — provides an empirical buffer against single-industry contraction.”
+      </p>
+<span class="shrink-0 text-xs font-mono uppercase tracking-widest text-secondary font-bold px-3 py-1 border border-secondary rounded-full">
+        Balancing Multiplier
+      </span>
+</div>
+<!-- Geographic Storytelling Canvas: Map with Floating Nodes + Four Pillars Unboxed -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Interactive Satellite Corridor Map with Precision Markers and Vector Tags -->
+<div class="lg:col-span-7 space-y-4">
+<div class="relative rounded-3xl overflow-hidden shadow-xl border border-surface-container-high bg-primary-container">
+<img alt="Aerial satellite view of Old Mahabalipuram Road corridor and arterial networks in Chennai" class="w-full h-[400px] sm:h-[480px] object-cover filter contrast-[1.08] saturate-[0.8]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1YxuDpPZ4yoaV6uCCS27P38REMpjoZNFMcTd5ONemR0o52xcbbdzgmfJkDCwI8Zrp0t9AmwsZKPQt5vdxh0s5s28P1RUjuzpqNGaFpEhFqLAMjv1DWk3xo9Tb5NBbkiOQ8HnvXkgOHRjoFQWFu2B-OtgSXfXg6vLQM4YihRKfNwNC_plyBidfLYiv3gLyKfQG8oCksZBYumR9dtQv2lcmXAbR9fxOdXY_A-6UHUwL7Db-KmFcegQFGw"/>
+<!-- Subtle Dark Gradient Vignette -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-primary/20 pointer-events-none"></div>
+<!-- FLOATING CALLOUT LOCATIONS & DELICATE VECTOR LABELS -->
+<!-- Node 1: Guindy Nexus -->
+<div class="absolute top-[20%] left-[24%] flex items-center gap-2 group cursor-pointer">
+<span class="relative flex h-5 w-5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+<span class="relative inline-flex rounded-full h-5 w-5 bg-primary text-white text-[9px] font-bold items-center justify-center ring-2 ring-white shadow-lg">●</span>
+</span>
+<div class="bg-primary/90 text-white backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-mono font-bold shadow-md">
+              ● Guindy Nexus <span class="text-outline-variant font-normal">| Auto / Rail</span>
+</div>
+</div>
+<!-- Node 2: Taramani (IIT-M) -->
+<div class="absolute top-[34%] left-[44%] flex items-center gap-2 group cursor-pointer">
+<span class="relative flex h-5 w-5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-accent opacity-80"></span>
+<span class="relative inline-flex rounded-full h-5 w-5 bg-secondary-accent text-white text-[9px] font-bold items-center justify-center ring-2 ring-white shadow-lg">●</span>
+</span>
+<div class="bg-surface/95 text-on-surface backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-mono font-bold border border-secondary-accent/40 shadow-md">
+<span class="text-secondary-accent">● Taramani</span> <span class="text-outline font-normal">| IIT-M Research Park</span>
+</div>
+</div>
+<!-- Node 3: OMR Arterial Core -->
+<div class="absolute top-[48%] left-[54%] flex items-center gap-2 group cursor-pointer">
+<span class="relative flex h-6 w-6">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-80"></span>
+<span class="relative inline-flex rounded-full h-6 w-6 bg-secondary text-white text-[10px] font-bold items-center justify-center ring-2 ring-white shadow-xl">●</span>
+</span>
+<div class="bg-secondary text-white px-3 py-1 rounded-full text-[11px] font-mono font-bold shadow-xl">
+              ● OMR Arterial Spine
+            </div>
+</div>
+<!-- Node 4: Sholinganallur -->
+<div class="absolute top-[65%] left-[58%] flex items-center gap-2 group cursor-pointer">
+<span class="relative flex h-5 w-5">
+<span class="relative inline-flex rounded-full h-5 w-5 bg-secondary-accent text-white text-[9px] font-bold items-center justify-center ring-2 ring-white shadow-lg">●</span>
+</span>
+<div class="bg-surface/95 text-on-surface backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-mono font-bold border border-surface-container-high shadow-md">
+              ● Sholinganallur <span class="text-secondary font-normal">| Co-Living Hub</span>
+</div>
+</div>
+<!-- Node 5: Siruseri SIPCOT -->
+<div class="absolute bottom-[16%] left-[64%] flex items-center gap-2 group cursor-pointer">
+<span class="relative flex h-5 w-5">
+<span class="relative inline-flex rounded-full h-5 w-5 bg-primary text-white text-[9px] font-bold items-center justify-center ring-2 ring-white shadow-lg">●</span>
+</span>
+<div class="bg-primary/90 text-white backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-mono font-bold shadow-md">
+              ● Siruseri <span class="text-outline-variant font-normal">| SIPCOT Campus</span>
+</div>
+</div>
+<!-- Bottom map status strip -->
+<div class="absolute bottom-4 left-6 right-6 flex items-center justify-between text-white/90 text-xs font-mono">
+<span class="hidden sm:inline-block text-[11px] uppercase tracking-wider text-outline-variant">Corridor Coordinates 12.98° N, 80.24° E</span>
+<span class="bg-primary/80 backdrop-blur-sm px-3 py-1 rounded-full text-[11px] text-white">CMRL Phase II: 74% Complete</span>
+</div>
+</div>
+<!-- Node Breakdown Strip Below Map -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2 font-mono text-xs">
+<div class="border-t-2 border-secondary-accent pt-2">
+<span class="font-bold text-on-surface block">● Taramani</span>
+<span class="text-secondary-accent text-[11px] block">Deep Tech &amp; Quantum</span>
+</div>
+<div class="border-t-2 border-on-surface pt-2">
+<span class="font-bold text-on-surface block">● Guindy</span>
+<span class="text-outline text-[11px] block">Industrial &amp; Rail Nexus</span>
+</div>
+<div class="border-t-2 border-secondary pt-2">
+<span class="font-bold text-on-surface block">● Sholinganallur</span>
+<span class="text-secondary text-[11px] block">High-Density Co-Living</span>
+</div>
+<div class="border-t-2 border-outline pt-2">
+<span class="font-bold text-on-surface block">● Siruseri</span>
+<span class="text-outline text-[11px] block">SIPCOT Reconfiguration</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Four Pillars of Industrial Resilience (UNBOXED, PURE EDITORIAL) -->
+<div class="lg:col-span-5 space-y-8">
+<div>
+<span class="text-xs font-mono font-semibold uppercase tracking-widest text-outline block mb-1">Structural Insulation</span>
+<h3 class="text-2xl font-bold text-on-surface tracking-tight">The Multi-Polar Industrial Anchor</h3>
+<p class="text-sm text-on-surface-variant mt-2 leading-relaxed">
+            Unlike single-engine software cities dependent almost entirely on export outsourcing, Chennai’s economic topology anchors urban consumption across durable physical sectors:
+          </p>
+</div>
+<!-- Four Pillars List: Clean horizontal rule dividers, no card containers -->
+<div class="space-y-6 text-sm">
+<div class="border-t border-surface-container-high pt-4">
+<div class="flex items-center gap-3 mb-1.5">
+<span class="w-6 h-6 rounded-full border border-secondary text-secondary font-mono font-bold text-xs flex items-center justify-center">A</span>
+<h4 class="font-bold text-base text-on-surface tracking-tight">Automotive &amp; EV Heavyweights</h4>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed pl-9">
+              Over 35% of India’s auto production; hubs in Sriperumbudur and Oragadam generate non-virtualized industrial salaries that shield retail from tech fluctuations.
+            </p>
+</div>
+<div class="border-t border-surface-container-high pt-4">
+<div class="flex items-center gap-3 mb-1.5">
+<span class="w-6 h-6 rounded-full border border-secondary text-secondary font-mono font-bold text-xs flex items-center justify-center">B</span>
+<h4 class="font-bold text-base text-on-surface tracking-tight">Healthcare Capital of South Asia</h4>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed pl-9">
+              World-renowned medical centers draw tens of thousands of domestic and international travelers weekly, continuously anchoring suburban hospitality and dining demand.
+            </p>
+</div>
+<div class="border-t border-surface-container-high pt-4">
+<div class="flex items-center gap-3 mb-1.5">
+<span class="w-6 h-6 rounded-full border border-secondary text-secondary font-mono font-bold text-xs flex items-center justify-center">C</span>
+<h4 class="font-bold text-base text-on-surface tracking-tight">Deepwater Ports &amp; Freight Corridors</h4>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed pl-9">
+              Two deepwater ports support extensive warehousing and multimodal rail logistics completely insulated from algorithmic software automation.
+            </p>
+</div>
+<div class="border-t border-surface-container-high pt-4">
+<div class="flex items-center gap-3 mb-1.5">
+<span class="w-6 h-6 rounded-full border border-secondary text-secondary font-mono font-bold text-xs flex items-center justify-center">D</span>
+<h4 class="font-bold text-base text-on-surface tracking-tight">Hardware &amp; Precision Electronics</h4>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed pl-9">
+              Over 500 engineering institutions feed specialized chip design, automotive electronics, and robotics prototyping directly along the corridor.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. THREE SCENARIOS: THREE DISTINCT VISUAL LANGUAGES (NO UNIFORM 3-CARD ROW!) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-24 border-b border-surface-container-high/80">
+<div class="max-w-3xl mb-16">
+<span class="text-xs font-mono font-semibold uppercase tracking-widest text-secondary-accent block mb-2">Strategic Projections // 2025–2030</span>
+<h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-on-surface leading-tight">
+        Three Scenarios for the Tech Metropolis
+      </h2>
+<p class="mt-3 text-base sm:text-lg text-on-surface-variant">
+        Structural trajectories for developers, local enterprises, and municipal urban planners navigating the AI transition.
+      </p>
+</div>
+<!-- THREE RADICALLY DISTINCT COMPOSITIONS (NOT A CARD ROW) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+<!-- SCENARIO 01: COMPRESSED, DENSE TYPOGRAPHY WITH VERTICAL RISK BARS (STARK MONOCHROME CONTRAST) -->
+<div class="lg:col-span-4 bg-primary text-white p-8 sm:p-10 rounded-3xl flex flex-col justify-between shadow-2xl relative overflow-hidden">
+<!-- Vertical risk graphic on left side -->
+<div class="space-y-6">
+<div class="flex items-center justify-between border-b border-white/20 pb-4">
+<div>
+<span class="text-[10px] font-mono uppercase tracking-widest text-secondary-accent font-bold">Trajectory 01 // Shock</span>
+<h3 class="text-2xl sm:text-3xl font-black tracking-tighter text-white uppercase leading-none mt-1">
+                Sudden Automation
+              </h3>
+</div>
+<div class="text-right font-mono">
+<span class="text-3xl font-black text-secondary-accent leading-none">25%</span>
+<span class="block text-[9px] uppercase text-outline-variant">Probability</span>
+</div>
+</div>
+<!-- Dense typographic narrative -->
+<p class="text-xs sm:text-sm text-outline-variant leading-relaxed font-sans">
+            Autonomous software agents replace entry-tier programming, back-office operations, and tier-1 maintenance faster than regional universities can reskill labor cohorts.
+          </p>
+<!-- Tight Vertical Risk Bars Graphic -->
+<div class="py-4 border-y border-white/15 space-y-3 font-mono text-xs">
+<div class="flex items-center gap-3">
+<span class="w-20 text-[10px] uppercase text-outline-variant">Rental Drop</span>
+<div class="flex-1 bg-white/10 h-3 rounded-full overflow-hidden flex">
+<div class="bg-secondary w-[78%] h-full"></div>
+</div>
+<span class="text-secondary font-bold text-[11px]">-28%</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-20 text-[10px] uppercase text-outline-variant">Dining Ticket</span>
+<div class="flex-1 bg-white/10 h-3 rounded-full overflow-hidden flex">
+<div class="bg-secondary-accent w-[65%] h-full"></div>
+</div>
+<span class="text-secondary-accent font-bold text-[11px]">-35%</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-20 text-[10px] uppercase text-outline-variant">Absorption</span>
+<div class="flex-1 bg-white/10 h-3 rounded-full overflow-hidden flex">
+<div class="bg-white/40 w-[85%] h-full"></div>
+</div>
+<span class="text-white font-bold text-[11px]">+6.2m</span>
+</div>
+</div>
+<div class="space-y-2 text-xs text-white/80">
+<span class="text-[10px] font-mono uppercase tracking-wider text-secondary-accent block font-bold">Policy Intervention</span>
+<p class="leading-relaxed">Emergency rezoning of SEZ boundaries to permit light assembly, biotechnology prototyping, and residential conversions.</p>
+</div>
+</div>
+<div class="pt-6 border-t border-white/15 flex items-center justify-between text-xs font-mono">
+<span class="text-secondary-accent flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-accent animate-ping"></span>
+            Stark Compression Mode
+          </span>
+<span class="text-outline-variant text-[10px]">Model: A-SHOCK</span>
+</div>
+</div>
+<!-- SCENARIO 02: SMOOTH HORIZONTAL TIMELINE PROGRESSION WITH CONNECTED CIRCLE NODES -->
+<div class="lg:col-span-4 p-8 sm:p-10 border-2 border-on-surface rounded-3xl flex flex-col justify-between bg-transparent">
+<div class="space-y-6">
+<div class="flex items-center justify-between border-b border-surface-container-high pb-4">
+<div>
+<span class="text-[10px] font-mono uppercase tracking-widest text-on-surface font-bold">Trajectory 02 // Baseline</span>
+<h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-on-surface leading-none mt-1">
+                Gradual Reskilling
+              </h3>
+</div>
+<div class="text-right font-mono">
+<span class="text-3xl font-bold text-on-surface leading-none">55%</span>
+<span class="block text-[9px] uppercase text-outline">Probability</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed font-sans">
+            AI augments developer productivity rather than eliminating headcounts wholesale. Campus hiring batches moderate, but individual purchasing power rises as senior specialized staff expand.
+          </p>
+<!-- Smooth Horizontal Timeline Progression with Connected Circle Nodes -->
+<div class="py-5 border-y border-surface-container-high">
+<span class="text-[10px] font-mono uppercase tracking-widest text-outline block mb-4 font-bold">Ecosystem Timeline Trajectory</span>
+<div class="relative flex items-center justify-between font-mono text-xs">
+<!-- Connecting horizontal line -->
+<div class="absolute left-3 right-3 top-3 h-0.5 bg-surface-container-high -z-10"></div>
+<!-- Node 1 -->
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center font-bold text-[10px] ring-4 ring-surface">1</div>
+<span class="font-bold text-on-surface mt-2 text-[11px]">Adapt</span>
+<span class="text-[9px] text-outline">0–12 Mo</span>
+</div>
+<!-- Node 2 -->
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-secondary-accent text-white flex items-center justify-center font-bold text-[10px] ring-4 ring-surface">2</div>
+<span class="font-bold text-secondary-accent mt-2 text-[11px]">Reskill</span>
+<span class="text-[9px] text-outline">12–24 Mo</span>
+</div>
+<!-- Node 3 -->
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-on-surface text-white flex items-center justify-center font-bold text-[10px] ring-4 ring-surface">3</div>
+<span class="font-bold text-on-surface mt-2 text-[11px]">Equilibrium</span>
+<span class="text-[9px] text-outline">24–36 Mo</span>
+</div>
+</div>
+</div>
+<div class="space-y-2 text-xs text-on-surface-variant">
+<span class="text-[10px] font-mono uppercase tracking-wider text-outline block font-bold">Real Estate Trajectory</span>
+<p class="leading-relaxed">Flat rental yields for 18–24 months followed by stabilized appreciation centered around transit-connected integrated townships.</p>
+</div>
+</div>
+<div class="pt-6 border-t border-surface-container-high flex items-center justify-between text-xs font-mono">
+<span class="text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-on-surface"></span>
+            Sequential Timeline Path
+          </span>
+<span class="text-outline text-[10px]">Model: B-GRADUAL</span>
+</div>
+</div>
+<!-- SCENARIO 03: EXPANDING UPWARD CONCENTRIC ARCS / GROWTH RINGS (MULTI-TIER EXPANSION) -->
+<div class="lg:col-span-4 p-8 sm:p-10 border border-secondary-accent/40 rounded-3xl flex flex-col justify-between bg-secondary-accent/[0.03]">
+<div class="space-y-6">
+<div class="flex items-center justify-between border-b border-secondary-accent/20 pb-4">
+<div>
+<span class="text-[10px] font-mono uppercase tracking-widest text-secondary font-bold">Trajectory 03 // Growth</span>
+<h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-on-surface leading-none mt-1">
+                Net Expansion
+              </h3>
+</div>
+<div class="text-right font-mono">
+<span class="text-3xl font-bold text-secondary leading-none">20%</span>
+<span class="block text-[9px] uppercase text-outline">Probability</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed font-sans">
+            Massive developer productivity unlocks entirely new domestic industries: specialized AI agency hubs, robotics deployment facilities, and local sensor testing laboratories.
+          </p>
+<!-- Expanding Upward Concentric Arcs / Growth Rings Graphic -->
+<div class="py-5 border-y border-secondary-accent/20 flex flex-col items-center">
+<span class="text-[10px] font-mono uppercase tracking-widest text-secondary block mb-3 font-bold">Concentric Growth Arc Tiers</span>
+<div class="relative w-48 h-24 flex items-end justify-center overflow-hidden">
+<!-- Tier 1 Arc -->
+<div class="absolute bottom-0 w-20 h-10 rounded-t-full border-2 border-outline-variant flex items-center justify-center">
+<span class="text-[8px] font-mono text-outline pb-1">Tier 1</span>
+</div>
+<!-- Tier 2 Arc -->
+<div class="absolute bottom-0 w-32 h-16 rounded-t-full border-2 border-secondary-accent/50 flex items-center justify-center">
+<span class="text-[8px] font-mono text-secondary-accent pb-3">Tier 2</span>
+</div>
+<!-- Tier 3 Arc -->
+<div class="absolute bottom-0 w-48 h-24 rounded-t-full border-2 border-secondary flex items-start justify-center pt-1">
+<span class="text-[9px] font-mono font-bold text-secondary bg-surface px-1.5">▲ Frontier Expansion</span>
+</div>
+</div>
+<span class="text-[11px] font-mono text-secondary font-semibold mt-3">+38% High-Comp Premium Multiplier</span>
+</div>
+<div class="space-y-2 text-xs text-on-surface-variant">
+<span class="text-[10px] font-mono uppercase tracking-wider text-secondary block font-bold">Spatial Spread</span>
+<p class="leading-relaxed">Peripheral rings along Outer Ring Road and ECR become lifestyle-led knowledge communities attracting global returnees.</p>
+</div>
+</div>
+<div class="pt-6 border-t border-secondary-accent/20 flex items-center justify-between text-xs font-mono">
+<span class="text-secondary font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Ascending Expansion Arc
+          </span>
+<span class="text-outline text-[10px]">Model: C-FRONTIER</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. EDITORIAL SYNTHESIS & PULL QUOTE: ENORMOUS MAGAZINE SPREAD (NO BOX, PURE TYPOGRAPHY) -->
+<section class="max-w-6xl mx-auto px-6 lg:px-12 py-32 text-center" id="synthesis">
+<span class="text-xs font-mono font-semibold uppercase tracking-widest text-secondary-accent block mb-12">
+      Synthesis &amp; Monograph Conclusion
+    </span>
+<!-- Enormous Pull Quote with Oversized Typographic Quotation Marks & Generous Negative Space -->
+<div class="relative max-w-4xl mx-auto my-8">
+<span class="font-serif text-7xl sm:text-9xl text-secondary-accent/30 font-light block leading-none select-none -mb-10 sm:-mb-14">
+        “
+      </span>
+<blockquote class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-on-surface tracking-tighter leading-[1.12]">
+        AI may change the IT workforce <span class="italic font-serif font-normal text-secondary-accent">more</span> than it eliminates it.
+      </blockquote>
+<span class="font-serif text-7xl sm:text-9xl text-secondary-accent/30 font-light block leading-none select-none -mt-8 sm:-mt-10">
+        ”
+      </span>
+</div>
+<p class="text-lg sm:text-2xl text-on-surface-variant leading-relaxed max-w-3xl mx-auto mt-8 mb-16 font-light">
+      The narrative of the deserted technology ghost-town misunderstands the adaptive metabolism of modern metropolitan centers. Cities that survived the transition from port-side trading to textile mills, and from light assembly to software offshoring, possess natural regenerative elasticity. As computation becomes ambient, urban clusters will evolve from monoline coder dormitories into multi-disciplinary hubs where physical manufacturing, medical sciences, and civic culture intertwine.
+    </p>
+<!-- Pill Navigation Triggers with Icon Markers -->
+<div class="flex flex-wrap justify-center items-center gap-4">
+<a class="px-8 py-4 rounded-full bg-primary text-on-primary font-semibold text-sm hover:bg-on-surface-variant transition-all inline-flex items-center gap-3 shadow-xl ring-4 ring-primary/10" href="#">
+<span>Read Next: Scenarios &amp; Outlook 2030</span>
+<span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</span>
+</a>
+<a class="px-8 py-4 rounded-full border border-surface-container-high bg-transparent text-on-surface font-semibold text-sm hover:bg-surface-container-high transition-all inline-flex items-center gap-3" href="#">
+<span>Download Regional Dataset (PDF, 8.4MB)</span>
+<span class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-xs">download</span>
+</span>
+</a>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="w-full bg-inverse-surface text-inverse-on-surface pt-20 pb-16">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-surface-container-high/15">
+<div class="lg:col-span-7 space-y-4">
+<div class="flex items-center gap-3 mb-2">
+<span class="w-7 h-7 rounded-full bg-white text-inverse-surface flex items-center justify-center font-bold text-xs">N</span>
+<span class="text-sm font-bold tracking-tight uppercase font-mono">NEUROS Urban Dynamics Briefing</span>
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white max-w-lg">
+          Welcome to the new era of work &amp; technology.
+        </h2>
+<p class="text-sm text-outline-variant max-w-md leading-relaxed">
+          An empirical forecasting initiative analyzing algorithmic disruption, technological shifts, and structural realignments in IT ecosystems by 2030.
+        </p>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-end">
+<div class="p-6 rounded-2xl border border-white/10 bg-white/[0.02]">
+<h4 class="text-sm font-bold text-white mb-1">Subscribe to Intel Dispatch</h4>
+<p class="text-xs text-outline-variant mb-4">Quarterly empirical data cuts, labor realignment figures, and regional model updates.</p>
+<div class="flex flex-col sm:flex-row gap-2">
+<input class="flex-1 px-4 py-2.5 bg-surface-container-lowest text-on-surface text-xs rounded-full outline-none focus:ring-2 focus:ring-secondary-accent" placeholder="researcher@institution.org" type="email"/>
+<button class="px-5 py-2.5 bg-secondary text-white rounded-full text-xs font-bold hover:bg-secondary-container transition-colors shrink-0">
+              Dispatch Access
+            </button>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-b border-white/10 text-xs">
+<div class="space-y-3">
+<span class="font-mono uppercase tracking-widest text-secondary-container block font-semibold text-[11px]">Inquiries</span>
+<a class="block text-outline-variant hover:text-white transition-colors" href="#">Methodology &amp; Data</a>
+<a class="block text-outline-variant hover:text-white transition-colors" href="#">Press &amp; Media Kit</a>
+<a class="block text-outline-variant hover:text-white transition-colors" href="#">Academic Citation</a>
+</div>
+<div class="space-y-3">
+<span class="font-mono uppercase tracking-widest text-secondary-container block font-semibold text-[11px]">Deep Dives</span>
+<a class="block text-outline-variant hover:text-white transition-colors" href="#">Workforce Displacement</a>
+<a class="block text-outline-variant hover:text-white transition-colors" href="#">Real Estate Contraction</a>
+<a class="block text-outline-variant hover:text-white transition-colors" href="#">Coromandel Corridor</a>
+</div>
+<div class="space-y-3">
+<span class="font-mono uppercase tracking-widest text-secondary-container block font-semibold text-[11px]">Scenarios</span>
+<a class="block text-outline-variant hover:text-white transition-colors" href="#">Augmentation Horizon</a>
+<a class="block text-outline-variant hover:text-white transition-colors" href="#">Synthetic Enterprise</a>
+<a class="block text-outline-variant hover:text-white transition-colors" href="#">Legacy Inertia</a>
+</div>
+<div class="space-y-3">
+<span class="font-mono uppercase tracking-widest text-secondary-container block font-semibold text-[11px]">Editorial Desk</span>
+<span class="block text-outline-variant">NEUROS Global Futures Lab</span>
+<span class="block text-outline-variant">ISSN 2840-192X</span>
+<span class="block text-outline-variant">Cambridge / Bengaluru / Zurich</span>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-outline-variant">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-accent"></span>
+<span>© 2024–2030 NEUROS Research Foundation. Distributed under CC BY-NC 4.0.</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of License</a>
+<a class="hover:text-white transition-colors" href="#">Model Changelog v4.2</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IT 2030 — AI, Jobs &amp; The Future of India’s Tech Cities</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bone: '#F6F4EE',
+            cream: '#FAF8F3',
+            parchment: '#EFECE3',
+            ink: '#111111',
+            obsidian: '#0C0C0C',
+            graphite: '#1C1C1C',
+            hairline: '#E3DFD4',
+            darkhairline: '#262626',
+            amberAccent: '#C97A3E'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'Cambria', '"Times New Roman"', 'serif'],
+            display: ['"Cinzel"', '"Didot"', 'Georgia', 'serif'],
+            mono: ['"SF Mono"', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+          },
+          letterSpacing: {
+            widest2: '0.22em',
+            monumental: '0.3em'
+          }
+        }
+      }
+    }
+  </script>
+<!-- Styles for Layout and Typographic Refinements -->
+<style data-purpose="typography">
+    .monolithic-title {
+      font-feature-settings: "kern" 1, "liga" 1;
+      text-rendering: optimizeLegibility;
+      letter-spacing: 0.14em;
+    }
+    .watermark-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(17, 17, 17, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(17, 17, 17, 0.04) 1px, transparent 1px);
+    }
+    .dark-grid {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    }
+  </style>
+<style data-purpose="component-effects">
+    .vintage-silhouette {
+      mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+    }
+    input[type=range]::-webkit-slider-thumb {
+      background-color: #111111;
+      height: 18px;
+      width: 18px;
+      border-radius: 9999px;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #181818;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #333333;
+    }
+  </style>
+</head>
+<body class="bg-bone text-ink font-sans antialiased selection:bg-ink selection:text-bone min-h-screen">
+<!-- BEGIN: TopUtilityBar -->
+<!-- Mimics the dark minimalist top utility line in the reference layout -->
+<aside class="bg-obsidian text-neutral-400 text-[11px] uppercase tracking-widest2 py-2 px-6 border-b border-darkhairline" data-purpose="utility-header">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+<div class="flex items-center gap-4">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-medium text-neutral-200">NATIONAL RESEARCH INITIATIVE • URBAN RESILIENCE DOSSIER</span>
+<span class="text-neutral-600">|</span>
+<span class="hidden sm:inline">DATA CYCLE 2024–2030</span>
+</div>
+<div class="flex items-center gap-6 text-[10px]">
+<a class="hover:text-white transition-colors" href="#methodology">METHODOLOGY &amp; DATA VERIFICATION</a>
+<span class="">•</span>
+<a class="hover:text-white transition-colors" href="#simulator">SCENARIO ENGINE V2.4</a>
+<span class="">•</span>
+<span class="text-neutral-200 font-semibold tracking-normal">BENGALURU • HYDERABAD • CHENNAI</span>
+</div>
+</div>
+</aside>
+<!-- END: TopUtilityBar -->
+<!-- BEGIN: StickyMainNavigation -->
+<!-- High contrast masthead navigation inspired by the reference header -->
+<header class="sticky top-0 z-50 bg-bone/95 backdrop-blur-md border-b border-hairline transition-all" id="main-nav">
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<!-- Primary Masthead Logotype -->
+<a class="flex flex-col group" href="#">
+<div class="flex items-baseline space-x-2">
+<span class="font-serif text-2xl md:text-3xl font-black tracking-widest2 text-ink">IT 2030</span>
+<span class="text-xs uppercase font-mono tracking-widest px-1.5 py-0.5 bg-ink text-bone font-semibold">REPORT</span>
+</div>
+<span class="text-[9px] uppercase tracking-widest2 text-neutral-500 -mt-1 group-hover:text-ink transition-colors">
+          THE FUTURE OF INDIA'S TECH CORRIDORS
+        </span>
+</a>
+<!-- Primary Desktop Nav Anchors -->
+<nav class="hidden lg:flex items-center space-x-7 text-xs uppercase tracking-widest font-medium text-neutral-700">
+<a class="hover:text-ink border-b-2 border-transparent hover:border-ink pb-1 transition-all" href="#overview">Overview</a>
+<a class="hover:text-ink border-b-2 border-transparent hover:border-ink pb-1 transition-all" href="#cascade">Urban Ripple</a>
+<a class="hover:text-ink border-b-2 border-transparent hover:border-ink pb-1 transition-all" href="#matrix">Tri-City Matrix</a>
+<a class="hover:text-ink border-b-2 border-transparent hover:border-ink pb-1 transition-all" href="#roles">Roles Explorer</a>
+<a class="hover:text-ink border-b-2 border-transparent hover:border-ink pb-1 transition-all" href="#simulator">2030 Simulator</a>
+<a class="hover:text-ink border-b-2 border-transparent hover:border-ink pb-1 transition-all" href="#pathway">Career Shift</a>
+</nav>
+<!-- Primary Action CTAs -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-mono font-bold uppercase tracking-widest bg-ink text-bone hover:bg-neutral-800 transition-colors shadow-sm" href="#simulator">
+          EXPLORE 2030 →
+        </a>
+<button aria-label="Toggle menu" class="lg:hidden p-2 text-ink focus:outline-none" id="mobileMenuBtn">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer -->
+<div class="hidden lg:hidden border-t border-hairline bg-cream px-6 py-4 space-y-3 text-xs uppercase tracking-wider font-mono" id="mobileMenu">
+<a class="block py-1 hover:text-neutral-500" href="#overview">Overview</a>
+<a class="block py-1 hover:text-neutral-500" href="#cascade">Urban Ripple</a>
+<a class="block py-1 hover:text-neutral-500" href="#matrix">Tri-City Matrix</a>
+<a class="block py-1 hover:text-neutral-500" href="#roles">Roles Explorer</a>
+<a class="block py-1 hover:text-neutral-500" href="#simulator">2030 Simulator</a>
+<a class="block py-1 hover:text-neutral-500" href="#pathway">Career Shift</a>
+<a class="block py-1 hover:text-neutral-500" href="#methodology">Sources &amp; Methodology</a>
+</div>
+</header>
+<!-- END: StickyMainNavigation -->
+<!-- BEGIN: HeroSection -->
+<!-- Monolithic visual identity directly paying homage to the reference image -->
+<section class="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-28 border-b border-hairline watermark-grid" id="overview">
+<div class="max-w-7xl mx-auto px-6 relative">
+<!-- Top Thesis Subhead -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8 border-b border-hairline pb-6">
+<div class="max-w-md">
+<p class="font-mono text-xs uppercase tracking-widest text-neutral-500 mb-1">STRATEGIC ASSESSMENT • DOSSIER 2030</p>
+<p class="font-serif text-base md:text-lg text-ink font-bold tracking-tight uppercase leading-snug">
+            LOYALTY IS EARNED.<br/>VALUE IS BUILT.<br/>RESILIENCE IS TESTED.
+          </p>
+</div>
+<div class="text-right">
+<p class="text-[11px] font-mono tracking-widest text-neutral-600 uppercase">MACRO FOCUS</p>
+<p class="text-xs font-mono font-semibold uppercase tracking-wider text-ink">BENGALURU • HYDERABAD • CHENNAI</p>
+</div>
+</div>
+<!-- Main Giant Monolithic Graphic Stack -->
+<div class="relative flex flex-col items-center justify-center my-6 md:my-10">
+<!-- Background Monolithic Typography "IT 2030" -->
+<h1 class="monolithic-title text-center font-serif font-black text-[72px] sm:text-[120px] md:text-[180px] lg:text-[230px] leading-none tracking-tighter text-ink select-none opacity-95">
+          IT 2030
+        </h1>
+<!-- Architectural Developer / Architect Metaphor Silhouette Centerpiece -->
+<div class="absolute inset-x-0 bottom-0 top-6 flex items-end justify-center pointer-events-none vintage-silhouette">
+<div class="w-72 h-80 sm:w-96 sm:h-96 md:w-[480px] md:h-[390px] relative flex justify-center items-end">
+<!-- Stylized Minimalist SVG Silhouette representing tech leadership overlooking high-tech city hubs -->
+<svg class="w-full h-full text-ink opacity-90 drop-shadow-2xl" fill="currentColor" viewbox="0 0 500 500">
+<!-- Skyline silhouettes in background -->
+<path d="M30 450 L30 380 L60 380 L60 340 L80 340 L80 380 L110 380 L110 450 Z" opacity="0.25"></path>
+<path d="M380 450 L380 320 L405 320 L405 300 L425 300 L425 360 L450 360 L450 450 Z" opacity="0.3"></path>
+<path d="M120 450 L120 300 L150 260 L180 300 L180 450 Z" opacity="0.2"></path>
+<!-- Central engineer / architect silhouette in trench coat/overcoat referencing film noir stance -->
+<circle cx="250" cy="140" r="32"></circle>
+<path d="M210 142 C 220 125, 275 120, 290 142 L 298 147 C 300 152, 280 155, 250 155 C 220 155, 200 152, 202 147 Z"></path> <!-- Fedora brim -->
+<path d="M230 172 L 270 172 L 295 230 L 305 340 L 320 450 L 180 450 L 195 340 L 205 230 Z"></path> <!-- Coat body -->
+<path d="M210 230 L 165 310 L 180 325 L 215 260 Z"></path> <!-- Arm left -->
+<path d="M290 230 L 325 320 L 305 330 L 285 260 Z"></path> <!-- Arm right -->
+<!-- Laptop / Blueprint device in hand -->
+<polygon opacity="0.85" points="315,310 350,310 345,340 310,335"></polygon>
+</svg>
+</div>
+</div>
+</div>
+<!-- Supporting Statement and Dual Action Buttons -->
+<div class="flex flex-col md:flex-row justify-between items-center mt-6 pt-6 border-t border-hairline gap-6">
+<div class="flex items-center space-x-4">
+<a class="px-8 py-3 bg-ink text-bone text-xs font-mono font-bold tracking-widest uppercase hover:bg-neutral-800 transition-all text-center" href="#roles">
+            PRE-REGISTER ROLE ASSESSMENT
+          </a>
+<a class="px-7 py-3 border border-ink text-ink text-xs font-mono font-semibold tracking-widest uppercase hover:bg-ink hover:text-bone transition-all flex items-center gap-2" href="#simulator">
+<span class="">RUN SIMULATOR</span>
+<span class="text-xs">▶</span>
+</a>
+</div>
+<div class="max-w-md text-right md:text-right text-xs text-neutral-600 leading-relaxed">
+<p class="font-serif italic text-ink font-semibold text-sm mb-1">
+            "Tasks transform long before titles disappear."
+          </p>
+          Exploring how generative architectures, deep automation, and Global Capability Centers redefine 5.4 million Indian IT jobs and their surrounding urban economies.
+        </div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: FourKeyPillarsBar -->
+<!-- Dark horizontal banner echoing the 4-column feature row from https://lh3.googleusercontent.com/aida-public/AB6AXuBsKBIVH7G-paGIDtmiAVY5nBOdLYcW-ZPkvGHNZFqOE2uOAV0C3nghPH2eJIfqeNxnc8zpdKG-xYUoHxFHY4Xey5yjPHNL8PD37OA2sCTDkHSAMkc8jGNd-gmCVfjICndJ35YaEfnkpXBOFF9b8UFu4tt57BdvFakjwnuVhwCKoTlE16O-QxVm-XVk8TznnfEq6eHti1QYqDVmoQVFba76wQOW6fx7hPxiqIxtFvDyXxBS0R-CzGX4msRZvj6Yu6CmrA -->
+<section class="bg-obsidian text-neutral-300 py-10 border-b border-darkhairline" data-purpose="four-pillars">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-neutral-800">
+<!-- Pillar 1 -->
+<div class="py-4 md:py-0 md:px-6 first:pl-0 flex flex-col justify-between">
+<div class="flex items-center space-x-3 mb-3">
+<span class="w-8 h-8 rounded-full border border-neutral-700 flex items-center justify-center font-mono text-xs text-bone">01</span>
+<h3 class="text-xs font-mono uppercase tracking-widest text-neutral-100 font-bold">TASK ATOMIZATION</h3>
+</div>
+<p class="text-xs text-neutral-400 leading-relaxed mb-4">
+            Jobs do not vanish overnight. Routine syntax generation, boilerplates, and manual QA shrink first; systems design expands.
+          </p>
+<a class="text-[11px] font-mono text-neutral-300 hover:text-white uppercase tracking-wider flex items-center gap-1" href="#roles">
+<span class="">EXPLORE EVOLUTION</span> <span class="">→</span>
+</a>
+</div>
+<!-- Pillar 2 -->
+<div class="py-4 md:py-0 md:px-6 flex flex-col justify-between">
+<div class="flex items-center space-x-3 mb-3">
+<span class="w-8 h-8 rounded-full border border-neutral-700 flex items-center justify-center font-mono text-xs text-bone">02</span>
+<h3 class="text-xs font-mono uppercase tracking-widest text-neutral-100 font-bold">GCC VALUE SHIFT</h3>
+</div>
+<p class="text-xs text-neutral-400 leading-relaxed mb-4">
+            From low-cost back-office centers to high-agency engineering headquarters: GCCs dictate future compensation and hiring benchmarks.
+          </p>
+<a class="text-[11px] font-mono text-neutral-300 hover:text-white uppercase tracking-wider flex items-center gap-1" href="#matrix">
+<span class="">VIEW GCC DYNAMICS</span> <span class="">→</span>
+</a>
+</div>
+<!-- Pillar 3 -->
+<div class="py-4 md:py-0 md:px-6 flex flex-col justify-between">
+<div class="flex items-center space-x-3 mb-3">
+<span class="w-8 h-8 rounded-full border border-neutral-700 flex items-center justify-center font-mono text-xs text-bone">03</span>
+<h3 class="text-xs font-mono uppercase tracking-widest text-neutral-100 font-bold">URBAN COMMERCE RIPPLE</h3>
+</div>
+<p class="text-xs text-neutral-400 leading-relaxed mb-4">
+            Tech engineer salaries fund secondary ecosystems: rental micro-markets, cloud kitchens, auto loans, and ride-hailing networks.
+          </p>
+<a class="text-[11px] font-mono text-neutral-300 hover:text-white uppercase tracking-wider flex items-center gap-1" href="#cascade">
+<span class="">MAP THE CASCADE</span> <span class="">→</span>
+</a>
+</div>
+<!-- Pillar 4 -->
+<div class="py-4 md:py-0 md:px-6 last:pr-0 flex flex-col justify-between">
+<div class="flex items-center space-x-3 mb-3">
+<span class="w-8 h-8 rounded-full border border-neutral-700 flex items-center justify-center font-mono text-xs text-bone">04</span>
+<h3 class="text-xs font-mono uppercase tracking-widest text-neutral-100 font-bold">TRI-CITY RESILIENCE</h3>
+</div>
+<p class="text-xs text-neutral-400 leading-relaxed mb-4">
+            Bengaluru’s product focus, Hyderabad’s campus scale, and Chennai’s industrial SaaS showcase distinct adaptation curves.
+          </p>
+<a class="text-[11px] font-mono text-neutral-300 hover:text-white uppercase tracking-wider flex items-center gap-1" href="#matrix">
+<span class="">COMPARE CLUSTERS</span> <span class="">→</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FourKeyPillarsBar -->
+<!-- BEGIN: Section1_CausalCascade -->
+<!-- Narrative breakdown of 1st, 2nd, and 3rd order impacts on urban ecosystems -->
+<section class="py-20 border-b border-hairline bg-cream" id="cascade">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-hairline pb-4">
+<div>
+<span class="text-xs font-mono uppercase tracking-widest text-neutral-500">SECTION 01 // MACRO SYSTEM ARCHITECTURE</span>
+<h2 class="font-serif text-3xl md:text-5xl font-black text-ink tracking-tight mt-1">
+            THE CAUSAL CASCADE
+          </h2>
+</div>
+<p class="max-w-md text-xs font-mono text-neutral-600 mt-4 md:mt-0">
+          How microscopic code-generation efficiencies propagate outward into macroscopic urban economies across peninsular India.
+        </p>
+</div>
+<!-- Cascade Flowchart Cards -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+<!-- Step 1 -->
+<div class="bg-bone border border-hairline p-5 relative group hover:border-ink transition-colors">
+<div class="text-[10px] font-mono font-bold text-neutral-400 uppercase tracking-widest mb-2">TIER 1 • INPUT</div>
+<h4 class="font-serif font-bold text-base text-ink mb-2">AI Tooling Ingestion</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+            LLMs, automated test generators, and AI co-pilots achieve 35% automated code generation for standard tasks.
+          </p>
+<div class="mt-4 pt-3 border-t border-hairline text-[10px] font-mono text-neutral-500">
+            Speed: 2.2x code throughput
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-bone border border-hairline p-5 relative group hover:border-ink transition-colors">
+<div class="text-[10px] font-mono font-bold text-neutral-400 uppercase tracking-widest mb-2">TIER 2 • RESTRUCTURING</div>
+<h4 class="font-serif font-bold text-base text-ink mb-2">IT Bench Compaction</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+            Service giants reduce generic fresh-graduate mass intake. Pyramid structures shift toward diamond profiles.
+          </p>
+<div class="mt-4 pt-3 border-t border-hairline text-[10px] font-mono text-neutral-500">
+            Intake: -20% entry campus hires
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-bone border border-hairline p-5 relative group hover:border-ink transition-colors">
+<div class="text-[10px] font-mono font-bold text-neutral-400 uppercase tracking-widest mb-2">TIER 3 • SPATIAL MOBILITY</div>
+<h4 class="font-serif font-bold text-base text-ink mb-2">Corridor Redistribution</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+            Flexible hybrid routines reduce peak daily rush. Senior specialists retain high compensation; entry talent disperses.
+          </p>
+<div class="mt-4 pt-3 border-t border-hairline text-[10px] font-mono text-neutral-500">
+            Pattern: Tier-2 city retention
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-bone border border-hairline p-5 relative group hover:border-ink transition-colors">
+<div class="text-[10px] font-mono font-bold text-neutral-400 uppercase tracking-widest mb-2">TIER 4 • REAL ESTATE IMPACT</div>
+<h4 class="font-serif font-bold text-base text-ink mb-2">Housing &amp; PG Yields</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+            Shared bachelor PGs experience rent pressure; luxury gated suburbs (3BHK+) sustain values due to senior engineering wealth.
+          </p>
+<div class="mt-4 pt-3 border-t border-hairline text-[10px] font-mono text-neutral-500">
+            Divergence: PG -12% / Luxury +18%
+          </div>
+</div>
+<!-- Step 5 -->
+<div class="bg-bone border border-hairline p-5 relative group hover:border-ink transition-colors">
+<div class="text-[10px] font-mono font-bold text-neutral-400 uppercase tracking-widest mb-2">TIER 5 • URBAN COMMERCE</div>
+<h4 class="font-serif font-bold text-base text-ink mb-2">Local Economy Recoil</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+            Ride shares, tech-park canteen operators, delivery fleets, and retail hubs adapt to bifurcated engineer discretionary spending.
+          </p>
+<div class="mt-4 pt-3 border-t border-hairline text-[10px] font-mono text-neutral-500">
+            Multiplier: 1 IT job = 3.6 service jobs
+          </div>
+</div>
+</div>
+<!-- Detailed Cascade Explainer Card -->
+<div class="mt-8 bg-bone border border-hairline p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-ink text-bone font-mono flex items-center justify-center font-bold text-lg flex-shrink-0">
+            ∑
+          </div>
+<div>
+<h4 class="font-serif font-bold text-base text-ink">The Multiplier Effect of Indian IT</h4>
+<p class="text-xs text-neutral-600 mt-1 max-w-3xl">
+              According to macroeconomic analyses by NASSCOM and urban research institutes, every formal software engineer in an Indian metro creates an indirect livelihood for approximately 3.5 to 4 individuals in transport, hospitality, residential facilities, and retail. When AI automates the bottom layer of coding, city centers experience indirect commercial shockwaves.
+            </p>
+</div>
+</div>
+<a class="px-5 py-2.5 bg-ink text-bone font-mono text-xs uppercase tracking-wider font-bold hover:bg-neutral-800 transition-colors whitespace-nowrap" href="#simulator">
+          Test in Simulator →
+        </a>
+</div>
+</div>
+</section>
+<!-- END: Section1_CausalCascade -->
+<!-- BEGIN: Section2_TriCityMatrix -->
+<!-- Deep dive into Bengaluru, Hyderabad, and Chennai -->
+<section class="py-20 border-b border-hairline bg-bone" id="matrix">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 border-b border-hairline pb-4">
+<div>
+<span class="text-xs font-mono uppercase tracking-widest text-neutral-500">SECTION 02 // GEOGRAPHIC RESILIENCE</span>
+<h2 class="font-serif text-3xl md:text-5xl font-black text-ink tracking-tight mt-1">
+            TRI-CITY ECOSYSTEM MATRIX
+          </h2>
+</div>
+<!-- City Switcher Tabs -->
+<div class="flex space-x-2 mt-4 md:mt-0 font-mono text-xs" data-purpose="city-filter-buttons">
+<button class="px-4 py-2 bg-ink text-bone font-bold tracking-wider border border-ink transition-all" id="btn-blr" onclick="switchCity('blr')">
+            BENGALURU
+          </button>
+<button class="px-4 py-2 bg-bone text-ink font-semibold tracking-wider border border-hairline hover:border-ink transition-all" id="btn-hyd" onclick="switchCity('hyd')">
+            HYDERABAD
+          </button>
+<button class="px-4 py-2 bg-bone text-ink font-semibold tracking-wider border border-hairline hover:border-ink transition-all" id="btn-che" onclick="switchCity('che')">
+            CHENNAI
+          </button>
+</div>
+</div>
+<!-- City Detail Canvas -->
+<div class="bg-cream border border-hairline p-8 transition-all" id="city-content-container">
+<!-- Dynamic City Panel: Bengaluru (Default) -->
+<div class="city-panel block" id="city-blr">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-5 space-y-6">
+<div>
+<span class="text-xs font-mono uppercase tracking-widest text-amberAccent font-bold">CLUSTER PROFILE // 01</span>
+<h3 class="font-serif text-3xl font-black text-ink mt-1">BENGALURU</h3>
+<p class="text-xs font-mono text-neutral-500 uppercase">Silicon Valley of India • Product &amp; Deep-Tech Capital</p>
+</div>
+<p class="text-xs text-neutral-700 leading-relaxed">
+                Bengaluru possesses the highest density of venture-backed AI startups, foundational research units, and product architecture teams in India. Because it houses complex engineering rather than mere legacy maintenance, its talent pool experiences high AI adoption rather than sudden displacement.
+              </p>
+<div class="border-t border-b border-hairline py-4 space-y-3">
+<div class="flex justify-between text-xs">
+<span class="font-mono text-neutral-500">CORE CORRIDORS</span>
+<span class="font-mono font-semibold text-ink">Outer Ring Road, Whitefield, Electronic City</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="font-mono text-neutral-500">PRIMARY RISK FACTOR</span>
+<span class="font-mono font-semibold text-rose-700">Urban infrastructure &amp; rent inflation</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="font-mono text-neutral-500">RESILIENCE SCORE</span>
+<span class="font-mono font-bold text-ink">92 / 100 (HIGH)</span>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-mono uppercase tracking-widest text-neutral-500 mb-2">LOCAL ECONOMIC NODES</h4>
+<div class="flex flex-wrap gap-2 text-[11px] font-mono">
+<span class="px-2.5 py-1 bg-bone border border-hairline">Bellandur Tech-Plex</span>
+<span class="px-2.5 py-1 bg-bone border border-hairline">HSR Layout Startup Belt</span>
+<span class="px-2.5 py-1 bg-bone border border-hairline">Whitefield ITPL Zone</span>
+<span class="px-2.5 py-1 bg-bone border border-hairline">Manyata Tech Park</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-bone border border-hairline p-6 flex flex-col justify-between">
+<div>
+<h4 class="font-serif font-bold text-lg text-ink mb-4 border-b border-hairline pb-2">
+                  2030 Projections &amp; City Metrics
+                </h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+<div class="p-4 bg-cream border border-hairline">
+<div class="text-[10px] font-mono uppercase text-neutral-500">Total Tech Workforce (2024)</div>
+<div class="font-serif text-2xl font-bold text-ink mt-1">~1,650,000</div>
+<div class="text-[11px] text-emerald-700 font-mono mt-1">▲ Projecting 1.95M by 2030</div>
+</div>
+<div class="p-4 bg-cream border border-hairline">
+<div class="text-[10px] font-mono uppercase text-neutral-500">GCC Concentration</div>
+<div class="font-serif text-2xl font-bold text-ink mt-1">42% National Share</div>
+<div class="text-[11px] text-neutral-600 font-mono mt-1">Over 550 Global Tech Centers</div>
+</div>
+</div>
+<div class="space-y-3 text-xs">
+<div>
+<div class="flex justify-between font-mono mb-1">
+<span class="">Software Engineering Value Addition</span>
+<span class="font-bold">88% (Advanced)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200">
+<div class="h-1.5 bg-ink" style="width: 88%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-mono mb-1">
+<span class="">Campus Junior Intake Risk</span>
+<span class="font-bold text-amber-700">Moderate (-14%)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200">
+<div class="h-1.5 bg-amber-600" style="width: 58%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-mono mb-1">
+<span class="">Residential Micro-Market Buffer</span>
+<span class="font-bold">Strong</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200">
+<div class="h-1.5 bg-ink" style="width: 75%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 p-4 bg-neutral-900 text-bone text-xs font-mono">
+<span class="text-amber-400 font-bold">ANALYST NOTE:</span> "Bengaluru acts as the absorption sponge for AI disruption. Startups create net new job roles (Prompt Designers, Evaluation Engineers, Fine-tuners) faster than automation destroys baseline maintenance roles."
+              </div>
+</div>
+</div>
+</div>
+<!-- Dynamic City Panel: Hyderabad -->
+<div class="city-panel hidden" id="city-hyd">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-5 space-y-6">
+<div>
+<span class="text-xs font-mono uppercase tracking-widest text-amberAccent font-bold">CLUSTER PROFILE // 02</span>
+<h3 class="font-serif text-3xl font-black text-ink mt-1">HYDERABAD</h3>
+<p class="text-xs font-mono text-neutral-500 uppercase">Cyberabad Scale • GCC &amp; Cloud Infrastructure Giant</p>
+</div>
+<p class="text-xs text-neutral-700 leading-relaxed">
+                Hyderabad's master-planned HITEC City and Financial District house massive mega-campuses for Microsoft, Amazon, Google, and major financial GCCs. With lower operational costs and rapid infrastructure development, it is aggressively capturing enterprise backend expansion.
+              </p>
+<div class="border-t border-b border-hairline py-4 space-y-3">
+<div class="flex justify-between text-xs">
+<span class="font-mono text-neutral-500">CORE CORRIDORS</span>
+<span class="font-mono font-semibold text-ink">HITEC City, Gachibowli, Financial District</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="font-mono text-neutral-500">PRIMARY RISK FACTOR</span>
+<span class="font-mono font-semibold text-amber-700">Service desk &amp; junior developer saturation</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="font-mono text-neutral-500">RESILIENCE SCORE</span>
+<span class="font-mono font-bold text-ink">85 / 100 (VERY STRONG)</span>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-mono uppercase tracking-widest text-neutral-500 mb-2">LOCAL ECONOMIC NODES</h4>
+<div class="flex flex-wrap gap-2 text-[11px] font-mono">
+<span class="px-2.5 py-1 bg-bone border border-hairline">Mindspace CyberCity</span>
+<span class="px-2.5 py-1 bg-bone border border-hairline">Knowledge City Raidurg</span>
+<span class="px-2.5 py-1 bg-bone border border-hairline">Financial Dist. Nanakramguda</span>
+<span class="px-2.5 py-1 bg-bone border border-hairline">Kokapet SEZ</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-bone border border-hairline p-6 flex flex-col justify-between">
+<div>
+<h4 class="font-serif font-bold text-lg text-ink mb-4 border-b border-hairline pb-2">
+                  2030 Projections &amp; City Metrics
+                </h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+<div class="p-4 bg-cream border border-hairline">
+<div class="text-[10px] font-mono uppercase text-neutral-500">Total Tech Workforce (2024)</div>
+<div class="font-serif text-2xl font-bold text-ink mt-1">~1,050,000</div>
+<div class="text-[11px] text-emerald-700 font-mono mt-1">▲ Rapid growth toward 1.45M by 2030</div>
+</div>
+<div class="p-4 bg-cream border border-hairline">
+<div class="text-[10px] font-mono uppercase text-neutral-500">Campus Scale Trajectory</div>
+<div class="font-serif text-2xl font-bold text-ink mt-1">+28% GCC Footprint</div>
+<div class="text-[11px] text-neutral-600 font-mono mt-1">Highest office absorption in Q1 2024</div>
+</div>
+</div>
+<div class="space-y-3 text-xs">
+<div>
+<div class="flex justify-between font-mono mb-1">
+<span class="">Enterprise Cloud &amp; Data Centers</span>
+<span class="font-bold">92% (Dominant)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200">
+<div class="h-1.5 bg-ink" style="width: 92%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-mono mb-1">
+<span class="">Fresh Graduate Reskilling Urgency</span>
+<span class="font-bold text-amber-600">High (68%)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200">
+<div class="h-1.5 bg-amber-600" style="width: 68%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-mono mb-1">
+<span class="">Residential &amp; Commercial Infrastructure Buffer</span>
+<span class="font-bold">Exceptional</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200">
+<div class="h-1.5 bg-ink" style="width: 86%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 p-4 bg-neutral-900 text-bone text-xs font-mono">
+<span class="text-amber-400 font-bold">ANALYST NOTE:</span> "Hyderabad's strength lies in proactive government land allocations and robust Grade-A office parks. If the city's universities bridge AI engineering gaps quickly, it will capture GCC operations migrating away from congested corridors elsewhere."
+              </div>
+<div class="mt-4 pt-3 border-t border-hairline flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+<div class="font-mono text-[11px] text-neutral-600"><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary-container mr-1.5"></span>CORRIDOR DEEP-DIVE: HITEC CITY &amp; FINANCIAL DISTRICT</div>
+<button class="px-4 py-2 bg-ink text-bone font-mono text-[11px] uppercase font-bold tracking-wider hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2" onclick="openHyderabadModal()">
+<span>EXPLORE HYDERABAD HITEC CITY &amp; FINANCIAL DISTRICT IMPACT</span> <span>→</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic City Panel: Chennai -->
+<div class="city-panel hidden" id="city-che">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-5 space-y-6">
+<div>
+<span class="text-xs font-mono uppercase tracking-widest text-amberAccent font-bold">CLUSTER PROFILE // 03</span>
+<h3 class="font-serif text-3xl font-black text-ink mt-1">CHENNAI</h3>
+<p class="text-xs font-mono text-neutral-500 uppercase">SaaS Capital • Industrial Automotive &amp; Deep Enterprise IT</p>
+</div>
+<p class="text-xs text-neutral-700 leading-relaxed">
+                Chennai represents India’s most diversified industrial-software nexus. The historic Old Mahabalipuram Road (OMR) corridor hosts both multi-decade IT service campuses and global B2B SaaS giants (Zoho, Freshworks), while Mount-Poonamallee and Guindy anchor modern industrial-tech innovation.
+              </p>
+<div class="border-t border-b border-hairline py-4 space-y-3">
+<div class="flex justify-between text-xs">
+<span class="font-mono text-neutral-500">CORE CORRIDORS</span>
+<span class="font-mono font-semibold text-ink">OMR (Taramani to Siruseri), Guindy, Ambattur</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="font-mono text-neutral-500">PRIMARY RISK FACTOR</span>
+<span class="font-mono font-semibold text-amber-700">Vulnerability of manual testing &amp; legacy maintenance</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="font-mono text-neutral-500">RESILIENCE SCORE</span>
+<span class="font-mono font-bold text-ink">79 / 100 (BALANCED)</span>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-mono uppercase tracking-widest text-neutral-500 mb-2">LOCAL ECONOMIC NODES</h4>
+<div class="flex flex-wrap gap-2 text-[11px] font-mono">
+<span class="px-2.5 py-1 bg-bone border border-hairline">TIDEL Park &amp; Taramani</span>
+<span class="px-2.5 py-1 bg-bone border border-hairline">Sholinganallur Junction</span>
+<span class="px-2.5 py-1 bg-bone border border-hairline">Siruseri SIPCOT Hub</span>
+<span class="px-2.5 py-1 bg-bone border border-hairline">Guindy Olympia Tech Park</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-bone border border-hairline p-6 flex flex-col justify-between">
+<div>
+<h4 class="font-serif font-bold text-lg text-ink mb-4 border-b border-hairline pb-2">
+                  2030 Projections &amp; City Metrics
+                </h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+<div class="p-4 bg-cream border border-hairline">
+<div class="text-[10px] font-mono uppercase text-neutral-500">Total Tech Workforce (2024)</div>
+<div class="font-serif text-2xl font-bold text-ink mt-1">~650,000</div>
+<div class="text-[11px] text-neutral-700 font-mono mt-1">▲ Steady pivot toward 780K by 2030</div>
+</div>
+<div class="p-4 bg-cream border border-hairline">
+<div class="text-[10px] font-mono uppercase text-neutral-500">Hardware &amp; Industrial Synergy</div>
+<div class="font-serif text-2xl font-bold text-ink mt-1">#1 Auto-Tech Hub</div>
+<div class="text-[11px] text-neutral-600 font-mono mt-1">EV, Avionics &amp; Embedded Software</div>
+</div>
+</div>
+<div class="space-y-3 text-xs">
+<div>
+<div class="flex justify-between font-mono mb-1">
+<span class="">B2B Enterprise SaaS Depth</span>
+<span class="font-bold">85% (Very High)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200">
+<div class="h-1.5 bg-ink" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-mono mb-1">
+<span class="">Legacy Application Maintenance Exposure</span>
+<span class="font-bold text-rose-700">Substantial (74%)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200">
+<div class="h-1.5 bg-rose-700" style="width: 74%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-mono mb-1">
+<span class="">OMR Corridor Rental Multiplier Stability</span>
+<span class="font-bold">Selective / Reshaping</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200">
+<div class="h-1.5 bg-ink" style="width: 62%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 p-4 bg-neutral-900 text-bone text-xs font-mono">
+<span class="text-amber-400 font-bold">ANALYST NOTE:</span> "Chennai has an unheralded defense mechanism: deep hardware, automotive electronics, and vertical industrial SaaS. Pure-play maintenance contracts on OMR face margin compression, but deep engineering teams in Guindy and Sholinganallur remain deeply sticky."
+              </div><div class="mt-4 pt-3 border-t border-hairline flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3"><div class="font-mono text-[11px] text-neutral-600"><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary-container mr-1.5"></span>CORRIDOR DEEP-DIVE: OLD MAHABALIPURAM ROAD (OMR)</div><button class="px-4 py-2 bg-ink text-bone font-mono text-[11px] uppercase font-bold tracking-wider hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2" onclick="openOmrModal()"><span class="">EXPLORE CHENNAI OMR TECH PARK REAL ESTATE IMPACT</span> <span class="">→</span></button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section2_TriCityMatrix -->
+<!-- BEGIN: Section3_RolesExplorer -->
+<!-- Comprehensive filterable career role inspector -->
+<section class="py-20 border-b border-hairline bg-cream" id="roles">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 border-b border-hairline pb-4">
+<div>
+<span class="text-xs font-mono uppercase tracking-widest text-neutral-500">SECTION 03 // TASK ATOMIZATION &amp; CAREER PATHS</span>
+<h2 class="font-serif text-3xl md:text-5xl font-black text-ink tracking-tight mt-1">
+            IT ROLE EXPLORER
+          </h2>
+</div>
+<p class="text-xs font-mono text-neutral-600 mt-2 md:mt-0 max-w-sm">
+          Interactive classification of software job families based on automated exposure and human-value durability.
+        </p>
+</div>
+<!-- Filter Controls -->
+<div class="flex flex-wrap gap-2 mb-8 font-mono text-xs" data-purpose="role-filters">
+<button class="role-filter-btn px-4 py-2 bg-ink text-bone font-bold tracking-wider" onclick="filterRoles('all')">ALL DISCIPLINES</button>
+<button class="role-filter-btn px-4 py-2 bg-bone text-ink border border-hairline hover:border-ink" onclick="filterRoles('backend')">BACKEND</button>
+<button class="role-filter-btn px-4 py-2 bg-bone text-ink border border-hairline hover:border-ink" onclick="filterRoles('frontend')">FRONTEND</button>
+<button class="role-filter-btn px-4 py-2 bg-bone text-ink border border-hairline hover:border-ink" onclick="filterRoles('qa')">QA &amp; TEST</button>
+<button class="role-filter-btn px-4 py-2 bg-bone text-ink border border-hairline hover:border-ink" onclick="filterRoles('cloud')">CLOUD / SRE</button>
+<button class="role-filter-btn px-4 py-2 bg-bone text-ink border border-hairline hover:border-ink" onclick="filterRoles('ai')">DATA &amp; AI</button>
+<button class="role-filter-btn px-4 py-2 bg-bone text-ink border border-hairline hover:border-ink" onclick="filterRoles('arch')">LEADERSHIP &amp; ARCH</button>
+</div>
+<!-- Role Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="roles-grid">
+<!-- Role 1: Java/Spring Backend -->
+<div class="role-card bg-bone border border-hairline p-6 flex flex-col justify-between" data-category="backend">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-neutral-500">BACKEND ENGINEERING</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-amber-100 text-amber-900 font-bold uppercase">TRANSFORMING</span>
+</div>
+<h3 class="font-serif text-xl font-bold text-ink mb-1">Java / Spring Backend Dev</h3>
+<p class="text-xs text-neutral-600 mb-4 leading-relaxed">
+              Standard CRUD, REST endpoints, and ORM boilerplate are heavily auto-completed. Value pivots to concurrency, database tuning, and API security.
+            </p>
+<div class="space-y-2.5 text-xs font-mono border-t border-hairline pt-4 mb-6">
+<div>
+<div class="flex justify-between text-[11px] mb-1">
+<span class="text-neutral-500">AI Task Exposure:</span>
+<span class="font-bold text-ink">65% (High)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200"><div class="h-1.5 bg-ink" style="width: 65%"></div></div>
+</div>
+<div class="flex justify-between text-[11px] pt-1">
+<span class="text-neutral-500">Human Anchor:</span>
+<span class="text-ink font-semibold">Distributed consistency, DB locking</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-neutral-200 hover:bg-ink hover:text-bone text-ink font-mono text-[11px] uppercase font-bold tracking-wider transition-colors" onclick="openRoleModal('java')">
+            INSPECT DEEP BREAKDOWN →
+          </button>
+</div>
+<!-- Role 2: Manual & QA Automation -->
+<div class="role-card bg-bone border border-hairline p-6 flex flex-col justify-between" data-category="qa">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-neutral-500">QUALITY ASSURANCE</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-rose-100 text-rose-900 font-bold uppercase">HIGH CONTRACTION RISK</span>
+</div>
+<h3 class="font-serif text-xl font-bold text-ink mb-1">QA Automation Engineer</h3>
+<p class="text-xs text-neutral-600 mb-4 leading-relaxed">
+              Synthesizing Selenium or Cypress test scripts is easily handled by modern LLMs. Pure script runners face steep commoditization.
+            </p>
+<div class="space-y-2.5 text-xs font-mono border-t border-hairline pt-4 mb-6">
+<div>
+<div class="flex justify-between text-[11px] mb-1">
+<span class="text-neutral-500">AI Task Exposure:</span>
+<span class="font-bold text-rose-700">82% (Critical)</span>
+</div>
+<div class="w-full h-1.5 bg-rose-700" style="width: 82%"></div>
+</div>
+</div>
+<div class="flex justify-between text-[11px] pt-1">
+<span class="text-neutral-500">Human Anchor:</span>
+<span class="text-ink font-semibold">Chaos testing, edge-case ethics</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-neutral-200 hover:bg-ink hover:text-bone text-ink font-mono text-[11px] uppercase font-bold tracking-wider transition-colors" onclick="openRoleModal('qa')">
+            INSPECT DEEP BREAKDOWN →
+          </button>
+</div>
+<!-- Role 3: AI Platform & Fine-tuning -->
+<div class="role-card bg-bone border border-hairline p-6 flex flex-col justify-between" data-category="ai">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-neutral-500">DATA &amp; AI SYSTEMS</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-emerald-100 text-emerald-900 font-bold uppercase">MASSIVE EXPANSION</span>
+</div>
+<h3 class="font-serif text-xl font-bold text-ink mb-1">AI Platform &amp; LLMOps Engineer</h3>
+<p class="text-xs text-neutral-600 mb-4 leading-relaxed">
+              Designing vector retrieval (RAG) pipelines, low-latency inferencing microservices, and monitoring token drift across enterprise systems.
+            </p>
+<div class="space-y-2.5 text-xs font-mono border-t border-hairline pt-4 mb-6">
+<div>
+<div class="flex justify-between text-[11px] mb-1">
+<span class="text-neutral-500">AI Task Exposure:</span>
+<span class="font-bold text-emerald-700">22% (Low/Complementary)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200"><div class="h-1.5 bg-emerald-600" style="width: 22%"></div></div>
+</div>
+<div class="flex justify-between text-[11px] pt-1">
+<span class="text-neutral-500">Human Anchor:</span>
+<span class="text-ink font-semibold">Model evaluation, GPU memory budgets</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-neutral-200 hover:bg-ink hover:text-bone text-ink font-mono text-[11px] uppercase font-bold tracking-wider transition-colors" onclick="openRoleModal('ai')">
+            INSPECT DEEP BREAKDOWN →
+          </button>
+</div>
+<!-- Role 4: Frontend / React Specialist -->
+<div class="role-card bg-bone border border-hairline p-6 flex flex-col justify-between" data-category="frontend">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-neutral-500">INTERFACE SYSTEMS</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-amber-100 text-amber-900 font-bold uppercase">TRANSFORMING</span>
+</div>
+<h3 class="font-serif text-xl font-bold text-ink mb-1">Design Engineer / Frontend</h3>
+<p class="text-xs text-neutral-600 mb-4 leading-relaxed">
+              Figma-to-code plugins and prompt-driven UI generators commoditize static slicing. Engineers evolve into interaction and animation designers.
+            </p>
+<div class="space-y-2.5 text-xs font-mono border-t border-hairline pt-4 mb-6">
+<div>
+<div class="flex justify-between text-[11px] mb-1">
+<span class="text-neutral-500">AI Task Exposure:</span>
+<span class="font-bold text-ink">58% (Moderate)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200"><div class="h-1.5 bg-ink" style="width: 58%"></div></div>
+</div>
+<div class="flex justify-between text-[11px] pt-1">
+<span class="text-neutral-500">Human Anchor:</span>
+<span class="text-ink font-semibold">Accessibility (a11y), user psychology</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-neutral-200 hover:bg-ink hover:text-bone text-ink font-mono text-[11px] uppercase font-bold tracking-wider transition-colors" onclick="openRoleModal('frontend')">
+            INSPECT DEEP BREAKDOWN →
+          </button>
+</div>
+<!-- Role 5: Cloud SRE & DevOps -->
+<div class="role-card bg-bone border border-hairline p-6 flex flex-col justify-between" data-category="cloud">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-neutral-500">INFRASTRUCTURE</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-emerald-100 text-emerald-900 font-bold uppercase">EXPANDING</span>
+</div>
+<h3 class="font-serif text-xl font-bold text-ink mb-1">Site Reliability Engineer (SRE)</h3>
+<p class="text-xs text-neutral-600 mb-4 leading-relaxed">
+              IaC generation is rapid, but distributed multi-region failovers, compliance sovereignty, and disaster recovery demand deep human culpability.
+            </p>
+<div class="space-y-2.5 text-xs font-mono border-t border-hairline pt-4 mb-6">
+<div>
+<div class="flex justify-between text-[11px] mb-1">
+<span class="text-neutral-500">AI Task Exposure:</span>
+<span class="font-bold text-ink">38% (Manageable)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200"><div class="h-1.5 bg-ink" style="width: 38%"></div></div>
+</div>
+<div class="flex justify-between text-[11px] pt-1">
+<span class="text-neutral-500">Human Anchor:</span>
+<span class="text-ink font-semibold">Incident postmortems, cloud FinOps</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-neutral-200 hover:bg-ink hover:text-bone text-ink font-mono text-[11px] uppercase font-bold tracking-wider transition-colors" onclick="openRoleModal('sre')">
+            INSPECT DEEP BREAKDOWN →
+          </button>
+</div>
+<!-- Role 6: Enterprise Architect -->
+<div class="role-card bg-bone border border-hairline p-6 flex flex-col justify-between" data-category="arch">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-neutral-500">SYSTEMS ARCHITECTURE</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-emerald-100 text-emerald-900 font-bold uppercase">MAXIMUM VALUE</span>
+</div>
+<h3 class="font-serif text-xl font-bold text-ink mb-1">Principal Systems Architect</h3>
+<p class="text-xs text-neutral-600 mb-4 leading-relaxed">
+              Cross-domain synthesis: orchestrating banking regulations, legacy core migration, enterprise risk, and long-term cost models.
+            </p>
+<div class="space-y-2.5 text-xs font-mono border-t border-hairline pt-4 mb-6">
+<div>
+<div class="flex justify-between text-[11px] mb-1">
+<span class="text-neutral-500">AI Task Exposure:</span>
+<span class="font-bold text-emerald-800">18% (Very Low)</span>
+</div>
+<div class="w-full h-1.5 bg-neutral-200"><div class="h-1.5 bg-emerald-700" style="width: 18%"></div></div>
+</div>
+<div class="flex justify-between text-[11px] pt-1">
+<span class="text-neutral-500">Human Anchor:</span>
+<span class="text-ink font-semibold">Organizational alignment, risk liability</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-neutral-200 hover:bg-ink hover:text-bone text-ink font-mono text-[11px] uppercase font-bold tracking-wider transition-colors" onclick="openRoleModal('arch')">
+            INSPECT DEEP BREAKDOWN →
+          </button>
+</div>
+</div>
+</section>
+<!-- END: Section3_RolesExplorer -->
+<!-- BEGIN: Section4_ScenarioSimulator -->
+<!-- Interactive parameter modeling suite -->
+<section class="py-20 border-b border-darkhairline bg-obsidian text-bone" id="simulator">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-darkhairline pb-4">
+<div>
+<span class="text-xs font-mono uppercase tracking-widest text-amberAccent font-bold">SECTION 04 // REAL-TIME MODELING ENGINE</span>
+<h2 class="font-serif text-3xl md:text-5xl font-black text-white tracking-tight mt-1">
+            THE 2030 SCENARIO SIMULATOR
+          </h2>
+</div>
+<p class="text-xs font-mono text-neutral-400 mt-2 md:mt-0 max-w-sm">
+          Adjust macro variables to simulate shifts in hiring volume, city real-estate yields, and local economic resilience.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Controls Panel -->
+<div class="lg:col-span-5 bg-graphite border border-darkhairline p-6 space-y-6">
+<div class="border-b border-darkhairline pb-3">
+<h3 class="font-mono text-xs uppercase tracking-widest text-white font-bold">SIMULATION PARAMETERS</h3>
+<p class="text-[11px] text-neutral-400 font-mono mt-0.5">Move sliders to observe system-level reactions</p>
+</div>
+<!-- Parameter 1: AI Code Generation Adoption -->
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-mono">
+<span class="text-neutral-300">AI Adoption Speed:</span>
+<span class="font-bold text-amber-400" id="label-ai-speed">High (65%)</span>
+</div>
+<input class="w-full h-1.5 bg-neutral-700 appearance-none rounded cursor-pointer" id="param-ai-speed" max="95" min="20" oninput="updateSimulator()" type="range" value="65"/>
+<div class="flex justify-between text-[10px] font-mono text-neutral-500">
+<span class="">Moderate Tools</span>
+<span class="">Autonomous Agents</span>
+</div>
+</div>
+<!-- Parameter 2: Work Model Structure -->
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-mono">
+<span class="text-neutral-300">Work Model Distribution:</span>
+<span class="font-bold text-white" id="label-work-model">Hybrid (3 Days Office)</span>
+</div>
+<input class="w-full h-1.5 bg-neutral-700 appearance-none rounded cursor-pointer" id="param-work-model" max="3" min="1" oninput="updateSimulator()" step="1" type="range" value="2"/>
+<div class="flex justify-between text-[10px] font-mono text-neutral-500">
+<span class="">100% In-Office</span>
+<span class="">Hybrid Matrix</span>
+<span class="">Fully Distributed</span>
+</div>
+</div>
+<!-- Parameter 3: GCC Expansion Velocity -->
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-mono">
+<span class="text-neutral-300">Global Center Inflow (GCCs):</span>
+<span class="font-bold text-emerald-400" id="label-gcc-flow">+14% Annual</span>
+</div>
+<input class="w-full h-1.5 bg-neutral-700 appearance-none rounded cursor-pointer" id="param-gcc" max="30" min="0" oninput="updateSimulator()" type="range" value="14"/>
+<div class="flex justify-between text-[10px] font-mono text-neutral-500">
+<span class="">Flatlining (0%)</span>
+<span class="">Aggressive Tech Shift (+30%)</span>
+</div>
+</div>
+<!-- Target Metro Selector -->
+<div class="space-y-2 pt-2 border-t border-darkhairline">
+<label class="block text-xs font-mono uppercase text-neutral-300">Target Metro Context</label>
+<select class="w-full bg-obsidian border border-neutral-700 text-bone text-xs font-mono p-2.5 focus:border-white focus:ring-0" id="sim-city-select" onchange="updateSimulator()">
+<option value="blr">Bengaluru (Product Hub)</option>
+<option value="hyd">Hyderabad (GCC Scale)</option>
+<option value="che">Chennai (SaaS &amp; Industrial)</option>
+</select>
+</div>
+<div class="p-3 bg-obsidian/70 border border-darkhairline text-[11px] font-mono text-neutral-400">
+<span class="text-white font-bold">METHODOLOGY NOTE:</span> Dynamic equations map code-generation automation against traditional campus hiring intake curves and commercial density multipliers.
+          </div>
+</div>
+<!-- Real-Time Metrics Gauge Panel -->
+<div class="lg:col-span-7 bg-graphite border border-darkhairline p-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between border-b border-darkhairline pb-3 mb-6">
+<h3 class="font-mono text-xs uppercase tracking-widest text-white font-bold">2030 PROJECTED EQUILIBRIUM</h3>
+<span class="text-[10px] font-mono uppercase px-2 py-0.5 bg-neutral-800 text-neutral-300 border border-neutral-700">LIVE COMPUTED OUTPUT</span>
+</div>
+<!-- Output Metric Tiles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+<!-- Metric 1: Campus Hiring -->
+<div class="p-4 bg-obsidian border border-darkhairline">
+<div class="text-[10px] font-mono uppercase text-neutral-400">Junior / Entry Campus Demand</div>
+<div class="font-serif text-3xl font-bold text-rose-400 mt-1" id="metric-junior-demand">-28%</div>
+<p class="text-[11px] font-mono text-neutral-400 mt-1" id="metric-junior-desc">
+                  Significant compression in non-specialized training batches.
+                </p>
+</div>
+<!-- Metric 2: Senior Architect Premium -->
+<div class="p-4 bg-obsidian border border-darkhairline">
+<div class="text-[10px] font-mono uppercase text-neutral-400">Senior Systems Architect Premium</div>
+<div class="font-serif text-3xl font-bold text-emerald-400" id="metric-senior-demand">+42%</div>
+<p class="text-[11px] font-mono text-neutral-400 mt-1" id="metric-senior-desc">
+                  Surging demand for cross-domain orchestration talent.
+                </p>
+</div>
+<!-- Metric 3: Urban Rental Demand -->
+<div class="p-4 bg-obsidian border border-darkhairline">
+<div class="text-[10px] font-mono uppercase text-neutral-400">Corridor PG &amp; Rental Occupancy</div>
+<div class="font-serif text-3xl font-bold text-amber-400" id="metric-pg-occupancy">76%</div>
+<p class="text-[11px] font-mono text-neutral-400 mt-1" id="metric-pg-desc">
+                  Suburban clusters resilient; shared PG units face deflation.
+                </p>
+</div>
+<!-- Metric 4: Urban F&B Footfall -->
+<div class="p-4 bg-obsidian border border-darkhairline">
+<div class="text-[10px] font-mono uppercase text-neutral-400">Tech Park Retail &amp; Canteen Index</div>
+<div class="font-serif text-3xl font-bold text-white" id="metric-retail-index">84 / 100</div>
+<p class="text-[11px] font-mono text-neutral-400 mt-1" id="metric-retail-desc">
+                  Mid-week footfall peaks; weekend delivery economy stable.
+                </p>
+</div>
+</div>
+<!-- Narrative Simulation Summary -->
+<div class="p-4 bg-obsidian border border-darkhairline font-mono text-xs">
+<div class="text-neutral-400 uppercase tracking-wider text-[10px] mb-1 font-bold text-neutral-300">SCENARIO SUMMARY VECTOR</div>
+<p class="text-neutral-200 leading-relaxed" id="sim-narrative">
+                Aggressive AI integration reduces raw entry-level headcount requirement while accelerating demand for platform architects. In this selected metro, residential gated communities preserve valuation while budget bachelor housing pivots to diversified non-tech tenant bases.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-darkhairline flex items-center justify-between text-[11px] font-mono text-neutral-500">
+<span class="">*Illustrative scenario model based on selected parameters — not an official economic forecast.</span>
+<button class="hover:text-white underline uppercase" onclick="resetSimulator()">Reset Defaults</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section4_ScenarioSimulator -->
+<!-- BEGIN: Section5_CareerTransitionPathway -->
+<!-- Practical skill migration roadmap for individual engineers -->
+<section class="py-20 border-b border-hairline bg-bone" id="pathway">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-hairline pb-4">
+<div>
+<span class="text-xs font-mono uppercase tracking-widest text-neutral-500">SECTION 05 // PROFESSIONAL STRATEGY</span>
+<h2 class="font-serif text-3xl md:text-5xl font-black text-ink tracking-tight mt-1">
+            THE RESILIENT CAREER PATHWAY
+          </h2>
+</div>
+<p class="text-xs font-mono text-neutral-600 mt-2 md:mt-0 max-w-sm">
+          Deconstructing standard developer profiles into durable human moats and AI-augmented execution speed.
+        </p>
+</div>
+<!-- Step-by-Step Transition Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Step 1 -->
+<div class="bg-cream border border-hairline p-6 relative">
+<div class="w-8 h-8 bg-ink text-bone font-mono flex items-center justify-center font-bold text-xs mb-4">
+            01
+          </div>
+<span class="text-[10px] font-mono font-bold uppercase tracking-wider text-rose-800">AUTOMATABLE IN 2025</span>
+<h3 class="font-serif text-lg font-bold text-ink mt-1 mb-3">Syntax &amp; Scaffolding</h3>
+<p class="text-xs text-neutral-600 leading-relaxed mb-4">
+            Writing boilerplate CRUD, drafting basic unit tests, writing regex, setting up standard Dockerfiles, and translating between languages.
+          </p>
+<div class="text-[11px] font-mono text-neutral-500 bg-bone p-2 border border-hairline">
+            Action: Offload 100% to LLM assistants.
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-cream border border-hairline p-6 relative">
+<div class="w-8 h-8 bg-ink text-bone font-mono flex items-center justify-center font-bold text-xs mb-4">
+            02
+          </div>
+<span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-800">COLLABORATIVE AUGMENTATION</span>
+<h3 class="font-serif text-lg font-bold text-ink mt-1 mb-3">System Verification</h3>
+<p class="text-xs text-neutral-600 leading-relaxed mb-4">
+            Reviewing AI-generated PRs, evaluating subtle security vulnerabilities, detecting hallucinations in critical financial calculations.
+          </p>
+<div class="text-[11px] font-mono text-neutral-500 bg-bone p-2 border border-hairline">
+            Action: Master code auditing &amp; static proofs.
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-cream border border-hairline p-6 relative">
+<div class="w-8 h-8 bg-ink text-bone font-mono flex items-center justify-center font-bold text-xs mb-4">
+            03
+          </div>
+<span class="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-800">HIGH HUMAN AGENCY</span>
+<h3 class="font-serif text-lg font-bold text-ink mt-1 mb-3">Domain Architecture</h3>
+<p class="text-xs text-neutral-600 leading-relaxed mb-4">
+            Translating vague business stakeholder requests into concrete technical requirements, data contracts, and fault tolerance boundaries.
+          </p>
+<div class="text-[11px] font-mono text-neutral-500 bg-bone p-2 border border-hairline">
+            Action: Cultivate enterprise domain mastery.
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-cream border border-hairline p-6 relative">
+<div class="w-8 h-8 bg-ink text-bone font-mono flex items-center justify-center font-bold text-xs mb-4">
+            04
+          </div>
+<span class="text-[10px] font-mono font-bold uppercase tracking-wider text-ink">THE 2030 TARGET</span>
+<h3 class="font-serif text-lg font-bold text-ink mt-1 mb-3">AI Systems Orchestrator</h3>
+<p class="text-xs text-neutral-600 leading-relaxed mb-4">
+            Supervising ensembles of autonomous agents, managing latency-token costs, and guaranteeing regulatory compliance across multiple jurisdictions.
+          </p>
+<div class="text-[11px] font-mono text-neutral-500 bg-bone p-2 border border-hairline">
+            Target: Top-decile enterprise agency.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section5_CareerTransitionPathway -->
+<!-- BEGIN: Section6_MethodologyAndSources -->
+<!-- Transparency and verification references -->
+<section class="py-16 border-b border-hairline bg-cream text-neutral-700" id="methodology">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="text-xs font-mono uppercase tracking-widest text-neutral-500">VERIFICATION &amp; CITATION</span>
+<h3 class="font-serif text-2xl font-bold text-ink mt-1">Research Sources &amp; Analytical Boundaries</h3>
+<p class="text-xs text-neutral-600 mt-3 leading-relaxed">
+            Synthesized from annual workforce reports, urban infrastructure assessments, and engineering capability indices across India’s primary software corridors.
+          </p>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs font-mono">
+<div class="border-l-2 border-ink pl-4 space-y-1">
+<h4 class="font-bold text-ink uppercase">NASSCOM Strategic Review (2023–2024)</h4>
+<p class="text-neutral-600 leading-normal">
+              Benchmarks on 5.4M tech workforce headcounts, GCC revenue expansion, and the rise of engineering R&amp;D centers.
+            </p>
+</div>
+<div class="border-l-2 border-ink pl-4 space-y-1">
+<h4 class="font-bold text-ink uppercase">World Economic Forum — Future of Jobs</h4>
+<p class="text-neutral-600 leading-normal">
+              Frameworks on task atomization, occupational half-life compression, and complementary human reasoning skills.
+            </p>
+</div>
+<div class="border-l-2 border-ink pl-4 space-y-1">
+<h4 class="font-bold text-ink uppercase">Knight Frank &amp; CBRE India Tech Reports</h4>
+<p class="text-neutral-600 leading-normal">
+              Grade-A office absorption metrics across Bengaluru ORR, Hyderabad Gachibowli, and Chennai OMR corridor micro-markets.
+            </p>
+</div>
+<div class="border-l-2 border-ink pl-4 space-y-1">
+<h4 class="font-bold text-ink uppercase">Ministry of Electronics &amp; IT (MeitY)</h4>
+<p class="text-neutral-600 leading-normal">
+              India AI Mission allocations, national data center capacities, and digital infrastructure resilience policies.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section6_MethodologyAndSources -->
+<!-- BEGIN: CallToActionBanner -->
+<!-- Echoing the bold bottom banner in https://lh3.googleusercontent.com/aida-public/AB6AXuCUMEbVbIzUhyjYsTSAhUBRGQLbcNV9tzd2_WUUX1HJqz4_rnRE4kRZvl5y6HzymZR_8_PR-rjfxtZwDRNIPvBJn86B6z2Pu9GVgZJko6OSTfNjKNLdrXSy5CMUvEu1fFzEhRwU2FKPVJqbB4p7xoYsd3p5gnbYS9Vk3UWxvQLUw60T0EGoD6vedkbJu6ySw3yRWfA2tQqHVJJSGXnzMs84t3KJvCigOSKYQL1brvaPH7HyiQVSk8fk0-jQdNQPrcCrdg -->
+<section class="bg-bone py-16 border-b border-hairline text-center" data-purpose="closing-banner">
+<div class="max-w-4xl mx-auto px-6">
+<span class="text-xs font-mono uppercase tracking-widest text-neutral-500 font-bold">EXECUTIVE DIRECTIVE</span>
+<h2 class="font-serif text-2xl md:text-4xl font-black text-ink tracking-tight mt-2 mb-4 uppercase">
+        Prepare for the tasks of tomorrow, not just the job title of today.
+      </h2>
+<p class="text-xs md:text-sm text-neutral-600 max-w-2xl mx-auto mb-8 font-sans leading-relaxed">
+        The future of India’s technology metropolises belongs neither to panic nor denial, but to aggressive architectural agency, deeper domain specialization, and relentless task adaptation.
+      </p>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="px-8 py-3 bg-ink text-bone font-mono text-xs font-bold uppercase tracking-widest hover:bg-neutral-800 transition-colors" href="#simulator">
+          LAUNCH SIMULATOR SUITE
+        </a>
+<a class="px-8 py-3 border border-ink text-ink font-mono text-xs font-semibold uppercase tracking-widest hover:bg-ink hover:text-bone transition-colors" href="#roles">
+          EXPLORE ROLE MATRICES
+        </a>
+</div>
+</div>
+</section>
+<!-- END: CallToActionBanner -->
+<!-- BEGIN: MainFooter -->
+<!-- Pitch black editorial footer inspired by the reference footer -->
+<footer class="bg-obsidian text-neutral-400 py-16 text-xs" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-darkhairline">
+<!-- Column 1: Logotype & Mission -->
+<div class="md:col-span-4 space-y-4">
+<div class="flex items-baseline space-x-2">
+<span class="font-serif text-2xl font-black tracking-widest text-white">IT 2030</span>
+<span class="text-[10px] font-mono uppercase tracking-widest px-1.5 py-0.5 bg-neutral-800 text-neutral-300">PLATFORM</span>
+</div>
+<p class="text-neutral-500 text-xs leading-relaxed max-w-sm">
+            An open research dossier exploring how artificial intelligence transforms software production, career trajectories, and the secondary urban economies of Bengaluru, Hyderabad, and Chennai.
+          </p>
+<div class="text-[11px] font-mono text-neutral-600">
+            © 2024–2030 NATIONAL RESEARCH INITIATIVE. ALL RIGHTS RESERVED.
+          </div>
+</div>
+<!-- Column 2: Corridors -->
+<div class="md:col-span-2 space-y-3 font-mono text-[11px]">
+<h5 class="text-white uppercase tracking-wider font-bold">TECH CORRIDORS</h5>
+<ul class="space-y-2 text-neutral-500">
+<li class=""><a class="hover:text-white transition-colors" href="#matrix">Bengaluru (ORR / Whitefield)</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#matrix">Hyderabad (HITEC / Gachibowli)</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#matrix">Chennai (OMR / Guindy)</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#matrix">Tier-2 Satellite Hubs</a></li>
+</ul>
+</div>
+<!-- Column 3: Analytical Frameworks -->
+<div class="md:col-span-3 space-y-3 font-mono text-[11px]">
+<h5 class="text-white uppercase tracking-wider font-bold">ANALYTICAL MODULES</h5>
+<ul class="space-y-2 text-neutral-500">
+<li class=""><a class="hover:text-white transition-colors" href="#cascade">Urban Economic Multiplier Model</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#roles">Task Exposure Taxonomy</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#simulator">2030 Macro Scenario Engine</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#pathway">Engineering Moat Blueprint</a></li>
+</ul>
+</div>
+<!-- Column 4: Newsletter Dossier Dispatch -->
+<div class="md:col-span-3 space-y-3">
+<h5 class="text-white uppercase tracking-wider font-mono text-[11px] font-bold">INTELLIGENCE DISPATCH</h5>
+<p class="text-[11px] text-neutral-500 leading-relaxed font-mono">
+            Receive verified quarterly updates on GCC migration, metro hiring indices, and AI tooling benchmarks.
+          </p>
+<form class="space-y-2" onsubmit="handleDispatchSignup(event)">
+<div class="flex">
+<input class="bg-graphite border border-neutral-700 text-bone text-xs font-mono px-3 py-2 w-full focus:outline-none focus:border-white" placeholder="name@domain.com" required="" type="email"/>
+<button class="bg-white text-ink px-4 text-xs font-mono font-bold hover:bg-neutral-200 transition-colors" type="submit">
+                ↵
+              </button>
+</div>
+<span class="hidden text-[10px] font-mono text-emerald-400" id="signup-confirmation">Dossier frequency registered.</span>
+</form>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono text-neutral-600 gap-4">
+<div class="">DESIGN ARCHITECTURE: RETRO-MONOLITHIC EDITORIAL SYSTEM</div>
+<div class="flex space-x-6">
+<a class="hover:text-neutral-400" href="#methodology">Privacy &amp; Research Ethics</a>
+<a class="hover:text-neutral-400" href="#methodology">Data Sources</a>
+<a class="hover:text-neutral-400" href="#overview">Back to Top ↑</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: RoleDetailModal -->
+<!-- Live modal preview for deep role inspection -->
+<div class="fixed inset-0 z-50 bg-black/80 hidden items-center justify-center p-4 backdrop-blur-sm" id="roleModal" onclick="closeRoleModalOnBackdrop(event)">
+<div class="bg-cream border border-neutral-600 max-w-2xl w-full p-8 shadow-2xl relative" onclick="event.stopPropagation()">
+<button class="absolute top-4 right-4 text-neutral-500 hover:text-ink font-mono text-xl font-bold" onclick="closeRoleModal()">✕</button>
+<div id="modal-role-content">
+<!-- Dynamically injected via JavaScript -->
+</div>
+</div>
+</div><div class="fixed inset-0 z-50 bg-black/80 hidden items-center justify-center p-3 sm:p-6 backdrop-blur-sm" id="omrModal" onclick="closeOmrModalOnBackdrop(event)"><div class="bg-bone border border-hairline max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative custom-scrollbar" onclick="event.stopPropagation()"><div class="sticky top-0 z-20 bg-obsidian text-bone px-6 py-4 flex items-center justify-between border-b border-darkhairline"><div><div class="flex items-center gap-2"><span class="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold">REGIONAL DOSSIER // CORRIDOR 04</span><span class="text-[9px] font-mono px-2 py-0.5 bg-neutral-800 text-neutral-200 border border-neutral-700 uppercase">SaaS, Enterprise &amp; Hardware Hub</span></div><h3 class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-white mt-0.5">CHENNAI OMR (IT EXPRESSWAY)</h3></div><button aria-label="Close dossier" class="px-3 py-1 bg-graphite border border-neutral-700 text-neutral-300 hover:text-white hover:border-neutral-500 font-mono text-xs uppercase tracking-wider transition-colors" onclick="closeOmrModal()">CLOSE [ESC] ✕</button></div><div class="p-6 space-y-6"><div class="border-b border-hairline pb-4"><p class="font-mono text-xs text-neutral-600 leading-relaxed">Spatial transformation, tech park vacancy dynamics, and urban housing yields along the 45km IT corridor (Taramani to Siruseri SIPCOT).</p></div><div><div class="flex items-center justify-between mb-3"><h4 class="font-serif font-bold text-base text-ink uppercase tracking-tight">Corridor Micro-Markets &amp; Spatial Zones</h4><span class="text-[10px] font-mono text-neutral-500 uppercase">North to South Traverse</span></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs"><div class="bg-cream border border-hairline p-4"><div class="flex justify-between items-start mb-1"><span class="font-mono font-bold text-ink uppercase text-[11px]">Zone 1: Taramani &amp; TIDEL Park</span><span class="font-mono text-[10px] px-1.5 py-0.5 bg-emerald-100 text-emerald-800 font-semibold">INNER CORE</span></div><p class="text-neutral-600 leading-relaxed mb-2">High density, near-zero vacancy (4.8%), rapid transition to Global Capability Centers (GCCs), highly resilient rental yields across Thiruvanmiyur and Adyar fringe.</p><div class="font-mono text-[10px] text-neutral-500 pt-2 border-t border-hairline">Key Anchors: TIDEL Park, Ascendas International Tech Park, IIT-M Research Park</div></div><div class="bg-cream border border-hairline p-4"><div class="flex justify-between items-start mb-1"><span class="font-mono font-bold text-ink uppercase text-[11px]">Zone 2: Perungudi &amp; Kandanchavadi</span><span class="font-mono text-[10px] px-1.5 py-0.5 bg-amber-100 text-amber-900 font-semibold">TRANSITION ZONE</span></div><p class="text-neutral-600 leading-relaxed mb-2">Hybrid flex workspaces and co-living conversions. Mid-tier IT service firms downsizing floorplates; rapid absorption by enterprise SaaS product startups.</p><div class="font-mono text-[10px] text-neutral-500 pt-2 border-t border-hairline">Key Anchors: SP Infocity, Prince Info City, RMZ Millenia</div></div><div class="bg-cream border border-hairline p-4"><div class="flex justify-between items-start mb-1"><span class="font-mono font-bold text-ink uppercase text-[11px]">Zone 3: Sholinganallur Junction</span><span class="font-mono text-[10px] px-1.5 py-0.5 bg-rose-100 text-rose-900 font-semibold">CENTRAL NODE</span></div><p class="text-neutral-600 leading-relaxed mb-2">Major SEZ hubs (ELCOT), dense bachelor PG clusters. Acute vulnerability to fresher hiring contraction, offset by resilient 3BHK gated community demand.</p><div class="font-mono text-[10px] text-neutral-500 pt-2 border-t border-hairline">Key Anchors: ELCOT SEZ, Wipro Campus, HCL Technologies</div></div><div class="bg-cream border border-hairline p-4"><div class="flex justify-between items-start mb-1"><span class="font-mono font-bold text-ink uppercase text-[11px]">Zone 4: Navalur &amp; Siruseri SIPCOT</span><span class="font-mono text-[10px] px-1.5 py-0.5 bg-neutral-200 text-neutral-800 font-semibold">OUTER ARC</span></div><p class="text-neutral-600 leading-relaxed mb-2">Largest campus scale in Tamil Nadu. High commercial vacancy shifts as batch training consolidates; pricing stabilization around integrated mega-townships.</p><div class="font-mono text-[10px] text-neutral-500 pt-2 border-t border-hairline">Key Anchors: SIPCOT IT Park (1,000 Acres), TCS Signature Campus, Cognizant</div></div></div></div><div><h4 class="font-serif font-bold text-base text-ink uppercase tracking-tight mb-3">Tech Park Real Estate &amp; Urban Economy Projections (2024–2030)</h4><div class="grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono"><div class="p-4 bg-cream border border-hairline"><span class="text-[10px] uppercase text-neutral-500 block mb-1">Commercial IT SEZ Vacancy</span><div class="font-serif text-2xl font-bold text-rose-700">8.2% → 13.8%</div><p class="text-[11px] text-neutral-600 mt-1 font-sans">Selective flight to quality; legacy floorplates face redesign pressure as headcount density eases.</p></div><div class="p-4 bg-cream border border-hairline"><span class="text-[10px] uppercase text-neutral-500 block mb-1">Bachelor PG vs Luxury Yield</span><div class="font-serif text-2xl font-bold text-amber-700">-24% / +18%</div><p class="text-[11px] text-neutral-600 mt-1 font-sans">Shared entry-level PG rentals compress while family 3BHK gated enclaves retain strong pricing power.</p></div><div class="p-4 bg-cream border border-hairline"><span class="text-[10px] uppercase text-neutral-500 block mb-1">Informal Economic Ripple</span><div class="font-serif text-2xl font-bold text-ink">1 IT : 3.4 Service</div><p class="text-[11px] text-neutral-600 mt-1 font-sans">Karapakkam &amp; Thoraipakkam transport, street dining, and quick commerce adapt to hybrid office schedules.</p></div></div></div><div class="bg-cream border border-hairline p-4"><h4 class="font-mono font-bold text-xs uppercase tracking-wider text-ink mb-2">Strategic Resilience Vectors for Chennai OMR</h4><div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-neutral-700 font-sans"><div class=""><span class="font-mono font-semibold text-ink uppercase text-[11px] block">1. Metro Phase 2 Connectivity (Madhavaram - SIPCOT):</span>The elevated corridor will drastically reduce commute barriers by 2026–2028, reconnecting central Chennai residential hubs directly to Sholinganallur and Siruseri.</div><div class=""><span class="font-mono font-semibold text-ink uppercase text-[11px] block">2. Campus Repurposing to AI Compute &amp; GCC:</span>Large outer campuses are retrofitting legacy test-lab floors into sovereign data centers and high-agency product GCC suites.</div></div></div><div class="pt-2 border-t border-hairline flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-[10px] font-mono text-neutral-500"><span class="">*Illustrative spatial scenario based on Chennai corridor data — verified local registration data required before commercial publication.</span><button class="px-4 py-1.5 bg-ink text-bone font-mono text-xs uppercase font-bold hover:bg-neutral-800 transition-colors" onclick="closeOmrModal()">CLOSE DOSSIER</button></div></div></div></div>
+<!-- Hyderabad HITEC City & Financial District Corridor Modal -->
+<div class="fixed inset-0 z-50 bg-black/80 hidden items-center justify-center p-3 sm:p-6 backdrop-blur-sm" id="hyderabad-modal" onclick="closeHyderabadModalOnBackdrop(event)">
+<div class="bg-bone border border-hairline max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative custom-scrollbar" onclick="event.stopPropagation()">
+<div class="sticky top-0 z-20 bg-obsidian text-bone px-6 py-4 flex items-center justify-between border-b border-darkhairline">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold">REGIONAL DOSSIER // CORRIDOR 02</span>
+<span class="text-[9px] font-mono px-2 py-0.5 bg-neutral-800 text-neutral-200 border border-neutral-700 uppercase">GCC, Cloud &amp; Enterprise Campus Hub</span>
+</div>
+<h3 class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-white mt-0.5">HYDERABAD: HITEC CITY &amp; FINANCIAL DISTRICT</h3>
+</div>
+<button aria-label="Close dossier" class="px-3 py-1 bg-graphite border border-neutral-700 text-neutral-300 hover:text-white hover:border-neutral-500 font-mono text-xs uppercase tracking-wider transition-colors" onclick="closeHyderabadModal()">CLOSE [ESC] ✕</button>
+</div>
+<div class="p-6 space-y-6">
+<div class="border-b border-hairline pb-4">
+<p class="font-mono text-xs text-neutral-600 leading-relaxed">
+          Spatial absorption, GCC mega-campuses, Grade-A tech corridor vacancy rates, and rental dynamics across western Hyderabad’s high-density tech expressways.
+        </p>
+</div>
+<!-- 4 Micro-Markets Grid -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<h4 class="font-serif font-bold text-base text-ink uppercase tracking-tight">Corridor Micro-Markets &amp; Spatial Zones</h4>
+<span class="text-[10px] font-mono text-neutral-500 uppercase">Western Growth Axis</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+<div class="bg-cream border border-hairline p-4">
+<div class="flex justify-between items-start mb-1">
+<span class="font-mono font-bold text-ink uppercase text-[11px]">Zone 1: HITEC City &amp; Madhapur</span>
+<span class="font-mono text-[10px] px-1.5 py-0.5 bg-emerald-100 text-emerald-800 font-semibold">LEGACY CORE</span>
+</div>
+<p class="text-neutral-600 leading-relaxed mb-2">
+              High density, exceptionally low commercial vacancy (~5.2%), deep concentration of mature global capability units, and high-velocity retail, dining, and co-working ecosystems.
+            </p>
+<div class="font-mono text-[10px] text-neutral-500 pt-2 border-t border-hairline">
+              Key Anchors: Mindspace CyberCity, Cyber Towers, Inorbit Corridor, L&amp;T Infocity
+            </div>
+</div>
+<div class="bg-cream border border-hairline p-4">
+<div class="flex justify-between items-start mb-1">
+<span class="font-mono font-bold text-ink uppercase text-[11px]">Zone 2: Financial District &amp; Gachibowli</span>
+<span class="font-mono text-[10px] px-1.5 py-0.5 bg-amber-100 text-amber-900 font-semibold">ENTERPRISE &amp; BFSI</span>
+</div>
+<p class="text-neutral-600 leading-relaxed mb-2">
+              Massive custom-built corporate campuses, top global investment banks, and enterprise cloud operations. Sustained Grade-A leasing momentum with institutional capital backing.
+            </p>
+<div class="font-mono text-[10px] text-neutral-500 pt-2 border-t border-hairline">
+              Key Anchors: Waverock SEZ, Microsoft Campus, Amazon Campus, Google Megacampus, ICICI Towers
+            </div>
+</div>
+<div class="bg-cream border border-hairline p-4">
+<div class="flex justify-between items-start mb-1">
+<span class="font-mono font-bold text-ink uppercase text-[11px]">Zone 3: Nanakramguda &amp; Knowledge City</span>
+<span class="font-mono text-[10px] px-1.5 py-0.5 bg-emerald-100 text-emerald-800 font-semibold">R&amp;D MEGA-TOWERS</span>
+</div>
+<p class="text-neutral-600 leading-relaxed mb-2">
+              Next-generation ultra-tall corporate towers housing Tier-1 software engineering, AI centers of excellence, executive housing enclaves, and premium hospitality belts.
+            </p>
+<div class="font-mono text-[10px] text-neutral-500 pt-2 border-t border-hairline">
+              Key Anchors: Knowledge City Raidurg, Salarpuria Sattva Horizon, GAR Infobahn, One Golden Mile
+            </div>
+</div>
+<div class="bg-cream border border-hairline p-4">
+<div class="flex justify-between items-start mb-1">
+<span class="font-mono font-bold text-ink uppercase text-[11px]">Zone 4: Kokapet Neopolis &amp; Tellapur</span>
+<span class="font-mono text-[10px] px-1.5 py-0.5 bg-neutral-200 text-neutral-800 font-semibold">EMERGING GROWTH</span>
+</div>
+<p class="text-neutral-600 leading-relaxed mb-2">
+              High-FSI integrated mega-developments directly along Outer Ring Road (ORR). Rapid residential land absorption catering to senior engineering leadership and GCC executives.
+            </p>
+<div class="font-mono text-[10px] text-neutral-500 pt-2 border-t border-hairline">
+              Key Anchors: Kokapet SEZ &amp; Neopolis Layout, Golden Mile Ext., Tellapur Techno-Townships
+            </div>
+</div>
+</div>
+</div>
+<!-- Real Estate & GCC Indicators (4 Cards) -->
+<div>
+<h4 class="font-serif font-bold text-base text-ink uppercase tracking-tight mb-3">Tech Park Real Estate &amp; GCC Indicators (2024–2030)</h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 font-mono">
+<div class="p-4 bg-cream border border-hairline">
+<span class="text-[10px] uppercase text-neutral-500 block mb-1">GCC Headcount Share</span>
+<div class="font-serif text-2xl font-bold text-emerald-700">52% Share</div>
+<p class="text-[11px] text-neutral-600 mt-1 font-sans">Over half of Hyderabad office absorption driven by GCC expansions — highest national ratio.</p>
+</div>
+<div class="p-4 bg-cream border border-hairline">
+<span class="text-[10px] uppercase text-neutral-500 block mb-1">Commercial Grade-A Vacancy</span>
+<div class="font-serif text-2xl font-bold text-ink">11.4% Rate</div>
+<p class="text-[11px] text-neutral-600 mt-1 font-sans">Western corridor insulated by sustained flight-to-quality and competitive rentals compared to Bengaluru.</p>
+</div>
+<div class="p-4 bg-cream border border-hairline">
+<span class="text-[10px] uppercase text-neutral-500 block mb-1">Residential Yield Divergence</span>
+<div class="font-serif text-2xl font-bold text-amber-700">-18% / +22%</div>
+<p class="text-[11px] text-neutral-600 mt-1 font-sans">Traditional bachelor PGs compress; luxury gated 3BHK/4BHK family communities maintain aggressive pricing power.</p>
+</div>
+<div class="p-4 bg-cream border border-hairline">
+<span class="text-[10px] uppercase text-neutral-500 block mb-1">Urban Informal Multiplier</span>
+<div class="font-serif text-2xl font-bold text-ink">1 GCC : 3.8 Service</div>
+<p class="text-[11px] text-neutral-600 mt-1 font-sans">1 GCC technology engineer sustains ~3.8 local jobs in transport, campus facilities, F&amp;B, and retail.</p>
+</div>
+</div>
+</div>
+<!-- Strategic Resilience Vectors -->
+<div class="bg-cream border border-hairline p-4">
+<h4 class="font-mono font-bold text-xs uppercase tracking-wider text-ink mb-2">Strategic Resilience &amp; Policy Vectors for Hyderabad</h4>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-neutral-700 font-sans">
+<div>
+<span class="font-mono font-semibold text-ink uppercase text-[11px] block">1. Telangana AI City Initiative:</span>
+            200-acre dedicated hub at Mucherla/Maheshwaram targeting sovereign AI compute, LLM startups, and dedicated chip design research facilities.
+          </div>
+<div>
+<span class="font-mono font-semibold text-ink uppercase text-[11px] block">2. Metro Phase 2 Connectivity:</span>
+            Elevated Airport Express connection via Gachibowli and Financial District eliminates western corridor transit chokepoints by 2027–2029.
+          </div>
+<div>
+<span class="font-mono font-semibold text-ink uppercase text-[11px] block">3. GCC Architectural Evolution:</span>
+            Centers are rapidly pivoting from support infrastructure into Tier-1 product ownership, algorithmic risk models, and generative tooling governance.
+          </div>
+</div>
+</div>
+<!-- Footer / Disclaimer -->
+<div class="pt-2 border-t border-hairline flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-[10px] font-mono text-neutral-500">
+<span>*Illustrative spatial scenario based on Telangana state urban assessments and CBRE/Knight Frank reports — verified institutional audit required prior to commercial investment.</span>
+<button class="px-4 py-1.5 bg-ink text-bone font-mono text-xs uppercase font-bold hover:bg-neutral-800 transition-colors" onclick="closeHyderabadModal()">CLOSE DOSSIER</button>
+</div>
+</div>
+</div>
+</div>
+<!-- END: RoleDetailModal -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="city-switcher">
+    // Switch between the three tech corridors
+    function switchCity(cityCode) {
+      const panels = document.querySelectorAll('.city-panel');
+      panels.forEach(panel => panel.classList.add('hidden'));
+
+      const activePanel = document.getElementById(`city-${cityCode}`);
+      if (activePanel) {
+        activePanel.classList.remove('hidden');
+      }
+
+      // Update button styles
+      const buttons = ['blr', 'hyd', 'che'];
+      buttons.forEach(code => {
+        const btn = document.getElementById(`btn-${code}`);
+        if (btn) {
+          if (code === cityCode) {
+            btn.className = 'px-4 py-2 bg-ink text-bone font-bold tracking-wider border border-ink transition-all';
+          } else {
+            btn.className = 'px-4 py-2 bg-bone text-ink font-semibold tracking-wider border border-hairline hover:border-ink transition-all';
+          }
+        }
+      });
+    }
+  </script>
+<script data-purpose="role-filter">
+    // Filter IT role cards
+    function filterRoles(category) {
+      const cards = document.querySelectorAll('.role-card');
+      const buttons = document.querySelectorAll('.role-filter-btn');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-ink', 'text-bone', 'font-bold');
+        btn.classList.add('bg-bone', 'text-ink');
+      });
+
+      // Highlight clicked button
+      if (event && event.target) {
+        event.target.classList.remove('bg-bone', 'text-ink');
+        event.target.classList.add('bg-ink', 'text-bone', 'font-bold');
+      }
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+<script data-purpose="scenario-simulator-logic">
+    // Real-time calculation logic for 2030 scenario simulator
+    function updateSimulator() {
+      const aiSpeed = parseInt(document.getElementById('param-ai-speed').value, 10);
+      const workModel = parseInt(document.getElementById('param-work-model').value, 10);
+      const gccFlow = parseInt(document.getElementById('param-gcc').value, 10);
+      const city = document.getElementById('sim-city-select').value;
+
+      // Update UI labels
+      let speedText = 'Moderate';
+      if (aiSpeed > 75) speedText = 'Extreme (Autonomous Agents)';
+      else if (aiSpeed > 50) speedText = 'High (Generative Ingestion)';
+      document.getElementById('label-ai-speed').innerText = `${speedText} (${aiSpeed}%)`;
+
+      const workModels = ['Full On-Site (5 Days)', 'Hybrid Matrix (3 Days)', 'Distributed Remote (1 Day)'];
+      document.getElementById('label-work-model').innerText = workModels[workModel - 1];
+      document.getElementById('label-gcc-flow').innerText = `+${gccFlow}% Annual`;
+
+      // Computed indicators
+      const juniorDemand = -Math.round((aiSpeed * 0.55) - (gccFlow * 0.4));
+      const seniorDemand = Math.round((aiSpeed * 0.35) + (gccFlow * 0.8));
+      
+      let pgOccupancy = 90 - (aiSpeed * 0.25) - ((workModel - 1) * 8) + (gccFlow * 0.3);
+      pgOccupancy = Math.max(45, Math.min(98, Math.round(pgOccupancy)));
+
+      let retailIndex = 100 - ((workModel - 1) * 12) - (aiSpeed * 0.1) + (gccFlow * 0.6);
+      retailIndex = Math.max(50, Math.min(115, Math.round(retailIndex)));
+
+      // Render indicators
+      const juniorElem = document.getElementById('metric-junior-demand');
+      juniorElem.innerText = `${juniorDemand > 0 ? '+' : ''}${juniorDemand}%`;
+      juniorElem.className = `font-serif text-3xl font-bold mt-1 ${juniorDemand < -15 ? 'text-rose-400' : 'text-amber-400'}`;
+
+      const seniorElem = document.getElementById('metric-senior-demand');
+      seniorElem.innerText = `+${seniorDemand}%`;
+      seniorElem.className = 'font-serif text-3xl font-bold mt-1 text-emerald-400';
+
+      document.getElementById('metric-pg-occupancy').innerText = `${pgOccupancy}%`;
+      document.getElementById('metric-retail-index').innerText = `${retailIndex} / 100`;
+
+      // Contextual city narrative
+      const cityNames = { blr: 'Bengaluru', hyd: 'Hyderabad', che: 'Chennai' };
+      const narrativeElem = document.getElementById('sim-narrative');
+      
+      narrativeElem.innerText = `In ${cityNames[city]}, with ${aiSpeed}% task automation and GCC growth at ${gccFlow}%, routine campus bench-hiring shrinks by ~${Math.abs(juniorDemand)}%. Conversely, demand for senior architects expands by +${seniorDemand}%. Under a ${workModels[workModel - 1]} regimen, rental corridors see ~${pgOccupancy}% occupancy, shifting discretionary commerce closer to metro transit nodes.`;
+    }
+
+    function resetSimulator() {
+      document.getElementById('param-ai-speed').value = 65;
+      document.getElementById('param-work-model').value = 2;
+      document.getElementById('param-gcc').value = 14;
+      document.getElementById('sim-city-select').value = 'blr';
+      updateSimulator();
+    }
+  </script>
+<script data-purpose="role-modal-handler">
+    // Deep dive breakdown modal for roles
+    const roleDetails = {
+      java: {
+        title: "Java / Spring Backend Developer",
+        category: "Backend Systems",
+        exposure: "65%",
+        direction: "TRANSFORMING",
+        tasksAutomated: ["REST CRUD endpoints", "Data transfer object mappings", "Standard Unit & Mock tests", "Basic SQL queries & JPA schemas"],
+        tasksDurable: ["Distributed cache race-condition handling", "High-throughput database partitioning", "Domain-Driven Design (DDD) boundaries", "Regulatory data localization compliance"],
+        verdict: "The routine 'Spring Boot glue code' developer will shrink. Backend engineers must pivot to distributed systems architecture, asynchronous event systems, and performance tuning."
+      },
+      qa: {
+        title: "QA & Automation Test Specialist",
+        category: "Verification & Quality",
+        exposure: "82%",
+        direction: "HIGH RISK / CONTRACTION",
+        tasksAutomated: ["End-to-end Cypress/Playwright scripting", "Regression suite execution", "Bug reproduction script generation", "API contract smoke tests"],
+        tasksDurable: ["Security exploit simulations", "Ethical adversarial jailbreaking", "User frustration heuristics & subtle UX audit", "Zero-day chaos testing"],
+        verdict: "Pure manual testers and standard script writers face immediate redundancy. Quality specialists must evolve into Security Engineers or AI Reliability Auditors."
+      },
+      ai: {
+        title: "AI Platform & LLMOps Engineer",
+        category: "Data & Inference Infrastructure",
+        exposure: "22%",
+        direction: "HIGH GROWTH",
+        tasksAutomated: ["Generic vector index setup", "Basic prompt drafting", "Standard token counting wrappers"],
+        tasksDurable: ["GPU memory optimization (vLLM, TensorRT)", "Enterprise RAG context hallucination guardrails", "Hybrid on-premise inference latency budgets", "Data poisoning defense"],
+        verdict: "One of the highest-leverage positions through 2030. Bridges the gap between raw machine learning models and cost-effective enterprise software backbones."
+      },
+      frontend: {
+        title: "Design Engineer / Modern Frontend",
+        category: "Client & Interface Engineering",
+        exposure: "58%",
+        direction: "TRANSFORMING",
+        tasksAutomated: ["Figma auto-conversion to React/Tailwind", "Responsive CSS flex/grid layout boilerplate", "Basic form validation logic"],
+        tasksDurable: ["Complex canvas webGL visualizations", "Sub-millisecond interaction feedback loops", "Inclusive screen-reader accessibility (WCAG AAA)", "Micro-animations and emotional brand identity"],
+        verdict: "Writing simple components will not sustain a career. Frontends who blend typography, design taste, and high-performance WebAssembly/WebGL will thrive."
+      },
+      sre: {
+        title: "Site Reliability Engineer (SRE)",
+        category: "Resilience & Operations",
+        exposure: "38%",
+        direction: "EXPANDING",
+        tasksAutomated: ["Standard Terraform module writing", "Basic alert triage and log aggregation", "Routine container scaling policies"],
+        tasksDurable: ["Multi-cloud disaster recovery failover", "FinOps cloud budget enforcement", "Post-mortem human root-cause analyses", "Cyber-warfare and ransomware isolation"],
+        verdict: "AI writes infrastructure code, but humans carry the pager and legal accountability during multi-million-dollar banking downtimes."
+      },
+      arch: {
+        title: "Principal Systems Architect",
+        category: "Systems & Leadership",
+        exposure: "18%",
+        direction: "MAXIMUM DURABILITY",
+        tasksAutomated: ["Architecture diagram drafting", "Drafting technical RFC templates", "API spec generation"],
+        tasksDurable: ["Multi-decade technology debt evaluation", "Executive trade-off negotiation", "Cross-system liability and security blast radius", "Engineering culture and agency standards"],
+        verdict: "Highest value position in the industry. As code becomes infinitely cheaper, deciding WHAT to build and HOW pieces interlock becomes the primary bottleneck."
+      }
+    };
+
+    function openRoleModal(key) {
+      const data = roleDetails[key];
+      if (!data) return;
+
+      const html = `
+        <div class="space-y-4">
+          <div class="flex justify-between items-start border-b border-hairline pb-3">
+            <div>
+              <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-500 font-bold">${data.category}</span>
+              <h3 class="font-serif text-2xl font-black text-ink mt-0.5">${data.title}</h3>
+            </div>
+            <span class="text-[11px] font-mono px-2.5 py-1 bg-ink text-bone font-bold uppercase">${data.direction}</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 text-xs font-mono py-2">
+            <div class="p-3 bg-bone border border-hairline">
+              <span class="text-neutral-500 block text-[10px]">AI TASK EXPOSURE</span>
+              <span class="text-lg font-bold text-ink">${data.exposure}</span>
+            </div>
+            <div class="p-3 bg-bone border border-hairline">
+              <span class="text-neutral-500 block text-[10px]">VALUE ANCHOR</span>
+              <span class="text-xs font-semibold text-ink">High Agency Reasoning</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="border border-rose-200 bg-rose-50/50 p-4">
+              <h4 class="font-mono font-bold text-rose-900 uppercase text-[11px] mb-2">Automated Tasks (Shrinking)</h4>
+              <ul class="list-disc list-inside space-y-1 text-neutral-700">
+                ${data.tasksAutomated.map(t => `<li>${t}</li>`).join('')}
+              </ul>
+            </div>
+            <div class="border border-emerald-200 bg-emerald-50/50 p-4">
+              <h4 class="font-mono font-bold text-emerald-900 uppercase text-[11px] mb-2">Human Moat (Durable)</h4>
+              <ul class="list-disc list-inside space-y-1 text-neutral-700">
+                ${data.tasksDurable.map(t => `<li>${t}</li>`).join('')}
+              </ul>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-hairline">
+            <span class="text-[10px] font-mono text-neutral-500 uppercase font-bold block mb-1">STRATEGIC VERDICT</span>
+            <p class="text-xs text-neutral-800 leading-relaxed font-sans">${data.verdict}</p>
+          </div>
+
+          <div class="pt-2 flex justify-end">
+            <button onclick="closeRoleModal()" class="px-5 py-2 bg-ink text-bone font-mono text-xs uppercase font-bold hover:bg-neutral-800">
+              Close Inspection
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('modal-role-content').innerHTML = html;
+      const modal = document.getElementById('roleModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeRoleModal() {
+      const modal = document.getElementById('roleModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function closeRoleModalOnBackdrop(e) {
+      closeRoleModal();
+    }
+
+    // Corridor Modals (OMR Chennai & HITEC City / Financial District Hyderabad)
+    function openOmrModal() {
+      const modal = document.getElementById('omrModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeOmrModal() {
+      const modal = document.getElementById('omrModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function closeOmrModalOnBackdrop(e) {
+      closeOmrModal();
+    }
+
+    function openHyderabadModal() {
+      const modal = document.getElementById('hyderabad-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeHyderabadModal() {
+      const modal = document.getElementById('hyderabad-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function closeHyderabadModalOnBackdrop(e) {
+      closeHyderabadModal();
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeRoleModal();
+        closeOmrModal();
+        closeHyderabadModal();
+      }
+    });
+  </script>
+<script data-purpose="mobile-and-dispatch-handlers">
+    // Mobile navigation toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu upon clicking links
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Handle newsletter submission
+    function handleDispatchSignup(e) {
+      e.preventDefault();
+      document.getElementById('signup-confirmation').classList.remove('hidden');
+      e.target.reset();
+    }
+  </script>
+<!-- END: InteractiveScripts -->
+</body></html>

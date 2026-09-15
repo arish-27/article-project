@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bone: #F6F4EE;
+  --color-cream: #FAF8F3;
+  --color-parchment: #EFECE3;
+  --color-ink: #111111;
+  --color-obsidian: #0C0C0C;
+  --color-graphite: #1C1C1C;
+  --color-hairline: #E3DFD4;
+  --color-darkhairline: #262626;
+  --color-amberAccent: #C97A3E;
+
+  --font-serif: "Newsreader", Georgia, Cambria, "Times New Roman", serif;
+  --font-display: "Cinzel", "Newsreader", Georgia, serif;
+  --font-editorial: "Newsreader", Georgia, serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace;
+  --font-sans: Inter, system-ui, -apple-system, sans-serif;
+  
+  --tracking-widest2: 0.22em;
+  --tracking-monumental: 0.3em;
+}
+
+@layer base {
+  body {
+    background-color: #F6F4EE;
+    color: #111111;
+  }
+}
+
+.monolithic-title {
+  font-family: "Cinzel", "Didot", Georgia, serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.14em;
+}
+
+.watermark-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(17, 17, 17, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.04) 1px, transparent 1px);
+}
+
+.dark-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.vintage-silhouette {
+  mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  accent-color: #C97A3E;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #E3DFD4;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #C97A3E;
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  border: 2px solid #FAF8F3;
+  margin-top: -5px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(17, 17, 17, 0.25);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+input[type=range]:hover::-webkit-slider-thumb {
+  background-color: #111111;
+  transform: scale(1.15);
+}
+
+input[type=range]::-moz-range-track {
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #E3DFD4;
+}
+
+input[type=range]::-moz-range-progress {
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #C97A3E;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: #C97A3E;
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  border: 2px solid #FAF8F3;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(17, 17, 17, 0.25);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #EFECE3;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #C97A3E;
+  border-radius: 3px;
+}
+
+/* Interactive Modal System */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(17, 17, 17, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-container {
+  background-color: #FAF8F3;
+  border: 1px solid #E3DFD4;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+  width: 100%;
+  max-width: 56rem;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  animation: modalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalPop {
+  0% {
+    transform: scale(0.96) translateY(8px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+

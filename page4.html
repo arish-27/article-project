@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>NEUROS / IT 2030 — Page 04: Jobs AI Will Struggle to Replace (Human-First Work)</title>
+
+  <!-- Typography: Plus Jakarta Sans & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..24,400..700,0..1,-50..200"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#f8f9fa",
+            "surface-dim": "#d9dadb",
+            "surface-bright": "#f8f9fa",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f3f4f5",
+            "surface-container": "#edeeef",
+            "surface-container-high": "#e7e8e9",
+            "surface-container-highest": "#e1e3e4",
+            "on-surface": "#191c1d",
+            "on-surface-variant": "#46464b",
+            "inverse-surface": "#1b1b1f",
+            "inverse-on-surface": "#f0f1f2",
+            "outline": "#76777b",
+            "outline-variant": "#c7c6cb",
+            "surface-tint": "#5e5e62",
+            "primary": "#000000",
+            "on-primary": "#ffffff",
+            "primary-container": "#1b1b1f",
+            "on-primary-container": "#848387",
+            "secondary": "#af2f25",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#fe6858",
+            "on-secondary-container": "#690003",
+            "secondary-accent": "#e05244",
+            "tertiary": "#6366f1",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6"
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['"SF Mono"', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+            serif: ['Georgia', 'Cambria', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+        background-color: #f8f9fa;
+        color: #191c1d;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f2f4;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c7c6cb;
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #76777b;
+      }
+    }
+
+    .shape-card-base {
+      border: none !important;
+      background: linear-gradient(145deg, #ffffff 0%, #f6f7f9 100%);
+      box-shadow: 0 12px 30px -8px rgba(25, 28, 29, 0.06), 0 3px 10px -2px rgba(25, 28, 29, 0.03);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .shape-card-base:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 42px -10px rgba(25, 28, 29, 0.12), 0 6px 16px -3px rgba(25, 28, 29, 0.05);
+    }
+    .shape-grand-deck {
+      border: none !important;
+      border-radius: 36px;
+      background: linear-gradient(175deg, #ffffff 0%, #f7f8fa 100%);
+      box-shadow: 0 24px 60px -15px rgba(25, 28, 29, 0.07), 0 8px 24px -4px rgba(25, 28, 29, 0.03);
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-sans text-on-surface antialiased selection:bg-secondary/20 selection:text-secondary">
+
+  <!-- ========================================================================= -->
+  <!-- FIXED TOP MASTHEAD & 4-PAGE NAVIGATION -->
+  <!-- ========================================================================= -->
+  <header
+    class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-highest/60 transition-all duration-300"
+    id="mainHeader">
+    <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6">
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div
+          class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-base tracking-tighter shadow-sm group-hover:scale-105 transition-transform">
+          N
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-base tracking-tight text-on-surface leading-none">NEUROS</span>
+          <span class="text-[10px] tracking-widest text-secondary font-semibold uppercase">/ IT 2030 RESEARCH</span>
+        </div>
+      </a>
+
+      <!-- 4-PAGE NAVIGATOR (Direct Multi-Page Navigation) -->
+      <nav
+        class="hidden md:flex items-center gap-1.5 bg-surface-container-low/90 p-1.5 rounded-full border border-surface-container-highest/70 text-xs font-semibold shadow-sm"
+        id="pageNav">
+        <a href="index.html"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">01</span>
+          <span>Macro &amp; Architecture</span>
+        </a>
+        <a href="page2.html"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">02</span>
+          <span>Jobs &amp; Roles</span>
+        </a>
+        <a href="page3.html"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">03</span>
+          <span>Cities &amp; Corridors</span>
+        </a>
+        <a href="page4.html"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary text-on-primary shadow-sm transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-white/20 text-white">04</span>
+          <span>Human-First Work</span>
+        </a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3">
+        <!-- Search Trigger -->
+        <button onclick="toggleSearchModal()" aria-label="Search report"
+          class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+        </button>
+
+        <!-- Executive Summary Button -->
+        <button onclick="toggleSummaryModal()"
+          class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-on-primary text-xs font-semibold tracking-tight hover:bg-neutral-800 transition-all shadow-sm">
+          <span class="hidden sm:inline">Executive Summary</span>
+          <span class="sm:hidden">Summary</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button onclick="toggleMobileMenu()" aria-label="Toggle mobile menu"
+          class="md:hidden w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high">
+          <span class="material-symbols-outlined text-[22px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Drawer -->
+    <div id="mobileMenu"
+      class="hidden md:hidden border-t border-surface-container-highest bg-surface-container-lowest px-6 py-4 space-y-3 text-xs uppercase tracking-wider font-semibold">
+      <a href="index.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 01: Macro &amp; Architecture</a>
+      <a href="page2.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 02: Jobs &amp; Roles</a>
+      <a href="page3.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 03: Cities &amp; Corridors</a>
+      <a href="page4.html" class="block py-1.5 text-secondary font-bold">Page 04: Human-First Work (Active)</a>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT: JOBS AI WILL STRUGGLE TO REPLACE -->
+  <!-- ========================================================================= -->
+  <main class="w-full pt-20 bg-surface min-h-screen">
+
+    <!-- Top Breadcrumb Strip -->
+    <section class="w-full px-6 lg:px-12 pt-6 pb-2">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 border-b border-surface-container-highest pb-3">
+        <div class="flex items-center gap-3 text-on-surface-variant text-[11px] uppercase tracking-widest">
+          <span class="inline-flex items-center gap-1.5 text-secondary font-semibold">
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Comprehensive Report • Page 04 of 04
+          </span>
+          <span class="text-outline-variant">/</span>
+          <span>Chapter 04: Human-First Work &amp; Resilient Careers</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary text-[11px] font-mono font-bold">Workforce Analysis • Human Strengths</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 pt-10 pb-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-wrap items-center gap-4 text-xs font-semibold tracking-widest uppercase text-secondary mb-4">
+        <span>Volume IV: Human-First Work</span>
+        <span class="text-outline-variant">•</span>
+        <span class="text-outline">Realistic Workforce Guidance</span>
+      </div>
+
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+        <div class="max-w-3xl space-y-4">
+          <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-mono font-bold uppercase tracking-wider inline-block">
+            HUMAN-FIRST WORK
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-on-surface leading-[1.1]">
+            WHICH JOBS ARE HARDER FOR AI TO REPLACE?
+          </h1>
+          <p class="text-base sm:text-lg text-on-surface-variant font-light leading-relaxed">
+            AI is becoming better at information and repetitive tasks. But some jobs depend on things that are difficult to reproduce with software alone — human trust, physical presence, responsibility, empathy and real-world judgment.
+          </p>
+        </div>
+
+        <!-- Metric Anchor Callout -->
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest max-w-sm w-full space-y-3 shadow-sm">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+            <span class="text-[11px] font-mono uppercase tracking-wider text-outline font-semibold">Core Principle</span>
+          </div>
+          <div class="text-2xl font-bold text-on-surface">Harder to Fully Replace</div>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            AI can assist and change how work is done, but jobs grounded in physical reality, empathy, and accountability remain deeply human.
+          </p>
+        </div>
+      </div>
+
+      <!-- Introduction Banner Box -->
+      <div class="mt-10 p-6 sm:p-8 rounded-3xl bg-surface-container-low border border-surface-container-highest/70 flex flex-col md:flex-row items-start md:items-center gap-6">
+        <div class="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
+          <span class="material-symbols-outlined text-2xl">info</span>
+        </div>
+        <div class="space-y-1.5">
+          <h3 class="text-base font-bold text-on-surface">The Reality of Automation</h3>
+          <p class="text-xs sm:text-sm text-on-surface-variant font-light leading-relaxed">
+            AI is very good at working with information. It can write, analyse, generate ideas, recognise patterns and automate repetitive tasks. But many jobs involve people, physical environments, unexpected situations and decisions where someone has to take responsibility. That makes these jobs harder to fully automate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MAIN VISUAL COMPARISON: AI STRENGTHS VS HUMAN STRENGTHS -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col gap-2 mb-10">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">The Fundamental Comparison</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          Where AI Excels vs. Where Humans Remain Essential
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-3xl">
+          Understanding this boundary helps us see why some careers are easily augmented by software while others require a real person on the ground.
+        </p>
+      </div>
+
+      <!-- Comparison Ledger Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Left: AI Is Strong At -->
+        <div class="p-8 rounded-3xl bg-surface-container-lowest border border-surface-container-highest shadow-sm flex flex-col justify-between">
+          <div class="space-y-6">
+            <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-neutral-900 text-white flex items-center justify-center font-mono font-bold text-sm">
+                  AI
+                </div>
+                <div>
+                  <span class="text-[10px] font-mono uppercase tracking-widest text-outline block">Software Capabilities</span>
+                  <h3 class="text-lg font-bold text-on-surface">AI IS STRONG AT</h3>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-surface-container text-[11px] font-mono text-outline font-semibold">
+                Predictable / Digital
+              </span>
+            </div>
+
+            <ul class="space-y-3.5 text-xs sm:text-sm text-on-surface">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">check_circle</span>
+                <span><strong>Repetitive digital tasks</strong> — Generating standard boilerplate code, templates, and routine emails.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">check_circle</span>
+                <span><strong>Processing large datasets</strong> — Searching millions of documents in seconds for facts and numbers.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">check_circle</span>
+                <span><strong>Pattern recognition</strong> — Spotting trends, anomalies, and statistical regularities in recorded data.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">check_circle</span>
+                <span><strong>Generating creative drafts</strong> — Producing quick outlines, image variations, and initial concepts.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">check_circle</span>
+                <span><strong>Fast calculations</strong> — Running complex mathematical formulas without tiring or arithmetic error.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">check_circle</span>
+                <span><strong>Repeating predictable processes</strong> — Executing the exact same digital workflow millions of times.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-surface-container-highest text-xs text-on-surface-variant font-light">
+            AI works inside closed digital rules where the problem and data are well-defined.
+          </div>
+        </div>
+
+        <!-- Right: Humans Remain Important For -->
+        <div class="p-8 rounded-3xl bg-surface-container-lowest border-2 border-secondary/40 shadow-md flex flex-col justify-between">
+          <div class="space-y-6">
+            <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-secondary text-white flex items-center justify-center font-mono font-bold text-sm">
+                  HU
+                </div>
+                <div>
+                  <span class="text-[10px] font-mono uppercase tracking-widest text-secondary font-semibold block">Human Qualities</span>
+                  <h3 class="text-lg font-bold text-on-surface">HUMANS REMAIN IMPORTANT FOR</h3>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-secondary/10 text-secondary text-[11px] font-mono font-bold">
+                Real-World / Trust
+              </span>
+            </div>
+
+            <ul class="space-y-3.5 text-xs sm:text-sm text-on-surface">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">favorite</span>
+                <span><strong>Building genuine trust</strong> — People want a real person to confide in for health, money, and life choices.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">favorite</span>
+                <span><strong>Empathy &amp; emotional care</strong> — Understanding how someone actually feels and providing true comfort.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">favorite</span>
+                <span><strong>Physical presence &amp; dexterity</strong> — Working in messy physical rooms, buildings, and outdoor locations.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">favorite</span>
+                <span><strong>Real-world judgment</strong> — Making nuanced decisions when rules conflict and there is no single "right" answer.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">favorite</span>
+                <span><strong>Taking responsibility</strong> — Being legally and ethically accountable when serious choices are made.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">favorite</span>
+                <span><strong>Unpredictable situations &amp; leadership</strong> — Guiding teams through crises that have never happened before.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-surface-container-highest text-xs text-secondary font-medium">
+            Humans excel in the messy, nuanced, real world where trust and accountability matter.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. SIX CATEGORIES OF WORK HARDER TO REPLACE -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col gap-2 mb-12">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Detailed Taxonomy</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          6 Main Categories of Work Harder to Fully Automate
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-3xl">
+          These categories describe kinds of human work where software alone cannot easily take over the entire job.
+        </p>
+      </div>
+
+      <!-- 6 Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Category 1 -->
+        <div class="p-7 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between hover:border-secondary/50 transition-all shadow-sm group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+              <span class="text-xs font-mono font-bold text-secondary uppercase">Category 01</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-container text-outline font-semibold">AI Impact: Low–Medium</span>
+            </div>
+            <h3 class="text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">
+              Work That Needs Human Trust
+            </h3>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+              Some jobs depend on people trusting another person with important decisions, personal situations or sensitive information.
+            </p>
+            <div class="p-3 rounded-2xl bg-surface border border-surface-container-highest text-xs space-y-1">
+              <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Common Examples</span>
+              <p class="text-on-surface font-medium">Therapist, Social Worker, Teacher, Doctor, Nurse, Financial Adviser</p>
+            </div>
+            <p class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              <strong>How AI fits in:</strong> AI can assist with information and routine lookups, but people still want a trusted human involved when critical decisions and personal well-being matter.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Key Anchor: Human Trust &amp; Relationship
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="p-7 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between hover:border-secondary/50 transition-all shadow-sm group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+              <span class="text-xs font-mono font-bold text-secondary uppercase">Category 02</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-container text-outline font-semibold">AI Impact: Low–Medium</span>
+            </div>
+            <h3 class="text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">
+              Work That Needs Human Empathy
+            </h3>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+              Some situations are not just about finding the correct mathematical answer. People need someone who genuinely understands how they feel.
+            </p>
+            <div class="p-3 rounded-2xl bg-surface border border-surface-container-highest text-xs space-y-1">
+              <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Common Examples</span>
+              <p class="text-on-surface font-medium">Counsellor, Nurse, Teacher, Care Worker, Social Worker, Customer Relations</p>
+            </div>
+            <p class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              <strong>How AI fits in:</strong> AI can draft notes or suggest resources, but genuine human connection, listening, and reassurance cannot be replaced by an algorithm.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Key Anchor: Emotional Understanding &amp; Care
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="p-7 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between hover:border-secondary/50 transition-all shadow-sm group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+              <span class="text-xs font-mono font-bold text-secondary uppercase">Category 03</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-container text-outline font-semibold">AI Impact: Low (Physical)</span>
+            </div>
+            <h3 class="text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">
+              Work That Happens in the Real World
+            </h3>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+              Software can work with digital files, but physical environments are unpredictable, messy, and non-standard.
+            </p>
+            <div class="p-3 rounded-2xl bg-surface border border-surface-container-highest text-xs space-y-1">
+              <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Common Examples</span>
+              <p class="text-on-surface font-medium">Electrician, Plumber, Carpenter, Mechanic, Construction Worker, Field Tech</p>
+            </div>
+            <p class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              <strong>How AI fits in:</strong> A tool may help diagnose a problem, but navigating different buildings, wiring, custom pipes, and physical obstacles is very hard to automate.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Key Anchor: Physical Dexterity &amp; Space
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="p-7 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between hover:border-secondary/50 transition-all shadow-sm group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+              <span class="text-xs font-mono font-bold text-secondary uppercase">Category 04</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-container text-outline font-semibold">AI Impact: Medium (Assisted)</span>
+            </div>
+            <h3 class="text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">
+              Work Where Every Day Is Different
+            </h3>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+              Some jobs involve unpredictable situations where people have to make fast, split-second decisions without an existing playbook.
+            </p>
+            <div class="p-3 rounded-2xl bg-surface border border-surface-container-highest text-xs space-y-1">
+              <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Common Examples</span>
+              <p class="text-on-surface font-medium">Emergency Responders, Firefighters, Paramedics, Field Engineers, Maintenance</p>
+            </div>
+            <p class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              <strong>How AI fits in:</strong> AI can assist with mapping routes and predicting risks, but managing chaos on the scene requires human adaptability.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Key Anchor: Fast Adaptation in Crisis
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="p-7 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between hover:border-secondary/50 transition-all shadow-sm group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+              <span class="text-xs font-mono font-bold text-secondary uppercase">Category 05</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-container text-outline font-semibold">AI Impact: High Tool / 100% Accountable</span>
+            </div>
+            <h3 class="text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">
+              Work That Carries Human Responsibility
+            </h3>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+              Some decisions have serious consequences, so organisations and laws require a real person to take legal and moral responsibility.
+            </p>
+            <div class="p-3 rounded-2xl bg-surface border border-surface-container-highest text-xs space-y-1">
+              <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Common Examples</span>
+              <p class="text-on-surface font-medium">Senior Managers, Doctors, Safety Directors, Lawyers, Security Chiefs, Public Leaders</p>
+            </div>
+            <p class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              <strong>Recommendation ≠ Responsibility:</strong> An AI system can suggest an answer. A human must decide whether that answer should actually be used.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Key Anchor: Legal &amp; Ethical Accountability
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="p-7 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between hover:border-secondary/50 transition-all shadow-sm group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+              <span class="text-xs font-mono font-bold text-secondary uppercase">Category 06</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-container text-outline font-semibold">AI Impact: High Multiplier</span>
+            </div>
+            <h3 class="text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">
+              Work That Needs Creativity + Direction
+            </h3>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+              AI can generate endless ideas and variations, but deciding what to create, why it matters, and who it serves requires human vision.
+            </p>
+            <div class="p-3 rounded-2xl bg-surface border border-surface-container-highest text-xs space-y-1">
+              <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Common Examples</span>
+              <p class="text-on-surface font-medium">Creative Directors, Product Leaders, Entrepreneurs, Brand Designers, Writers, Researchers</p>
+            </div>
+            <p class="text-[11px] text-on-surface-variant font-light leading-relaxed">
+              <strong>How AI fits in:</strong> AI acts as a powerful creative tool. The human shifts from manual execution to directing, curating, and refining the vision.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-surface-container-highest text-[10px] font-mono text-outline">
+            Key Anchor: Taste, Vision &amp; Strategic Direction
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. WHY SECTION: 6 CORE REASONS -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80 bg-surface-container-lowest/50 rounded-3xl my-10 border border-surface-container-highest">
+      <div class="flex flex-col gap-2 mb-10">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Core Drivers</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          WHY ARE THESE JOBS HARDER TO FULLY AUTOMATE?
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-3xl">
+          Six practical, real-world reasons why software cannot easily replace everything people do.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-surface border border-surface-container-highest space-y-2">
+          <div class="text-xl font-bold text-secondary font-mono">01</div>
+          <h3 class="text-base font-bold text-on-surface">"People want people"</h3>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            When it comes to our health, our children's education, or our life savings, we seek human empathy, trust, and personal understanding that software cannot provide.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-surface border border-surface-container-highest space-y-2">
+          <div class="text-xl font-bold text-secondary font-mono">02</div>
+          <h3 class="text-base font-bold text-on-surface">"The real world is messy"</h3>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            Real buildings, electrical wires, mechanical engines, and natural environments rarely behave cleanly or predictably like a computer screen.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-surface border border-surface-container-highest space-y-2">
+          <div class="text-xl font-bold text-secondary font-mono">03</div>
+          <h3 class="text-base font-bold text-on-surface">"Not every decision has a clear formula"</h3>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            Many difficult situations require human judgment, balancing conflicting trade-offs, and understanding context rather than just following pattern rules.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-surface border border-surface-container-highest space-y-2">
+          <div class="text-xl font-bold text-secondary font-mono">04</div>
+          <h3 class="text-base font-bold text-on-surface">"Someone has to take responsibility"</h3>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            When decisions have legal, safety, or financial consequences, an AI cannot sign the document or stand accountable. A human must take responsibility.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-surface border border-surface-container-highest space-y-2">
+          <div class="text-xl font-bold text-secondary font-mono">05</div>
+          <h3 class="text-base font-bold text-on-surface">"Every situation can be different"</h3>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            Unexpected emergencies and one-of-a-kind problems cannot be handled by standard scripts. Humans excel at figuring out what to do on the spot.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-surface border border-surface-container-highest space-y-2">
+          <div class="text-xl font-bold text-secondary font-mono">06</div>
+          <h3 class="text-base font-bold text-on-surface">"AI is a tool, not the worker"</h3>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            In most professions, AI helps the professional work faster and more accurately rather than replacing the human being entirely.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. CRITICAL PRINCIPLE: AI MAY REPLACE TASKS BEFORE IT REPLACES JOBS -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="p-8 sm:p-10 rounded-3xl bg-surface-container-lowest border-2 border-secondary/30 shadow-md">
+        <div class="max-w-3xl space-y-3 mb-8">
+          <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-mono font-bold uppercase tracking-wider inline-block">
+            Important Distinction
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-on-surface tracking-tight">
+            AI MAY REPLACE TASKS BEFORE IT REPLACES JOBS
+          </h2>
+          <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+            A job is usually made up of many different tasks. AI may automate some of those routine tasks while the person continues doing the rest of the job.
+          </p>
+        </div>
+
+        <!-- Practical Example: The Healthcare Professional / Nurse -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-surface border border-surface-container-highest">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+            <span class="text-sm font-bold text-on-surface">Real-World Example: A Healthcare Nurse</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 rounded-xl bg-surface-container-lowest border border-surface-container-highest">
+              <span class="text-[10px] uppercase font-mono text-outline font-bold block mb-2">Tasks AI May Help Automate:</span>
+              <ul class="space-y-2 text-xs text-on-surface-variant list-disc pl-4 font-light">
+                <li>Typing medical notes and filling forms</li>
+                <li>Managing patient appointment schedules</li>
+                <li>Quickly searching medicine interactions</li>
+                <li>Organizing routine inventory checklists</li>
+              </ul>
+            </div>
+
+            <div class="p-5 rounded-xl bg-surface-container-lowest border border-secondary/30">
+              <span class="text-[10px] uppercase font-mono text-secondary font-bold block mb-2">Tasks The Human Nurse Still Handles:</span>
+              <ul class="space-y-2 text-xs text-on-surface list-disc pl-4 font-medium">
+                <li>Direct bedside patient comfort and empathy</li>
+                <li>Listening to worried families and explaining care</li>
+                <li>Hands-on wound treatment and physical care</li>
+                <li>Split-second clinical judgment during emergencies</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="text-xs text-secondary mt-5 font-medium">
+            → The nurse's job does not vanish; instead, AI saves time on paperwork so the nurse can spend more time caring for patients.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. COLLABORATION WORKFLOW: HUMANS + AI -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col gap-2 mb-10 text-center items-center">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Collaboration Over Replacement</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          Not "Humans vs. AI" — But "Humans + AI"
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-2xl">
+          The future of work is not about competing against machines. It is about using AI as a supercharged assistant to do better human work.
+        </p>
+      </div>
+
+      <!-- Step-by-Step Flow -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between text-center items-center space-y-3">
+          <div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-mono font-bold text-secondary text-sm">
+            1
+          </div>
+          <h4 class="text-sm font-bold text-on-surface">AI Handles Routine Work</h4>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            AI takes care of repetitive drafts, basic data crunching, and search.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between text-center items-center space-y-3">
+          <div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-mono font-bold text-secondary text-sm">
+            2
+          </div>
+          <h4 class="text-sm font-bold text-on-surface">Human Focuses on Judgment</h4>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            The person focuses on empathy, critical decisions, ethics, and relationships.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col justify-between text-center items-center space-y-3">
+          <div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-mono font-bold text-secondary text-sm">
+            3
+          </div>
+          <h4 class="text-sm font-bold text-on-surface">Human + AI Work Together</h4>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            Combined, the output is faster, more accurate, and deeply human.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-surface-container-lowest border-2 border-secondary/40 flex flex-col justify-between text-center items-center space-y-3 shadow-sm">
+          <div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-mono font-bold text-sm">
+            4
+          </div>
+          <h4 class="text-sm font-bold text-on-surface">Jobs Evolve, Not Disappear</h4>
+          <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+            The role becomes higher-value and less bogged down by mundane repetition.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-8 text-center">
+        <p class="text-sm text-secondary font-medium italic">
+          "The future of many jobs may not be humans versus AI. It may be people using AI to do their work better."
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. IT JOB CONNECTION: WHAT DOES THIS MEAN FOR IT JOBS? -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="flex flex-col gap-2 mb-10">
+        <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Tech Industry Focus</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-on-surface tracking-tight">
+          WHAT DOES THIS MEAN FOR IT JOBS?
+        </h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-3xl">
+          Even inside software and technology companies, not every part of a job is equally easy to automate. Here is what shifts faster vs. what remains hard to automate.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- More Automatable in IT -->
+        <div class="p-7 rounded-3xl bg-surface-container-lowest border border-surface-container-highest space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+            <span class="text-xs font-mono font-bold text-outline uppercase">Fastest to Change</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-container text-outline">More Automatable</span>
+          </div>
+          <h3 class="text-lg font-bold text-on-surface">Routine IT &amp; Coding Tasks</h3>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-on-surface-variant">
+            <li class="flex items-center gap-2"><span>•</span> Repetitive boilerplate coding &amp; syntax translation</li>
+            <li class="flex items-center gap-2"><span>•</span> Basic unit test case creation</li>
+            <li class="flex items-center gap-2"><span>•</span> Routine technical documentation</li>
+            <li class="flex items-center gap-2"><span>•</span> Simple, repetitive customer support tickets</li>
+            <li class="flex items-center gap-2"><span>•</span> Basic data cleaning and script conversion</li>
+          </ul>
+        </div>
+
+        <!-- Harder to Automate in IT -->
+        <div class="p-7 rounded-3xl bg-surface-container-lowest border-2 border-secondary/40 space-y-4 shadow-sm">
+          <div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+            <span class="text-xs font-mono font-bold text-secondary uppercase">High Value / Enduring</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-secondary/10 text-secondary font-bold">Harder to Fully Automate</span>
+          </div>
+          <h3 class="text-lg font-bold text-on-surface">Strategic Engineering &amp; Problem Solving</h3>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-on-surface">
+            <li class="flex items-center gap-2"><span class="text-secondary font-bold">•</span> Understanding what a business actually needs</li>
+            <li class="flex items-center gap-2"><span class="text-secondary font-bold">•</span> Designing complex, secure software architectures</li>
+            <li class="flex items-center gap-2"><span class="text-secondary font-bold">•</span> Making critical technical trade-offs &amp; decisions</li>
+            <li class="flex items-center gap-2"><span class="text-secondary font-bold">•</span> Communicating clearly with clients and team members</li>
+            <li class="flex items-center gap-2"><span class="text-secondary font-bold">•</span> Diagnosing unexpected system outages &amp; failures</li>
+            <li class="flex items-center gap-2"><span class="text-secondary font-bold">•</span> Taking ultimate responsibility for safety and data privacy</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. CAREER GUIDANCE: WHAT SHOULD YOU LEARN? -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-surface-container-highest/80">
+      <div class="p-8 sm:p-12 rounded-3xl bg-surface-container-lowest border border-surface-container-highest flex flex-col lg:flex-row items-center justify-between gap-10">
+        
+        <div class="space-y-4 max-w-xl">
+          <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold block">Practical Advice</span>
+          <h2 class="text-3xl font-bold text-on-surface tracking-tight">
+            WHAT SHOULD YOU LEARN FOR AN AI FUTURE?
+          </h2>
+          <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+            If you want to prepare for an AI-heavy future, do not focus only on skills that AI can easily copy. Combine strong human judgment with smart AI literacy.
+          </p>
+          <div class="pt-2 text-xs text-secondary font-semibold">
+            "The strongest career path is learning how to use AI while mastering the skills that still require human judgment."
+          </div>
+        </div>
+
+        <!-- Formula Badges -->
+        <div class="w-full lg:max-w-md p-6 rounded-2xl bg-surface border border-surface-container-highest flex flex-wrap gap-2.5 items-center justify-center">
+          <span class="px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-surface-container-highest text-xs font-bold text-on-surface shadow-xs">Technical Skills</span>
+          <span class="text-secondary font-bold text-base">+</span>
+          <span class="px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-surface-container-highest text-xs font-bold text-on-surface shadow-xs">Problem Solving</span>
+          <span class="text-secondary font-bold text-base">+</span>
+          <span class="px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-surface-container-highest text-xs font-bold text-on-surface shadow-xs">Communication</span>
+          <span class="text-secondary font-bold text-base">+</span>
+          <span class="px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-surface-container-highest text-xs font-bold text-on-surface shadow-xs">Creativity</span>
+          <span class="text-secondary font-bold text-base">+</span>
+          <span class="px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-surface-container-highest text-xs font-bold text-on-surface shadow-xs">Human Judgment</span>
+          <span class="text-secondary font-bold text-base">+</span>
+          <span class="px-3.5 py-2 rounded-xl bg-secondary text-white text-xs font-bold shadow-xs">AI Literacy</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. FINAL INSPIRING CLOSING MESSAGE -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+      <div class="p-8 sm:p-12 rounded-3xl bg-neutral-900 text-white text-center flex flex-col items-center justify-center space-y-4 shadow-xl">
+        <span class="text-[11px] font-mono tracking-widest text-secondary-container uppercase font-semibold">Final Takeaway</span>
+        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight max-w-3xl leading-snug">
+          "THE FUTURE MAY NOT BE ABOUT JOBS THAT AI CAN'T DO. IT MAY BE ABOUT PEOPLE WHO KNOW HOW TO WORK WITH AI."
+        </h3>
+        <p class="text-xs sm:text-sm text-neutral-300 font-light max-w-2xl leading-relaxed">
+          Some jobs may change significantly. Some tasks may disappear. New tasks and new jobs will appear. The people who combine AI skills with strong human skills will be the best prepared for whatever comes next.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BOTTOM MULTI-PAGE PAGINATION DECK -->
+    <!-- ========================================================================= -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-10">
+      <div class="shape-grand-deck p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 border border-surface-container-highest/60">
+        
+        <!-- Left: Status Indicator -->
+        <div class="flex items-center gap-3">
+          <div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+          <span class="text-xs font-mono uppercase tracking-widest text-on-surface font-semibold">Comprehensive Report • Page 04 of 04</span>
+        </div>
+
+        <!-- Middle: Page Indicator Dots -->
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-outline">Page</span>
+          <div class="flex items-center gap-2">
+            <a href="index.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">01</a>
+            <a href="page2.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">02</a>
+            <a href="page3.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">03</a>
+            <span class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-secondary text-white shadow-sm">04</span>
+          </div>
+          <span class="text-xs text-on-surface-variant font-medium">of 04</span>
+        </div>
+
+        <!-- Right: Next Page / Restart -->
+        <a href="index.html"
+          class="flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-on-primary text-xs font-bold hover:bg-neutral-800 transition-all group shadow-sm">
+          <div class="flex flex-col text-right">
+            <span class="text-[9px] uppercase font-mono text-outline-variant">Return to Start</span>
+            <span>Page 01: Macro Shift ↺</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform">restart_alt</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- BALANCED EDITORIAL FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="w-full bg-inverse-surface text-inverse-on-surface pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-surface-tint/20">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-5 flex flex-col justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+            <span class="text-[11px] font-mono tracking-widest text-secondary uppercase font-semibold">Strategic Industry Report</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl text-inverse-on-surface tracking-tight font-light leading-snug">
+            Welcome to the new era of work &amp; technology.
+          </h2>
+          <p class="text-sm text-outline-variant font-light leading-relaxed">
+            A clear, research-backed guide examining how AI and automation are changing jobs, skills, and human careers by 2030.
+          </p>
+          <div class="pt-2 flex flex-wrap items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-mono text-outline-variant">Edition 2026–2030</span>
+            <span class="px-3 py-1 rounded-full bg-secondary/20 text-secondary text-[11px] font-semibold">Verified Research</span>
+            <span class="text-xs text-outline-variant font-mono">Cambridge / Bengaluru / Chennai / Zurich</span>
+          </div>
+        </div>
+
+        <!-- Right Side: 3-Column Directory -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 lg:pt-0">
+          <div class="flex flex-col gap-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">Report Pages</h4>
+            <ul class="space-y-2 text-xs text-outline-variant">
+              <li><a href="index.html" class="hover:text-inverse-on-surface transition-colors">Page 01: Macro Shift</a></li>
+              <li><a href="page2.html" class="hover:text-inverse-on-surface transition-colors">Page 02: Jobs &amp; Roles</a></li>
+              <li><a href="page3.html" class="hover:text-inverse-on-surface transition-colors">Page 03: Cities &amp; Corridors</a></li>
+              <li><a href="page4.html" class="text-inverse-on-surface font-semibold">Page 04: Human-First Work (Active)</a></li>
+              <li><a href="#" onclick="toggleSummaryModal(); return false;" class="text-secondary hover:underline flex items-center gap-1">Executive Summary <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">Research Centers</h4>
+            <ul class="space-y-2 text-xs text-outline-variant">
+              <li><span class="text-inverse-on-surface font-medium">Cambridge</span> — Policy &amp; Ethics</li>
+              <li><span class="text-inverse-on-surface font-medium">Bengaluru</span> — AI &amp; Software</li>
+              <li><span class="text-inverse-on-surface font-medium">Chennai</span> — Auto &amp; SaaS</li>
+              <li><span class="text-inverse-on-surface font-medium">Zurich</span> — Systems Engineering</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">4-Page Edition</h4>
+            <ul class="space-y-2 text-xs text-outline-variant">
+              <li><a href="index.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">01</span> Macro Shift</a></li>
+              <li><a href="page2.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">02</span> Jobs &amp; Roles</a></li>
+              <li><a href="page3.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">03</span> Cities &amp; Corridors</a></li>
+              <li><a href="page4.html" class="flex items-center gap-1.5 text-inverse-on-surface font-semibold"><span class="font-mono text-[10px] text-secondary">04</span> Human-First Work</a></li>
+              <li class="pt-1 font-mono text-[11px] text-outline">ISSN 2840-192X</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-outline-variant">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+          <span>© 2024–2030 NEUROS Research Foundation. Distributed under CC BY-NC 4.0.</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="index.html" class="hover:text-inverse-on-surface transition-colors">Page 01: Macro</a>
+          <a href="page2.html" class="hover:text-inverse-on-surface transition-colors">Page 02: Jobs</a>
+          <a href="page3.html" class="hover:text-inverse-on-surface transition-colors">Page 03: Cities</a>
+          <a href="page4.html" class="text-inverse-on-surface font-semibold">Page 04: Human-First</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: EXECUTIVE SUMMARY MATRIX -->
+  <!-- ========================================================================= -->
+  <div id="summaryModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div
+      class="bg-surface-container-lowest max-w-2xl w-full rounded-3xl p-6 sm:p-8 shadow-2xl border border-surface-container-highest max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+          <h3 class="text-lg font-bold text-on-surface">Executive Summary: Key Takeaways</h3>
+        </div>
+        <button onclick="toggleSummaryModal()"
+          class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="mt-6 space-y-4 text-xs sm:text-sm text-on-surface leading-relaxed">
+        <p class="font-medium text-secondary">Key Points from the 2030 IT Industry Report:</p>
+        <ul class="space-y-2 list-disc pl-5 text-on-surface-variant">
+          <li><strong>Routine Code Automation:</strong> Up to 80% of repetitive code, basic testing, and routine scripts can be generated automatically by AI tools by 2028.</li>
+          <li><strong>High-Value Skills:</strong> Senior engineers who understand system design, problem solving, AI safety, and business needs see a 4.2x demand boost.</li>
+          <li><strong>Local Business Ripple Effect:</strong> Every 1 tech job supports nearly 4 (3.8) local jobs in hostels, food stalls, transport, and neighborhood shops.</li>
+          <li><strong>Jobs Harder to Replace:</strong> Work requiring genuine human trust, empathy, physical dexterity, unpredictable crisis management, and legal responsibility remains firmly anchored in human hands.</li>
+        </ul>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-surface-container-highest flex justify-end">
+        <button onclick="toggleSummaryModal()"
+          class="px-6 py-2.5 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-neutral-800 transition-all">
+          Close Summary
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: SEARCH OVERLAY -->
+  <!-- ========================================================================= -->
+  <div id="searchModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div
+      class="bg-surface-container-lowest max-w-xl w-full rounded-3xl p-6 shadow-2xl border border-surface-container-highest">
+      <div class="flex items-center gap-3 border-b border-surface-container-highest pb-3">
+        <span class="material-symbols-outlined text-outline">search</span>
+        <input id="searchInput" type="text" placeholder="Search roles, human skills, categories, or technologies..."
+          oninput="handleSearch(this.value)"
+          class="flex-1 text-sm bg-transparent outline-none text-on-surface placeholder:text-outline" />
+        <button onclick="toggleSearchModal()"
+          class="text-xs text-outline hover:text-on-surface font-semibold">ESC</button>
+      </div>
+      <div id="searchResults" class="mt-4 max-h-60 overflow-y-auto space-y-2 text-xs">
+        <p class="text-outline text-center py-4">Type to instantly search across all 4 report pages...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- SCRIPTS -->
+  <!-- ========================================================================= -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    function toggleSummaryModal() {
+      const modal = document.getElementById('summaryModal');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+    }
+
+    function toggleSearchModal() {
+      const modal = document.getElementById('searchModal');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+      if (!modal.classList.contains('hidden')) {
+        setTimeout(() => document.getElementById('searchInput').focus(), 100);
+      }
+    }
+
+    const searchItems = [
+      { title: 'Work That Needs Human Trust', url: 'page4.html', desc: 'Therapists, doctors, teachers, financial advisers' },
+      { title: 'Work That Needs Human Empathy', url: 'page4.html', desc: 'Counsellors, nurses, care workers, social workers' },
+      { title: 'Real-World Physical Trades', url: 'page4.html', desc: 'Electricians, plumbers, carpenters, mechanics' },
+      { title: 'Unpredictable Situation Responders', url: 'page4.html', desc: 'Emergency responders, firefighters, paramedics' },
+      { title: 'Human Responsibility & Decision Making', url: 'page4.html', desc: 'Managers, safety directors, lawyers, executives' },
+      { title: 'AI + Human Collaboration Formula', url: 'page4.html', desc: 'Technical skills + problem solving + human judgment' },
+      { title: 'AI Application Engineer', url: 'page2.html#jobs-skills', desc: 'Agent workflows, RAG pipelines, production LLMs' },
+      { title: 'Machine Learning Engineer', url: 'page2.html#jobs-skills', desc: 'Fine-tuning, vLLM, quantization, Triton' },
+      { title: 'Chennai Coromandel Corridor', url: 'page3.html#chennai-2030', desc: 'Automotive, SaaS, healthcare capital resilience' },
+      { title: 'Urban Multiplier (1 : 3.8)', url: 'page3.html#urban-ripple', desc: '1 IT job sustains 3.8 peripheral livelihoods' }
+    ];
+
+    function handleSearch(query) {
+      const resultsContainer = document.getElementById('searchResults');
+      if (!query.trim()) {
+        resultsContainer.innerHTML = '<p class="text-outline text-center py-4">Type to instantly search across all 4 report pages...</p>';
+        return;
+      }
+      const q = query.toLowerCase();
+      const matches = searchItems.filter(item =>
+        item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q)
+      );
+      if (matches.length === 0) {
+        resultsContainer.innerHTML = '<p class="text-outline text-center py-4">No matching entries found.</p>';
+        return;
+      }
+      resultsContainer.innerHTML = matches.map(item => `
+        <a href="${item.url}" class="block p-3 rounded-xl bg-surface hover:bg-surface-container transition-colors">
+          <div class="font-bold text-on-surface">${item.title}</div>
+          <div class="text-xs text-on-surface-variant font-light mt-0.5">${item.desc}</div>
+        </a>
+      `).join('');
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.getElementById('summaryModal').classList.add('hidden');
+        document.getElementById('summaryModal').classList.remove('flex');
+        document.getElementById('searchModal').classList.add('hidden');
+        document.getElementById('searchModal').classList.remove('flex');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

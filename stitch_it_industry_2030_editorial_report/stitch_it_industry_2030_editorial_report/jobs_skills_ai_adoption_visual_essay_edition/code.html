@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#f8f9fa",
+            "surface-dim": "#f0f1f3",
+            "surface-variant": "#e6e8ea",
+            "on-surface": "#111215",
+            "on-surface-variant": "#4a4c52",
+            "primary": "#111215",
+            "secondary": "#e05244",
+            "secondary-container": "#fee8e6",
+            "secondary-dark": "#b03225",
+            "outline": "#787b84",
+            "outline-variant": "#d3d5da",
+            "surface-tint": "#24262b"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-sans text-on-surface antialiased selection:bg-secondary/15 selection:text-secondary">
+<!-- TOP EDITORIAL HEADER BAR (NO BOXES, OPEN ARCHITECTURAL LINE) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/50">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<div class="flex items-baseline gap-4">
+<span class="font-extrabold text-2xl tracking-tighter text-on-surface">NEUROS</span>
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-semibold">/ IT 2030 ESSAY &amp; MACRO INDEX</span>
+</div>
+<nav class="hidden lg:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-secondary transition-colors" data-path="overview" href="#">Overview</a>
+<a class="text-secondary transition-colors" data-path="jobs-and-skills" href="#">Jobs &amp; Skills</a>
+<a class="hover:text-secondary transition-colors" data-path="ripple-on-cities" href="#">Ripple on Cities</a>
+<a class="hover:text-secondary transition-colors" data-path="chennai-2030" href="#">Coromandel 2030</a>
+<a class="hover:text-secondary transition-colors" data-path="scenarios-and-outlook" href="#">Scenarios</a>
+</nav>
+<div class="flex items-center gap-6">
+<span class="font-mono text-xs text-outline hidden sm:inline">ISSN 2840-192X</span>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-on-surface hover:text-secondary transition-colors border-b-2 border-primary pb-0.5" data-path="executive-summary" href="#">
+<span>Executive Summary</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-surface min-h-screen overflow-hidden">
+<div class="flex flex-col w-full">
+<!-- SECTION 0: ESSAY TITLE & OPEN HERO MANIFESTO -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 pt-16 lg:pt-24 pb-20 border-b border-outline-variant/60">
+<!-- Editorial Micro-Meta -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-8 border-b border-outline-variant/40 font-mono text-xs uppercase tracking-widest text-outline">
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-semibold">Macroeconomic Labor Dossier</span>
+<span>/</span>
+<span>Forecast 2026–2030</span>
+</div>
+<div class="flex items-center gap-6">
+<span>Model v4.2</span>
+<span>Sample: 1,420 Enterprise Leads</span>
+<span>Q4 2024 → 2030</span>
+</div>
+</div>
+<!-- Headline & Manifesto Opening -->
+<div class="pt-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-baseline">
+<div class="lg:col-span-8">
+<h1 class="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight text-on-surface leading-[1.05]">
+              Expected Changes in <br/>
+<span class="font-extrabold italic text-secondary font-serif">IT Employment</span> by 2030.
+            </h1>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end space-y-4">
+<p class="text-lg text-on-surface-variant font-light leading-relaxed">
+              How foundational machine intelligence alters engineering headcount: the irreversible flight from manual syntactic writing toward resilient system architecture and sovereign business trust.
+            </p>
+<div class="flex items-center gap-3 pt-2">
+<span class="h-[1px] w-12 bg-secondary"></span>
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Editorial Research Dispatch</span>
+</div>
+</div>
+</div>
+<!-- PURE EDITORIAL PULLQUOTE & CALLOUT (Completely Unboxed, Raw Typography & Geometry) -->
+<div class="mt-20 pt-10 border-t border-outline-variant/40 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-2 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-mono text-xs uppercase tracking-widest font-bold text-secondary">Core Thesis</span>
+</div>
+<span class="font-mono text-[11px] text-outline uppercase tracking-wider">Human-In-The-Loop Principle</span>
+</div>
+<div class="lg:col-span-10 border-l border-outline-variant/50 pl-6 lg:pl-10">
+<blockquote class="text-2xl sm:text-3xl lg:text-4xl font-normal tracking-tight text-on-surface leading-snug">
+              “AI-generated code still needs human review. Developers who use AI effectively may complete repetitive work much faster — but sovereign architecture and catastrophic risk belong solely to the human engineer.”
+            </blockquote>
+<p class="mt-4 font-mono text-xs text-outline uppercase tracking-wider">
+              Verification Sovereignty — Autonomous generation yields zero legal accountability.
+            </p>
+</div>
+</div>
+<!-- OPEN INFOGRAPHIC: AI TO JOBS TRANSITION SEQUENCE (Line & Circles, No Boxes) -->
+<div class="mt-20 pt-12 border-t border-outline-variant/40">
+<div class="flex items-center justify-between pb-8">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full border-2 border-secondary bg-transparent"></span>
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Transition Sequence</span>
+</div>
+<span class="font-mono text-[11px] text-outline uppercase tracking-widest">Macroeconomic Transformation Pipeline</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative pt-4">
+<!-- Node 1 -->
+<div class="relative flex flex-col space-y-3">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center font-mono text-sm font-bold text-primary">
+                  01
+                </div>
+<div class="h-[1px] flex-1 bg-outline-variant"></div>
+</div>
+<span class="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">Frontier Ingestion</span>
+<h3 class="text-xl font-bold tracking-tight text-on-surface">AI Code Synthesis</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                Foundation models ingest billions of code lines, abstracting boilerplate syntax, boilerplate CRUD, and routine endpoint scripts.
+              </p>
+</div>
+<!-- Node 2 -->
+<div class="relative flex flex-col space-y-3">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full border-2 border-secondary text-secondary flex items-center justify-center font-mono text-sm font-bold">
+                  02
+                </div>
+<div class="h-[1px] flex-1 bg-outline-variant"></div>
+</div>
+<span class="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">Displacement</span>
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Automation of Repetitive Tasks</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                Syntactic boilerplate, unit tests, and defect triage are absorbed in sub-second inference calls, deflating raw volume tasks.
+              </p>
+</div>
+<!-- Node 3 -->
+<div class="relative flex flex-col space-y-3">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center font-mono text-sm font-bold text-primary">
+                  03
+                </div>
+<div class="h-[1px] flex-1 bg-outline-variant"></div>
+</div>
+<span class="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">Realignment</span>
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Headcount Shift</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                Engineering bandwidth pivots from manual syntactic typing toward verification, security boundaries, and domain orchestration.
+              </p>
+</div>
+<!-- Node 4 -->
+<div class="relative flex flex-col space-y-3">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary text-surface flex items-center justify-center font-mono text-sm font-bold">
+                  04
+                </div>
+<div class="h-[1px] flex-1 bg-secondary"></div>
+</div>
+<span class="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">Equilibrium</span>
+<h3 class="text-xl font-bold tracking-tight text-on-surface">High-Leverage Systems</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                Human engineers focus exclusively on multi-region failover, concurrency, zero-trust protocols, and business-critical architecture.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: OVERSIZED ARCHITECTURAL NUMERAL '01' — WHAT AI ABSORBS -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-24 border-b border-outline-variant/60">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Massive Numeral & Header -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="flex items-baseline space-x-4">
+<span class="text-8xl sm:text-9xl font-extrabold tracking-tighter text-on-surface leading-none select-none">01</span>
+<div class="flex flex-col">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Syntactic Displacement</span>
+<span class="font-mono text-[11px] text-outline uppercase tracking-wider">Absorption Matrix</span>
+</div>
+</div>
+<h2 class="text-3xl sm:text-4xl font-light tracking-tight text-on-surface mt-6 leading-tight">
+              What AI Tools Will <span class="font-bold">Directly Absorb</span> by 2030
+            </h2>
+<p class="text-base text-on-surface-variant font-light leading-relaxed mt-6">
+              Routine syntactic transcription, boilerplate compilation, and predictable defect matching are transitioning irreversibly into automated semantic synthesis pipelines.
+            </p>
+<div class="mt-8 pt-8 border-t border-outline-variant/40 flex items-center gap-4">
+<span class="text-3xl font-extrabold text-secondary font-mono">60–80%</span>
+<span class="text-xs uppercase font-mono tracking-wider text-outline leading-tight">Estimated collapse in repetitive coding hours by 2028</span>
+</div>
+</div>
+<!-- Editorial Sequence Infographic (Connected Vertical Nodes, No Boxes) -->
+<div class="lg:col-span-7 relative pl-4 lg:pl-10">
+<div class="absolute left-6 lg:left-12 top-4 bottom-4 w-[1px] bg-outline-variant/70"></div>
+<div class="space-y-10 relative">
+<!-- Item 1 -->
+<div class="flex items-start gap-6 group">
+<div class="w-5 h-5 rounded-full border-2 border-secondary bg-surface flex items-center justify-center shrink-0 mt-1 z-10">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex-1 pb-6 border-b border-outline-variant/30">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<h3 class="text-lg font-bold tracking-tight text-on-surface">Boilerplate &amp; Repetitive Syntax</h3>
+<span class="font-mono text-xs font-semibold text-secondary">60–80% Velocity Shift</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    CRUD endpoints, DTO entities, serializer mappings, standard ORM models, and repetitive glue code compiled on demand via natural language intent.
+                  </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start gap-6 group">
+<div class="w-5 h-5 rounded-full border-2 border-primary bg-surface flex items-center justify-center shrink-0 mt-1 z-10">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex-1 pb-6 border-b border-outline-variant/30">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<h3 class="text-lg font-bold tracking-tight text-on-surface">Routine Defect Triage &amp; Patching</h3>
+<span class="font-mono text-xs font-semibold text-secondary">Autonomous Resolution</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    Null pointers, memory leaks, off-by-one indices, and library version drift isolated and patched automatically through runtime trace synthesis.
+                  </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start gap-6 group">
+<div class="w-5 h-5 rounded-full border-2 border-primary bg-surface flex items-center justify-center shrink-0 mt-1 z-10">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex-1 pb-6 border-b border-outline-variant/30">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<h3 class="text-lg font-bold tracking-tight text-on-surface">Test Harness &amp; Mock Generation</h3>
+<span class="font-mono text-xs font-semibold text-secondary">92% Continuous Floor</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    Continuous generation of boundary conditions, edge test permutations, synthetic load fixtures, and integration harnesses authored at compile time.
+                  </p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex items-start gap-6 group">
+<div class="w-5 h-5 rounded-full border-2 border-primary bg-surface flex items-center justify-center shrink-0 mt-1 z-10">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex-1 pb-6 border-b border-outline-variant/30">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<h3 class="text-lg font-bold tracking-tight text-on-surface">Living Architectural Documentation</h3>
+<span class="font-mono text-xs font-semibold text-secondary">Zero-Lag Spec Sync</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    OpenAPI schemas, entity relationship models, dependency graphs, and incident runbooks generated and synchronized directly on commit.
+                  </p>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="flex items-start gap-6 group">
+<div class="w-5 h-5 rounded-full border-2 border-primary bg-surface flex items-center justify-center shrink-0 mt-1 z-10">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex-1 pb-6 border-b border-outline-variant/30">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<h3 class="text-lg font-bold tracking-tight text-on-surface">Telemetry, Trace &amp; Error Analysis</h3>
+<span class="font-mono text-xs font-semibold text-secondary">Rapid MTTR Deflection</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    Semantic distillation of high-volume observability logs (OpenTelemetry, Datadog), accelerating incident recovery cycles from hours to minutes.
+                  </p>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="flex items-start gap-6 group">
+<div class="w-5 h-5 rounded-full border-2 border-secondary bg-secondary flex items-center justify-center shrink-0 mt-1 z-10">
+<span class="w-1.5 h-1.5 rounded-full bg-surface"></span>
+</div>
+<div class="flex-1 pb-2">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<h3 class="text-lg font-bold tracking-tight text-on-surface">L1 Operational Deflection &amp; Support</h3>
+<span class="font-mono text-xs font-semibold text-secondary">Autonomous Routing</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    Automated parsing of customer tickets, algorithmic resolution of Tier-1 anomalies, and automated delegation of complex faults to staff engineers.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: OVERSIZED ARCHITECTURAL NUMERAL '02' — SOVEREIGN HUMAN ARCHITECTURE (FULL-WIDTH EDITORIAL MANIFESTO, NO BLACK BOX) -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-24 border-b border-outline-variant/60">
+<div class="flex flex-col">
+<!-- Oversized Numeral & Editorial Header -->
+<div class="flex items-baseline space-x-4">
+<span class="text-8xl sm:text-9xl font-extrabold tracking-tighter text-on-surface leading-none select-none">02</span>
+<div class="flex flex-col">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">The Unbroken Sovereignty</span>
+<span class="font-mono text-[11px] text-outline uppercase tracking-wider">Human Responsibility Spread</span>
+</div>
+</div>
+<h2 class="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-on-surface mt-8 max-w-5xl leading-[1.1]">
+            Why Human Engineers Remain <span class="font-extrabold italic text-secondary">Sovereign and Irreplaceable</span>
+</h2>
+<!-- Editorial Manifesto Text (Big Bold Typography) -->
+<p class="text-xl sm:text-2xl text-on-surface font-light leading-relaxed mt-8 max-w-4xl border-l-2 border-secondary pl-6">
+            AI systems possess zero legal culpability, cannot negotiate socio-economic trade-offs with client stakeholders, lack real-world physical context, and cannot assume operational liabilities when systems buckle under catastrophic concurrency.
+          </p>
+<!-- 3-Point Horizontal Balance (Delicate Rules, Open Editorial Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16 pt-12 border-t border-outline-variant/50">
+<div class="flex flex-col space-y-3">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">02.1 / Topology</span>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface">System Architecture</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                Directing multi-region failure domains, strict data consistency protocols, distributed consensus mechanisms, and low-latency database sharding schemes that resist automated reasoning.
+              </p>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">02.2 / Catastrophe</span>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface">Production Resiliency</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                Orchestrating emergency rollbacks, zero-downtime database migrations, and high-stakes triage during unscripted global cloud outages and unforeseen hardware failures.
+              </p>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">02.3 / Sovereignty</span>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface">Governance &amp; Trust</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                Safeguarding data lineage, regional jurisdictional compliance, adversarial prompt defenses, and contractual liabilities in strictly regulated enterprise banking and healthcare ecosystems.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: OVERSIZED ARCHITECTURAL NUMERAL '03' — MEASURABLE BENEFITS -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-24 border-b border-outline-variant/60">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-5 flex flex-col">
+<div class="flex items-baseline space-x-4">
+<span class="text-8xl sm:text-9xl font-extrabold tracking-tighter text-on-surface leading-none select-none">03</span>
+<div class="flex flex-col">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Enterprise Realignment</span>
+<span class="font-mono text-[11px] text-outline uppercase tracking-wider">Efficiency Metrics</span>
+</div>
+</div>
+<h2 class="text-3xl sm:text-4xl font-light tracking-tight text-on-surface mt-6 leading-tight">
+              Measurable Benefits of AI Adoption Across <span class="font-bold">Engineering Cohorts</span>
+</h2>
+<!-- Giant Metric -->
+<div class="mt-12 pt-8 border-t border-outline-variant/40">
+<div class="text-7xl sm:text-8xl font-black tracking-tight text-secondary font-mono leading-none">
+                +38%
+              </div>
+<p class="text-lg font-bold text-on-surface mt-3">
+                Net Increase in High-Order Architectural Output
+              </p>
+<p class="text-sm text-on-surface-variant font-light mt-2 leading-relaxed">
+                Developers transition over 70% of weekly cycles from typing syntax and resolving boilerplate glue code toward validating domain schemas, distributed concurrency, and boundary constraints.
+              </p>
+<!-- Open Editorial Metric Track -->
+<div class="mt-8 space-y-2">
+<div class="flex justify-between font-mono text-xs uppercase tracking-wider">
+<span class="text-outline">Time spent on pure syntax</span>
+<span class="font-bold text-secondary">55% → 15%</span>
+</div>
+<div class="w-full h-1 bg-outline-variant">
+<div class="h-full bg-secondary" style="width: 27%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Editorial Narrative Breakdown (No Box Enclosures) -->
+<div class="lg:col-span-7 space-y-12 lg:pt-4">
+<div class="pb-8 border-b border-outline-variant/30 space-y-2">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-semibold">Velocity Acceleration</span>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface">Compressed Learning Curves &amp; Institutional Memory</h3>
+<p class="text-base text-on-surface-variant font-light leading-relaxed">
+                Junior engineers query institutional repositories and decode historical monoliths in real time, reducing developer onboarding latency from 90 days down to 24 days without consuming senior architect hours.
+              </p>
+</div>
+<div class="pb-8 border-b border-outline-variant/30 space-y-2">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-semibold">Capital Multiplier</span>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface">Hyper-Lean Capital Formation</h3>
+<p class="text-base text-on-surface-variant font-light leading-relaxed">
+                A 3-person engineering squad in 2026 possesses the shipping velocity and feature deployment capacity of a 25-person team in 2020, democratizing vertical SaaS creation and hyper-specialized micro-enterprises.
+              </p>
+</div>
+<div class="space-y-2">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-semibold">Reliability Baseline</span>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface">Systematic and Continuous Quality Verification</h3>
+<p class="text-base text-on-surface-variant font-light leading-relaxed">
+                Autonomous agents run exhaustive regression sweeps, fuzz testing, and localized schema verifications prior to human code review, driving production defect escape rates down by 44% while sustaining a 92% automated test floor.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: OVERSIZED ARCHITECTURAL NUMERAL '04' — ROLE CONSTELLATION MAP (NO CARDS, PURE VISUAL CONSTELLATION) -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-24 border-b border-outline-variant/60">
+<div class="flex flex-col">
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-4 pb-6">
+<div class="flex items-baseline space-x-4">
+<span class="text-8xl sm:text-9xl font-extrabold tracking-tighter text-on-surface leading-none select-none">04</span>
+<div class="flex flex-col">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Talent Horizon 2026–2030</span>
+<span class="font-mono text-[11px] text-outline uppercase tracking-wider">Topological Domain Map</span>
+</div>
+</div>
+<span class="font-mono text-xs uppercase tracking-widest text-outline">Open Constellation System</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-light tracking-tight text-on-surface mt-4 max-w-3xl leading-tight">
+            High Growth <span class="font-bold">Specialized Engineering Roles</span>
+</h2>
+<p class="text-base text-on-surface-variant font-light mt-4 max-w-2xl leading-relaxed">
+            Headcount migrates from generalist application assemblers toward specialized nodal clusters anchored around foundation models, distributed cloud backbones, and governance.
+          </p>
+<!-- CONSTELLATION DIAGRAM CANVAS (SVG Network with Floating Open Typographic Nodes) -->
+<div class="mt-16 pt-8 relative">
+<!-- Central Planetary Anchor -->
+<div class="flex flex-col items-center justify-center text-center my-8">
+<div class="relative flex items-center justify-center">
+<!-- Large Concentric Radiating Rings -->
+<div class="w-56 h-56 rounded-full border border-outline-variant/50 absolute animate-ping opacity-25"></div>
+<div class="w-48 h-48 rounded-full border border-secondary/30 absolute"></div>
+<div class="w-36 h-36 rounded-full border border-primary/20 absolute"></div>
+<!-- Core Hub -->
+<div class="w-24 h-24 rounded-full bg-primary text-surface flex flex-col items-center justify-center p-3 shadow-xl z-20">
+<span class="font-mono text-[10px] uppercase text-secondary font-bold tracking-widest">NUCLEUS</span>
+<span class="text-xs font-bold text-center leading-tight mt-1">AI SYSTEMS ARCHITECTURE</span>
+</div>
+</div>
+<span class="mt-4 font-mono text-[11px] text-secondary font-bold uppercase tracking-widest">Central Gravitational Hub</span>
+</div>
+<!-- Open Grid of 9 Orbital Domain Clusters (Free Floating Typography, No Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16 mt-12 pt-8 border-t border-outline-variant/40 relative">
+<!-- Orbital Node 1 -->
+<div class="relative flex flex-col space-y-2 border-l border-secondary/40 pl-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-mono text-xs uppercase font-bold text-secondary tracking-wider">Node 01 / Frontier</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">AI Application Engineers</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                  Connecting enterprise datastores with frontier models via RAG pipelines, orchestrating multi-agent chains, and building verified production tool-calling integrations.
+                </p>
+<span class="font-mono text-xs text-outline pt-1">LangChain, LlamaIndex, FastAPI, Pinecone</span>
+</div>
+<!-- Orbital Node 2 -->
+<div class="relative flex flex-col space-y-2 border-l border-primary/40 pl-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-mono text-xs uppercase font-bold text-on-surface tracking-wider">Node 02 / Weights</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">Machine Learning Engineers</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                  Fine-tuning open weights, 4-bit quantization, distributed LoRA training, and deploying lightweight custom reasoning models on edge infrastructure.
+                </p>
+<span class="font-mono text-xs text-outline pt-1">PyTorch, vLLM, Hugging Face, Triton</span>
+</div>
+<!-- Orbital Node 3 -->
+<div class="relative flex flex-col space-y-2 border-l border-outline/40 pl-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-mono text-xs uppercase font-bold text-outline tracking-wider">Node 03 / Pipelines</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">Modern Data Engineers</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                  Curating high-volume multimodal repositories, designing sub-second vector embedding ingestion pipelines, and governing data lakes.
+                </p>
+<span class="font-mono text-xs text-outline pt-1">Apache Iceberg, dbt, Apache Kafka, ClickHouse</span>
+</div>
+<!-- Orbital Node 4 -->
+<div class="relative flex flex-col space-y-2 border-l border-outline/40 pl-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-mono text-xs uppercase font-bold text-outline tracking-wider">Node 04 / Ingress</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">Cloud Platform Engineers</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                  Managing distributed cloud fabrics, sovereign multi-region boundaries, low-latency ingress meshes, and zero-trust VPC perimeters.
+                </p>
+<span class="font-mono text-xs text-outline pt-1">AWS, Terraform, Kubernetes, Cilium</span>
+</div>
+<!-- Orbital Node 5 -->
+<div class="relative flex flex-col space-y-2 border-l border-secondary/40 pl-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-mono text-xs uppercase font-bold text-secondary tracking-wider">Node 05 / Orchestration</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">MLOps &amp; LLMOps Engineers</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                  Monitoring production model drift, optimizing GPU compute provisioning, caching semantic embeddings, and cutting token expenditure.
+                </p>
+<span class="font-mono text-xs text-outline pt-1">Kubeflow, MLflow, Ray, Triton Server</span>
+</div>
+<!-- Orbital Node 6 -->
+<div class="relative flex flex-col space-y-2 border-l border-primary/40 pl-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-mono text-xs uppercase font-bold text-on-surface tracking-wider">Node 06 / Defense</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">AI &amp; Cloud Cybersecurity</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                  Defending against prompt injections, model extraction exploits, automated supply chain tampering, and unauthorized data leakage.
+                </p>
+<span class="font-mono text-xs text-outline pt-1">OWASP LLM 10, Wiz, Snyk, Falco</span>
+</div>
+<!-- Orbital Node 7 -->
+<div class="relative flex flex-col space-y-2 border-l border-primary/40 pl-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-mono text-xs uppercase font-bold text-on-surface tracking-wider">Node 07 / Synthesis</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">AI Testing &amp; Eval Engineers</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                  Authoring rigorous synthetic evaluation benchmarks, scoring hallucination thresholds, and certifying model alignment for enterprise release.
+                </p>
+<span class="font-mono text-xs text-outline pt-1">Ragas, DeepEval, Promptfoo, Giskard</span>
+</div>
+<!-- Orbital Node 8 -->
+<div class="relative flex flex-col space-y-2 border-l border-outline/40 pl-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-mono text-xs uppercase font-bold text-outline tracking-wider">Node 08 / Policy</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">AI Governance &amp; Ethics Leads</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                  Enforcing compliance with the EU AI Act, corporate data privacy mandates, algorithmic bias audits, and intellectual property provenance.
+                </p>
+<span class="font-mono text-xs text-outline pt-1">NIST AI RMF, AuditBoard, OneTrust</span>
+</div>
+<!-- Orbital Node 9 -->
+<div class="relative flex flex-col space-y-2 border-l border-secondary/40 pl-5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-mono text-xs uppercase font-bold text-secondary tracking-wider">Node 09 / Hardware</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">Compute Fabric &amp; Data Center</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                  Thermal dynamics engineering, high-throughput InfiniBand interconnects, optical switches, and bare-metal cluster orchestrations.
+                </p>
+<span class="font-mono text-xs text-outline pt-1">NVIDIA DGX, NVLink, Slurm, InfiniBand</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: OVERSIZED ARCHITECTURAL NUMERAL '05' — DESCENDING EXPOSURE GRADIENT SCALE (NO TABLES, NO CARDS) -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-24 border-b border-outline-variant/60">
+<div class="flex flex-col">
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-4 pb-6">
+<div class="flex items-baseline space-x-4">
+<span class="text-8xl sm:text-9xl font-extrabold tracking-tighter text-on-surface leading-none select-none">05</span>
+<div class="flex flex-col">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Structural Contraction Forecast</span>
+<span class="font-mono text-[11px] text-outline uppercase tracking-wider">Vulnerability Gradient</span>
+</div>
+</div>
+<span class="font-mono text-xs uppercase tracking-widest text-outline">Empirical Displacement Model</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-light tracking-tight text-on-surface mt-4 max-w-3xl leading-tight">
+            Roles Most Exposed to <span class="font-bold">Algorithmic Contraction</span>
+</h2>
+<!-- LARGE EDITORIAL CAVEAT CALLOUT (Open Editorial Typography) -->
+<div class="my-10 py-6 border-y border-outline-variant/50 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="flex items-baseline gap-4">
+<span class="text-secondary font-serif italic text-2xl">“</span>
+<p class="text-lg sm:text-xl font-medium text-on-surface">
+                Higher exposure does not mean guaranteed job loss.
+                <span class="text-on-surface-variant font-light">Surviving practitioners evolve into supervisors, evaluators, and system orchestrators.</span>
+</p>
+</div>
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold shrink-0">Evolution &gt; Extinction</span>
+</div>
+<!-- VERTICAL EXPOSURE GRADIENT LINE & NODES (Pure Editorial Data Journalism) -->
+<div class="mt-8 relative max-w-4xl mx-auto w-full">
+<!-- Central Gradient Spine -->
+<div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] -ml-[1px] bg-gradient-to-b from-secondary via-secondary/70 to-outline-variant"></div>
+<div class="space-y-16 relative">
+<!-- Node 1: Simple Data Entry (-70% to -80%) -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 group">
+<div class="md:w-1/2 md:text-right pl-16 md:pl-0 order-2 md:order-1">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold block">Extreme Risk Exposure</span>
+<h3 class="text-2xl font-bold text-on-surface mt-1">Simple Data Entry &amp; Transcription</h3>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    Multimodal OCR models extract, structure, and validate non-standard document formats with near-zero error tolerances.
+                  </p>
+<span class="font-mono text-xs text-outline mt-2 block">Pivot Vector: Data Pipeline Governance &amp; Schema Design</span>
+</div>
+<div class="absolute left-8 md:left-1/2 -ml-4 w-8 h-8 rounded-full bg-secondary text-surface flex items-center justify-center font-mono text-xs font-bold shadow-md z-10 order-1 md:order-2">
+                  80%
+                </div>
+<div class="md:w-1/2 pl-16 md:pl-8 order-3">
+<span class="font-mono text-3xl font-extrabold text-secondary tracking-tight">-70% to -80%</span>
+<span class="text-xs uppercase font-mono text-outline block mt-1">Direct Headcount Deflection</span>
+</div>
+</div>
+<!-- Node 2: Manual QA Testing (-60% to -70%) -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 group">
+<div class="md:w-1/2 md:text-right pl-16 md:pl-0 order-2 md:order-1">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold block">High Risk Exposure</span>
+<h3 class="text-2xl font-bold text-on-surface mt-1">Manual QA Testing</h3>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    Repetitive click-through routines and manual UI regressions are completely supplanted by autonomous agent simulation swarms.
+                  </p>
+<span class="font-mono text-xs text-outline mt-2 block">Pivot Vector: Automated Evaluation &amp; Synthetic Benchmarking</span>
+</div>
+<div class="absolute left-8 md:left-1/2 -ml-4 w-8 h-8 rounded-full bg-secondary text-surface flex items-center justify-center font-mono text-xs font-bold shadow-md z-10 order-1 md:order-2">
+                  70%
+                </div>
+<div class="md:w-1/2 pl-16 md:pl-8 order-3">
+<span class="font-mono text-3xl font-extrabold text-secondary tracking-tight">-60% to -70%</span>
+<span class="text-xs uppercase font-mono text-outline block mt-1">Autonomous Swarm Replacement</span>
+</div>
+</div>
+<!-- Node 3: Basic L1 Support (-55% to -65%) -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 group">
+<div class="md:w-1/2 md:text-right pl-16 md:pl-0 order-2 md:order-1">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold block">High Risk Exposure</span>
+<h3 class="text-2xl font-bold text-on-surface mt-1">Basic L1 Technical Support</h3>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    Contextual conversational agents resolve over 75% of routine user tickets end-to-end without human intervention.
+                  </p>
+<span class="font-mono text-xs text-outline mt-2 block">Pivot Vector: L3 Systems Escalation &amp; Customer Success</span>
+</div>
+<div class="absolute left-8 md:left-1/2 -ml-4 w-8 h-8 rounded-full bg-secondary/80 text-surface flex items-center justify-center font-mono text-xs font-bold shadow-md z-10 order-1 md:order-2">
+                  65%
+                </div>
+<div class="md:w-1/2 pl-16 md:pl-8 order-3">
+<span class="font-mono text-3xl font-extrabold text-secondary tracking-tight">-55% to -65%</span>
+<span class="text-xs uppercase font-mono text-outline block mt-1">Autonomous First-Contact Resolution</span>
+</div>
+</div>
+<!-- Node 4: Routine Tech Writing (-50% to -60%) -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 group">
+<div class="md:w-1/2 md:text-right pl-16 md:pl-0 order-2 md:order-1">
+<span class="font-mono text-xs uppercase tracking-widest text-outline font-bold block">Moderate Risk Exposure</span>
+<h3 class="text-2xl font-bold text-on-surface mt-1">Routine Technical Writing</h3>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    Inline code modifications generate synchronized OpenAPI specifications and interactive guides directly on Git merge.
+                  </p>
+<span class="font-mono text-xs text-outline mt-2 block">Pivot Vector: Product Architecture Communication &amp; Whitepapers</span>
+</div>
+<div class="absolute left-8 md:left-1/2 -ml-4 w-8 h-8 rounded-full border-2 border-primary bg-surface text-on-surface flex items-center justify-center font-mono text-xs font-bold shadow-sm z-10 order-1 md:order-2">
+                  60%
+                </div>
+<div class="md:w-1/2 pl-16 md:pl-8 order-3">
+<span class="font-mono text-3xl font-bold text-on-surface tracking-tight">-50% to -60%</span>
+<span class="text-xs uppercase font-mono text-outline block mt-1">Continuous Inline Doc Synthesis</span>
+</div>
+</div>
+<!-- Node 5: Basic Coding (-45% to -55%) -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 group">
+<div class="md:w-1/2 md:text-right pl-16 md:pl-0 order-2 md:order-1">
+<span class="font-mono text-xs uppercase tracking-widest text-outline font-bold block">Moderate Risk Exposure</span>
+<h3 class="text-2xl font-bold text-on-surface mt-1">Basic Coding &amp; Routine Scripting</h3>
+<p class="text-sm text-on-surface-variant font-light mt-1.5 leading-relaxed">
+                    Deterministic syntax trees and common framework boilerplate are completely absorbed by frontier code synthesis engines.
+                  </p>
+<span class="font-mono text-xs text-outline mt-2 block">Pivot Vector: Prompt Architecture &amp; Automated PR Auditing</span>
+</div>
+<div class="absolute left-8 md:left-1/2 -ml-4 w-8 h-8 rounded-full border-2 border-outline-variant bg-surface text-outline flex items-center justify-center font-mono text-xs font-bold shadow-sm z-10 order-1 md:order-2">
+                  55%
+                </div>
+<div class="md:w-1/2 pl-16 md:pl-8 order-3">
+<span class="font-mono text-3xl font-bold text-on-surface tracking-tight">-45% to -55%</span>
+<span class="text-xs uppercase font-mono text-outline block mt-1">Absorbed by Foundation Copilots</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: OVERSIZED ARCHITECTURAL NUMERAL '06' — 2026 VS 2030 VISUAL JOURNEY & UNBOXED ALLOCATION CHART -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-24 border-b border-outline-variant/60">
+<div class="flex flex-col">
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-4 pb-6">
+<div class="flex items-baseline space-x-4">
+<span class="text-8xl sm:text-9xl font-extrabold tracking-tighter text-on-surface leading-none select-none">06</span>
+<div class="flex flex-col">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Entry-Level Trajectory</span>
+<span class="font-mono text-[11px] text-outline uppercase tracking-wider">The 2026 → 2030 Divide</span>
+</div>
+</div>
+<span class="font-mono text-xs uppercase tracking-widest text-outline">Talent Progression Horizon</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-light tracking-tight text-on-surface mt-4 max-w-3xl leading-tight">
+            Fresher Opportunities: <span class="font-bold">The Great Compression</span>
+</h2>
+<p class="text-lg text-on-surface-variant font-light mt-4 max-w-3xl leading-relaxed">
+            The classical hiring contract—absorbing cohorts of junior engineers onto the bench for 18 months of routine syntax maintenance—has permanently ceased. Entry into engineering now demands Day-1 production readiness.
+          </p>
+<!-- CONTINUOUS TIMELINE FLOW (No Boxes, Progressive Rings: 2026 small -> 2028 transitioning -> 2030 large focal double ring) -->
+<div class="mt-16 pt-10 border-t border-outline-variant/40">
+<div class="flex items-center justify-between pb-8">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Timeline Vector: Progressive Milestones</span>
+<span class="font-mono text-[11px] text-outline uppercase">Continuous Narrative Stream</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 relative pt-6">
+<!-- 2026: Small Milestone Circle -->
+<div class="flex flex-col space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full border border-primary flex items-center justify-center font-mono text-xs font-bold text-primary">
+                    26
+                  </div>
+<div class="h-[1px] flex-1 bg-outline-variant"></div>
+</div>
+<div>
+<span class="font-mono text-xs uppercase tracking-wider text-outline font-semibold">2026 Baseline</span>
+<h3 class="text-2xl font-bold text-on-surface mt-1">Copilot Assisted Developer</h3>
+</div>
+<div class="space-y-3 text-sm text-on-surface-variant font-light leading-relaxed">
+<p><strong class="font-medium text-on-surface">Hiring:</strong> Moderate campus hiring volume. Enterprises still allocate 3 to 6 months for codebase onboarding and syntax training.</p>
+<p><strong class="font-medium text-on-surface">Skillset:</strong> Core syntax proficiency, standard SQL CRUD, Git branching, and prompt-assisted code completion.</p>
+<p><strong class="font-medium text-on-surface">Progression:</strong> Junior → Mid-Level → Senior Engineer spanning a conventional 5 to 7 year progression timeline.</p>
+</div>
+</div>
+<!-- 2028: Transitioning Ring -->
+<div class="flex flex-col space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full border-2 border-dashed border-secondary text-secondary flex items-center justify-center font-mono text-sm font-bold">
+                    28
+                  </div>
+<div class="h-[1px] flex-1 bg-outline-variant"></div>
+</div>
+<div>
+<span class="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">2028 Inflection</span>
+<h3 class="text-2xl font-bold text-on-surface mt-1">Hybrid Synthesis Squads</h3>
+</div>
+<div class="space-y-3 text-sm text-on-surface-variant font-light leading-relaxed">
+<p><strong class="font-medium text-on-surface">Hiring:</strong> Manual code authoring drops by 50%. Junior hires are evaluated directly on debugging synthetic pipelines and handling multi-service integration boundaries.</p>
+<p><strong class="font-medium text-on-surface">Skillset:</strong> Vector datastores, asynchronous messaging, synthetic test harnesses, and automated cloud deployments.</p>
+<p><strong class="font-medium text-on-surface">Progression:</strong> Accelerated 3-year promotion tracks for engineers demonstrating strong architectural ownership.</p>
+</div>
+</div>
+<!-- 2030: Large Focal Double Ring -->
+<div class="flex flex-col space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full border-2 border-secondary p-1 flex items-center justify-center">
+<div class="w-full h-full rounded-full bg-secondary text-surface flex items-center justify-center font-mono text-base font-extrabold shadow-lg">
+                      30
+                    </div>
+</div>
+<div class="h-[1px] flex-1 bg-secondary"></div>
+</div>
+<div>
+<span class="font-mono text-xs uppercase tracking-wider text-secondary font-bold">2030 Horizon</span>
+<h3 class="text-2xl font-bold text-secondary mt-1">Autonomous Systems Orchestrator</h3>
+</div>
+<div class="space-y-3 text-sm text-on-surface-variant font-light leading-relaxed">
+<p><strong class="font-medium text-on-surface">Hiring:</strong> Selective, precision hiring. Fresh recruits arrive as systems orchestrators managing autonomous pipelines, verifying model reasoning outputs, and enforcing zero-trust API limits.</p>
+<p><strong class="font-medium text-on-surface">Skillset:</strong> Full lifecycle systems literacy: container orchestrations, distributed failover, vector search, and strict security compliance.</p>
+<p><strong class="font-medium text-on-surface">Progression:</strong> Direct ascent to Solutions Architect in &lt;3 years, compressing conventional corporate ladders.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- UNBOXED DATA VISUALIZATION: AI ADOPTION & CAPACITY ALLOCATION (Directly on canvas) -->
+<div class="mt-24 pt-12 border-t border-outline-variant/40">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Empirical Workforce Shift</span>
+<h3 class="text-3xl font-light tracking-tight text-on-surface mt-2">
+                  Possible AI Adoption &amp; IT Capacity Allocation: <span class="font-bold">2026–2030</span>
+</h3>
+<p class="text-sm text-on-surface-variant font-light mt-1">
+                  Modeled distribution of developer working hours: Routine Manual Syntax vs. High-Order Architectural Engineering.
+                </p>
+</div>
+<div class="flex items-center gap-8 font-mono text-xs uppercase tracking-wider shrink-0">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-outline-variant"></span>
+<span class="text-outline">Routine Syntax</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-on-surface font-bold">Architecture</span>
+</div>
+</div>
+</div>
+<!-- Open Chart Bar Tracks with Circular Milestone Anchors -->
+<div class="space-y-8">
+<!-- 2026 -->
+<div class="space-y-2">
+<div class="flex justify-between font-mono text-xs">
+<span class="font-bold text-on-surface">2026 Baseline</span>
+<span class="text-outline">Routine: 62% | Architecture: 38%</span>
+</div>
+<div class="relative w-full h-3 bg-surface-dim rounded-full flex items-center">
+<div class="h-full bg-outline-variant rounded-l-full" style="width: 62%;"></div>
+<div class="h-full bg-primary rounded-r-full" style="width: 38%;"></div>
+<div class="absolute left-[62%] -ml-2.5 w-5 h-5 rounded-full bg-surface border-2 border-primary flex items-center justify-center font-mono text-[9px] font-bold">●</div>
+</div>
+</div>
+<!-- 2027 -->
+<div class="space-y-2">
+<div class="flex justify-between font-mono text-xs">
+<span class="font-bold text-on-surface">2027 Projected</span>
+<span class="text-outline">Routine: 48% | Architecture: 52%</span>
+</div>
+<div class="relative w-full h-3 bg-surface-dim rounded-full flex items-center">
+<div class="h-full bg-outline-variant rounded-l-full" style="width: 48%;"></div>
+<div class="h-full bg-primary rounded-r-full" style="width: 52%;"></div>
+<div class="absolute left-[48%] -ml-2.5 w-5 h-5 rounded-full bg-surface border-2 border-secondary text-secondary flex items-center justify-center font-mono text-[9px] font-bold">●</div>
+</div>
+</div>
+<!-- 2028 -->
+<div class="space-y-2">
+<div class="flex justify-between font-mono text-xs">
+<span class="font-bold text-on-surface">2028 Projected</span>
+<span class="text-outline">Routine: 34% | Architecture: 66%</span>
+</div>
+<div class="relative w-full h-3 bg-surface-dim rounded-full flex items-center">
+<div class="h-full bg-outline-variant rounded-l-full" style="width: 34%;"></div>
+<div class="h-full bg-primary rounded-r-full" style="width: 66%;"></div>
+<div class="absolute left-[34%] -ml-2.5 w-5 h-5 rounded-full bg-surface border-2 border-primary flex items-center justify-center font-mono text-[9px] font-bold">●</div>
+</div>
+</div>
+<!-- 2029 -->
+<div class="space-y-2">
+<div class="flex justify-between font-mono text-xs">
+<span class="font-bold text-on-surface">2029 Projected</span>
+<span class="text-outline">Routine: 22% | Architecture: 78%</span>
+</div>
+<div class="relative w-full h-3 bg-surface-dim rounded-full flex items-center">
+<div class="h-full bg-outline-variant rounded-l-full" style="width: 22%;"></div>
+<div class="h-full bg-primary rounded-r-full" style="width: 78%;"></div>
+<div class="absolute left-[22%] -ml-2.5 w-5 h-5 rounded-full bg-surface border-2 border-primary flex items-center justify-center font-mono text-[9px] font-bold">●</div>
+</div>
+</div>
+<!-- 2030 -->
+<div class="space-y-2">
+<div class="flex justify-between font-mono text-xs">
+<span class="font-bold text-secondary">2030 Horizon</span>
+<span class="text-secondary font-bold">Routine: 11% | Architecture: 89%</span>
+</div>
+<div class="relative w-full h-3 bg-surface-dim rounded-full flex items-center">
+<div class="h-full bg-secondary rounded-l-full" style="width: 11%;"></div>
+<div class="h-full bg-primary rounded-r-full" style="width: 89%;"></div>
+<div class="absolute left-[11%] -ml-3 w-6 h-6 rounded-full bg-secondary text-surface shadow-md flex items-center justify-center font-mono text-[10px] font-extrabold">✓</div>
+</div>
+</div>
+</div>
+<!-- Open Scenario Annotations (No Container Box) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 pt-8 border-t border-outline-variant/30">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-mono text-xs uppercase font-bold text-on-surface">Scenario A: High Co-Pilot Saturation</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed pl-4">
+                  Synthetic code generation handles 89% of codebases by 2030, leaving human bandwidth exclusively for architecture, performance profiling, and regulatory accountability.
+                </p>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-mono text-xs uppercase font-bold text-secondary">Scenario B: Resilient Human Governance</span>
+</div>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed pl-4">
+                  Engineering headcount remains numerically stable or expands across high-consequence verticals (Fintech, Health, Defense), but syntactic manual coding becomes functionally extinct.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: OVERSIZED ARCHITECTURAL NUMERAL '07' — SKILLS FOR THE FUTURE & OPEN SPECIMEN BLUEPRINT -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-24 border-b border-outline-variant/60">
+<div class="flex flex-col">
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-4 pb-6">
+<div class="flex items-baseline space-x-4">
+<span class="text-8xl sm:text-9xl font-extrabold tracking-tighter text-on-surface leading-none select-none">07</span>
+<div class="flex flex-col">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">The Resilient Formula</span>
+<span class="font-mono text-[11px] text-outline uppercase tracking-wider">Invariant Competencies</span>
+</div>
+</div>
+<span class="font-mono text-xs uppercase tracking-widest text-outline">Reference Architecture</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-light tracking-tight text-on-surface mt-4 max-w-3xl leading-tight">
+            Skills for the Future: <span class="font-bold">What Never Depreciates</span>
+</h2>
+<p class="text-lg text-on-surface-variant font-light mt-4 max-w-3xl leading-relaxed">
+            Languages, frameworks, and syntax wrappers churn every cycle. What remains invariant is distributed system architecture, resilient relational consistency, fault tolerance mitigation, and clear technical communication.
+          </p>
+<!-- Raw Monospace Skill Stream (Open Typographic Line) -->
+<div class="py-6 my-10 border-y border-outline-variant/50 flex flex-wrap items-center gap-x-6 gap-y-3 font-mono text-sm">
+<span class="font-bold text-on-surface">Java / Go</span>
+<span class="text-secondary font-bold">/</span>
+<span class="font-bold text-on-surface">Distributed Microservices</span>
+<span class="text-secondary font-bold">/</span>
+<span class="font-bold text-on-surface">PostgreSQL &amp; Query Tuning</span>
+<span class="text-secondary font-bold">/</span>
+<span class="font-bold text-on-surface">Docker &amp; K8s</span>
+<span class="text-secondary font-bold">/</span>
+<span class="font-bold text-on-surface">Vector RAG Integration</span>
+<span class="text-secondary font-bold">/</span>
+<span class="font-bold text-secondary">Stakeholder Negotiation</span>
+</div>
+<!-- OPEN TYPOGRAPHIC BLUEPRINT & CODE SPECIMEN (No Box Enclosures) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pt-6">
+<div class="lg:col-span-6 space-y-6">
+<span class="font-mono text-xs uppercase tracking-widest text-outline">Production Reference Blueprint</span>
+<h3 class="text-2xl font-bold text-on-surface">What a High-Value Portfolio Project Looks Like in 2026–2030</h3>
+<p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                Candidates can no longer rely on toy frontend clones or surface-level CRUD dashboards. Enterprise technical leads filter specifically for deployed, verifiable architectures with automated integration tests, observability telemetry, and fault-tolerant failovers.
+              </p>
+<div class="space-y-4 pt-4 border-t border-outline-variant/30">
+<div>
+<h4 class="text-base font-bold text-on-surface">Spring Boot &amp; PostgreSQL ACID Core</h4>
+<p class="text-xs text-on-surface-variant font-light mt-0.5">Strict relational schemas, HikariCP connection tuning, and partitioned tables resilient to heavy concurrent transactions.</p>
+</div>
+<div>
+<h4 class="text-base font-bold text-on-surface">Stateless JWT &amp; Fine-Grained RBAC</h4>
+<p class="text-xs text-on-surface-variant font-light mt-0.5">Role-based privilege boundaries, short-lived bearer tokens, and cryptographically verified claims.</p>
+</div>
+<div>
+<h4 class="text-base font-bold text-on-surface">Semantic RAG Pipeline with pgvector</h4>
+<p class="text-xs text-on-surface-variant font-light mt-0.5">Hybrid vector-lexical indexing over internal documentation with sub-100ms retrieval latency.</p>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-secondary hover:text-on-surface transition-colors" data-path="executive-summary" href="#">
+<span>Inspect Open Source Blueprint Spec</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Architectural Code Specimen (Open Architectural Specimen, Dotted Guidelines, No Container Box) -->
+<div class="lg:col-span-6 font-mono text-xs border-l-2 border-dashed border-outline-variant/60 pl-6 lg:pl-8 py-2">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30 text-[11px] text-outline uppercase tracking-wider">
+<span>compose.production.yml</span>
+<span class="text-secondary font-bold">CI/CD Verified</span>
+</div>
+<div class="py-4 space-y-1.5 text-on-surface-variant leading-relaxed">
+<p><span class="text-secondary font-semibold">version:</span> "3.8"</p>
+<p><span class="text-secondary font-semibold">services:</span></p>
+<p class="pl-4 font-bold text-on-surface">enterprise-api:</p>
+<p class="pl-8">build: ./backend-services</p>
+<p class="pl-8">environment:</p>
+<p class="pl-12 text-secondary">- SPRING_PROFILES_ACTIVE=prod</p>
+<p class="pl-12 text-secondary">- DB_URL=r2dbc:postgresql://pg-cluster</p>
+<p class="pl-12 text-secondary">- EMBEDDING_MODEL=text-embedding-3-small</p>
+<p class="pl-8">depends_on:</p>
+<p class="pl-12">- db-cluster</p>
+<p class="pl-12">- vector-store</p>
+<p class="pl-4 font-bold text-on-surface mt-2">vector-store:</p>
+<p class="pl-8">image: pgvector/pgvector:pg16</p>
+<p class="pl-8">deploy:</p>
+<p class="pl-12 text-secondary">replicas: 3 (high-availability failover)</p>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex justify-between font-mono text-[11px] text-outline uppercase">
+<span>Test Suite: 100% Passing</span>
+<span class="text-on-surface font-semibold">Coverage: 94.2%</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BOTTOM EDITORIAL DISPATCH / NAVIGATION (Open Canvas Layout) -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+<div>
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Next Dossier Chapter</span>
+<h3 class="text-2xl sm:text-3xl font-light tracking-tight text-on-surface mt-1">
+            Explore the Urban Spatial Impact: <span class="font-bold">Ripple on Cities</span>
+</h3>
+<p class="text-sm text-on-surface-variant font-light mt-1">
+            Continue to Page 3: Real Estate Contraction and Ripple Effects on IT Mega-Cities.
+          </p>
+</div>
+<a class="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-surface bg-primary px-8 py-4 rounded-full hover:bg-secondary transition-colors shrink-0" data-path="ripple-on-cities" href="#">
+<span>Ripple on Cities</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</section>
+</div>
+</main>
+<!-- EDITORIAL FOOTER (UNBOXED, REFINED TYPOGRAPHY) -->
+<footer class="w-full bg-[#111215] text-[#f8f9fa] pt-20 pb-16 border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Top Spread -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-[#24262b]">
+<div class="lg:col-span-7 space-y-4">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">Strategic Macro Briefing</span>
+<h2 class="text-3xl sm:text-4xl font-light tracking-tight text-surface leading-tight">
+            Welcome to the new era of <span class="font-bold">work &amp; technology</span>.
+          </h2>
+<p class="text-base text-outline font-light max-w-xl leading-relaxed">
+            An empirical forecasting initiative analyzing algorithmic disruption, technological shifts, and structural realignments in IT ecosystems by 2030.
+          </p>
+</div>
+<!-- Intel Dispatch Subscription (Open Editorial Input) -->
+<div class="lg:col-span-5 flex flex-col justify-end space-y-3">
+<span class="font-mono text-xs uppercase tracking-widest text-outline">Quarterly Data Cuts</span>
+<h4 class="text-lg font-semibold text-surface">Subscribe to Intel Dispatch</h4>
+<div class="flex flex-col sm:flex-row gap-3 pt-2">
+<input class="flex-1 bg-transparent border-b border-outline text-surface font-mono text-xs py-2 px-0 focus:outline-none focus:border-secondary placeholder-outline" placeholder="researcher@institution.org" type="email"/>
+<button class="font-mono text-xs uppercase tracking-widest font-bold text-surface border-b-2 border-secondary py-2 hover:text-secondary transition-colors shrink-0">
+              Dispatch Access →
+            </button>
+</div>
+</div>
+</div>
+<!-- Links Grid (Open Typography) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-b border-[#24262b] font-mono text-xs">
+<div class="flex flex-col space-y-3">
+<span class="uppercase tracking-widest text-secondary font-bold">Inquiries</span>
+<a class="text-outline hover:text-surface transition-colors" data-path="methodology" href="#">Methodology &amp; Data</a>
+<a class="text-outline hover:text-surface transition-colors" data-path="press-kit" href="#">Press &amp; Media Kit</a>
+<a class="text-outline hover:text-surface transition-colors" data-path="citation-index" href="#">Academic Citation</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="uppercase tracking-widest text-secondary font-bold">Deep Dives</span>
+<a class="text-outline hover:text-surface transition-colors" data-path="jobs-and-skills" href="#">Workforce Displacement</a>
+<a class="text-outline hover:text-surface transition-colors" data-path="ripple-on-cities" href="#">Real Estate Contraction</a>
+<a class="text-outline hover:text-surface transition-colors" data-path="chennai-2030" href="#">Coromandel Corridor</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="uppercase tracking-widest text-secondary font-bold">Scenarios</span>
+<a class="text-outline hover:text-surface transition-colors" data-path="scenarios-and-outlook" href="#">Augmentation Horizon</a>
+<a class="text-outline hover:text-surface transition-colors" data-path="scenarios-and-outlook" href="#">Synthetic Enterprise</a>
+<a class="text-outline hover:text-surface transition-colors" data-path="scenarios-and-outlook" href="#">Legacy Inertia</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="uppercase tracking-widest text-secondary font-bold">Editorial Desk</span>
+<span class="text-outline">NEUROS Global Futures Lab</span>
+<span class="text-outline">ISSN 2840-192X</span>
+<span class="text-outline">Cambridge / Bengaluru / Zurich</span>
+</div>
+</div>
+<!-- Meta Bar -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs text-outline">
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>© 2024–2030 NEUROS Research Foundation. Distributed under CC BY-NC 4.0.</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="hover:text-surface transition-colors" data-path="legal-privacy" href="#">Privacy Policy</a>
+<a class="hover:text-surface transition-colors" data-path="terms" href="#">Terms of License</a>
+<a class="hover:text-surface transition-colors" data-path="changelog" href="#">Model Changelog v4.2</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

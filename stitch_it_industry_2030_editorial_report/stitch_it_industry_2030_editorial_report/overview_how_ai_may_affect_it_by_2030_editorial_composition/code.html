@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#edeeef", "surface-container-low": "#f3f4f5", "surface-tint": "#5e5e62", "tertiary-container": "#07006c", "on-primary-fixed-variant": "#46464a", "primary-fixed-dim": "#c7c6ca", "secondary-fixed-dim": "#ffb4aa", "surface-container-high": "#e7e8e9", "inverse-primary": "#c7c6ca", "error": "#ba1a1a", "on-secondary-fixed": "#410001", "on-primary": "#ffffff", "on-primary-fixed": "#1b1b1f", "surface-variant": "#e1e3e4", "secondary": "#af2f25", "on-secondary": "#ffffff", "surface-bright": "#f8f9fa", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "on-surface-variant": "#46464b", "on-surface": "#191c1d", "error-container": "#ffdad6", "surface-dim": "#d9dadb", "outline": "#76777b", "background": "#f8f9fa", "tertiary-fixed-dim": "#c0c1ff", "on-primary-container": "#848387", "primary": "#000000", "on-error-container": "#93000a", "on-background": "#191c1d", "on-error": "#ffffff", "on-tertiary-fixed": "#07006c", "on-tertiary-container": "#7073ff", "secondary-container": "#fe6858", "secondary-fixed": "#ffdad5", "outline-variant": "#c7c6cb", "inverse-surface": "#2e3132", "tertiary-fixed": "#e1e0ff", "primary-container": "#1b1b1f", "surface-container-highest": "#e1e3e4", "on-tertiary-fixed-variant": "#2f2ebe", "on-secondary-container": "#690003", "primary-fixed": "#e3e2e6", "surface": "#f8f9fa", "inverse-on-surface": "#f0f1f2", "on-secondary-fixed-variant": "#8d1510", "tertiary": "#000000" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-md": "1rem", "margin": "1.5rem", "space-xs": "0.25rem", "margin-lg": "5rem", "space-sm": "0.5rem", "margin-md": "3rem", "space-xl": "2.5rem", "space-3xl": "6rem", "gutter-lg": "2rem", "gutter": "1.5rem", "space-2xl": "4rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-pill": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["2rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "500" }], "label-caps": ["0.75rem", { "lineHeight": "1.4", "letterSpacing": "0.06em", "fontWeight": "600" }], "body-sm": ["0.8125rem", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero": ["4.5rem", { "lineHeight": "1.05", "letterSpacing": "-0.035em", "fontWeight": "600" }], "headline-sm": ["1.375rem", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg-mobile": ["2rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-hero-mobile": ["2.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-md": ["0.9375rem", { "lineHeight": "1.55", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg": ["3.25rem", { "lineHeight": "1.12", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-pill": ["0.8125rem", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary/20 selection:text-secondary"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-highest/60"><div class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm tracking-tighter">N</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface leading-none">NEUROS</span><span class="font-label-caps text-label-caps tracking-widest text-secondary font-semibold">/ IT 2030 RESEARCH</span></div></div><nav class="hidden lg:flex items-center gap-space-sm bg-surface-container-low/70 px-space-sm py-space-xs rounded-full" data-active-classes="bg-primary text-on-primary rounded-full px-space-md py-space-xs font-medium"><a aria-current="page" class="transition-colors bg-primary text-on-primary rounded-full px-space-md py-space-xs font-medium" data-path="overview" href="#">Overview</a><a class="font-label-pill text-label-pill px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="jobs-and-skills" href="#">Jobs &amp; Skills</a><a class="font-label-pill text-label-pill px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="ripple-on-cities" href="#">Ripple on Cities</a><a class="font-label-pill text-label-pill px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="chennai-2030" href="#">Chennai 2030</a><a class="font-label-pill text-label-pill px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="scenarios-and-outlook" href="#">Scenarios &amp; Outlook</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search report" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-label-pill text-label-pill tracking-tight hover:bg-primary-container transition-all" data-path="executive-summary" href="#"><span class="hidden sm:inline">Executive Summary</span><span class="sm:hidden">Summary</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full"><!-- Top Editorial Publication Masthead Strip -->
+<section class="w-full px-margin lg:px-margin-lg pt-space-lg pb-space-xs">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm border-b border-surface-container-highest pb-space-sm">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-caps text-label-caps uppercase tracking-widest">
+<span class="inline-flex items-center gap-1.5 text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+Empirical Research Monograph
+</span>
+<span class="text-outline-variant">/</span>
+<span>Vol. IV • Horizon 2030</span>
+<span class="hidden sm:inline text-outline-variant">/</span>
+<span class="hidden sm:inline text-on-surface">Global Futures Lab &amp; Coromandel Institute</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-caps text-label-caps">
+<span class="inline-flex items-center gap-1 text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Peer-Reviewed
+</span>
+<span class="text-outline-variant">•</span>
+<span class="text-secondary font-medium">Published Q4 2024</span>
+<span class="text-outline-variant">•</span>
+<span>14 Min Read</span>
+</div>
+</div>
+</section>
+<!-- Hero Section: Prestigious Editorial Cover Article -->
+<section class="w-full px-margin lg:px-margin-lg pt-space-xl pb-space-3xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-caps text-label-caps uppercase tracking-widest font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+Strategic Macro Assessment
+</span>
+<span class="text-outline-variant font-label-caps text-label-caps">— Special Report</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-none">
+          How AI May Affect the <span class="text-secondary font-semibold italic">IT Industry</span> by 2030
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl pt-space-xs leading-relaxed font-light">
+          Artificial intelligence will not destroy the IT industry—it will structurally invert it. The past 30 years of human syntax assembly, offshore maintenance arbitrage, and linear headcount scaling are collapsing into autonomous synthesis and high-leverage architectural orchestration.
+        </p>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-label-pill text-label-pill hover:bg-primary-container transition-all shadow-sm" href="#macro-breakdown">
+<span>Read Empirical Analysis</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs text-on-surface hover:text-secondary font-label-pill text-label-pill transition-colors group" href="#forecast-features">
+<span>Executive Summary Matrix</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-y-0.5 transition-transform">south</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-surface-container-highest pt-space-md lg:pt-0 lg:pl-space-xl gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Principal Findings</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed pl-3 border-l border-secondary">
+            By 2028, over 80% of routine CRUD boilerplate will be synthesized autonomously. By 2030, billing models shift from hourly developer seat licenses to outcome-based neural service level agreements.
+          </p>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-label-caps text-label-caps pt-space-md border-t border-surface-container-highest">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Lead Forecaster: <strong class="text-on-surface">Dr. Elena Vane, NEUROS AI Lab</strong></span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>Co-investigators: <span class="text-on-surface">K. Sundaram (Chennai), M. Althaus (Zurich)</span></span>
+</div>
+</div>
+</div>
+<!-- Cinematic Editorial Hero Visual (Unboxed, Pure Canvas Breath) -->
+<div class="w-full flex flex-col gap-space-xs pt-space-md">
+<div class="w-full relative overflow-hidden bg-primary-container min-h-[420px] lg:min-h-[560px] rounded-lg">
+<div class="absolute inset-0 z-0 opacity-80 mix-blend-screen bg-cover bg-center" data-alt="Abstract computational biology rendering of organic deep crimson and neural red cellular fibers interlacing with deep obsidian black synthetic pathways" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPNnILYYnqmRm3veBADqODQ48DhorM4kaQ8wajq70rD8Z19GOxRsDA46unYmDNAg3GVdnXgT5FqFsWR1FT12lpkd6Yo0KBLBTtonemNupleChA-aLWYDF7h9M1T364gWiYByM_SiL40NeF7MK8Qr1SsbDCpxiESevPntROAy-kIZY3_40I9vzbPlHm1R6L4ZYdwCh9IEE71H81pcUhnFSMktiTBjwPc_6a9Een6FzlXKlFqU4X67lKmw')"></div>
+<div class="absolute inset-0 z-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent opacity-95"></div>
+<div class="relative z-10 h-full min-h-[420px] lg:min-h-[560px] flex flex-col justify-end p-space-lg lg:p-space-2xl text-on-primary">
+<div class="max-w-3xl flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-caps text-label-caps tracking-widest uppercase font-semibold text-secondary-container">Figure 1.0 / Synthesis Matrix</span>
+<span class="text-outline-variant font-label-caps text-label-caps">— Longitudinal Simulation</span>
+</div>
+<p class="font-headline-md text-headline-md lg:text-headline-lg text-on-primary font-light leading-snug">
+              Mapping the transition from programmatic labor volume to autonomous neural cognitive orchestration pipelines.
+            </p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between text-on-surface-variant font-label-caps text-label-caps pt-space-xs px-1">
+<span>Source: NEUROS Global Systems Econometric Model v4.2 • Simulation runs n=420 enterprise vendors</span>
+<span>Visualization: Latent Topology Shift (2024–2030)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Expansive Full-Width Editorial Spread & Pull Quote (Zero Cards) -->
+<section class="w-full px-margin lg:px-margin-lg py-space-3xl bg-surface border-y border-surface-container-highest/80">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-3xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-baseline">
+<div class="lg:col-span-4 flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">The Core Thesis</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Beyond Syntax Assembly</span>
+<span class="text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider pt-2">Econometric Premise #01</span>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<p class="font-headline-md text-headline-md text-on-surface font-normal leading-relaxed tracking-tight">
+          "The dominant software delivery model of the past three decades—employing linear pyramids of junior engineers for ticket triage and manual unit tests—is reaching <span class="italic font-semibold text-secondary">mathematical obsolescence</span>."
+        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed font-light">
+          Engineering capital is not disappearing; it is concentrating into safety verification, heterogeneous distributed infrastructure, and autonomous agent coordination. Vendors that adapt will experience significant margin expansion, while legacy staffing firms face severe margin compression.
+        </p>
+</div>
+</div>
+<!-- Full-Width High-Art Editorial Pull Quote Spread (Unboxed, Expansive Typography & Large Quote Marks) -->
+<div class="w-full pt-space-2xl border-t border-surface-container-highest">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<div class="lg:col-span-2 flex items-start">
+<span class="font-display-hero text-[7rem] lg:text-[9rem] leading-[0.7] text-secondary font-extralight select-none pointer-events-none">“</span>
+</div>
+<div class="lg:col-span-10 flex flex-col gap-space-md">
+<blockquote class="font-headline-lg text-headline-lg lg:text-[3.25rem] text-on-surface font-light leading-tight tracking-tight max-w-4xl">
+            AI may not destroy the IT industry. <span class="font-semibold text-secondary italic">It may change the jobs, skills, cities and businesses built around it.</span>
+</blockquote>
+<div class="flex items-center gap-4 pt-space-xs">
+<div class="w-16 h-0.5 bg-secondary"></div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Central Invariant • Horizon 2030 Report</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Institutional Validation Line -->
+<div class="pt-space-xl border-t border-surface-container flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Validated Across Global Research Nodes</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xl opacity-75">
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tighter text-on-surface">QUO<span class="text-outline font-normal text-[12px] ml-1">LABS</span></span>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">layers</span> FRAMEWORK</span>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface">TERMINAL <span class="text-secondary font-bold text-[14px]">2030</span></span>
+<span class="font-headline-sm text-headline-sm font-light tracking-widest text-on-surface uppercase">IEEE <span class="text-outline text-[12px]">ANALYTICS</span></span>
+<span class="font-headline-sm text-headline-sm font-medium tracking-tight text-on-surface">COROMANDEL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Breathtaking Radial / Constellation Composition for Four Vectors (Zero Cards) -->
+<section class="w-full px-margin lg:px-margin-lg py-space-3xl bg-surface relative overflow-hidden" id="forecast-features">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-3xl">
+<!-- Section Header with Hairline Rule -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg pb-space-lg border-b border-surface-container-highest">
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">/ Constellation Mapping /</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Four vectors reshaping enterprise software architecture
+        </h2>
+</div>
+<div class="lg:col-span-6 flex flex-col justify-end">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed font-light">
+          Rather than incremental productivity bumps, these vectors redefine what constitutes engineering labor and how corporate IT capital will be deployed across the orbital architecture.
+        </p>
+</div>
+</div>
+<!-- Organic Radial Constellation Spread (Floating freely directly on canvas) -->
+<div class="w-full relative py-space-xl">
+<!-- Central Architectural SVG Constellation Geometry -->
+<div class="hidden lg:block absolute inset-0 pointer-events-none z-0">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 1200 780" xmlns="http://www.w3.org/2000/svg">
+<!-- Concentric Background Orbits -->
+<circle cx="600" cy="390" opacity="0.1" r="320" stroke="#af2f25" stroke-dasharray="6 6" stroke-width="1.2"></circle>
+<circle cx="600" cy="390" opacity="0.15" r="220" stroke="#191c1d" stroke-width="1"></circle>
+<circle cx="600" cy="390" opacity="0.25" r="120" stroke="#af2f25" stroke-width="1.5"></circle>
+<!-- Radial Ray Lines connecting to the 4 nodes -->
+<!-- Ray to Vector 01 (Top Left) -->
+<line opacity="0.3" stroke="#af2f25" stroke-width="1.2" x1="600" x2="280" y1="390" y2="160"></line>
+<!-- Ray to Vector 02 (Top Right) -->
+<line opacity="0.25" stroke="#191c1d" stroke-dasharray="4 4" stroke-width="1.2" x1="600" x2="920" y1="390" y2="160"></line>
+<!-- Ray to Vector 03 (Bottom Left) -->
+<line opacity="0.25" stroke="#191c1d" stroke-dasharray="4 4" stroke-width="1.2" x1="600" x2="280" y1="390" y2="620"></line>
+<!-- Ray to Vector 04 (Bottom Right) -->
+<line opacity="0.3" stroke="#af2f25" stroke-width="1.2" x1="600" x2="920" y1="390" y2="620"></line>
+<!-- Node markers -->
+<circle cx="280" cy="160" fill="#f8f9fa" r="6" stroke="#af2f25" stroke-width="2.5"></circle>
+<circle cx="920" cy="160" fill="#f8f9fa" r="5" stroke="#191c1d" stroke-width="2"></circle>
+<circle cx="280" cy="620" fill="#f8f9fa" r="5" stroke="#191c1d" stroke-width="2"></circle>
+<circle cx="920" cy="620" fill="#f8f9fa" r="6" stroke="#af2f25" stroke-width="2.5"></circle>
+</svg>
+</div>
+<!-- Central Orbital Core Emblem (Visible in desktop center) -->
+<div class="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex-col items-center justify-center text-center pointer-events-none">
+<div class="w-36 h-36 rounded-full border border-secondary/40 bg-surface/90 backdrop-blur-md flex flex-col items-center justify-center p-3 ring-8 ring-secondary/5 shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary mb-1"></span>
+<span class="font-label-caps text-[0.65rem] tracking-widest text-secondary font-bold uppercase leading-tight">CORE<br/>COMPOSITION</span>
+<span class="font-label-caps text-[0.6rem] text-outline mt-1 font-light tracking-wider">NEURAL LAB 2030</span>
+</div>
+</div>
+<!-- Constellation 4 Vectors Grid (Floating freely without card boxes) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-x-space-3xl gap-y-space-3xl relative z-10">
+<!-- Vector 01: Top Left -->
+<div class="flex flex-col gap-space-sm pr-0 lg:pr-space-xl">
+<div class="flex items-baseline justify-between border-b border-surface-container-highest pb-space-xs">
+<div class="flex items-baseline gap-space-md">
+<span class="font-display-hero text-8xl font-extralight text-secondary/30 tracking-tighter select-none leading-none">01</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">Pillar Vector</span>
+<span class="font-label-caps text-label-caps text-outline font-medium">Lift: +64% ARR</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-medium">2025 – 2027</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight pt-space-xs">
+            Intent-Driven Systems &amp; <span class="italic font-normal">Autonomous Consultation</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Decomposing monolithic, rigid legacy codebases is shifting from manual multi-year migrations to neural deconstruction pipelines. Strategic consulting moves upstream: validating organizational intent rather than handwriting microservice specifications.
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface-variant font-label-caps text-label-caps">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Synthesis Saturation: 84%</span>
+<span class="text-outline-variant">/</span>
+<span>High-Leverage Mandate</span>
+</div>
+</div>
+<!-- Vector 02: Top Right -->
+<div class="flex flex-col gap-space-sm pl-0 lg:pl-space-xl">
+<div class="flex items-baseline justify-between border-b border-surface-container-highest pb-space-xs">
+<div class="flex items-baseline gap-space-md">
+<span class="font-display-hero text-8xl font-extralight text-on-surface/20 tracking-tighter select-none leading-none">02</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface font-bold">Machine Learning Solutions</span>
+<span class="font-label-caps text-label-caps text-outline font-medium">Autonomy: 78.4%</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-medium">Horizon Vector</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight pt-space-xs">
+            Self-Healing Infrastructure &amp; <span class="italic font-normal">Synthetic Regression</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Automated unit test generation and self-healing CI/CD pipelines replace manual QA cycles. Models evaluate production telemetry in real-time, executing prophylactic patches before downstream microservice failure occurs.
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface-variant font-label-caps text-label-caps">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Telemetry Loops Active</span>
+<span class="text-outline-variant">/</span>
+<span>Mean-Time-To-Resolve: &lt;400ms</span>
+</div>
+</div>
+<!-- Vector 03: Bottom Left -->
+<div class="flex flex-col gap-space-sm pr-0 lg:pr-space-xl pt-space-lg lg:pt-space-2xl">
+<div class="flex items-baseline justify-between border-b border-surface-container-highest pb-space-xs">
+<div class="flex items-baseline gap-space-md">
+<span class="font-display-hero text-8xl font-extralight text-on-surface/20 tracking-tighter select-none leading-none">03</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface font-bold">Agentic Development</span>
+<span class="font-label-caps text-label-caps text-outline font-medium">Active: 250+ Benchmarks</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-medium">Runtime Shift</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight pt-space-xs">
+            Natural Language Compilation &amp; <span class="italic font-normal">Intent Synthesis</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Developers transition into system orchestrators who define boundary invariants and verify outputs. Natural language and mathematical proofs become the primary programming syntax, abstracting away framework boilerplate.
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface-variant font-label-caps text-label-caps">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Formal Verification Tier</span>
+<span class="text-outline-variant">/</span>
+<span>Multi-Agent Consensus</span>
+</div>
+</div>
+<!-- Vector 04: Bottom Right -->
+<div class="flex flex-col gap-space-sm pl-0 lg:pl-space-xl pt-space-lg lg:pt-space-2xl">
+<div class="flex items-baseline justify-between border-b border-surface-container-highest pb-space-xs">
+<div class="flex items-baseline gap-space-md">
+<span class="font-display-hero text-8xl font-extralight text-secondary/30 tracking-tighter select-none leading-none">04</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">Infrastructure Deployment</span>
+<span class="font-label-caps text-label-caps text-secondary font-medium">Tier 4 Mission-Critical</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-medium">Deterministic Era</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight pt-space-xs">
+            Deterministic Verification on <span class="italic font-normal">Sovereign Edge Clusters</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Bridging non-deterministic LLM probabilistic outputs into deterministic banking, healthcare, and telecom mainframes. Multi-cloud orchestrators enforce air-gapped data residency and automated audit ledgers.
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface-variant font-label-caps text-label-caps">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Sovereign Ledgers Enforced</span>
+<span class="text-outline-variant">/</span>
+<span>Cryptographic Parity</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Rings & Typographic Data Journalism for Statistics (Zero Cards) -->
+<section class="w-full px-margin lg:px-margin-lg py-space-3xl bg-surface border-t border-surface-container-highest" id="macro-breakdown">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-3xl">
+<!-- Section Header -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg pb-space-lg border-b border-surface-container-highest">
+<div class="lg:col-span-8 flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">/ Empirical Forecast /</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Quantifying the Structural Inversion
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-light">
+          Econometric projections modeled across 420 enterprise vendors, analyzing capital flows, labor shifts, and skill tree realignment by 2030.
+        </p>
+</div>
+<div class="lg:col-span-4 flex items-end lg:justify-end">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-caps text-label-caps">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-semibold text-on-surface">Baseline Model:</span>
+<span>Consensus Forecast (±4.8% CI)</span>
+</div>
+</div>
+</div>
+<!-- Rings & Open Typographic Sculptures (No boxes, no cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg items-start">
+<!-- Stat 01: SVG Ring Arc Sculpture (-35%) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-space-xs font-label-caps text-label-caps">
+<span class="text-error font-semibold uppercase tracking-wider flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-error"></span> Contraction Arc</span>
+<span class="text-on-surface-variant">2026 – 2028</span>
+</div>
+<div class="flex items-center gap-space-lg py-space-sm">
+<!-- SVG Radial Ring with 35% arc -->
+<div class="relative w-28 h-28 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90 transform" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="42" stroke="#e1e3e4" stroke-width="4"></circle>
+<!-- 35% of circumference (2 * pi * 42 = 263.89) -> stroke-dasharray = 92.36 263.89 -->
+<circle cx="50" cy="50" fill="none" r="42" stroke="#ba1a1a" stroke-dasharray="92.36 263.89" stroke-linecap="round" stroke-width="5"></circle>
+</svg>
+<span class="absolute font-headline-sm text-headline-sm font-bold text-error tracking-tighter">-35%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Labor Compression</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface leading-tight">Routine Syntax Hours</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+            Reduction in Routine Syntax
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Boilerplate generation, legacy code refactoring, and simple template construction collapse in billable labor hours as AI agent copylists reach saturation.
+          </p>
+<div class="pt-space-xs border-t border-surface-container-highest flex items-center gap-1.5 text-on-surface-variant font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Primary Impact: <strong class="text-on-surface font-semibold">Junior Engineering Ranks</strong></span>
+</div>
+</div>
+<!-- Stat 02: Oversized Typographic Lockup with Thin Hairline Rule (4.2x) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-space-xs font-label-caps text-label-caps">
+<span class="text-secondary font-semibold uppercase tracking-wider flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Surge Metric</span>
+<span class="text-on-surface-variant">Peak 2027</span>
+</div>
+<div class="flex flex-col py-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-8xl lg:text-9xl text-secondary font-light tracking-tighter leading-none">4.2</span>
+<span class="font-headline-lg text-headline-lg text-secondary font-extrabold -ml-2">×</span>
+</div>
+<div class="w-full h-px bg-secondary/30 mt-2 mb-1"></div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold uppercase tracking-widest">Multiplier On Senior Verification</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+            Surge in Architectural Orchestration
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Capital concentrates heavily on orchestrators who verify safety bounds, construct deterministic evaluation harnesses, and integrate agent pipelines.
+          </p>
+<div class="pt-space-xs border-t border-surface-container-highest flex items-center gap-1.5 text-on-surface-variant font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Critical Deficit: <strong class="text-on-surface font-semibold">Senior Verification Tier</strong></span>
+</div>
+</div>
+<!-- Stat 03: Concentric Orbital Circle Graphic (+1.8M) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-space-xs font-label-caps text-label-caps">
+<span class="text-primary font-semibold uppercase tracking-wider flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Net Growth Node</span>
+<span class="text-on-surface-variant">2030 Horizon</span>
+</div>
+<div class="flex items-center gap-space-lg py-space-sm">
+<!-- Concentric Orbital Sculpture -->
+<div class="relative w-28 h-28 flex-shrink-0 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border border-primary/20"></div>
+<div class="absolute inset-2.5 rounded-full border border-dashed border-secondary/40"></div>
+<div class="absolute inset-5 rounded-full border-2 border-primary bg-surface flex items-center justify-center shadow-sm">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary tracking-tight">+1.8M</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Global Influx</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface leading-tight">Net Global Mandates</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+            New Net Specializations
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Hardware accelerator routing, synthetic dataset curation, sovereign infrastructure ops, and formal methods engineers represent net global employment growth.
+          </p>
+<div class="pt-space-xs border-t border-surface-container-highest flex items-center gap-1.5 text-on-surface-variant font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Trajectory: <strong class="text-on-surface font-semibold">High-Leverage Mandates</strong></span>
+</div>
+</div>
+</div>
+<!-- Comparative Ledger: Zero Enclosed Cards, Pure Open Data Journalism Spread -->
+<div class="pt-space-3xl border-t border-surface-container-highest flex flex-col gap-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary font-semibold">Data Ledger / Empirical Migration</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Labor Migration: Attrition vs. New Mandates</h3>
+</div>
+<span class="text-on-surface-variant font-label-caps text-label-caps">Metric: Global Full-Time Equivalents (FTEs)</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter-lg pt-space-sm">
+<!-- Column 1: Contraction Vectors (Open Rows with Hairline Dividers) -->
+<div class="flex flex-col">
+<div class="flex items-center justify-between pb-space-sm border-b-2 border-error/30 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+<span class="text-error font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span> Contraction Vectors (-2.4M FTEs)
+</span>
+<span>Trajectory</span>
+</div>
+<div class="divide-y divide-surface-container-highest/80">
+<div class="py-space-md flex items-baseline justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium flex items-center gap-2">
+<span class="text-error font-bold">↓</span> Junior Manual QA &amp; Scripted Testers
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Replaced by synthetic execution loops &amp; invariant provers</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-error tracking-tight">-62%</span>
+</div>
+<div class="py-space-md flex items-baseline justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium flex items-center gap-2">
+<span class="text-error font-bold">↓</span> Routine L1/L2 Technical Support Desk
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Autonomous multi-turn agentic incident resolution</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-error tracking-tight">-48%</span>
+</div>
+<div class="py-space-md flex items-baseline justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium flex items-center gap-2">
+<span class="text-error font-bold">↓</span> Entry-Level Template &amp; Front-End Coders
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Direct multimodal prompt-to-production pipeline synthesis</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-error tracking-tight">-37%</span>
+</div>
+</div>
+</div>
+<!-- Column 2: Expansion Vectors (Open Rows with Hairline Dividers) -->
+<div class="flex flex-col">
+<div class="flex items-center justify-between pb-space-sm border-b-2 border-secondary/40 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+<span class="text-secondary font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Expansion Vectors (+4.2M FTEs)
+</span>
+<span>Trajectory</span>
+</div>
+<div class="divide-y divide-surface-container-highest/80">
+<div class="py-space-md flex items-baseline justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium flex items-center gap-2">
+<span class="text-secondary font-bold">↑</span> AI Safety &amp; Deterministic Verification
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Mathematical auditing of non-deterministic model behaviors</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-secondary tracking-tight">+290%</span>
+</div>
+<div class="py-space-md flex items-baseline justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium flex items-center gap-2">
+<span class="text-secondary font-bold">↑</span> Heterogeneous Compute &amp; MLOps Architects
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Distributed cluster routing, low-latency inference orchestration</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-secondary tracking-tight">+215%</span>
+</div>
+<div class="py-space-md flex items-baseline justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium flex items-center gap-2">
+<span class="text-secondary font-bold">↑</span> Legacy Deconstruction &amp; Migration Leads
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Autonomous reverse engineering of COBOL &amp; monolith systems</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-secondary tracking-tight">+185%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: The Three-Epoch Trajectory with Expansive Horizontal Journey Graphic -->
+<section class="w-full px-margin lg:px-margin-lg py-space-3xl bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="max-w-3xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">/ Temporal Roadmap /</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        The Three-Epoch Trajectory (2024 – 2030)
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-light">
+        Structural transformation in industrial software does not occur instantaneously; it advances through three distinct infrastructural stages.
+      </p>
+</div>
+<!-- Expansive Horizontal Journey Graphic (Progressive Nodes: Small Solid Dot -> Medium Ring -> Large Concentric Orbital) -->
+<div class="relative pt-space-xl pb-space-lg">
+<!-- Subtle connecting timeline trackline -->
+<div class="hidden md:block absolute top-[52px] left-12 right-12 h-px bg-gradient-to-r from-primary via-secondary to-on-surface z-0 opacity-40"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg relative z-10">
+<!-- Epoch 01: Node 2024 (Small Solid Dot) -->
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-3">
+<!-- Small Solid Circle Node -->
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-surface">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+</div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface font-semibold">2024 – 2026</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline font-semibold uppercase">Epoch 01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mt-2">
+            The Copilot &amp; Syntax Phase
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Assisted coding reaches universal saturation in modern IDEs. Productivity spikes 20-35% in boilerplate generation, but fundamental software architecture remains human-led and human-approved.
+          </p>
+<div class="pt-space-sm flex flex-col gap-1.5 text-on-surface-variant font-label-caps text-label-caps border-t border-surface-container-highest">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> IDE Copilot saturation crosses 92%</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Immediate hiring freeze on entry-level offshore coders</span>
+</div>
+</div>
+<!-- Epoch 02: Node 2027 (Medium Ring Circle) -->
+<div class="flex flex-col gap-space-sm pt-space-sm border-t md:border-t-0 border-surface-container-highest">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-3">
+<!-- Medium Ring Circle Node -->
+<div class="w-12 h-12 rounded-full border-2 border-secondary bg-surface text-secondary flex items-center justify-center shadow-md ring-4 ring-surface">
+<span class="w-4 h-4 rounded-full border border-secondary"></span>
+</div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary font-semibold">2027 – 2028</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold uppercase">Epoch 02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mt-2">
+            Autonomous Agent Swarms
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Autonomous multi-agent clusters formulate pull requests, run regression suites, and execute deployments without manual code touches. The billing model transitions irrevocably from contract hours to compute consumption.
+          </p>
+<div class="pt-space-sm flex flex-col gap-1.5 text-on-surface-variant font-label-caps text-label-caps border-t border-surface-container-highest">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Near-zero human intervention on ticket maintenance</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Bilateral fracture of conventional time-and-materials IT contracts</span>
+</div>
+</div>
+<!-- Epoch 03: Node 2030 (Large Multi-Ring Focal Node) -->
+<div class="flex flex-col gap-space-sm pt-space-sm border-t md:border-t-0 border-surface-container-highest">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-3">
+<!-- Large Multi-Ring Focal Node -->
+<div class="relative w-16 h-16 rounded-full border border-primary/40 bg-surface flex items-center justify-center shadow-md ring-4 ring-surface">
+<div class="w-11 h-11 rounded-full border border-dashed border-secondary flex items-center justify-center">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary text-[10px] font-bold">
+                    30
+                  </div>
+</div>
+</div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface font-semibold">2029 – 2030</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline font-semibold uppercase">Epoch 03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mt-2">
+            The Synthetic Enterprise
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Software stacks are generated dynamically for single executions and discarded. IT vendors sell business guarantees, continuous formal alignment, and sovereign compute access rather than headcounts.
+          </p>
+<div class="pt-space-sm flex flex-col gap-1.5 text-on-surface-variant font-label-caps text-label-caps border-t border-surface-container-highest">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Outcome-driven SLA architectures become industry default</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Engineering talent hyper-concentrates in core research nodes</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Continue Exploring — High Editorial Typography Links (Zero Cards) -->
+<section class="w-full px-margin lg:px-margin-lg py-space-3xl bg-surface border-t border-surface-container-highest">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">/ Subsequent Inquiries /</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+        Continue Exploring the Research Series
+      </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-lg divide-y md:divide-y-0 md:divide-x divide-surface-container-highest">
+<!-- Chapter 02 Link -->
+<a class="group pt-space-lg md:pt-0 md:pr-space-xl flex flex-col justify-between hover:text-secondary transition-colors" data-path="jobs-and-skills" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps uppercase">
+<span class="text-secondary font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Chapter 02</span>
+<span class="inline-flex items-center gap-1">8 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface group-hover:text-secondary transition-colors leading-tight tracking-tight">
+            Jobs, Skills &amp; The Re-skilling Imperative →
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            Examine deep-dive empirical models on which developer seniority tiers face immediate contraction, prompt engineering obsolescence, and new engineering skill trees.
+          </p>
+</div>
+<div class="pt-space-lg mt-space-lg border-t border-surface-container-highest flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps">
+<span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 14 Dynamic Econometric Models</span>
+<span class="text-on-surface group-hover:translate-x-1 transition-transform flex items-center gap-1 font-semibold">Read Chapter <span class="material-symbols-outlined text-[16px]">east</span></span>
+</div>
+</a>
+<!-- Chapter 03 Link -->
+<a class="group pt-space-lg md:pt-0 md:pl-space-xl flex flex-col justify-between hover:text-secondary transition-colors" data-path="ripple-on-cities" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps uppercase">
+<span class="text-secondary font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Chapter 03</span>
+<span class="inline-flex items-center gap-1">12 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface group-hover:text-secondary transition-colors leading-tight tracking-tight">
+            The Ripple Effect on Tech Cities &amp; Urban Real Estate →
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed font-light">
+            How contracting IT campuses in Bengaluru, Chennai, Hyderabad, and Silicon Valley trigger structural realignments across residential housing, commercial retail, and regional municipal tax bases.
+          </p>
+</div>
+<div class="pt-space-lg mt-space-lg border-t border-surface-container-highest flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps">
+<span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Coromandel Corridor Case Study</span>
+<span class="text-on-surface group-hover:translate-x-1 transition-transform flex items-center gap-1 font-semibold">Read Chapter <span class="material-symbols-outlined text-[16px]">east</span></span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 7: Dispatch Input (Minimal, Canvas-Direct) -->
+<section class="w-full px-margin lg:px-margin-lg py-space-3xl bg-surface border-t border-surface-container-highest">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-baseline justify-between gap-space-xl">
+<div class="max-w-xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Intel Dispatches</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight">
+        Receive Quarterly Macro Projections &amp; Model Data
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed font-light">
+        Direct quarterly access to econometric datasets, interview transcripts from 150+ technology executives, and mathematical appendixes.
+      </p>
+</div>
+<div class="w-full md:w-auto flex flex-col sm:flex-row items-center gap-space-xs border-b border-on-surface pb-2">
+<input class="w-full sm:w-80 px-2 py-space-xs bg-transparent text-on-surface font-body-sm text-body-sm outline-none border-none placeholder:text-outline" placeholder="researcher@institution.org" type="email"/>
+<button class="w-full sm:w-auto px-space-md py-space-xs text-secondary hover:text-on-surface font-label-pill text-label-pill tracking-tight transition-all flex items-center justify-center gap-1 uppercase font-bold">
+<span>Subscribe</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section></div></main><footer class="w-full bg-inverse-surface text-inverse-on-surface pt-space-3xl pb-space-2xl"><div class="max-w-7xl mx-auto px-margin lg:px-margin-lg"><div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg pb-space-3xl border-b border-surface-tint/20"><div class="lg:col-span-7 flex flex-col justify-between"><div class="space-y-space-md"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-label-caps text-label-caps tracking-widest text-secondary-container uppercase">Strategic Macro Briefing</span></div><h2 class="font-headline-lg text-headline-lg max-w-xl text-inverse-on-surface tracking-tight font-light">Welcome to the new era of work &amp; technology.</h2><p class="font-body-lg text-body-lg text-outline-variant max-w-lg font-light">An empirical forecasting initiative analyzing algorithmic disruption, technological shifts, and structural realignments in IT ecosystems by 2030.</p></div></div><div class="lg:col-span-5 flex flex-col justify-end mt-space-xl lg:mt-0"><div class="border-t border-surface-tint/20 pt-space-lg"><h4 class="font-headline-sm text-headline-sm text-inverse-on-surface mb-space-xs font-medium">Subscribe to Intel Dispatch</h4><p class="font-body-sm text-body-sm text-outline-variant mb-space-lg font-light">Quarterly empirical data cuts, labor realignment figures, and regional model updates.</p><div class="flex flex-col sm:flex-row gap-space-xs border-b border-inverse-on-surface/30 pb-2"><input class="flex-1 px-2 py-space-xs bg-transparent text-inverse-on-surface font-body-sm text-body-sm outline-none placeholder:text-outline-variant" placeholder="researcher@institution.org" type="email"/><button class="px-space-md py-space-xs text-secondary-container font-label-pill text-label-pill font-semibold hover:text-inverse-on-surface transition-colors uppercase">Dispatch Access →</button></div></div></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-gutter py-space-2xl border-b border-surface-tint/20"><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-secondary-container tracking-wider uppercase font-semibold">Inquiries</span><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="methodology" href="#">Methodology &amp; Data</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="press-kit" href="#">Press &amp; Media Kit</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="citation-index" href="#">Academic Citation</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-secondary-container tracking-wider uppercase font-semibold">Deep Dives</span><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="jobs-and-skills" href="#">Workforce Displacement</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="ripple-on-cities" href="#">Real Estate Contraction</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="chennai-2030" href="#">Coromandel Corridor</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-secondary-container tracking-wider uppercase font-semibold">Scenarios</span><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="scenarios-and-outlook" href="#">Augmentation Horizon</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="scenarios-and-outlook" href="#">Synthetic Enterprise</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="scenarios-and-outlook" href="#">Legacy Inertia</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-secondary-container tracking-wider uppercase font-semibold">Editorial Desk</span><span class="font-body-sm text-body-sm text-outline-variant">NEUROS Global Futures Lab</span><span class="font-body-sm text-body-sm text-outline-variant">ISSN 2840-192X</span><span class="font-body-sm text-body-sm text-outline-variant">Cambridge / Bengaluru / Zurich</span></div></div><div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-body-sm text-body-sm text-outline-variant">© 2024-2030 NEUROS Research Foundation. Distributed under CC BY-NC 4.0.</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="legal-privacy" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="terms" href="#">Terms of License</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-inverse-on-surface transition-colors" data-path="changelog" href="#">Model Changelog v4.2</a></div></div></div></footer></body></html>

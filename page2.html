@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>NEUROS / IT 2030 — Page 02: Jobs, Skills & AI Adoption Model</title>
+
+  <!-- Typography: Plus Jakarta Sans & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..24,400..700,0..1,-50..200"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#f8f9fa",
+            "surface-dim": "#d9dadb",
+            "surface-bright": "#f8f9fa",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f3f4f5",
+            "surface-container": "#edeeef",
+            "surface-container-high": "#e7e8e9",
+            "surface-container-highest": "#e1e3e4",
+            "on-surface": "#191c1d",
+            "on-surface-variant": "#46464b",
+            "inverse-surface": "#1b1b1f",
+            "inverse-on-surface": "#f0f1f2",
+            "outline": "#76777b",
+            "outline-variant": "#c7c6cb",
+            "surface-tint": "#5e5e62",
+            "primary": "#000000",
+            "on-primary": "#ffffff",
+            "primary-container": "#1b1b1f",
+            "on-primary-container": "#848387",
+            "secondary": "#af2f25",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#fe6858",
+            "on-secondary-container": "#690003",
+            "tertiary": "#6366f1",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6"
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['"SF Mono"', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+            serif: ['Georgia', 'Cambria', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+        background-color: #f8f9fa;
+        color: #191c1d;
+      }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #f1f2f4; }
+      ::-webkit-scrollbar-thumb { background: #c7c6cb; border-radius: 9999px; }
+      ::-webkit-scrollbar-thumb:hover { background: #76777b; }
+    }
+
+    input[type=range] {
+      -webkit-appearance: none;
+      background: #e1e3e4;
+      height: 6px;
+      border-radius: 9999px;
+      outline: none;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      background-color: #af2f25;
+      height: 20px;
+      width: 20px;
+      border-radius: 9999px;
+      border: 3px solid #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      transition: transform 0.1s ease;
+    }
+
+    input[type=range]::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+    }
+
+    /* CUSTOM SHAPED PODS */
+    .shape-card-base {
+      border: 1.5px solid rgba(225, 227, 228, 0.8) !important;
+      background: linear-gradient(145deg, #ffffff 0%, #f6f7f9 100%);
+      box-shadow: 0 12px 30px -8px rgba(25, 28, 29, 0.06), 0 3px 10px -2px rgba(25, 28, 29, 0.03);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .shape-card-base:hover {
+      transform: translateY(-6px);
+      border-color: #af2f25 !important;
+      box-shadow: 0 22px 48px -10px rgba(175, 47, 37, 0.15), 0 8px 20px -3px rgba(25, 28, 29, 0.05);
+    }
+
+    .shape-pebble-oval { border-radius: 46px 18px 46px 18px; }
+    .shape-gem-crest { border-radius: 18px 50px 18px 50px; }
+    .shape-stadium-arch { border-radius: 50px 22px 50px 22px; }
+    .shape-leaf-petal { border-radius: 22px 50px 22px 50px; }
+    .shape-vault-shield { border-radius: 36px 36px 52px 18px; }
+    .shape-fluid-teardrop { border-radius: 52px 18px 36px 52px; }
+
+    .shape-circle-dial {
+      border: 1.5px solid rgba(225, 227, 228, 0.8) !important;
+      border-radius: 38px 20px 38px 20px;
+      background: radial-gradient(circle at 35% 35%, #ffffff 0%, #f4f5f8 100%);
+      box-shadow: 0 14px 32px -6px rgba(186, 26, 26, 0.09), 0 4px 14px -2px rgba(25, 28, 29, 0.03);
+    }
+
+    .shape-pill-capsule {
+      border: 1.5px solid rgba(225, 227, 228, 0.8) !important;
+      border-radius: 9999px;
+      background: linear-gradient(135deg, #ffffff 0%, #fdf5f5 100%);
+      box-shadow: 0 14px 32px -6px rgba(175, 47, 37, 0.09), 0 4px 14px -2px rgba(25, 28, 29, 0.03);
+    }
+
+    .shape-organic-pod {
+      border: 1.5px solid rgba(225, 227, 228, 0.8) !important;
+      border-radius: 22px 46px 22px 46px;
+      background: linear-gradient(135deg, #ffffff 0%, #f2f4f8 100%);
+      box-shadow: 0 14px 32px -6px rgba(0, 0, 0, 0.08), 0 4px 14px -2px rgba(25, 28, 29, 0.03);
+    }
+
+    .shape-grand-deck {
+      border: 1.5px solid rgba(225, 227, 228, 0.9) !important;
+      border-radius: 36px;
+      background: linear-gradient(175deg, #ffffff 0%, #f7f8fa 100%);
+      box-shadow: 0 24px 60px -15px rgba(25, 28, 29, 0.07), 0 8px 24px -4px rgba(25, 28, 29, 0.03);
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-sans text-on-surface antialiased selection:bg-secondary/20 selection:text-secondary">
+
+  <!-- ========================================================================= -->
+  <!-- FIXED TOP MASTHEAD & 3-PAGE NAVIGATION -->
+  <!-- ========================================================================= -->
+  <header
+    class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-highest/60 transition-all duration-300"
+    id="mainHeader">
+    <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6">
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div
+          class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-base tracking-tighter shadow-sm group-hover:scale-105 transition-transform">
+          N
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-base tracking-tight text-on-surface leading-none">NEUROS</span>
+          <span class="text-[10px] tracking-widest text-secondary font-semibold uppercase">/ IT 2030 RESEARCH</span>
+        </div>
+      </a>
+
+      <!-- 4-PAGE NAVIGATOR (Direct Multi-Page Navigation) -->
+      <nav
+        class="hidden md:flex items-center gap-1.5 bg-surface-container-low/90 p-1.5 rounded-full border border-surface-container-highest/70 text-xs font-semibold shadow-sm"
+        id="pageNav">
+        <a href="index.html"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">01</span>
+          <span>Macro &amp; Architecture</span>
+        </a>
+        <a href="page2.html"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary text-on-primary shadow-sm transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-white/20 text-white">02</span>
+          <span>Jobs &amp; Roles</span>
+        </a>
+        <a href="page3.html"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">03</span>
+          <span>Cities &amp; Corridors</span>
+        </a>
+        <a href="page4.html"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono bg-surface-container text-outline">04</span>
+          <span>Human-First Work</span>
+        </a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3">
+        <!-- Search Trigger -->
+        <button onclick="toggleSearchModal()" aria-label="Search report"
+          class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+        </button>
+
+        <!-- Executive Summary Button -->
+        <button onclick="toggleSummaryModal()"
+          class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-on-primary text-xs font-semibold tracking-tight hover:bg-neutral-800 transition-all shadow-sm">
+          <span class="hidden sm:inline">Executive Summary</span>
+          <span class="sm:hidden">Summary</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button onclick="toggleMobileMenu()" aria-label="Toggle mobile menu"
+          class="md:hidden w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high">
+          <span class="material-symbols-outlined text-[22px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Drawer -->
+    <div id="mobileMenu"
+      class="hidden md:hidden border-t border-surface-container-highest bg-surface-container-lowest px-6 py-4 space-y-3 text-xs uppercase tracking-wider font-semibold">
+      <a href="index.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 01: Macro &amp; Architecture</a>
+      <a href="page2.html" class="block py-1.5 text-secondary font-bold">Page 02: Jobs &amp; Roles (Active)</a>
+      <a href="page3.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 03: Cities &amp; Corridors</a>
+      <a href="page4.html" class="block py-1.5 text-on-surface hover:text-secondary">Page 04: Human-First Work</a>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 02: JOBS, SKILLS & AI ADOPTION MODEL -->
+  <!-- ========================================================================= -->
+  <main class="w-full pt-20 bg-surface min-h-screen">
+
+    <!-- Top Breadcrumb Strip -->
+    <section class="w-full px-6 lg:px-12 pt-6 pb-2">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 border-b border-surface-container-highest pb-3">
+        <div class="flex items-center gap-3 text-on-surface-variant text-[11px] uppercase tracking-widest">
+          <span class="inline-flex items-center gap-1.5 text-secondary font-semibold">
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Comprehensive Report • Page 02 of 04
+          </span>
+          <span class="text-outline-variant">/</span>
+          <span>Chapter 02: Talent &amp; Architecture Realignment</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary text-[11px] font-mono font-bold">6 Strategic Roles • Interactive Simulator</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CHAPTER 02 — JOBS, SKILLS & RE-SKILLING IMPERATIVE -->
+    <section id="jobs-skills" class="w-full px-6 lg:px-12 py-12 border-b border-surface-container-highest bg-surface-container-lowest">
+      <div class="max-w-7xl mx-auto flex flex-col gap-14">
+
+        <!-- Header -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-baseline border-b border-surface-container-highest pb-8">
+          <div class="lg:col-span-8 flex flex-col gap-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-secondary"></span>
+              <span class="text-[11px] uppercase tracking-widest text-secondary font-semibold">How IT Jobs Are Changing</span>
+              <span class="text-outline-variant text-[11px]">/ Chapter 02</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-on-surface leading-tight">
+              Expected Changes in <br />
+              <span class="font-serif italic font-normal text-secondary">IT Employment</span> by 2030.
+            </h1>
+            <p class="text-base sm:text-lg text-on-surface-variant max-w-2xl font-light leading-relaxed">
+              As companies adopt more AI tools, the daily routine of software engineers is shifting. Instead of spending hours typing standard repetitive code, engineers will spend more time designing big systems and ensuring software works safely and reliably.
+            </p>
+          </div>
+          <div class="lg:col-span-4 border-l-0 lg:border-l lg:border-surface-container-highest lg:pl-8 space-y-4">
+            <div class="p-5 rounded-2xl bg-surface border border-surface-container-highest">
+              <span class="text-[10px] uppercase tracking-wider font-mono text-secondary block font-bold">Why Human Review Matters</span>
+              <p class="text-xs text-on-surface mt-1 leading-relaxed">
+                “AI tools can write code fast, but they still make mistakes. Human engineers are needed to double-check the work, design how everything connects, and take responsibility when real money or safety is on the line.”
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figure 2.0 & Measurable Benefits (USES fig2.jpg) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 relative rounded-2xl overflow-hidden shadow-lg border border-surface-container-highest">
+            <img src="./figures/fig2.jpg"
+              alt="AI Engineer working with data dashboards, interactive code synthesis, and analytics stylus"
+              class="w-full h-80 sm:h-96 object-cover object-center filter saturate-[1.05]"
+              onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='public/figures/fig2.jpg';}" />
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-primary/90 to-transparent text-on-primary">
+              <span class="text-[10px] font-mono uppercase tracking-widest text-secondary-container block">Figure 2.0 // A New Way of Working</span>
+              <p class="text-xs font-medium">A software engineer using AI assistants to design and test applications faster</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 flex flex-col gap-4">
+            <div class="flex items-center gap-2">
+              <span class="text-4xl font-extrabold text-secondary font-mono">+38%</span>
+              <div class="flex flex-col">
+                <span class="text-[11px] uppercase tracking-wider text-outline font-semibold">Productivity Boost</span>
+                <span class="text-sm font-semibold text-on-surface">More Work Done with AI Assistance</span>
+              </div>
+            </div>
+            <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+              Software developers who learn to guide AI tools and use automated testing can build higher quality software much faster, cutting repetitive typing time by up to 60%.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-4 rounded-xl bg-surface border border-surface-container-highest">
+                <div class="text-xs font-semibold text-on-surface">Faster Learning for Beginners</div>
+                <div class="text-[11px] text-on-surface-variant mt-1">Junior engineers can understand large, complex codebases in months instead of years.</div>
+              </div>
+              <div class="p-4 rounded-xl bg-surface border border-surface-container-highest">
+                <div class="text-xs font-semibold text-on-surface">Automatic Quality Checks</div>
+                <div class="text-[11px] text-on-surface-variant mt-1">Automated test programs run in the background to catch bugs instantly.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sovereign Human Engineers & Figure 3.0 (USES fig4.jpg) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8 border-t border-surface-container-highest">
+          <div class="lg:col-span-6 order-2 lg:order-1 flex flex-col gap-4">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-secondary"></span>
+              <span class="text-[11px] uppercase tracking-widest text-secondary font-semibold">Why Humans Matter</span>
+            </div>
+            <h3 class="text-2xl font-bold text-on-surface">Why Human Engineers Will Always Be Needed</h3>
+            <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+              Computers cannot take legal responsibility, negotiate with business clients, or understand human emotions and real-world common sense. When critical systems go down, human judgment and problem-solving are what save the day.
+            </p>
+            <div class="space-y-3 pt-1">
+              <div class="flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-mono text-xs font-bold text-secondary shrink-0">1</span>
+                <div>
+                  <h4 class="text-xs font-semibold text-on-surface">Understanding Real-World Client Needs</h4>
+                  <p class="text-[11px] text-on-surface-variant font-light">Turning vague client ideas into clear, workable software plans that actually solve business problems.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-mono text-xs font-bold text-secondary shrink-0">2</span>
+                <div>
+                  <h4 class="text-xs font-semibold text-on-surface">Fixing Live Outages &amp; Taking Responsibility</h4>
+                  <p class="text-[11px] text-on-surface-variant font-light">Finding and fixing the true root cause when websites or apps crash under heavy traffic.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-mono text-xs font-bold text-secondary shrink-0">3</span>
+                <div>
+                  <h4 class="text-xs font-semibold text-on-surface">Privacy, Security &amp; Legal Compliance</h4>
+                  <p class="text-[11px] text-on-surface-variant font-light">Making sure software respects user privacy, protects personal data, and follows government laws.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 order-1 lg:order-2 relative rounded-2xl overflow-hidden shadow-lg border border-surface-container-highest">
+            <img src="./figures/fig4.jpg" alt="Human and AI polygon mesh hands reaching out in synthesis"
+              class="w-full h-80 sm:h-96 object-cover object-center filter saturate-[1.1]"
+              onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='public/figures/fig4.jpg';}" />
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-primary/90 to-transparent text-on-primary">
+              <span class="text-[10px] font-mono uppercase tracking-widest text-secondary-container block">Figure 3.0 // Humans and AI Together</span>
+              <p class="text-xs font-medium">AI assists with the work, but humans make the final decisions</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 High Growth Roles (Custom Sculpted Shapes) -->
+        <div class="pt-8 border-t border-surface-container-highest flex flex-col gap-6">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Future Career Opportunities</span>
+              <h3 class="text-2xl font-bold text-on-surface">6 High-Demand Tech Roles for 2026–2030</h3>
+            </div>
+            <span class="text-xs text-outline font-mono">Click card to read what each role does</span>
+          </div>
+
+          <!-- 6 Roles Grid (Custom Designed Shapes) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="rolesGrid">
+            <!-- Role 1: Pebble Oval Shape -->
+            <div onclick="openRoleModal('ai-app-eng')"
+              class="shape-card-base shape-pebble-oval p-7 cursor-pointer group flex flex-col justify-between gap-4">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-bold uppercase text-secondary px-3 py-1 rounded-full bg-secondary/10 shadow-inner">High Growth</span>
+                <span class="text-[10px] font-mono text-outline px-2.5 py-0.5 rounded-full bg-surface-container font-semibold">+180% Demand</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 shrink-0">
+                    <span class="material-symbols-outlined text-sm">smart_toy</span>
+                  </div>
+                  <h4 class="text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
+                    AI Application Engineer</h4>
+                </div>
+                <p class="text-xs text-on-surface-variant font-light mt-1.5 leading-relaxed">Building practical apps and websites that use AI to search documents, answer questions, and automate daily work.</p>
+              </div>
+              <div class="mt-2 pt-3 border-t border-surface-container-highest/60 text-[11px] font-mono text-outline flex items-center justify-between">
+                <span class="truncate pr-2">LangChain • LlamaIndex</span>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-bold text-[10px] group-hover:bg-secondary group-hover:text-white transition-all shrink-0">Details →</span>
+              </div>
+            </div>
+
+            <!-- Role 2: Gem Crest Shape -->
+            <div onclick="openRoleModal('ml-eng')"
+              class="shape-card-base shape-gem-crest p-7 cursor-pointer group flex flex-col justify-between gap-4">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-bold uppercase text-secondary px-3 py-1 rounded-full bg-secondary/10 shadow-inner">High Growth</span>
+                <span class="text-[10px] font-mono text-outline px-2.5 py-0.5 rounded-full bg-surface-container font-semibold">+215% Demand</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 shrink-0">
+                    <span class="material-symbols-outlined text-sm">memory</span>
+                  </div>
+                  <h4 class="text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
+                    Machine Learning Engineer</h4>
+                </div>
+                <p class="text-xs text-on-surface-variant font-light mt-1.5 leading-relaxed">Training and fine-tuning AI models so they run fast, cheaply, and accurately for specific business needs.</p>
+              </div>
+              <div class="mt-2 pt-3 border-t border-surface-container-highest/60 text-[11px] font-mono text-outline flex items-center justify-between">
+                <span class="truncate pr-2">PyTorch • vLLM • Triton</span>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-bold text-[10px] group-hover:bg-secondary group-hover:text-white transition-all shrink-0">Details →</span>
+              </div>
+            </div>
+
+            <!-- Role 3: Stadium Arch Shape -->
+            <div onclick="openRoleModal('data-eng')"
+              class="shape-card-base shape-stadium-arch p-7 cursor-pointer group flex flex-col justify-between gap-4">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-bold uppercase text-secondary px-3 py-1 rounded-full bg-secondary/10 shadow-inner">High Growth</span>
+                <span class="text-[10px] font-mono text-outline px-2.5 py-0.5 rounded-full bg-surface-container font-semibold">+140% Demand</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 shrink-0">
+                    <span class="material-symbols-outlined text-sm">database</span>
+                  </div>
+                  <h4 class="text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
+                    Modern Data Engineer</h4>
+                </div>
+                <p class="text-xs text-on-surface-variant font-light mt-1.5 leading-relaxed">Organizing clean, reliable data pipelines so AI systems have accurate and up-to-date facts to learn from.</p>
+              </div>
+              <div class="mt-2 pt-3 border-t border-surface-container-highest/60 text-[11px] font-mono text-outline flex items-center justify-between">
+                <span class="truncate pr-2">Apache Iceberg • LanceDB</span>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-bold text-[10px] group-hover:bg-secondary group-hover:text-white transition-all shrink-0">Details →</span>
+              </div>
+            </div>
+
+            <!-- Role 4: Leaf Petal Shape -->
+            <div onclick="openRoleModal('cloud-platform')"
+              class="shape-card-base shape-leaf-petal p-7 cursor-pointer group flex flex-col justify-between gap-4">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-bold uppercase text-secondary px-3 py-1 rounded-full bg-secondary/10 shadow-inner">High Growth</span>
+                <span class="text-[10px] font-mono text-outline px-2.5 py-0.5 rounded-full bg-surface-container font-semibold">+165% Demand</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 shrink-0">
+                    <span class="material-symbols-outlined text-sm">cloud</span>
+                  </div>
+                  <h4 class="text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
+                    Cloud Platform Engineer</h4>
+                </div>
+                <p class="text-xs text-on-surface-variant font-light mt-1.5 leading-relaxed">Managing high-powered cloud servers (AWS, Google Cloud, Azure) to keep apps online smoothly 24/7.</p>
+              </div>
+              <div class="mt-2 pt-3 border-t border-surface-container-highest/60 text-[11px] font-mono text-outline flex items-center justify-between">
+                <span class="truncate pr-2">Kubernetes • Terraform</span>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-bold text-[10px] group-hover:bg-secondary group-hover:text-white transition-all shrink-0">Details →</span>
+              </div>
+            </div>
+
+            <!-- Role 5: Vault Shield Shape -->
+            <div onclick="openRoleModal('ai-cyber')"
+              class="shape-card-base shape-vault-shield p-7 cursor-pointer group flex flex-col justify-between gap-4">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-bold uppercase text-secondary px-3 py-1 rounded-full bg-secondary/10 shadow-inner">High Growth</span>
+                <span class="text-[10px] font-mono text-outline px-2.5 py-0.5 rounded-full bg-surface-container font-semibold">+240% Demand</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 shrink-0">
+                    <span class="material-symbols-outlined text-sm">shield</span>
+                  </div>
+                  <h4 class="text-base font-bold text-on-surface group-hover:text-secondary transition-colors leading-snug">
+                    AI &amp; Cloud Cybersecurity</h4>
+                </div>
+                <p class="text-xs text-on-surface-variant font-light mt-1.5 leading-relaxed">Protecting company AI systems, user databases, and cloud infrastructure from hackers and data leaks.</p>
+              </div>
+              <div class="mt-2 pt-3 border-t border-surface-container-highest/60 text-[11px] font-mono text-outline flex items-center justify-between">
+                <span class="truncate pr-2">Zero Trust • Security Audits</span>
+                <span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-bold text-[10px] group-hover:bg-secondary group-hover:text-white transition-all shrink-0">Details →</span>
+              </div>
+            </div>
+
+            <!-- Role 6: Fluid Teardrop Shape -->
+            <div onclick="openRoleModal('ai-safety')"
+              class="shape-card-base shape-fluid-teardrop p-7 cursor-pointer group flex flex-col justify-between gap-4 !bg-gradient-to-br !from-white !to-rose-50/30">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-bold uppercase text-error px-3 py-1 rounded-full bg-error/10 shadow-inner">Critical Need</span>
+                <span class="text-[10px] font-mono text-error font-bold px-2.5 py-0.5 rounded-full bg-error/10">+290% Surge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-8 h-8 rounded-full bg-error/10 flex items-center justify-center text-error group-hover:bg-error group-hover:text-white transition-colors duration-300 shrink-0">
+                    <span class="material-symbols-outlined text-sm">verified_user</span>
+                  </div>
+                  <h4 class="text-base font-bold text-on-surface group-hover:text-error transition-colors leading-snug">
+                    AI Testing &amp; Safety Engineer</h4>
+                </div>
+                <p class="text-xs text-on-surface-variant font-light mt-1.5 leading-relaxed">Testing AI models thoroughly to catch false statements, safety flaws, and software bugs before users see them.</p>
+              </div>
+              <div class="mt-2 pt-3 border-t border-error/20 text-[11px] font-mono text-outline flex items-center justify-between">
+                <span class="truncate pr-2">Prompt Testing • Benchmarks</span>
+                <span class="px-3 py-1 rounded-full bg-error/10 text-error font-bold text-[10px] group-hover:bg-error group-hover:text-white transition-all shrink-0">Details →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE AI ADOPTION & CAPACITY SLIDER (Sculpted Grand Deck) -->
+        <div class="shape-grand-deck p-8 sm:p-10 flex flex-col gap-8">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <span class="text-[11px] uppercase tracking-wider text-secondary font-semibold">Interactive Career &amp; Tech Explorer</span>
+              <h3 class="text-2xl font-bold text-on-surface">How AI Use Could Shift Daily IT Work (2026–2030)</h3>
+              <p class="text-xs text-on-surface-variant font-light mt-1">Move the slider below to see how work tasks, skills, and salaries may change each year.</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-mono text-outline uppercase font-semibold">Selected Year:</span>
+              <span id="sliderYearLabel"
+                class="text-3xl font-extrabold text-secondary font-mono px-4 py-1.5 rounded-full bg-secondary/10 shadow-inner">2027</span>
+            </div>
+          </div>
+
+          <!-- Slider Control -->
+          <div class="w-full flex flex-col gap-3">
+            <input id="yearSlider" type="range" min="2026" max="2030" value="2027" step="1"
+              class="w-full cursor-pointer" oninput="updateAdoptionModel(this.value)" />
+            <div class="flex justify-between text-xs font-mono text-outline px-1">
+              <span class="px-2 py-0.5 rounded-full bg-surface-container">2026 (Basic AI Helpers)</span>
+              <span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-semibold">2027 (Multi-AI Teams)</span>
+              <span class="px-2 py-0.5 rounded-full bg-surface-container">2028 (Automated Tasks)</span>
+              <span class="px-2 py-0.5 rounded-full bg-surface-container">2029 (Results-Based Delivery)</span>
+              <span class="px-2 py-0.5 rounded-full bg-surface-container">2030 (AI-First Companies)</span>
+            </div>
+          </div>
+
+          <!-- Dynamic Metrics Display (Custom Designed Shapes: Dial, Capsule, Pod) -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-surface-container-highest/60">
+            <!-- Metric 1: Circular Orbital Dial Pod -->
+            <div class="shape-circle-dial p-7 flex flex-col items-center text-center justify-center gap-3 group hover:scale-[1.02] transition-transform duration-300">
+              <span class="text-[10px] uppercase font-mono text-outline font-bold tracking-wider">Routine Coding Done by AI</span>
+              <div class="w-24 h-24 rounded-full bg-error/10 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-300">
+                <span id="statSyntax" class="text-3xl sm:text-4xl font-extrabold text-error font-mono">45%</span>
+              </div>
+              <p class="text-[11px] text-on-surface-variant max-w-xs leading-snug">Basic repetitive code, simple tests, and standard forms</p>
+            </div>
+
+            <!-- Metric 2: Stadium Pill Capsule Pod -->
+            <div class="shape-pill-capsule p-7 px-8 flex flex-col items-center text-center justify-center gap-3 group hover:scale-[1.02] transition-transform duration-300">
+              <span class="text-[10px] uppercase font-mono text-secondary font-bold tracking-wider">Salary Advantage for Senior Designers</span>
+              <div class="w-24 h-24 rounded-full bg-secondary/10 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-300">
+                <span id="statMultiplier" class="text-3xl sm:text-4xl font-extrabold text-secondary font-mono">2.8×</span>
+              </div>
+              <p class="text-[11px] text-on-surface-variant max-w-xs leading-snug">Higher pay for architects who design entire systems</p>
+            </div>
+
+            <!-- Metric 3: Sculpted Organic Teardrop Pod -->
+            <div class="shape-organic-pod p-7 flex flex-col items-center text-center justify-center gap-3 group hover:scale-[1.02] transition-transform duration-300">
+              <span class="text-[10px] uppercase font-mono text-primary font-bold tracking-wider">Beginner Jobs Requiring AI Skills</span>
+              <div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-300">
+                <span id="statFresher" class="text-3xl sm:text-4xl font-extrabold text-primary font-mono">72%</span>
+              </div>
+              <p class="text-[11px] text-on-surface-variant max-w-xs leading-snug">Percentage of entry-level openings expecting hands-on AI familiarity</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figure 4.0 & Fresher Opportunities (USES fig5.jpg) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8 border-t border-surface-container-highest">
+          <div class="lg:col-span-6 relative rounded-2xl overflow-hidden shadow-lg border border-surface-container-highest">
+            <img src="./figures/fig5.jpg" alt="Developer on laptop surrounded by AI agents and holographic UI controls"
+              class="w-full h-80 sm:h-96 object-cover object-center filter saturate-[1.05]"
+              onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='public/figures/fig5.jpg';}" />
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-primary/90 to-transparent text-on-primary">
+              <span class="text-[10px] font-mono uppercase tracking-widest text-secondary-container block">Figure 4.0 // The Modern Developer</span>
+              <p class="text-xs font-medium">An engineer guiding AI coding assistants to build software faster</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 flex flex-col gap-4">
+            <span class="text-[11px] uppercase tracking-widest text-secondary font-semibold">New Paths for College Graduates</span>
+            <h3 class="text-2xl font-bold text-on-surface">How Freshers and Students Can Succeed</h3>
+            <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+              In the past, large IT companies hired tens of thousands of college graduates each year and trained them for months on basic manual tasks. Today, companies look for graduates who already know how to use AI tools to solve problems and build real projects.
+            </p>
+            <div class="space-y-3 pt-2">
+              <div class="p-4 rounded-xl bg-surface border border-surface-container-highest">
+                <div class="text-xs font-bold text-on-surface">The Old Way (2020–2024)</div>
+                <div class="text-[11px] text-on-surface-variant mt-0.5">Typing standard code manually, basic software maintenance, and simple bug fixes.</div>
+              </div>
+              <div class="p-4 rounded-xl bg-secondary/5 border border-secondary/20">
+                <div class="text-xs font-bold text-secondary">The New Way (2026–2030)</div>
+                <div class="text-[11px] text-on-surface mt-0.5">Understanding client needs, guiding AI assistants to write code, checking outputs for mistakes, and making sure the final app works reliably.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- DOSSIER PAGINATION CONTROLLER: PAGE 02 OF 03 -->
+    <!-- ========================================================================= -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
+      <div class="shape-grand-deck p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 border border-surface-container-highest/60">
+        
+        <!-- Left: Previous Page -->
+        <a href="index.html"
+          class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface border border-surface-container-highest text-xs font-bold text-on-surface hover:bg-surface-container hover:text-secondary transition-all group">
+          <span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+          <div class="flex flex-col text-left">
+            <span class="text-[9px] uppercase font-mono text-outline">Page 01</span>
+            <span>Macro &amp; Architecture Shift</span>
+          </div>
+        </a>
+
+        <!-- Middle: Page Indicator Dots -->
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-outline">Page</span>
+          <div class="flex items-center gap-2">
+            <a href="index.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">01</a>
+            <span class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-secondary text-white shadow-sm">02</span>
+            <a href="page3.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">03</a>
+            <a href="page4.html" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold font-mono bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all">04</a>
+          </div>
+          <span class="text-xs text-on-surface-variant font-medium">of 04</span>
+        </div>
+
+        <!-- Right: Next Page -->
+        <a href="page3.html"
+          class="flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-on-primary text-xs font-bold hover:bg-neutral-800 transition-all group shadow-sm">
+          <div class="flex flex-col text-right">
+            <span class="text-[9px] uppercase font-mono text-outline-variant">Proceed to Page 03</span>
+            <span>Urban Tissue &amp; Cities →</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- BALANCED EDITORIAL FOOTER (ZERO EMPTY SPACE ON RIGHT) -->
+  <!-- ========================================================================= -->
+  <footer class="w-full bg-inverse-surface text-inverse-on-surface pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+      <!-- Main Footer Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-surface-tint/20">
+        <!-- Left Column: Title & Mission -->
+        <div class="lg:col-span-5 flex flex-col justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+            <span class="text-[11px] font-mono tracking-widest text-secondary uppercase font-semibold">Strategic Industry Report</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl text-inverse-on-surface tracking-tight font-light leading-snug">
+            Welcome to the new era of work &amp; technology.
+          </h2>
+          <p class="text-sm text-outline-variant font-light leading-relaxed">
+            A clear, research-backed guide examining how AI and automation are changing jobs, skills, and tech cities by 2030.
+          </p>
+          <div class="pt-2 flex flex-wrap items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-mono text-outline-variant">Edition 2026–2030</span>
+            <span class="px-3 py-1 rounded-full bg-secondary/20 text-secondary text-[11px] font-semibold">Verified Research</span>
+            <span class="text-xs text-outline-variant font-mono">Cambridge / Bengaluru / Chennai / Zurich</span>
+          </div>
+        </div>
+
+        <!-- Right Side: 3-Column Structured Information Hub (Balanced, No Empty Space) -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 lg:pt-0">
+          <!-- Col 1: Research Series -->
+          <div class="flex flex-col gap-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">Report Pages</h4>
+            <ul class="space-y-2 text-xs text-outline-variant">
+              <li><a href="index.html" class="hover:text-inverse-on-surface transition-colors">Page 01: Macro Shift</a></li>
+              <li><a href="page2.html" class="hover:text-inverse-on-surface text-inverse-on-surface font-semibold">Page 02: Jobs &amp; Roles (Active)</a></li>
+              <li><a href="page3.html" class="hover:text-inverse-on-surface transition-colors">Page 03: Cities &amp; Corridors</a></li>
+              <li><a href="page4.html" class="hover:text-inverse-on-surface transition-colors">Page 04: Human-First Work</a></li>
+              <li><a href="#" onclick="toggleSummaryModal(); return false;" class="text-secondary hover:underline flex items-center gap-1">Executive Summary <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Col 2: Global Nodes -->
+          <div class="flex flex-col gap-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">Research Centers</h4>
+            <ul class="space-y-2 text-xs text-outline-variant">
+              <li><span class="text-inverse-on-surface font-medium">Cambridge</span> — Policy &amp; Ethics</li>
+              <li><span class="text-inverse-on-surface font-medium">Bengaluru</span> — AI &amp; Software</li>
+              <li><span class="text-inverse-on-surface font-medium">Chennai</span> — Auto &amp; SaaS</li>
+              <li><span class="text-inverse-on-surface font-medium">Zurich</span> — Systems Engineering</li>
+            </ul>
+          </div>
+
+          <!-- Col 3: 4-Page Directory -->
+          <div class="flex flex-col gap-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-secondary font-bold">4-Page Edition</h4>
+            <ul class="space-y-2 text-xs text-outline-variant">
+              <li><a href="index.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">01</span> Macro Shift</a></li>
+              <li><a href="page2.html" class="flex items-center gap-1.5 text-inverse-on-surface font-semibold"><span class="font-mono text-[10px] text-secondary">02</span> Jobs &amp; Roles (Active)</a></li>
+              <li><a href="page3.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">03</span> Cities &amp; Corridors</a></li>
+              <li><a href="page4.html" class="flex items-center gap-1.5 hover:text-inverse-on-surface transition-colors"><span class="font-mono text-[10px] text-secondary">04</span> Human-First Work</a></li>
+              <li class="pt-1 font-mono text-[11px] text-outline">ISSN 2840-192X</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-outline-variant">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+          <span>© 2024–2030 NEUROS Research Foundation. Distributed under CC BY-NC 4.0.</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="index.html" class="hover:text-inverse-on-surface transition-colors">Page 01: Macro</a>
+          <a href="page2.html" class="text-inverse-on-surface font-semibold">Page 02: Jobs &amp; Skills</a>
+          <a href="page3.html" class="hover:text-inverse-on-surface transition-colors">Page 03: Cities</a>
+          <a href="page4.html" class="hover:text-inverse-on-surface transition-colors">Page 04: Human-First</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MODALS: ROLE DETAIL, EXECUTIVE SUMMARY & SEARCH -->
+  <!-- ========================================================================= -->
+  <!-- MODAL: ROLE DETAIL POPUP -->
+  <div id="roleModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-surface-container-lowest max-w-xl w-full rounded-3xl p-6 sm:p-8 shadow-2xl border border-surface-container-highest">
+      <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+          <h3 id="modalRoleTitle" class="text-lg font-bold text-on-surface">Role Title</h3>
+        </div>
+        <button onclick="closeRoleModal()" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div class="mt-4 space-y-3 text-xs sm:text-sm text-on-surface leading-relaxed">
+        <p id="modalRoleDesc" class="font-light text-on-surface-variant"></p>
+        <div class="p-4 rounded-xl bg-surface border border-surface-container-highest">
+          <span class="text-[10px] uppercase font-mono text-outline block font-semibold">Key Core Competencies:</span>
+          <span id="modalRoleSkills" class="font-mono text-xs text-secondary font-bold"></span>
+        </div>
+        <div class="p-4 rounded-xl bg-secondary/10 border border-secondary/20">
+          <span class="text-[10px] uppercase font-mono text-secondary block font-semibold">Market Outlook:</span>
+          <span id="modalRoleOutlook" class="text-xs font-bold text-on-surface"></span>
+        </div>
+      </div>
+      <div class="mt-6 pt-4 border-t border-surface-container-highest flex justify-end">
+        <button onclick="closeRoleModal()" class="px-5 py-2 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-neutral-800 transition-all">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: EXECUTIVE SUMMARY MATRIX -->
+  <div id="summaryModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-surface-container-lowest max-w-2xl w-full rounded-3xl p-6 sm:p-8 shadow-2xl border border-surface-container-highest max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-4 border-b border-surface-container-highest">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+          <h3 class="text-lg font-bold text-on-surface">Executive Summary Matrix</h3>
+        </div>
+        <button onclick="toggleSummaryModal()" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div class="mt-6 space-y-4 text-xs sm:text-sm text-on-surface leading-relaxed">
+        <p class="font-medium text-secondary">Key Findings of the IT 2030 Report:</p>
+        <ul class="space-y-2 list-disc pl-5 text-on-surface-variant">
+          <li><strong>Routine Tasks Handled by AI:</strong> Up to 80% of basic repetitive coding, standard testing, and template scripts could be automated by AI tools by 2028.</li>
+          <li><strong>Higher Pay for System Designers:</strong> Senior engineers who know how to design large, safe, and reliable systems can earn up to 4.2x more than standard coders.</li>
+          <li><strong>Local Business Impact:</strong> Every direct IT job supports 3.8 local service livelihoods (such as rental housing, food stalls, transport, and stores). Changes in IT hiring affect PG housing (-22%), cafeterias, and local buses.</li>
+          <li><strong>Chennai's Strong Foundation:</strong> With over 35% of India's car exports, world-class hospitals, deep shipping ports, and software product companies, Chennai is well-positioned for the future.</li>
+        </ul>
+      </div>
+      <div class="mt-8 pt-4 border-t border-surface-container-highest flex justify-end">
+        <button onclick="toggleSummaryModal()" class="px-6 py-2.5 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-neutral-800 transition-all">Close Summary</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: SEARCH OVERLAY -->
+  <div id="searchModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-surface-container-lowest max-w-xl w-full rounded-3xl p-6 shadow-2xl border border-surface-container-highest">
+      <div class="flex items-center gap-3 border-b border-surface-container-highest pb-3">
+        <span class="material-symbols-outlined text-outline">search</span>
+        <input id="searchInput" type="text" placeholder="Search roles, cities, metrics, or technologies..."
+          oninput="handleSearch(this.value)" class="flex-1 text-sm bg-transparent outline-none text-on-surface placeholder:text-outline" />
+        <button onclick="toggleSearchModal()" class="text-xs text-outline hover:text-on-surface font-semibold">ESC</button>
+      </div>
+      <div id="searchResults" class="mt-4 max-h-60 overflow-y-auto space-y-2 text-xs">
+        <p class="text-outline text-center py-4">Type to search across all 3 monograph pages...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIENT SCRIPTS -->
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    function toggleSummaryModal() {
+      const modal = document.getElementById('summaryModal');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+    }
+
+    function toggleSearchModal() {
+      const modal = document.getElementById('searchModal');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+      if (!modal.classList.contains('hidden')) {
+        setTimeout(() => document.getElementById('searchInput').focus(), 100);
+      }
+    }
+
+    // Role Details Data & Modal
+    const rolesData = {
+      'ai-app-eng': {
+        title: 'AI Application Engineer',
+        desc: 'Builds real-world applications that connect AI features (like smart search, auto-summaries, and chatbots) with company software and databases to help teams work faster.',
+        skills: 'LangChain, LlamaIndex, Python, RAG, DSPy',
+        outlook: '+180% Demand Growth by 2030'
+      },
+      'ml-eng': {
+        title: 'Machine Learning Engineer',
+        desc: 'Customizes and tunes AI models for specific companies and tasks, making them fast, cost-effective, and highly accurate for daily operations.',
+        skills: 'PyTorch, Triton, vLLM, TensorRT-LLM, Ray',
+        outlook: '+215% Surge in Global Openings'
+      },
+      'data-eng': {
+        title: 'Modern Data Engineer',
+        desc: 'Builds organized, high-speed data pipelines that feed clean and updated information into company AI systems in real time.',
+        skills: 'Apache Iceberg, LanceDB, Kafka, dbt, Spark',
+        outlook: '+140% Net Expansion'
+      },
+      'cloud-platform': {
+        title: 'Cloud Platform & Infrastructure Engineer',
+        desc: 'Manages high-performance cloud servers and computing hardware (like GPUs) across AWS, Google Cloud, and Azure to keep systems running 24/7 without outages.',
+        skills: 'Kubernetes, Terraform, AWS, Azure, GCP, Slurm',
+        outlook: '+165% Expansion'
+      },
+      'ai-cyber': {
+        title: 'AI & Cloud Cybersecurity Specialist',
+        desc: 'Protects company AI systems, user databases, and servers from hacking attempts, data theft, and unauthorized access.',
+        skills: 'Zero-Trust, Security Audits, OWASP LLM Top 10',
+        outlook: '+240% Critical Requirement'
+      },
+      'ai-safety': {
+        title: 'AI Testing & Safety Engineer',
+        desc: 'Develops test programs to verify that AI outputs are accurate, free of hallucinations (false answers), safe, and compliant with privacy rules.',
+        skills: 'Prompt Testing, DeepEval, Automated Benchmarks',
+        outlook: '+290% Surge (Highest Hiring Deficit)'
+      }
+    };
+
+    function openRoleModal(roleKey) {
+      const role = rolesData[roleKey];
+      if (!role) return;
+      document.getElementById('modalRoleTitle').innerText = role.title;
+      document.getElementById('modalRoleDesc').innerText = role.desc;
+      document.getElementById('modalRoleSkills').innerText = role.skills;
+      document.getElementById('modalRoleOutlook').innerText = role.outlook;
+      const modal = document.getElementById('roleModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeRoleModal() {
+      const modal = document.getElementById('roleModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Interactive Adoption Slider Logic
+    const adoptionData = {
+      2026: { syntax: '35%', multiplier: '2.2×', fresher: '85%' },
+      2027: { syntax: '45%', multiplier: '2.8×', fresher: '72%' },
+      2028: { syntax: '62%', multiplier: '3.6×', fresher: '58%' },
+      2029: { syntax: '74%', multiplier: '4.0×', fresher: '46%' },
+      2030: { syntax: '82%', multiplier: '4.2×', fresher: '38%' }
+    };
+
+    function updateAdoptionModel(year) {
+      document.getElementById('sliderYearLabel').innerText = year;
+      const data = adoptionData[year] || adoptionData[2027];
+      document.getElementById('statSyntax').innerText = data.syntax;
+      document.getElementById('statMultiplier').innerText = data.multiplier;
+      document.getElementById('statFresher').innerText = data.fresher;
+    }
+
+    // Search Bar Handler
+    const searchItems = [
+      { title: 'AI Application Engineer', url: 'page2.html#jobs-skills', desc: 'Agent workflows, RAG pipelines, production LLMs' },
+      { title: 'Machine Learning Engineer', url: 'page2.html#jobs-skills', desc: 'Fine-tuning, vLLM, quantization, Triton' },
+      { title: 'Chennai Coromandel Corridor', url: 'page3.html#chennai-2030', desc: 'Automotive, SaaS, healthcare capital resilience' },
+      { title: 'Urban Multiplier (1 : 3.8)', url: 'page3.html#urban-ripple', desc: '1 IT job sustains 3.8 peripheral livelihoods' },
+      { title: 'Four Vectors of Transformation', url: 'index.html#macro-vectors', desc: 'Intent-driven systems, self-healing code, deterministic verification' },
+      { title: 'The Three-Epoch Trajectory', url: 'index.html#epoch-trajectory', desc: '2024 Copilot, 2027 Swarms, 2030 Synthetic Enterprise' },
+      { title: 'Three Metropolis Scenarios', url: 'page3.html#scenarios', desc: 'Sudden automation, gradual reskilling, net expansion' }
+    ];
+
+    function handleSearch(query) {
+      const resultsContainer = document.getElementById('searchResults');
+      if (!query.trim()) {
+        resultsContainer.innerHTML = '<p class="text-outline text-center py-4">Type to search across all 3 monograph pages...</p>';
+        return;
+      }
+      const q = query.toLowerCase();
+      const matches = searchItems.filter(item =>
+        item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q)
+      );
+      if (matches.length === 0) {
+        resultsContainer.innerHTML = '<p class="text-outline text-center py-4">No matching entries found.</p>';
+        return;
+      }
+      resultsContainer.innerHTML = matches.map(item => `
+        <a href="${item.url}" class="block p-3 rounded-xl bg-surface hover:bg-surface-container transition-colors">
+          <div class="font-bold text-on-surface">${item.title}</div>
+          <div class="text-xs text-on-surface-variant font-light mt-0.5">${item.desc}</div>
+        </a>
+      `).join('');
+    }
+
+    // Close Modals on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.getElementById('summaryModal').classList.add('hidden');
+        document.getElementById('summaryModal').classList.remove('flex');
+        document.getElementById('roleModal').classList.add('hidden');
+        document.getElementById('roleModal').classList.remove('flex');
+        document.getElementById('searchModal').classList.add('hidden');
+        document.getElementById('searchModal').classList.remove('flex');
+      }
+    });
+  </script>
+</body>
+
+</html>
